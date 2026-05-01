@@ -45,7 +45,10 @@ function shuffleArray<T>(array: T[]): T[] {
 
 // ─── Raw data access ────────────────────────────────
 function getRawData(): QuestionsData {
-  return questionsData as unknown as QuestionsData;
+  // questions.json uses "subject" as the top-level key wrapping a single subject
+  const raw = questionsData as any;
+  if (raw.subject) return { subject: raw.subject } as QuestionsData;
+  return raw as QuestionsData;
 }
 
 export function getSubjects(): Subject[] {
