@@ -174,9 +174,11 @@ export default function QuizPage() {
   const handleStartQuiz = () => {
     saveQuizPrefs(prefs);
     const pool = buildQuizPool(subjectId, prefs);
-    console.log("[Quiz] subjectId:", subjectId, "pool size:", pool.length, "prefs:", JSON.stringify(prefs));
+    if (!pool.length) {
+      alert("No questions available for selected chapters. Please select at least one chapter.");
+      return;
+    }
     const questions = pool.slice(0, prefs.questionCount > 0 ? prefs.questionCount : pool.length);
-    console.log("[Quiz] selected questions:", questions.length, "first:", questions[0]?.text?.slice(0, 40));
     setQuizQuestions(questions);
     setCurrentIdx(0);
     setAnswers({});
@@ -493,7 +495,7 @@ export default function QuizPage() {
               <Button
                 variant="outline"
                 className="flex-1"
-                onClick={() => router.push("/")}
+                onClick={() => router.push("/?_=" + Date.now())}
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Home

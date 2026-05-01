@@ -39,25 +39,31 @@ export default function HomePage() {
   }));
   const TOTAL_QUESTIONS = CHAPTERS.reduce((s, c) => s + c.questions, 0);
 
-  useEffect(() => {
+  const loadStats = () => {
     const storedName = localStorage.getItem("quizcraft_name");
     if (storedName) setName(storedName);
+    else return;
 
     const attempts = JSON.parse(localStorage.getItem("quizcraft_attempts") || "[]");
-
     if (attempts.length > 0) {
       const scores = attempts.map((a: any) => Math.round((a.score / a.totalQuestions) * 100));
       const best = Math.max(...scores);
       const avg = Math.round(scores.reduce((s: number, v: number) => s + v, 0) / scores.length);
-
-      setUserStats({
-        totalQuizzes: attempts.length,
-        bestScore: best,
-        avgScore: avg
-      });
+      setUserStats({ totalQuizzes: attempts.length, bestScore: best, avgScore: avg });
     } else {
       setUserStats(null);
     }
+  };
+
+  useEffect(() => {
+    loadStats();
+  }, []);
+
+  // Re-load stats when returning from quiz (navigation without full reload)
+  useEffect(() => {
+    const handleShowStats = () => loadStats();
+    window.addEventListener("focus", handleShowStats);
+    return () => window.removeEventListener("focus", handleShowStats);
   }, []);
 
   const handleStartQuiz = () => {
