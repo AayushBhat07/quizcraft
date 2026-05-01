@@ -1,5 +1,5 @@
 {
-  "subject": {
+  "ete": {
     "id": "ete",
     "name": "Emerging Trends in Electronics",
     "chapters": [
@@ -7,236 +7,1180 @@
         "id": "advanced-processors",
         "name": "Advanced Processors and Technology",
         "questions": [
-          {"id": "ete-q1", "text": "GPUs are essential for .........", "options": {"A": "Data routing", "B": "Graphical requirements", "C": "Power conversion", "D": "Networking"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q2", "text": "Human vision requires a minimum of ......... frames per second.", "options": {"A": "10", "B": "16", "C": "30", "D": "60"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q3", "text": "GPUs are increasingly integrated into high-end processors such as .........", "options": {"A": "RISC-V only", "B": "PowerVR and MALI", "C": "AVR series", "D": "PIC controllers"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q4", "text": "GPU stands for .........", "options": {"A": "General Processing Unit", "B": "Graphical Processing Unit", "C": "Global Processing Unit", "D": "General Purpose Unit"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q5", "text": "High-quality visuals in modern displays requires .........", "options": {"A": "Low data bandwidth", "B": "Manual rendering", "C": "High memory bandwidth", "D": "No processing unit"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q6", "text": "Parallel processing capability of GPUs enables .....", "options": {"A": "Sequential logic only", "B": "Concurrent task handling", "C": "Reduced heat generation", "D": "Lower clock speed"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q7", "text": "GDDR6 and HBM are associated with ........", "options": {"A": "Power supply modules", "B": "Display types", "C": "High-speed GPU memory", "D": "Instruction set"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q8", "text": "CUDA is primarily used for ........", "options": {"A": "Power conversion", "B": "Parallel computing", "C": "Networking", "D": "Encryption"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q9", "text": "Ray tracing in GPUs is used for ........", "options": {"A": "Data compression", "B": "Image rendering", "C": "Keyboard control", "D": "Power supply stabilization"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q10", "text": "A CPUs internal layout and functional structure define ........", "options": {"A": "Clock generator", "B": "Processor architecture", "C": "Peripheral speed", "D": "Operating system"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q11", "text": "Identify a NON CPU component ........", "options": {"A": "ALU", "B": "Control Unit", "C": "Registers", "D": "LED Driver"}, "correctAnswer": "D", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q12", "text": "The fastest CPU cache level is ........", "options": {"A": "L1", "B": "L2", "C": "L3", "D": "Virtual memory"}, "correctAnswer": "A", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q13", "text": "RISC architecture uses ........", "options": {"A": "Many complex instructions", "B": "Few simple instructions", "C": "No instruction set", "D": "Many floating-point instructions"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q14", "text": "Pipelining Increases CPU performance ........", "options": {"A": "Lowering frequency", "B": "Increasing overlap of instruction stages", "C": "Reducing clock cycles to 0", "D": "Shutting down inactive cores"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q15", "text": "Superscalar processors execute ........", "options": {"A": "One instruction per cycle", "B": "Multiple instructions per cycle", "C": "No instructions in parallel", "D": "Only floating-point operations"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q16", "text": "ILP stands for ........", "options": {"A": "Instruction Level Processing", "B": "Inner Loop Processing", "C": "Instruction Level Parallelism", "D": "Intermediate Logic Protocol"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q17", "text": "The scheduler in a superscalar CPU ........", "options": {"A": "Controls power supply", "B": "Identifies parallel executable instructions", "C": "Increases clock frequency", "D": "Reduces cache size"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q18", "text": "Out-of-order execution is used in ........", "options": {"A": "RISC only", "B": "CISC only", "C": "Superscalar processors", "D": "8-bit microcontrollers"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q19", "text": "A benefit of superscalar architecture is ........", "options": {"A": "Reduced instruction throughput", "B": "Higher execution speed", "C": "Increased bottlenecks", "D": "Elimination of pipelines"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q20", "text": "ESP32 includes ........", "options": {"A": "No wireless interface", "B": "Only Ethernet", "C": "Wi-Fi and Bluetooth", "D": "Bluetooth only"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q21", "text": "ESP32 internal SRAM is ........", "options": {"A": "150 KB", "B": "520 KB", "C": "1MB", "D": "10 MB"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q22", "text": "ESP32 uses which core?", "options": {"A": "ARM7", "B": "Tensilica Xtensa LX6", "C": "AVR Mega", "D": "MIPS R3000"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q23", "text": "Maximum clock frequency of ESP32 is ........", "options": {"A": "40 MHz", "B": "80 MHz", "C": "120 MHz", "D": "240 MHz"}, "correctAnswer": "D", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q24", "text": "ESP32 has ....... DAC channels.", "options": {"A": "0", "B": "1", "C": "2", "D": "4"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q25", "text": "ESP32 supports ......... programming environments.", "options": {"A": "Only Arduino IDE", "B": "Only MicroPython", "C": "Arduino IDE, ESP-IDF, MicroPython", "D": "Only Java"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q26", "text": "ESP32 Bluetooth version supported ........", "options": {"A": "2.0", "B": "3.0", "C": "4.2 BR/EDR + BLE", "D": "5.3"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q27", "text": "ESP32 Operating voltage is ........", "options": {"A": "1.8V", "B": "3.0V", "C": "3.3V", "D": "5V"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q28", "text": "GPIOO is used for ........", "options": {"A": "Reset", "B": "Boot mode during programming", "C": "ADC only", "D": "PWM only"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q29", "text": "ESP8266 has ......... processor.", "options": {"A": "Dual-core", "B": "Single-core", "C": "Quad-core", "D": "No core"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q30", "text": "ESP32 supports .......", "options": {"A": "Wi-Fi only", "B": "Only Bluetooth", "C": "Wi-Fi + Bluetooth", "D": "Infrared only"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q31", "text": "ADC resolution of ESP32 is ........", "options": {"A": "8-bit", "B": "10-bit", "C": "12-bit", "D": "16-bit"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q32", "text": "Touch sensors available in ESP8266 are ........", "options": {"A": "0", "B": "2", "C": "5", "D": "10"}, "correctAnswer": "D", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q33", "text": "ESP32 deep sleep consumption is approx. ........", "options": {"A": "100 mA", "B": "1 mA", "C": "10 μA", "D": "1μA"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q34", "text": "AI aims to develop machines that can ........", "options": {"A": "Consume more power", "B": "Learn and reason like humans", "C": "Work without algorithms", "D": "Eliminate processors"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q35", "text": "AI applications include ........", "options": {"A": "Handwritten recognition", "B": "Circuit soldering", "C": "PCB layout", "D": "Cable manufacturing"}, "correctAnswer": "A", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q36", "text": "ML was first defined by ........", "options": {"A": "Charles Babbage", "B": "Arthur Samuel", "C": "John von Neumann", "D": "Alan Turing"}, "correctAnswer": "B", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q37", "text": "Supervised learning uses ........", "options": {"A": "No data", "B": "Unlabelled data", "C": "Labelled data", "D": "Only audio data"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q38", "text": "Unsupervised learning is mainly used for ........", "options": {"A": "Clustering", "B": "Power analysis", "C": "Bluetooth decoding", "D": "Ethernet switching"}, "correctAnswer": "A", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q39", "text": "GPIO pins available on ESP32 are up to ........", "options": {"A": "10", "B": "16", "C": "28", "D": "39"}, "correctAnswer": "D", "topic": "Advanced Processors and Technology"},
-          {"id": "ete-q40", "text": "Reinforcement learning learns through ........", "options": {"A": "Only one agent", "B": "Labels and datasets", "C": "Rewards and penalties", "D": "DNA sequencing"}, "correctAnswer": "C", "topic": "Advanced Processors and Technology"}
+          {
+            "id": "ete-q1",
+            "text": "Which of the following is NOT a type of processor architecture?",
+            "options": { "A": "RISC", "B": "CISC", "C": "MISC", "D": "MIPS" },
+            "correctAnswer": "C",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q2",
+            "text": "What does MIPS stand for?",
+            "options": { "A": "Micro Integrated Processing System", "B": "Million Instructions Per Second", "C": "Micro Internal Processor Speed", "D": "Multiple Instruction Processing System" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q3",
+            "text": "Which company developed the x86 processor architecture?",
+            "options": { "A": "AMD", "B": "Intel", "C": "ARM", "D": "Qualcomm" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q4",
+            "text": "What is the main advantage of RISC architecture over CISC?",
+            "options": { "A": "More complex instructions", "B": "Simpler instructions, faster execution", "C": "Lower power consumption only", "D": "Higher clock speeds only" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q5",
+            "text": "Which architecture is commonly used in mobile devices?",
+            "options": { "A": "x86", "B": "ARM", "C": "SPARC", "D": "PowerPC" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q6",
+            "text": "What is multi-core processor?",
+            "options": { "A": "Processor with multiple caches", "B": "Processor with multiple processing units on a single chip", "C": "Processor with multiple fans", "D": "Processor with multiple memory slots" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q7",
+            "text": "What does cache memory primarily improve?",
+            "options": { "A": "Storage capacity", "B": "Memory access speed", "C": "Display resolution", "D": "Network speed" },
+            "correctAnswer": "B",
+            "topic": "Memory Hierarchy"
+          },
+          {
+            "id": "ete-q8",
+            "text": "Which type of memory is fastest among the following?",
+            "options": { "A": "RAM", "B": "Cache", "C": "Hard Disk", "D": "SSD" },
+            "correctAnswer": "B",
+            "topic": "Memory Hierarchy"
+          },
+          {
+            "id": "ete-q9",
+            "text": "What is the purpose of pipelining in processors?",
+            "options": { "A": "To increase storage", "B": "To improve power efficiency", "C": "To allow parallel execution of instructions", "D": "To reduce heat" },
+            "correctAnswer": "C",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q10",
+            "text": "Which generation of processors introduced multi-core?",
+            "options": { "A": "1st generation", "B": "2nd generation", "C": "3rd generation", "D": "4th generation" },
+            "correctAnswer": "D",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q11",
+            "text": "What is SIMD in processor context?",
+            "options": { "A": "Single Input Multiple Data", "B": "Single Instruction Multiple Data", "C": "System Instruction Memory Data", "D": "Serial Input Modular Data" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q12",
+            "text": "What is the function of the ALU?",
+            "options": { "A": "Memory management", "B": "Arithmetic and Logic Operations", "C": "Data storage", "D": "Network communication" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q13",
+            "text": "What does GPU stand for?",
+            "options": { "A": "General Processing Unit", "B": "Graphics Processing Unit", "C": "Global Processing Unit", "D": "Graphic Peripheral Unit" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q14",
+            "text": "Which memory type is volatile?",
+            "options": { "A": "ROM", "B": "RAM", "C": "Flash", "D": "HDD" },
+            "correctAnswer": "B",
+            "topic": "Memory Hierarchy"
+          },
+          {
+            "id": "ete-q15",
+            "text": "What is the primary function of the register file?",
+            "options": { "A": "Long-term storage", "B": "Temporary high-speed storage for operands", "C": "Network routing", "D": "Graphics rendering" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q16",
+            "text": "What is instruction cycle?",
+            "options": { "A": "Time to boot system", "B": "Fetch, Decode, Execute cycle", "C": "Time to install software", "D": "Memory refresh cycle" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q17",
+            "text": "What is hyper-threading?",
+            "options": { "A": "Multiple processors", "B": "Making single core appear as two logical processors", "C": "Overclocking technique", "D": "Memory doubling" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q18",
+            "text": "Which of the following is a non-volatile memory?",
+            "options": { "A": "SRAM", "B": "DRAM", "C": "Flash Memory", "D": "Cache" },
+            "correctAnswer": "C",
+            "topic": "Memory Hierarchy"
+          },
+          {
+            "id": "ete-q19",
+            "text": "What is the role of the control unit?",
+            "options": { "A": "Perform arithmetic operations", "B": "Direct the operation of the processor", "C": "Store data", "D": "Cool the processor" },
+            "correctAnswer": "B",
+            "topic": "Processor Architecture"
+          },
+          {
+            "id": "ete-q20",
+            "text": "Which bus is used to transfer data between CPU and memory?",
+            "options": { "A": "Control bus", "B": "Address bus", "C": "Data bus", "D": "System bus" },
+            "correctAnswer": "C",
+            "topic": "Processor Architecture"
+          }
         ]
       },
       {
-        "id": "ai-ml",
-        "name": "AI and Machine Learning",
+        "id": "semiconductors",
+        "name": "Semiconductors and ICs",
         "questions": [
-          {"id": "ete-q41", "text": "ML is a subset of ........", "options": {"A": "Data science", "B": "AI", "C": "Network security", "D": "Microcontrollers"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q42", "text": "DL is mainly based on........", "options": {"A": "Flowcharts", "B": "Neural networks", "C": "Physical circuits", "D": "Wireless networks"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q43", "text": "The relation between DL, ML and AI represents ........", "options": {"A": "Independence", "B": "Hierarchical relationship", "C": "No relation", "D": "Opposite domains"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q44", "text": "PCA and ICA are used in........", "options": {"A": "Supervised learning", "B": "Unsupervised learning", "C": "Reinforcement learning", "D": "Deep learning"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q45", "text": "An agent uses sensors for ........", "options": {"A": "Power amplification", "B": "Gathering information", "C": "Data storage", "D": "Signal conversion"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q46", "text": "An agent with goals and autonomy is a ......... agent.", "options": {"A": "Passive", "B": "Rational", "C": "Contains only one intelligent agent", "D": "Requires negotiation"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q47", "text": "A single-agent system ........", "options": {"A": "Has multiple agents", "B": "Uses no sensors", "C": "Contains only one intelligent agent", "D": "Depends on multi-agent support"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q48", "text": "A traffic system with many autonomous cars is an example of ........", "options": {"A": "Single-agent system", "B": "Multi-agent system", "C": "Static system", "D": "No-agent system"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q49", "text": "A benefit of multi-agent systems is........", "options": {"A": "No communication", "B": "Low scalability", "C": "High resilience", "D": "Single-thread execution"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q50", "text": "The operational cycle of an AI agent is.........", "options": {"A": "Sleep — Wake — Run — Hibernation", "B": "Sense — Reason — Act", "C": "Observe — Sleep — Execute", "D": "Ignore — Execute"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q51", "text": "Multi-agent systems involve ........", "options": {"A": "Only one agent", "B": "Multiple interacting agents", "C": "Hardware-only systems", "D": "No communication"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q52", "text": "A single-agent chess program versus a human is a ........", "options": {"A": "Multi-agent system", "B": "Single-agent system", "C": "Distributed system", "D": "Technical system"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q53", "text": "Multi-agent systems are suitable for ........", "options": {"A": "Simple tasks only", "B": "Complex dynamic environments", "C": "Static environments only", "D": "No real-time operations"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q54", "text": "A benefit of multi-agent systems is ........", "options": {"A": "System collapses if one agent fails", "B": "Centralized control only", "C": "Scalability", "D": "No synchronization required"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q55", "text": "A drawback of multi-agent systems is ........", "options": {"A": "Simple coordination", "B": "Minimal communication", "C": "Conflict among agents", "D": "No decision-making required"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q56", "text": "Quantum computing is based on ........", "options": {"A": "Classical mechanics", "B": "Quantum mechanics", "C": "Newtonian physics", "D": "Electrical circuits"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q57", "text": "Qubit is a unit of quantum information ..........", "options": {"A": "Classical bit", "B": "Quantum bit", "C": "Binary digit", "D": "Analog signal"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q58", "text": "A qubit can represent ........", "options": {"A": "Only 0", "B": "Only 1", "C": "0 and 1 simultaneously", "D": "Only analog values"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q59", "text": "Mathematical representation of a qubit uses ......", "options": {"A": "Real numbers only", "B": "Complex numbers", "C": "Complex amplitudes", "D": "Fixed probability amplitudes"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q60", "text": "Superposition allows a qubit to ........", "options": {"A": "Collapse to one state", "B": "Exist in multiple states", "C": "Represent one value", "D": "Always be in error"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q61", "text": "Entanglement refers to ........", "options": {"A": "Wires connected physically", "B": "Correlation between qubits", "C": "Process of decoherence", "D": "Loss of information"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q62", "text": "Interference in quantum computing helps ........", "options": {"A": "Cancel correct solutions", "B": "Reinforce correct solutions", "C": "Reduce memory size", "D": "Increase voltage"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q63", "text": "Classical bits can represent ........", "options": {"A": "Limited states", "B": "Multiple states simultaneously", "C": "Probabilistic outcomes", "D": "Complex amplitudes"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q64", "text": "Quantum computers show exponential power because ........", "options": {"A": "n qubits = 2^n states", "B": "They use less power", "C": "They reduce heat", "D": "They are deterministic"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q65", "text": "Quantum parallelism is enabled by ........", "options": {"A": "PCB routing", "B": "Superposition", "C": "Binary registers", "D": "Clock pulses"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q66", "text": "Error correction in quantum computing is ........", "options": {"A": "Simple", "B": "Straightforward", "C": "Complex and resource-heavy", "D": "Not required"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q67", "text": "An example application of quantum computing is ..........", "options": {"A": "Word processing", "B": "Drug discovery", "C": "Basic arithmetic", "D": "Display control"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q68", "text": "QKD stands for ........", "options": {"A": "Quantum Key Distribution", "B": "Quick Kinetic Decryption", "C": "Quantum Kernel Decoder", "D": "Quality Key Design"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q69", "text": "A main application area for quantum computing is ........", "options": {"A": "Material science", "B": "Toy design", "C": "Laundry appliances", "D": "Woodwork"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q70", "text": "Quantum computing helps in drug discovery via ........", "options": {"A": "Audio processing", "B": "Molecular modeling", "C": "Power circuits", "D": "Car braking systems"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q71", "text": "Quantum computing is beneficial in finance mainly for ........", "options": {"A": "Tax collection", "B": "Market simulation", "C": "Car sales", "D": "Manual accounting"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q72", "text": "Quantum ML accelerates ........", "options": {"A": "Manual data entry", "B": "Data processing", "C": "Paper filing", "D": "Human labor"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q73", "text": "Climate modelling using quantum computing enables ........", "options": {"A": "Better weather simulation", "B": "Battery charging", "C": "Traffic signal control", "D": "Lighting control"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q74", "text": "Quantum computing improves cyber security through ........", "options": {"A": "Weak encryption", "B": "QKD", "C": "Removing encryption", "D": "Reducing key size"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q75", "text": "In Arduino IDE, the ESP32 sketch file extension is ........", "options": {"A": ".c", "B": ".cpp", "C": ".ino", "D": ".txt"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q76", "text": "setup() function in Arduino runs ........", "options": {"A": "Forever", "B": "Only once at start", "C": "When user presses reset", "D": "Never"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q77", "text": "loop() function in Arduino ........", "options": {"A": "Runs only once", "B": "Runs repeatedly", "C": "Never runs", "D": "Runs only in deep sleep"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q78", "text": "ESP32 supports Over-The-Air updates, known as ........", "options": {"A": "OTB", "B": "OTA", "C": "OTR", "D": "OTM"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q79", "text": "ESP32 programming tools include ........", "options": {"A": "Arduino IDE only", "B": "ESP-IDF, Arduino IDE, MicroPython", "C": "Notepad only", "D": "BlueJ IDE"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q80", "text": "GPIO36 is ........", "options": {"A": "Output only", "B": "Input only", "C": "Reserved", "D": "Boot pin"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q81", "text": "GPIO25 supports ........", "options": {"A": "DAC", "B": "Ethernet", "C": "UART0", "D": "Flash memory"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q82", "text": "GPIO2 is commonly used for ........", "options": {"A": "Ultrasonic sensor", "B": "Built-in LED", "C": "Reset", "D": "SPI Flash"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q83", "text": "GPIOO must be LOW during ........", "options": {"A": "Wi-Fi transmission", "B": "Boot mode/programming", "C": "ADC conversion", "D": "Deep sleep"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q84", "text": "ESP32 operating voltage range is ........", "options": {"A": "1.5V to 3.0V", "B": "2.2 V to 3.6V", "C": "5V to 12V", "D": "3.3V to 12V"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q85", "text": "ESP32 supports which interface for SD cards?", "options": {"A": "UART", "B": "SDIO", "C": "CAN", "D": "USB"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q86", "text": "ESP32 supports how many 8-bit DACs?", "options": {"A": "None", "B": "One", "C": "Two", "D": "Three"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q87", "text": "Touch sensors in ESP32 count ........", "options": {"A": "0", "B": "5", "C": "7", "D": "10"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q88", "text": "GPIO1 and GPIO3 are recommended for ........", "options": {"A": "General use", "B": "Reserved and not recommended", "C": "ADC-only", "D": "Touch pins"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q89", "text": "ESP32 security features include ........", "options": {"A": "Only SHA-1", "B": "Only DES", "C": "AES, RSA, ECC", "D": "No encryption"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q90", "text": "AI can operate ........", "options": {"A": "Only 8 hours per day", "B": "Only in daylight", "C": "24/7", "D": "Only during low power"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q91", "text": "A limitation of AI includes ........", "options": {"A": "Increased creativity", "B": "No ethical issues", "C": "Lack of common sense", "D": "Always correct decisions"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q92", "text": "An application of ML is ........", "options": {"A": "Spam detection", "B": "Wood cutting", "C": "Paper folding", "D": "Mechanical drilling"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q93", "text": "Supervised learning requires ........", "options": {"A": "A teacher providing correct outputs", "B": "No data", "C": "Real-time sensor input", "D": "Binary distributions"}, "correctAnswer": "A", "topic": "AI and Machine Learning"},
-          {"id": "ete-q94", "text": "Reinforcement learning agents learn through ........", "options": {"A": "Labelled data", "B": "Unlabelled data", "C": "Rewards and penalties", "D": "Random guesses"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q95", "text": "MAS requires ........", "options": {"A": "No synchronization", "B": "Coordination among agents", "C": "Only one decision maker", "D": "No environment"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q96", "text": "An autonomous vacuum cleaner operating alone is a ........", "options": {"A": "Multi-agent system", "B": "Single-agent system", "C": "Reactive system", "D": "Non-agent system"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q97", "text": "Sensor input in an AI agent belongs to ........", "options": {"A": "Execution", "B": "Reasoning", "C": "Sensation", "D": "Control"}, "correctAnswer": "C", "topic": "AI and Machine Learning"},
-          {"id": "ete-q98", "text": "A warehouse with many robots is an example of ........", "options": {"A": "Single-agent system", "B": "Multi-agent system", "C": "Semi-agent", "D": "No agent"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q99", "text": "MAS is suitable for ........", "options": {"A": "Centralized systems only", "B": "Decentralized, complex problems", "C": "No interaction", "D": "Linear circuits"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q100", "text": "GPU parallelism mainly improves ........", "options": {"A": "Audio clarity", "B": "Graphics rendering", "C": "Power switching", "D": "Memory leakage"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q101", "text": "Programmable shaders in GPUs include ........", "options": {"A": "Logic shaders", "B": "Pixel and vertex shaders", "C": "Resistive shaders", "D": "Frequency shaders"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q102", "text": "Tensor cores in GPUs are used for ........", "options": {"A": "File storage", "B": "AI-related tasks", "C": "Sealing systems", "D": "Wi-Fi communication"}, "correctAnswer": "B", "topic": "AI and Machine Learning"},
-          {"id": "ete-q103", "text": "UART link is used for ........", "options": {"A": "Display control", "B": "Parallel interfacing", "C": "Debugging", "D": "Serial communication"}, "correctAnswer": "D", "topic": "AI and Machine Learning"},
-          {"id": "ete-q104", "text": "GPU virtualization is useful for........", "options": {"A": "Cloud gaming", "B": "Printer settings", "C": "Water cooling", "D": "Web browsing only"}, "correctAnswer": "A", "topic": "AI and Machine Learning"}
+          {
+            "id": "ete-q21",
+            "text": "What is the most commonly used semiconductor material?",
+            "options": { "A": "Germanium", "B": "Silicon", "C": "Gallium Arsenide", "D": "Carbon" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q22",
+            "text": "What type of doping creates a P-type semiconductor?",
+            "options": { "A": "Phosphorus", "B": "Boron", "C": "Antimony", "D": "Arsenic" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q23",
+            "text": "What is a diode?",
+            "options": { "A": "Two-terminal device allowing current in one direction", "B": "Three-terminal transistor", "C": "Resistor with variable value", "D": "Capacitor with high capacitance" },
+            "correctAnswer": "A",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q24",
+            "text": "Which doping creates N-type semiconductor?",
+            "options": { "A": "Boron", "B": "Gallium", "C": "Indium", "D": "Phosphorus" },
+            "correctAnswer": "D",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q25",
+            "text": "What is the depletion region in a PN junction?",
+            "options": { "A": "Region with mobile charges", "B": "Region free of mobile charges", "C": "Region with excess electrons", "D": "Region with excess holes" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q26",
+            "text": "What is the approximate bandgap of silicon at room temperature?",
+            "options": { "A": "0.67 eV", "B": "1.1 eV", "C": "1.4 eV", "D": "2.2 eV" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q27",
+            "text": "What does IC stand for?",
+            "options": { "A": "Internal Circuit", "B": "Integrated Circuit", "C": "Internal Component", "D": "Individual Circuit" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q28",
+            "text": "Moore's Law states that the number of transistors on a chip doubles approximately every:",
+            "options": { "A": "6 months", "B": "12 months", "C": "18 months", "D": "24 months" },
+            "correctAnswer": "D",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q29",
+            "text": "Which type of transistor is most commonly used in digital circuits?",
+            "options": { "A": "BJT", "B": "MOSFET", "C": "JFET", "D": "PUT" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q30",
+            "text": "What is doping in semiconductors?",
+            "options": { "A": "Adding impurities to modify electrical properties", "B": "Heating the material", "C": "Coating the surface", "D": "Crystal growth" },
+            "correctAnswer": "A",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q31",
+            "text": "What is the forward voltage drop of a silicon diode?",
+            "options": { "A": "0.2 V", "B": "0.7 V", "C": "1.2 V", "D": "2.0 V" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q32",
+            "text": "Which semiconductor device can amplify signals?",
+            "options": { "A": "Diode", "B": "Transistor", "C": "Resistor", "D": "Inductor" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q33",
+            "text": "What is an FPGA?",
+            "options": { "A": "Fast Programmable Gate Array", "B": "Field Programmable Gate Array", "C": "Fixed Processor Graphics Adapter", "D": "Flash Programmable Read Array" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q34",
+            "text": "What is the main advantage of CMOS over TTL?",
+            "options": { "A": "Higher speed", "B": "Lower power consumption", "C": "Higher voltage", "D": "Larger size" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q35",
+            "text": "What does VLSI stand for?",
+            "options": { "A": "Very Large Scale Integration", "B": "Variable Logic System Interface", "C": "Virtual Linear Serial Interface", "D": "Voltage Level Switching Index" },
+            "correctAnswer": "A",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q36",
+            "text": "What is the function of a Zener diode?",
+            "options": { "A": "Rectification", "B": "Voltage regulation", "C": "Signal mixing", "D": "Power amplification" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q37",
+            "text": "What is the doping element used for P-type germanium?",
+            "options": { "A": "Phosphorus", "B": "Arsenic", "C": "Boron", "D": "Antimony" },
+            "correctAnswer": "C",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q38",
+            "text": "What happens when a PN junction is reverse-biased?",
+            "options": { "A": "Current flows easily", "B": "Width of depletion region increases", "C": "Width of depletion region decreases", "D": "Diode conducts" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q39",
+            "text": "Which logic family uses CMOS technology?",
+            "options": { "A": "TTL", "B": "CMOS", "C": "RTL", "D": "DTL" },
+            "correctAnswer": "B",
+            "topic": "Semiconductors"
+          },
+          {
+            "id": "ete-q40",
+            "text": "What is the unit of measurement for transistor density?",
+            "options": { "A": "Hertz", "B": "Watts", "C": "Nanometers", "D": "Amperes" },
+            "correctAnswer": "C",
+            "topic": "Semiconductors"
+          }
         ]
       },
       {
-        "id": "esp32",
-        "name": "ESP32 Microcontroller",
+        "id": "embedded-systems",
+        "name": "Embedded Systems and IoT",
         "questions": [
-          {"id": "ete-q105", "text": "Processor architecture influences ........", "options": {"A": "Keyboard response", "B": "Software compatibility", "C": "Screen colour", "D": "ADC voltage"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q106", "text": "The unit responsible for sequencing instructions is ........", "options": {"A": "ALU", "B": "Control Unit", "C": "Register", "D": "Cache"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q107", "text": "Registers provide ........", "options": {"A": "Long-term storage", "B": "Slow data access", "C": "High-speed temporary storage", "D": "Cloud memory"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q108", "text": "Cache memory reduces ........", "options": {"A": "Battery life", "B": "Need for RAM", "C": "Access delay to main memory", "D": "Processor clock speed"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q109", "text": "L3 cache is typically ........", "options": {"A": "Fastest and smallest", "B": "Shared among cores", "C": "Inside I/O controllers", "D": "Used for USB storage"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q110", "text": "Instruction Set Architecture (ISA) defines ........", "options": {"A": "CPU clock speed", "B": "Executable operations", "C": "PCB size", "D": "Cooling method"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q111", "text": "CISC processors typically use ........", "options": {"A": "Simple instructions", "B": "Complex instructions", "C": "No instructions", "D": "Only load/store operations"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q112", "text": "Pipelining divides instruction execution into ........", "options": {"A": "Random loops", "B": "Overlapping stages", "C": "Electrical cycles only", "D": "Unrelated tasks"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q113", "text": "A benefit of pipelining is ........", "options": {"A": "Reduced parallelism", "B": "Higher throughput", "C": "Reduced data storage", "D": "Increased memory usage"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q114", "text": "Superscalar processors dispatch instructions to ........", "options": {"A": "One execution unit only", "B": "Multiple execution units", "C": "Registers only", "D": "Only pipeline buffers"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q115", "text": "Superscalar execution improves ........", "options": {"A": "Instruction throughput", "B": "Clock failure", "C": "Noise generation", "D": "Power dissipation only"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q116", "text": "Out-of-order execution helps achieve ........", "options": {"A": "Idle CPU cycles", "B": "Better resource utilization", "C": "Increased bottlenecks", "D": "Instruction loss"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q117", "text": "A typical application of superscalar architecture is ........", "options": {"A": "Washing machines", "B": "High-performance CPUs", "C": "Traffic lights", "D": "Simple calculators"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q118", "text": "ESP32 is classified as a ........", "options": {"A": "Microprocessor", "B": "SoC microcontroller", "C": "DSP chip", "D": "FPGA board"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q119", "text": "ESP32's Wi-Fi standard is ........", "options": {"A": "802.11 a/b", "B": "802.11 ac", "C": "802.11 b/g/n", "D": "802.11 ax"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q120", "text": "ESP32 has how many ADCs? ........", "options": {"A": "One 8-bit only", "B": "One 10-bit only", "C": "Two 12-bit ADCs", "D": "No ADCs"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q121", "text": "ESP32 DAC resolution is ........", "options": {"A": "6-bit", "B": "8-bit", "C": "10-bit", "D": "12-bit"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q122", "text": "ESP32 supports multiple sleep modes for ........", "options": {"A": "Increasing speed", "B": "Reducing power", "C": "Increasing memory", "D": "Changing voltage"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q124", "text": "ESP32 GPIO count supports up to ........", "options": {"A": "10", "B": "16", "C": "28", "D": "39"}, "correctAnswer": "D", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q125", "text": "GPIO34—GPIO39 pins are used primarily as ........", "options": {"A": "Output-only pins", "B": "Input-only pins", "C": "SPI flash pins", "D": "UART pins"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q126", "text": "GPIO13 includes which feature ........", "options": {"A": "Boot mode", "B": "Used during boot, use with care", "C": "Reset", "D": "Always pulled high"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q127", "text": "Reserved pins (GPIO6-GPIO11) are connected to ........", "options": {"A": "Wi-Fi hardware", "B": "Flash memory", "C": "CPU clock", "D": "DAC"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q128", "text": "GPIO15 must be ........", "options": {"A": "HIGH during boot", "B": "LOW during boot", "C": "Floating always", "D": "Pulled high by default"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q129", "text": "GPIOO LOW is required for ........", "options": {"A": "ADC", "B": "PWM", "C": "Program upload", "D": "Bluetooth"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q130", "text": "I2C SDA pin on ESP32 is typically ........", "options": {"A": "GPIO21", "B": "GPIO1", "C": "GPIO25", "D": "GPIO12"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q131", "text": "I2C SCL pin on ESP32 is typically ........", "options": {"A": "GPIO19", "B": "GPIO22", "C": "GPIO2", "D": "GPIO39"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q132", "text": "ESP32 UART0 uses which pins ........", "options": {"A": "GPIO26 & GPIO27", "B": "GPIO36 & GPIO37", "C": "GPIO1 & GPIO3", "D": "GPIO5 & GPIO14"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q133", "text": "VIN pin generally accepts ........", "options": {"A": "1.8V", "B": "2.2V", "C": "3.3V", "D": "5V"}, "correctAnswer": "D", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q134", "text": "ESP32 supports which security feature?", "options": {"A": "DES only", "B": "Internal lock fuse", "C": "Secure boot", "D": "No security"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q135", "text": "ESP8266 core type is ........", "options": {"A": "Dual-core", "B": "Single-core", "C": "Quad-core", "D": "ARM cortex"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q136", "text": "ESP8266 lacks which feature found in ESP32 ?", "options": {"A": "Wi-Fi", "B": "GPIO pins", "C": "Bluetooth", "D": "SPI"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q137", "text": "ESP8266 ADC resolution is ........", "options": {"A": "12-bit", "B": "10-bit", "C": "8-bit", "D": "None of these"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q138", "text": "ESP8266 touch sensors count........", "options": {"A": "10", "B": "8", "C": "2", "D": "0"}, "correctAnswer": "D", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q139", "text": "ESP8266 deep sleep current is about ........", "options": {"A": "10 μA", "B": "20 μA", "C": "1mA", "D": "100 mA"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q140", "text": "ESP32 is better suited for ........", "options": {"A": "Very simple Wi-Fi switches", "B": "Multitasking and Bluetooth applications", "C": "Only battery chargers", "D": "Only LED blinking"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q141", "text": "Simple Wi-Fi projects prefer ........", "options": {"A": "ARM processor", "B": "ESP8266", "C": "ESP32", "D": "FPGA"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q142", "text": "ESP32 ADC2 pins have restrictions when ........", "options": {"A": "Bluetooth is ON", "B": "Wi-Fi is ON", "C": "Flash is erased", "D": "Deep sleep is active"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q143", "text": "ESP32 Hall sensor is ........", "options": {"A": "Not available", "B": "Available", "C": "External only", "D": "Optional"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q144", "text": "ESP32 supports capacitive touch with ........", "options": {"A": "2 pins", "B": "5 pins", "C": "7 pins", "D": "10 pins"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q145", "text": "Arduino IDE requires adding ESP32 board using ........", "options": {"A": "Serial monitor", "B": "Board Manager URL", "C": "Device Manager", "D": "Editor settings"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q146", "text": "ESP32 sketches are uploaded through ........", "options": {"A": "GPIOO via Wi-Fi", "B": "UART0", "C": "CAN interface", "D": "SPI pins"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q147", "text": "Overlapping stages in pipelining include ........", "options": {"A": "Fetch, decode, execute", "B": "Start, stop, restart", "C": "Burn-in test cycles", "D": "Wi-Fi connect stages"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q148", "text": "A GPU feature enabling AI tasks is ........", "options": {"A": "RT cores", "B": "Tensor cores", "C": "HDMI ports", "D": "Power rails"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q149", "text": "Deep Learning uses primarily ........", "options": {"A": "Flowcharts", "B": "Neural networks", "C": "Logic gates", "D": "Counters"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q150", "text": "AI integrates concepts from ........", "options": {"A": "Physics only", "B": "Computer science, physiology, and philosophy", "C": "Mechanical engineering only", "D": "Architecture"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q151", "text": "AI enables ........", "options": {"A": "Slower decision-making", "B": "Predictive system outputs", "C": "Manual calculations", "D": "High system errors"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q152", "text": "A key limitation of AI is ........", "options": {"A": "Always accurate", "B": "Low development cost", "C": "Ethical and privacy issues", "D": "Full creativity"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q153", "text": "An example of AI application is ........", "options": {"A": "Welding", "B": "Brain-Machine Interfaces", "C": "Wood polishing", "D": "Circuit tracing"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q154", "text": "ML allows computers to ........", "options": {"A": "Ignore data", "B": "Learn without explicit programming", "C": "Sleep during training", "D": "Avoid patterns"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q155", "text": "Unsupervised learning identifies ........", "options": {"A": "Labelled data", "B": "Hidden patterns", "C": "Fixed outputs", "D": "Compiler errors"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q156", "text": "Reinforcement Learning involves ........", "options": {"A": "No feedback", "B": "Rewards and penalties", "C": "Static environment only", "D": "Only labelled datasets"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q157", "text": "Clustering is used in ........", "options": {"A": "Supervised learning", "B": "Unsupervised learning", "C": "Reinforcement learning", "D": "Human supervision"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q158", "text": "A supervised learning algorithm example is ........", "options": {"A": "PCA", "B": "Clustering", "C": "Regression", "D": "SOM"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q159", "text": "A typical application of RL is ........", "options": {"A": "OCR scanning", "B": "Driving and gaming", "C": "PCB etching", "D": "Motor rewinding"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q160", "text": "DL architectures include ........", "options": {"A": "DBN and CNN", "B": "DFT and FFT", "C": "AND/OR logic", "D": "RAM modules"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q161", "text": "DL is a subset of ........", "options": {"A": "AI", "B": "ML", "C": "RISC", "D": "GPU"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q162", "text": "Select the correct hierarchy ........", "options": {"A": "AI is inside ML, and ML is inside DL", "B": "ML is inside DL, and DL is inside AI", "C": "DL is a part of ML, and ML is a part of AI", "D": "AI, ML, and DL are all the same"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q163", "text": "AI agents use actuators for ........", "options": {"A": "Thinking", "B": "Execution of actions", "C": "Measuring voltage", "D": "Encryption"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q164", "text": "The sequence of an AI agent is ........", "options": {"A": "Act — Sense — Reason", "B": "Reason — Act + Sense", "C": "Sense + Reason — Act", "D": "Start = End = Restart"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q165", "text": "A self-driving car in a world with other autonomous cars is ........", "options": {"A": "Single-agent", "B": "Multi-agent", "C": "No-agent", "D": "Reactive-only system"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q166", "text": "Multi-agent systems require ........", "options": {"A": "No communication", "B": "Coordination between agents", "C": "No autonomy", "D": "Software only"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q167", "text": "Drone swarm operations represent ........", "options": {"A": "Single-agent", "B": "Multi-agent", "C": "Hybrid computing", "D": "Manual control only"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q168", "text": "Multi-agent systems provide ........", "options": {"A": "Lower resilience", "B": "Higher scalability", "C": "Zero complexity", "D": "Single goal only"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q169", "text": "MAS drawbacks include ........", "options": {"A": "Simple design", "B": "Complex synchronization", "C": "Minimal communication", "D": "No conflict between agents"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q170", "text": "Qubits can be correlated due to ........", "options": {"A": "Decoherence", "B": "Entanglement", "C": "Supervision", "D": "Insulation"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q171", "text": "Quantum interference is beneficial because it ........", "options": {"A": "Removes all states", "B": "Reinforces desired states", "C": "Stops parallelism", "D": "Increases hardware size"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q172", "text": "Classical computing is limited due to ........", "options": {"A": "No transistors", "B": "Deterministic bit states", "C": "Using qubit logic", "D": "High noise"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q173", "text": "Quantum computing excels at ........", "options": {"A": "Simple arithmetic", "B": "Complex optimization", "C": "Basic display control", "D": "LED dimming"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q174", "text": "......... is a field benefiting from quantum simulations.", "options": {"A": "Tailoring", "B": "Drug discovery", "C": "Gardening", "D": "Car washing"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q175", "text": "In finance, quantum computing is used for ........", "options": {"A": "Printing currency", "B": "Market risk simulation", "C": "ATM repair", "D": "Debit card activation"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q176", "text": "Quantum AI accelerates ........", "options": {"A": "Manual data entry", "B": "Data analysis and ML", "C": "Paper scanning", "D": "Human labor"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q177", "text": "Quantum cryptography supports ........", "options": {"A": "Weak passwords", "B": "QKD", "C": "No encryption", "D": "Analog keys"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q178", "text": "Quantum computers help optimize ........", "options": {"A": "Truck mileage only", "B": "Supply chain routes", "C": "Wall painting", "D": "Car speedometers"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q179", "text": "Quantum material science allows ........", "options": {"A": "Atomic level simulations", "B": "Floor cleaning", "C": "CNC cutting", "D": "Manual drilling"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q180", "text": "ESP32 can run a simple web server using ........", "options": {"A": "No libraries", "B": "WiFi.h library", "C": "EEPROM.h", "D": "Servo.h"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q181", "text": "analogRead() on ESP32 reads from ........", "options": {"A": "Digital pins only", "B": "ADC channels", "C": "DAC output", "D": "PWM pins only"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q182", "text": "ESP32 basic RGB LED control uses ........", "options": {"A": "analogWrite()", "B": "tone()", "C": "digitalSet()", "D": "delayWrite()"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q183", "text": "LM35 gives ........", "options": {"A": "Digital output", "B": "10 mV per °C", "C": "1V per °C", "D": "No temperature value"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q184", "text": "The pulseIn() function is used for ........", "options": {"A": "Measuring LED brightness", "B": "Reading echo pulse duration", "C": "Sending Wi-Fi packets", "D": "Configuring UART"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q185", "text": "ESP32 deep sleep saves ........", "options": {"A": "Memory only", "B": "Power", "C": "Clock cycles", "D": "Program counter"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q186", "text": "The ESP32 servo motor uses ........", "options": {"A": "GPIO13 (example code)", "B": "GPIO0", "C": "GPIO36", "D": "GPIO21"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q187", "text": "ESP32 web server returns ........", "options": {"A": "PDF files", "B": "HTML content", "C": "Binary only", "D": "Images only"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q188", "text": "The I2C LCD commonly uses address ........", "options": {"A": "0x10", "B": "0x27", "C": "0x01", "D": "0x99"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q189", "text": "Counter variable in LCD example increases ........", "options": {"A": "On reset only", "B": "Every 1 second", "C": "Every 10 ms", "D": "Never"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q190", "text": "GPUs improve AI because ........", "options": {"A": "They increase voltage", "B": "They have parallel compute cores", "C": "They include keyboards", "D": "They store more ROM"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q191", "text": "CPUs use pipelining to ........", "options": {"A": "Slow down execution", "B": "Overlap instruction execution", "C": "Replace GPU tasks", "D": "Remove instruction fetch"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q192", "text": "GPUs commonly support ........", "options": {"A": "HDMI and DisplayPort", "B": "Only USB", "C": "Only VGA", "D": "Only RF output"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q193", "text": "Superscalar CPUs rely on ........", "options": {"A": "Serial execution", "B": "Instruction dispatch in parallel", "C": "Mechanical computation", "D": "Slow decode units"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q194", "text": "GPU energy efficiency is managed by ........", "options": {"A": "Increasing heat", "B": "Optimized architecture", "C": "Removing fans", "D": "Low frequency"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q195", "text": "AI systems require ........", "options": {"A": "Frequent human supervision", "B": "No data", "C": "Statistical learning models", "D": "Only hardware upgrades"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q196", "text": "Unsupervised learning is preferred when ........", "options": {"A": "Labels are easily available", "B": "Data is small", "C": "Data labelling is expensive", "D": "Outputs are known"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q197", "text": "Reinforcement learning must balance ........", "options": {"A": "Speed and heat", "B": "Exploration and exploitation", "C": "Input and output voltages", "D": "Labels and clusters"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q198", "text": "Multi-agent systems are ideal for ........", "options": {"A": "Single-goal tasks only", "B": "Decentralized decision-making", "C": "No communication tasks", "D": "Small fixed systems"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q199", "text": "Quantum computing provides exponential advantage because ........", "options": {"A": "It uses classical parallelism", "B": "Qubits represent 2^n states at once", "C": "It has slower clocks", "D": "It stores data in HDDs"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q200", "text": "In an ESP32 Arduino sketch, which function runs only once at startup?", "options": {"A": "loop()", "B": "run()", "C": "main()", "D": "setup()"}, "correctAnswer": "D", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q201", "text": "The loop() function in ESP32 programs ........", "options": {"A": "Executes only once", "B": "Executes repeatedly", "C": "Never executes", "D": "Runs only in deep sleep"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q202", "text": "......... command reads analog input on ESP32.", "options": {"A": "digitalRead()", "B": "analogRead()", "C": "readADC()", "D": "getAnalog()"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q203", "text": "To write PWM values to an LED, we use ........", "options": {"A": "analogWrite()", "B": "digitalWrite() only", "C": "pwmOut()", "D": "writePWM()"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q204", "text": "Which library is required to use Wi-Fi functions in ESP32?", "options": {"A": "ESP32Wifi.h", "B": "WiFi.h", "C": "Network32.h", "D": "ESPNet.h"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q205", "text": "Which pin is commonly used for the built-in LED on the ESP32 Dev Board?", "options": {"A": "GPIO5", "B": "GPIO0", "C": "GPIO2", "D": "GPIO22"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q206", "text": "Which function is used to begin serial communication?", "options": {"A": "Serial.start(9600);", "B": "Serial.begin(9600);", "C": "Serial.open(9600);", "D": "Serial.write(9600);"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q207", "text": "The pinMode() function is used to ........", "options": {"A": "Set ADC resolution", "B": "Configure a pin as INPUT or OUTPUT", "C": "Control Wi-Fi", "D": "Upload sketches"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q208", "text": "......... is used to upload code to an ESP32.", "options": {"A": "UART0 (TX0/RX0)", "B": "Bluetooth", "C": "Wi-Fi", "D": "CAN interface"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q209", "text": "GPIOO must be kept LOW for ........", "options": {"A": "Reset", "B": "Bootloader/programming mode", "C": "PWM mode", "D": "Deep sleep"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q210", "text": "Find the function used to map ADC values ........", "options": {"A": "map()", "B": "convert()", "C": "adcMap()", "D": "valueMap()"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q211", "text": "Select the function that controls a servo motor on ........", "options": {"A": "Servo.rotate()", "B": "myServo.spin()", "C": "myServo.write()", "D": "servoOut()"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q212", "text": "The delay(1000) function pauses execution for ........", "options": {"A": "1 microsecond", "B": "1 millisecond", "C": "1 second", "D": "10 seconds"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q213", "text": "Find command used to read distance in ultrasonic ........", "options": {"A": "distance()", "B": "getEcho()", "C": "pulseIn()", "D": "timeRead()"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q214", "text": "Find command used to check if data is available in Serial Monitor ........", "options": {"A": "Serial.ready()", "B": "Serial.get()", "C": "Serial.available()", "D": "Serial.present()"}, "correctAnswer": "C", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q215", "text": "Select interface required for PC LCD display is ........", "options": {"A": "Wi-Fi", "B": "SPI", "C": "I2C", "D": "UART"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q216", "text": "ESP32 PWM output can be generated using:", "options": {"A": "timerWrite()", "B": "analogWrite()", "C": "pwmStart()", "D": "gpioPWM()"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q217", "text": "Identify pin typically used for reading temperature from an LM35 ........", "options": {"A": "GPIO34", "B": "GPIO12", "C": "GPIO8", "D": "GPIO1"}, "correctAnswer": "A", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q218", "text": "For the successful compiling of following program find out the missing statement", "options": {"A": "The inclusion of <ESP32.h>", "B": "The inclusion of <WiFi.h>", "C": "The setup() function", "D": "The loop() function"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"},
-          {"id": "ete-q219", "text": "ESP32 supports .......... programming environments.", "options": {"A": "Only Arduino IDE", "B": "ESP-IDF, Arduino IDE, MicroPython", "C": "Notepad only", "D": "BlueJ IDE"}, "correctAnswer": "B", "topic": "ESP32 Microcontroller"}
+          {
+            "id": "ete-q41",
+            "text": "What is an embedded system?",
+            "options": { "A": "A computer with internet access", "B": "A dedicated computer system for a specific function", "C": "A gaming console", "D": "A supercomputer" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q42",
+            "text": "Which microcontroller is commonly used in Arduino?",
+            "options": { "A": "ATmega328P", "B": "Intel 8051", "C": "PIC18F", "D": "MSP430" },
+            "correctAnswer": "A",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q43",
+            "text": "What does RTOS stand for?",
+            "options": { "A": "Real Time Operating System", "B": "Random Time Operating System", "C": "Rapid Transfer Output System", "D": "Real Transfer Operating System" },
+            "correctAnswer": "A",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q44",
+            "text": "What is the primary characteristic of a real-time embedded system?",
+            "options": { "A": "Low power consumption", "B": "Meeting deadines predictably", "C": "High processing speed", "D": "Wireless connectivity" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q45",
+            "text": "What is MQTT protocol used for?",
+            "options": { "A": "File transfer", "B": "IoT messaging", "C": "Video streaming", "D": "Image processing" },
+            "correctAnswer": "B",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q46",
+            "text": "What is the primary purpose of an ADC in embedded systems?",
+            "options": { "A": "Digital to analog conversion", "B": "Analog to digital conversion", "C": "Amplification", "D": "Filtering" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q47",
+            "text": "Which communication protocol is NOT typically used in embedded systems?",
+            "options": { "A": "I2C", "B": "SPI", "C": "HTTP", "D": "UART" },
+            "correctAnswer": "C",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q48",
+            "text": "What is the function of a DAC?",
+            "options": { "A": "Convert digital to analog signals", "B": "Convert analog to digital", "C": "Amplify signals", "D": "Modulate signals" },
+            "correctAnswer": "A",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q49",
+            "text": "What is BLE in IoT context?",
+            "options": { "A": "Basic Logic Element", "B": "Bluetooth Low Energy", "C": "Binary Logic Encoder", "D": "Broadband Local Exchange" },
+            "correctAnswer": "B",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q50",
+            "text": "What is the maximum data rate of BLE?",
+            "options": { "A": "1 Mbps", "B": "2 Mbps", "C": "10 Mbps", "D": "50 Mbps" },
+            "correctAnswer": "A",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q51",
+            "text": "What does IoT stand for?",
+            "options": { "A": "Internet of Things", "B": "Integration of Technology", "C": "Intelligent Operating System", "D": "Interface of Transistors" },
+            "correctAnswer": "A",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q52",
+            "text": "Which layer of IoT architecture handles data processing?",
+            "options": { "A": "Sensing Layer", "B": "Network Layer", "C": "Application Layer", "D": "Edge Computing Layer" },
+            "correctAnswer": "D",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q53",
+            "text": "What is the primary advantage of ESP32 over Arduino?",
+            "options": { "A": "Built-in WiFi and Bluetooth", "B": "Lower cost", "C": "Simpler programming", "D": "Smaller size" },
+            "correctAnswer": "A",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q54",
+            "text": "Which protocol is used for web communication in IoT?",
+            "options": { "A": "CoAP", "B": "FTP", "C": "SMTP", "D": "SSH" },
+            "correctAnswer": "A",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q55",
+            "text": "What is watchdog timer used for in embedded systems?",
+            "options": { "A": "Time display", "B": "System reset on software malfunction", "C": "Power management", "D": "Data storage" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q56",
+            "text": "What is the function of PWM in embedded systems?",
+            "options": { "A": "Power management module", "B": "Controlling analog devices digitally", "C": "Program write memory", "D": "Processing weighted math" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q57",
+            "text": "Which is NOT a real-time operating system?",
+            "options": { "A": "FreeRTOS", "B": "Linux", "C": "RIOT", "D": "Zephyr" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q58",
+            "text": "What is the primary function of the sensing layer in IoT?",
+            "options": { "A": "Data storage", "B": "Collecting data from environment", "C": "User interface", "D": "Cloud connectivity" },
+            "correctAnswer": "B",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q59",
+            "text": "What is mbed used for in embedded development?",
+            "options": { "A": "3D printing", "B": "Online embedded systems platform", "C": "Network security", "D": "Database management" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          },
+          {
+            "id": "ete-q60",
+            "text": "What is the primary challenge in embedded system design?",
+            "options": { "A": "High cost", "B": "Limited resources and specific requirements", "C": "Slow speed", "D": "Large size" },
+            "correctAnswer": "B",
+            "topic": "Embedded Systems"
+          }
+        ]
+      },
+      {
+        "id": "communication-systems",
+        "name": "Modern Communication Systems",
+        "questions": [
+          {
+            "id": "ete-q61",
+            "text": "What is the maximum data rate of WiFi 6?",
+            "options": { "A": "3.5 Gbps", "B": "6.5 Gbps", "C": "9.6 Gbps", "D": "12 Gbps" },
+            "correctAnswer": "C",
+            "topic": "Wireless Communication"
+          },
+          {
+            "id": "ete-q62",
+            "text": "Which frequency band does 5G NR primarily use in India?",
+            "options": { "A": "700 MHz", "B": "3.5 GHz", "C": "26 GHz", "D": "All of the above" },
+            "correctAnswer": "D",
+            "topic": "Wireless Communication"
+          },
+          {
+            "id": "ete-q63",
+            "text": "What does OFDM stand for?",
+            "options": { "A": "Optical Frequency Division Multiplexing", "B": "Orthogonal Frequency Division Multiplexing", "C": "Open Frequency Data Modulation", "D": "Output Frequency Division Modulation" },
+            "correctAnswer": "B",
+            "topic": "Wireless Communication"
+          },
+          {
+            "id": "ete-q64",
+            "text": "What is the primary advantage of fiber optic communication?",
+            "options": { "A": "Low cost", "B": "Extremely high bandwidth and low attenuation", "C": "Easy installation", "D": "No interference" },
+            "correctAnswer": "B",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q65",
+            "text": "Which modulation technique is used in 4G LTE?",
+            "options": { "A": "QPSK", "B": "16-QAM", "C": "64-QAM", "D": "All of the above" },
+            "correctAnswer": "D",
+            "topic": "Wireless Communication"
+          },
+          {
+            "id": "ete-q66",
+            "text": "What is the range of Bluetooth 5.0 in terms of range?",
+            "options": { "A": "10 meters", "B": "50 meters", "C": "240 meters", "D": "500 meters" },
+            "correctAnswer": "C",
+            "topic": "Wireless Communication"
+          },
+          {
+            "id": "ete-q67",
+            "text": "What does LPWAN stand for?",
+            "options": { "A": "Low Power Wide Area Network", "B": "Long Pulse Wireless Area Network", "C": "Local Private Wireless Area", "D": "Large Protocol Wide Area Node" },
+            "correctAnswer": "A",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q68",
+            "text": "Which LPWAN technology has the longest range?",
+            "options": { "A": "LoRa", "B": "NB-IoT", "C": "Sigfox", "D": "Weightless" },
+            "correctAnswer": "C",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q69",
+            "text": "What is the function of a modem?",
+            "options": { "A": "Memory access", "B": "Modulation and demodulation of signals", "C": "Data storage", "D": "Signal amplification" },
+            "correctAnswer": "B",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q70",
+            "text": "Which transmission medium has highest bandwidth?",
+            "options": { "A": "Copper wire", "B": "Coaxial cable", "C": "Fiber optic", "D": "Wireless" },
+            "correctAnswer": "C",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q71",
+            "text": "What is the speed of light in fiber optic cable?",
+            "options": { "A": "3 × 10^8 m/s", "B": "2 × 10^8 m/s", "C": "1.5 × 10^8 m/s", "D": "1 × 10^8 m/s" },
+            "correctAnswer": "B",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q72",
+            "text": "What does FTTH stand for?",
+            "options": { "A": "Fiber To The Home", "B": "Fast Transmission To Home", "C": "Fiber Transmission Terminal Hub", "D": "Full Throughput To Household" },
+            "correctAnswer": "A",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q73",
+            "text": "What is the frequency of operation of S-band radar?",
+            "options": { "A": "2-4 GHz", "B": "4-8 GHz", "C": "8-12 GHz", "D": "12-18 GHz" },
+            "correctAnswer": "A",
+            "topic": "Radar Systems"
+          },
+          {
+            "id": "ete-q74",
+            "text": "What is the main advantage of digital communication over analog?",
+            "options": { "A": "Higher power requirement", "B": "Better noise immunity and easier processing", "C": "Simpler circuitry", "D": "Lower bandwidth" },
+            "correctAnswer": "B",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q75",
+            "text": "What is multiplexing?",
+            "options": { "A": "Amplifying a signal", "B": "Transmitting multiple signals over shared medium", "C": "Filtering noise", "D": "Converting analog to digital" },
+            "correctAnswer": "B",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q76",
+            "text": "What is TDM?",
+            "options": { "A": "Time Division Multiplexing", "B": "Text Data Modulation", "C": "Technical Data Management", "D": "Transmit Data Mode" },
+            "correctAnswer": "A",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q77",
+            "text": "What is the main function of a repeater in communication systems?",
+            "options": { "A": "Store data", "B": "Amplify and retransmit signals", "C": "Modulate signals", "D": "Filter signals" },
+            "correctAnswer": "B",
+            "topic": "Communication Systems"
+          },
+          {
+            "id": "ete-q78",
+            "text": "Which protocol is used for cellular IoT communication?",
+            "options": { "A": "LoRa", "B": "NB-IoT", "C": "Zigbee", "D": "Bluetooth" },
+            "correctAnswer": "B",
+            "topic": "IoT"
+          },
+          {
+            "id": "ete-q79",
+            "text": "What is the typical frequency band for WiFi 5 GHz?",
+            "options": { "A": "2.4 GHz", "B": "5 GHz", "C": "60 GHz", "D": "Both B and C" },
+            "correctAnswer": "D",
+            "topic": "Wireless Communication"
+          },
+          {
+            "id": "ete-q80",
+            "text": "What is the primary benefit of beamforming in wireless communication?",
+            "options": { "A": "Lower cost", "B": "Directed signal transmission improving coverage", "C": "Simpler antenna design", "D": "Reduced power consumption" },
+            "correctAnswer": "B",
+            "topic": "Wireless Communication"
+          }
+        ]
+      },
+      {
+        "id": "digital-electronics",
+        "name": "Digital Electronics and Logic Design",
+        "questions": [
+          {
+            "id": "ete-q81",
+            "text": "What is the binary representation of decimal 15?",
+            "options": { "A": "1000", "B": "1110", "C": "1111", "D": "1101" },
+            "correctAnswer": "C",
+            "topic": "Number Systems"
+          },
+          {
+            "id": "ete-q82",
+            "text": "Which logic gate produces output 1 only when all inputs are 1?",
+            "options": { "A": "OR", "B": "AND", "C": "NOT", "D": "XOR" },
+            "correctAnswer": "B",
+            "topic": "Logic Gates"
+          },
+          {
+            "id": "ete-q83",
+            "text": "What is the output of a 2-input XOR gate when both inputs are 1?",
+            "options": { "A": "0", "B": "1", "C": "X", "D": "High impedance" },
+            "correctAnswer": "A",
+            "topic": "Logic Gates"
+          },
+          {
+            "id": "ete-q84",
+            "text": "What is a flip-flop?",
+            "options": { "A": "Amplifier circuit", "B": "1-bit memory element", "C": "Filter circuit", "D": "Power supply" },
+            "correctAnswer": "B",
+            "topic": "Sequential Circuits"
+          },
+          {
+            "id": "ete-q85",
+            "text": "What is the output of NOT gate if input is 0?",
+            "options": { "A": "0", "B": "1", "C": "X", "D": "High impedance" },
+            "correctAnswer": "B",
+            "topic": "Logic Gates"
+          },
+          {
+            "id": "ete-q86",
+            "text": "Which flip-flop is used for edge detection?",
+            "options": { "A": "SR flip-flop", "B": "D flip-flop", "C": "JK flip-flop", "D": "T flip-flop" },
+            "correctAnswer": "B",
+            "topic": "Sequential Circuits"
+          },
+          {
+            "id": "ete-q87",
+            "text": "What does MSI stand for in digital electronics?",
+            "options": { "A": "Medium Scale Integration", "B": "Micro System Interface", "C": "Modular Sequential Instruction", "D": "Memory Storage Index" },
+            "correctAnswer": "A",
+            "topic": "Digital Circuits"
+          },
+          {
+            "id": "ete-q88",
+            "text": "What is the function of a multiplexer (MUX)?",
+            "options": { "A": "Convert parallel to serial", "B": "Select one of many inputs", "C": "Amplify signals", "D": "Store data" },
+            "correctAnswer": "B",
+            "topic": "Combinational Circuits"
+          },
+          {
+            "id": "ete-q89",
+            "text": "What is a decoder?",
+            "options": { "A": "Converts binary to decimal", "B": "Converts n-bit code to 2^n outputs", "C": "Amplifies signals", "D": "Stores binary data" },
+            "correctAnswer": "B",
+            "topic": "Combinational Circuits"
+          },
+          {
+            "id": "ete-q90",
+            "text": "What is the truth table for a 2-input NOR gate?",
+            "options": { "A": "Output is 1 when any input is 1", "B": "Output is 1 only when all inputs are 0", "C": "Output is always 0", "D": "Output is always 1" },
+            "correctAnswer": "B",
+            "topic": "Logic Gates"
+          },
+          {
+            "id": "ete-q91",
+            "text": "What is the output of a 3-input NAND gate if all inputs are 1?",
+            "options": { "A": "0", "B": "1", "C": "X", "D": "High impedance" },
+            "correctAnswer": "A",
+            "topic": "Logic Gates"
+          },
+          {
+            "id": "ete-q92",
+            "text": "Which type of counter has a fixed sequence?",
+            "options": { "A": "Ripple counter", "B": "Synchronous counter", "C": "Modulo counter", "D": "Up-down counter" },
+            "correctAnswer": "C",
+            "topic": "Sequential Circuits"
+          },
+          {
+            "id": "ete-q93",
+            "text": "What is the purpose of a clock signal in digital circuits?",
+            "options": { "A": "Power supply", "B": "Synchronize operations", "C": "Amplify signals", "D": "Store data" },
+            "correctAnswer": "B",
+            "topic": "Sequential Circuits"
+          },
+          {
+            "id": "ete-q94",
+            "text": "What is the output expression for AND gate?",
+            "options": { "A": "A + B", "B": "A . B", "C": "A XOR B", "D": "A ⊕ B" },
+            "correctAnswer": "B",
+            "topic": "Logic Gates"
+          },
+          {
+            "id": "ete-q95",
+            "text": "What is a latch?",
+            "options": { "A": "Logic gate", "B": "Level-sensitive storage element", "C": "Filter circuit", "D": "Amplifier" },
+            "correctAnswer": "B",
+            "topic": "Sequential Circuits"
+          },
+          {
+            "id": "ete-q96",
+            "text": "How many bits are in a nibble?",
+            "options": { "A": "2", "B": "4", "C": "8", "D": "16" },
+            "correctAnswer": "B",
+            "topic": "Number Systems"
+          },
+          {
+            "id": "ete-q97",
+            "text": "What is the decimal value of binary 1010?",
+            "options": { "A": "8", "B": "10", "C": "12", "D": "14" },
+            "correctAnswer": "B",
+            "topic": "Number Systems"
+          },
+          {
+            "id": "ete-q98",
+            "text": "What is an encoder?",
+            "options": { "A": "Converts decimal to binary", "B": "Converts 2^n inputs to n outputs", "C": "Amplifies signals", "D": "Filters signals" },
+            "correctAnswer": "B",
+            "topic": "Combinational Circuits"
+          },
+          {
+            "id": "ete-q99",
+            "text": "What is the function of a register in digital systems?",
+            "options": { "A": "Perform arithmetic operations", "B": "Store multiple bits of data", "C": "Generate clock signals", "D": "Decode instructions" },
+            "correctAnswer": "B",
+            "topic": "Sequential Circuits"
+          },
+          {
+            "id": "ete-q100",
+            "text": "What is the difference between combinational and sequential circuits?",
+            "options": { "A": "Combinational circuits use flip-flops", "B": "Sequential circuits have memory, combinational don't", "C": "No difference", "D": "Combinational circuits are slower" },
+            "correctAnswer": "B",
+            "topic": "Digital Circuits"
+          }
+        ]
+      },
+      {
+        "id": "信号系统",
+        "name": "Signal Processing",
+        "questions": [
+          {
+            "id": "ete-q101",
+            "text": "What does DSP stand for?",
+            "options": { "A": "Digital Signal Processor", "B": "Data Storage Protocol", "C": "Dual Signal Processing", "D": "Direct System Protocol" },
+            "correctAnswer": "A",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q102",
+            "text": "What is the Nyquist sampling theorem?",
+            "options": { "A": "Sample at twice the signal frequency", "B": "Sample at half the signal frequency", "C": "Sample at any rate", "D": "Sample at zero frequency" },
+            "correctAnswer": "A",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q103",
+            "text": "What is aliasing in signal processing?",
+            "options": { "A": "Signal amplification", "B": "Distortion due to insufficient sampling", "C": "Signal filtering", "D": "Signal storage" },
+            "correctAnswer": "B",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q104",
+            "text": "What is the Fourier Transform used for?",
+            "options": { "A": "Signal storage", "B": "Convert signals from time domain to frequency domain", "C": "Signal amplification", "D": "Digital-to-analog conversion" },
+            "correctAnswer": "B",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q105",
+            "text": "What does ADC stand for?",
+            "options": { "A": "Analog Digital Converter", "B": "Audio Data Compression", "C": "Automatic Data Control", "D": "Amplitude Doubling Circuit" },
+            "correctAnswer": "A",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q106",
+            "text": "What is the main advantage of digital signal processing over analog?",
+            "options": { "A": "Higher power consumption", "B": "Programmability and flexibility", "C": "Lower cost always", "D": "Simpler circuitry" },
+            "correctAnswer": "B",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q107",
+            "text": "What is a low-pass filter?",
+            "options": { "A": "Passes high frequencies", "B": "Passes low frequencies, blocks high", "C": "Blocks all frequencies", "D": "Amplifies all frequencies" },
+            "correctAnswer": "B",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q108",
+            "text": "What is the unit of frequency?",
+            "options": { "A": "Volt", "B": "Ampere", "C": "Hertz", "D": "Ohm" },
+            "correctAnswer": "C",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q109",
+            "text": "What is quantization in DSP?",
+            "options": { "A": "Converting continuous values to discrete levels", "B": "Filtering noise", "C": "Amplifying signal", "D": "Storing signal" },
+            "correctAnswer": "A",
+            "topic": "Signal Processing"
+          },
+          {
+            "id": "ete-q110",
+            "text": "What does DAC stand for?",
+            "options": { "A": "Digital Amplifier Circuit", "B": "Digital to Analog Converter", "C": "Data Acquisition Computer", "D": "Dual Analog Controller" },
+            "correctAnswer": "B",
+            "topic": "Signal Processing"
+          }
+        ]
+      },
+      {
+        "id": "power-electronics",
+        "name": "Power Electronics",
+        "questions": [
+          {
+            "id": "ete-q111",
+            "text": "What is the function of an inverter in power electronics?",
+            "options": { "A": "AC to DC conversion", "B": "DC to AC conversion", "C": "Voltage multiplication", "D": "Current amplification" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q112",
+            "text": "What is a rectifier?",
+            "options": { "A": "Converts AC to DC", "B": "Converts DC to AC", "C": "Amplifies power", "D": "Filters noise" },
+            "correctAnswer": "A",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q113",
+            "text": "What is the main advantage of switched-mode power supply (SMPS)?",
+            "options": { "A": "Lower efficiency", "B": "Higher efficiency and compact size", "C": "Simpler design", "D": "No heat generation" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q114",
+            "text": "What is a chopper in power electronics?",
+            "options": { "A": "Cutting tool", "B": "DC to DC converter", "C": "AC to AC converter", "D": "Filter circuit" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q115",
+            "text": "What type of device is used for forced commutation in SCR?",
+            "options": { "A": "Transistor", "B": "Capacitor", "C": "Inductor", "D": "Resistor" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q116",
+            "text": "What is the function of a snubber circuit?",
+            "options": { "A": "Power storage", "B": "Protection from voltage spikes", "C": "Signal filtering", "D": "Voltage regulation" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q117",
+            "text": "What is PWM used for in power electronics?",
+            "options": { "A": "Data transmission", "B": "Controlling power by varying duty cycle", "C": "Signal filtering", "D": "Voltage doubling" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q118",
+            "text": "Which device is used for AC voltage regulation?",
+            "options": { "A": "Diode", "B": "SCR", "C": "Transistor only", "D": "LED" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q119",
+            "text": "What is the main application of IGBT?",
+            "options": { "A": "Low-power electronics", "B": "High-power applications like inverters", "C": "Audio amplifiers only", "D": "Display screens" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          },
+          {
+            "id": "ete-q120",
+            "text": "What is the function of a cycloconverter?",
+            "options": { "A": "Convert DC to AC at variable frequencies", "B": "Convert AC to AC at different frequency", "C": "Amplify AC signals", "D": "Filter AC signals" },
+            "correctAnswer": "B",
+            "topic": "Power Electronics"
+          }
+        ]
+      },
+      {
+        "id": "microprocessors",
+        "name": "Microprocessors and Microcontrollers",
+        "questions": [
+          {
+            "id": "ete-q121",
+            "text": "Who developed the first microprocessor?",
+            "options": { "A": "AMD", "B": "Intel", "C": "Texas Instruments", "D": "Motorola" },
+            "correctAnswer": "B",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q122",
+            "text": "What was the first commercial microprocessor?",
+            "options": { "A": "Intel 8008", "B": "Intel 4004", "C": "Intel 8086", "D": "Zilog Z80" },
+            "correctAnswer": "B",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q123",
+            "text": "What does ALU stand for?",
+            "options": { "A": "Arithmetic Logic Unit", "B": "Advanced Logic Unit", "C": "Automatic Logical Unit", "D": "Array Logic Unit" },
+            "correctAnswer": "A",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q124",
+            "text": "What is the function of the program counter?",
+            "options": { "A": "Count programs", "B": "Point to next instruction address", "C": "Store data", "D": "Control interrupts" },
+            "correctAnswer": "B",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q125",
+            "text": "What does GPIO stand for?",
+            "options": { "A": "General Purpose Input Output", "B": "Graphics Processing Input Output", "C": "Global Protocol Interface", "D": "General Power Input Output" },
+            "correctAnswer": "A",
+            "topic": "Microcontrollers"
+          },
+          {
+            "id": "ete-q126",
+            "text": "Which interrupt is non-maskable?",
+            "options": { "A": "Timer interrupt", "B": "Hardware interrupt", "C": "NMI", "D": "Software interrupt" },
+            "correctAnswer": "C",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q127",
+            "text": "What is the function of stack pointer?",
+            "options": { "A": "Point to data", "B": "Point to top of stack memory", "C": "Control program flow", "D": "Manage interrupts" },
+            "correctAnswer": "B",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q128",
+            "text": "What is the word size of Intel 8086?",
+            "options": { "A": "8 bits", "B": "16 bits", "C": "32 bits", "D": "64 bits" },
+            "correctAnswer": "B",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q129",
+            "text": "What is the function of an interrupt controller?",
+            "options": { "A": "Generate interrupts", "B": "Manage and prioritize interrupt requests", "C": "Disable interrupts", "D": "Store interrupt data" },
+            "correctAnswer": "B",
+            "topic": "Microprocessors"
+          },
+          {
+            "id": "ete-q130",
+            "text": "What is the difference between microprocessor and microcontroller?",
+            "options": { "A": "No difference", "B": "Microcontroller has integrated peripherals", "C": "Microprocessor is faster", "D": "Microcontroller uses less power" },
+            "correctAnswer": "B",
+            "topic": "Microcontrollers"
+          }
+        ]
+      },
+      {
+        "id": " vlsi-design",
+        "name": "VLSI Design",
+        "questions": [
+          {
+            "id": "ete-q131",
+            "text": "What does VLSI stand for?",
+            "options": { "A": "Very Large Scale Integration", "B": "Variable Logic System Interface", "C": "Virtual Linear Serial Interface", "D": "Voltage Level Switching Index" },
+            "correctAnswer": "A",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q132",
+            "text": "What is the typical feature size in modern VLSI chips?",
+            "options": { "A": "100 nm", "B": "28 nm", "C": "3-5 nm", "D": "500 nm" },
+            "correctAnswer": "C",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q133",
+            "text": "What is the design flow in VLSI?",
+            "options": { "A": "Design → Testing → Fabrication", "B": "Specification → Synthesis → Simulation → Layout → Verification → Fabrication", "C": "Coding → Assembly", "D": "Design → Packaging" },
+            "correctAnswer": "B",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q134",
+            "text": "What is RTL in VLSI design?",
+            "options": { "A": "Register Transfer Logic", "B": "Rapid Transfer Language", "C": "Real Time Logic", "D": "Random Test Library" },
+            "correctAnswer": "A",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q135",
+            "text": "What is the purpose of HDL in VLSI design?",
+            "options": { "A": "Hardware Description Language for circuit modeling", "B": "High Data Language", "C": "Human Design Logic", "D": "Heat Dissipation Layer" },
+            "correctAnswer": "A",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q136",
+            "text": "Which is NOT a popular HDL?",
+            "options": { "A": "VHDL", "B": "Verilog", "C": "C++", "D": "SystemVerilog" },
+            "correctAnswer": "C",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q137",
+            "text": "What is FPGA?",
+            "options": { "A": "Fast Programmable Gate Array", "B": "Field Programmable Gate Array", "C": "Fixed Processor Graphics Adapter", "D": "Flash Programmable Read Array" },
+            "correctAnswer": "B",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q138",
+            "text": "What is the advantage of ASIC over FPGA?",
+            "options": { "A": "Lower cost for small volume", "B": "Higher performance and lower power in high volume", "C": "Easier to modify", "D": "Faster design time" },
+            "correctAnswer": "B",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q139",
+            "text": "What is timing closure in VLSI?",
+            "options": { "A": "Closing the chip package", "B": "Ensuring all timing constraints are met", "C": "Final testing", "D": "Power optimization" },
+            "correctAnswer": "B",
+            "topic": "VLSI"
+          },
+          {
+            "id": "ete-q140",
+            "text": "What is DRC in VLSI design?",
+            "options": { "A": "Data Read Cycle", "B": "Design Rule Check", "C": "Digital Reset Circuit", "D": "Dual RAM Component" },
+            "correctAnswer": "B",
+            "topic": "VLSI"
+          }
+        ]
+      },
+      {
+        "id": "computer-networks",
+        "name": "Computer Networks",
+        "questions": [
+          {
+            "id": "ete-q141",
+            "text": "What is the default subnet mask for a Class C IP address?",
+            "options": { "A": "255.0.0.0", "B": "255.255.0.0", "C": "255.255.255.0", "D": "255.255.255.255" },
+            "correctAnswer": "C",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q142",
+            "text": "Which layer of the OSI model handles routing?",
+            "options": { "A": "Data Link Layer", "B": "Network Layer", "C": "Transport Layer", "D": "Session Layer" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q143",
+            "text": "What does TCP stand for?",
+            "options": { "A": "Transfer Control Protocol", "B": "Transmission Control Protocol", "C": "Transport Connection Protocol", "D": "Technical Control Protocol" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q144",
+            "text": "What is the well-known port number for HTTP?",
+            "options": { "A": "21", "B": "25", "C": "80", "D": "443" },
+            "correctAnswer": "C",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q145",
+            "text": "What does DNS stand for?",
+            "options": { "A": "Domain Name System", "B": "Digital Network Service", "C": "Dynamic Name Server", "D": "Data Network Standard" },
+            "correctAnswer": "A",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q146",
+            "text": "What is the maximum segment size (MSS) in TCP?",
+            "options": { "A": "536 bytes", "B": "1460 bytes", "C": "1500 bytes", "D": "65535 bytes" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q147",
+            "text": "Which protocol is used for email sending?",
+            "options": { "A": "HTTP", "B": "SMTP", "C": "FTP", "D": "SNMP" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q148",
+            "text": "What is the function of a switch in a network?",
+            "options": { "A": "Route packets between networks", "B": "Connect devices within a network using MAC addresses", "C": "Translate IP to MAC", "D": "Block all traffic" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q149",
+            "text": "What is the default gateway?",
+            "options": { "A": "The internet router IP", "B": "IP address of the router used to reach external networks", "C": "DNS server address", "D": "Subnet mask" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q150",
+            "text": "What does DHCP stand for?",
+            "options": { "A": "Dynamic Host Configuration Protocol", "B": "Digital Host Control Protocol", "C": "Direct Host Connection Protocol", "D": "Data Header Communication Protocol" },
+            "correctAnswer": "A",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q151",
+            "text": "Which of the following is a private IP address range?",
+            "options": { "A": "100.0.0.0", "B": "172.16.0.0", "C": "200.0.0.0", "D": "8.0.0.0" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q152",
+            "text": "What is the function of ARP?",
+            "options": { "A": "Map IP address to MAC address", "B": "Map domain name to IP", "C": "Resolve routing path", "D": "Assign port numbers" },
+            "correctAnswer": "A",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q153",
+            "text": "Which layer provides end-to-end communication?",
+            "options": { "A": "Network Layer", "B": "Transport Layer", "C": "Session Layer", "D": "Data Link Layer" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q154",
+            "text": "What is the maximum transmission unit (MTU) for Ethernet?",
+            "options": { "A": "536 bytes", "B": "1500 bytes", "C": "65535 bytes", "D": "9000 bytes" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q155",
+            "text": "What does OSI stand for?",
+            "options": { "A": "Open System Interconnection", "B": "Operating System Interface", "C": "Online System Integration", "D": "Output System Interface" },
+            "correctAnswer": "A",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q156",
+            "text": "Which protocol is connectionless?",
+            "options": { "A": "TCP", "B": "UDP", "C": "FTP", "D": "SSH" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q157",
+            "text": "What is the size of IPv4 address?",
+            "options": { "A": "16 bits", "B": "32 bits", "C": "64 bits", "D": "128 bits" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q158",
+            "text": "What is the primary function of a router?",
+            "options": { "A": "Connect devices in the same network", "B": "Route packets between different networks", "C": "Assign IP addresses", "D": "Filter frames" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q159",
+            "text": "What protocol is used to retrieve emails?",
+            "options": { "A": "SMTP", "B": "POP3", "C": "FTP", "D": "TELNET" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          },
+          {
+            "id": "ete-q160",
+            "text": "What is the function of the Physical layer?",
+            "options": { "A": "Routing", "B": "Transmit raw bits over physical medium", "C": "Error detection", "D": "Flow control" },
+            "correctAnswer": "B",
+            "topic": "Networking"
+          }
         ]
       }
     ]
