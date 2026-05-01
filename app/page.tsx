@@ -23,20 +23,21 @@ const C = {
   success:   "#81c784",  // green
 };
 
-const SUBJECTS = questionsData.subjects;
-const DEFAULT_SUBJECT = SUBJECTS[0];
-const CHAPTERS = DEFAULT_SUBJECT.chapters.map(ch => ({
-  name: ch.name,
-  questions: ch.questions.length,
-  id: ch.id
-}));
-
-const TOTAL_QUESTIONS = CHAPTERS.reduce((s, c) => s + c.questions, 0);
+const ALL_SUBJECTS = questionsData.subjects;
 
 export default function HomePage() {
   const [name, setName] = useState("");
+  const [selectedSubjectIdx, setSelectedSubjectIdx] = useState(0);
   const [userStats, setUserStats] = useState<{ totalQuizzes: number; bestScore: number; avgScore: number } | null>(null);
   const router = useRouter();
+
+  const SELECTED_SUBJECT = ALL_SUBJECTS[selectedSubjectIdx];
+  const CHAPTERS = SELECTED_SUBJECT.chapters.map(ch => ({
+    name: ch.name,
+    questions: ch.questions.length,
+    id: ch.id
+  }));
+  const TOTAL_QUESTIONS = CHAPTERS.reduce((s, c) => s + c.questions, 0);
 
   useEffect(() => {
     const storedName = localStorage.getItem("quizcraft_name");
@@ -62,8 +63,9 @@ export default function HomePage() {
   const handleStartQuiz = () => {
     const finalName = name.trim() || "Anonymous";
     localStorage.setItem("quizcraft_name", finalName);
-    localStorage.setItem("quizcraft_subject", DEFAULT_SUBJECT.id);
-    router.push(`/quiz/${DEFAULT_SUBJECT.id}?name=${encodeURIComponent(finalName)}`);
+    const subj = ALL_SUBJECTS[selectedSubjectIdx];
+    localStorage.setItem("quizcraft_subject", subj.id);
+    router.push(`/quiz/${subj.id}?name=${encodeURIComponent(finalName)}`);
   };
 
   const hasData = userStats !== null;
@@ -142,6 +144,24 @@ export default function HomePage() {
               {/* Chapter List */}
               <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.card}` }}>
                 <CardHeader className="pb-2">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: C.mutedFg }}>Subject</span>
+                    <select
+                      value={selectedSubjectIdx}
+                      onChange={e => setSelectedSubjectIdx(Number(e.target.value))}
+                      className="text-xs px-2 py-1 rounded-md border"
+                      style={{
+                        backgroundColor: C.card,
+                        color: C.fg,
+                        borderColor: `${C.primary}40`,
+                        fontFamily: "Lexend, sans-serif",
+                      }}
+                    >
+                      {ALL_SUBJECTS.map((s, i) => (
+                        <option key={s.id} value={i}>{s.name}</option>
+                      ))}
+                    </select>
+                  </div>
                   <CardTitle
                     className="text-sm"
                     style={{ fontFamily: "Lexend, sans-serif", color: C.mutedFg }}
@@ -167,8 +187,10 @@ export default function HomePage() {
                         (e.currentTarget as HTMLElement).style.borderColor = "transparent";
                       }}
                       onClick={() => {
+                        const subj = ALL_SUBJECTS[selectedSubjectIdx];
                         localStorage.setItem("quizcraft_selected_chapters", JSON.stringify([ch.id]));
-                        handleStartQuiz();
+                        localStorage.setItem("quizcraft_subject", subj.id);
+                        router.push(`/quiz/${subj.id}?name=${encodeURIComponent(name.trim() || "Anonymous")}`);
                       }}
                     >
                       <div className="flex items-center gap-2">
