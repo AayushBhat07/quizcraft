@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -27,6 +27,7 @@ const PLACEHOLDER_QUESTIONS = [
     options: { A: "Joule", B: "Newton", C: "Watt", D: "Pascal" },
     correctAnswer: "B",
     topic: "Kinematics",
+    chapterName: "Mechanics",
   },
   {
     id: "q2",
@@ -34,6 +35,7 @@ const PLACEHOLDER_QUESTIONS = [
     options: { A: "First Law", B: "Second Law", C: "Third Law", D: "Law of Gravitation" },
     correctAnswer: "C",
     topic: "Laws of Motion",
+    chapterName: "Mechanics",
   },
   {
     id: "q3",
@@ -41,6 +43,7 @@ const PLACEHOLDER_QUESTIONS = [
     options: { A: "8.8 m/s²", B: "9.8 m/s²", C: "10.8 m/s²", D: "11.8 m/s²" },
     correctAnswer: "B",
     topic: "Gravitation",
+    chapterName: "Gravitation",
   },
   {
     id: "q4",
@@ -48,6 +51,7 @@ const PLACEHOLDER_QUESTIONS = [
     options: { A: "Velocity", B: "Acceleration", C: "Force", D: "Mass" },
     correctAnswer: "D",
     topic: "Kinematics",
+    chapterName: "Mechanics",
   },
   {
     id: "q5",
@@ -55,11 +59,13 @@ const PLACEHOLDER_QUESTIONS = [
     options: { A: "Force × Time", B: "Mass × Velocity", C: "Mass × Acceleration", D: "Force × Distance" },
     correctAnswer: "B",
     topic: "Laws of Motion",
+    chapterName: "Mechanics",
   },
 ];
 
 export default function QuizPage() {
   const params = useParams();
+  const router = useRouter();
   const subject = params.subject as string;
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
