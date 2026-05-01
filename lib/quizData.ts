@@ -45,9 +45,15 @@ function shuffleArray<T>(array: T[]): T[] {
 
 // ─── Raw data access ────────────────────────────────
 function getRawData(): QuestionsData {
-  // questions.json uses "subject" as the top-level key wrapping a single subject
   const raw = questionsData as any;
+  // Legacy single-subject format: { subject: { id, name, chapters } }
   if (raw.subject) return { ete: raw.subject } as QuestionsData;
+  // New multi-subject format: { subjects: [{ id, name, chapters }] }
+  if (Array.isArray(raw.subjects)) {
+    const map: QuestionsData = {};
+    raw.subjects.forEach((s: RawSubject) => { map[s.id] = s; });
+    return map;
+  }
   return raw as QuestionsData;
 }
 
