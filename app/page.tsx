@@ -23,7 +23,9 @@ const C = {
   success:   "#81c784",  // green
 };
 
-const CHAPTERS = questionsData.subject.chapters.map(ch => ({
+const SUBJECTS = questionsData.subjects;
+const DEFAULT_SUBJECT = SUBJECTS[0];
+const CHAPTERS = DEFAULT_SUBJECT.chapters.map(ch => ({
   name: ch.name,
   questions: ch.questions.length,
   id: ch.id
@@ -60,8 +62,8 @@ export default function HomePage() {
   const handleStartQuiz = () => {
     const finalName = name.trim() || "Anonymous";
     localStorage.setItem("quizcraft_name", finalName);
-    localStorage.setItem("quizcraft_subject", "ete");
-    router.push(`/quiz/ete?name=${encodeURIComponent(finalName)}`);
+    localStorage.setItem("quizcraft_subject", DEFAULT_SUBJECT.id);
+    router.push(`/quiz/${DEFAULT_SUBJECT.id}?name=${encodeURIComponent(finalName)}`);
   };
 
   const hasData = userStats !== null;
