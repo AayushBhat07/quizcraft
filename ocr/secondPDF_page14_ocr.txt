@@ -1,0 +1,191 @@
+Emerging Trends in Electronics (S-VI)
+
+Smart Manufacturing Processes and Tool,
+
+35.
+
+36.
+
+37.
+
+38.
+
+SD.
+
+41.
+
+42.
+
+The following is a disadvantage of using BGA
+packages in SMT assembly ?
+
+(a) Increased thermal performance
+(b) Limited component density
+
+(c) Difficulties in rework
+
+(d) Reduced risk of solder bridging
+
+The primary purpose of a conformal coating in SMT
+assembly is to .........
+(a) enhance heat dissipation
+
+(b) protect components from environmental factors
+(c) improve solder joint visibility
+
+(d) facilitate component placement
+
+SMD package has a flat bottom and is attached to the
+PCB using solder balls
+
+(a) QFP
+
+(b) LCC (Leadless Chip Carrier)
+
+(c) BGA
+
+(d) TO-92
+
+The primary advantage of using a hot air rework
+station in SMT rework is
+(a) To enhance manual control
+
+(b) To reduce risk of overheating components
+(c) To improve flux application
+(d) For even heating of components
+
+The following is a common example of a four-
+terminal SMD package -
+
+(a) TQFP (b) SOT-89
+(c) DIP (d) SSOP
+
+The primary function of a wave soldering machine in
+SMT assembly is to .........
+
+(a)
+(b)
+(c)
+(d) cool down solder joints
+
+The SMD package is commonly used for high-
+frequency applications due to its minimal parasitic
+capacitance and inductance is .........
+
+(a) SOT-23 (b) QFN
+
+(c) SOD-323 (d) RF package
+
+The primary purpose of a fiducial mark on a PCB in
+SMT assembly is .......--
+
+(a) To identify the manufacturer
+
+(b) To indicate the orientation of components
+
+(c) To assist in the precise placement of components
+(d) To measure the PCB size
+
+remove excess solder
+apply solder paste
+melt soider and create connections
+
+43.
+
+44,
+
+45.
+
+46.
+
+47.
+
+48.
+
+49.
+
+50.
+
+51.
+
+In SMT, the term for the unintentional connection of
+two adjacent solder joints, creating a short circuit jg
+
+(a) Solder bridging (b) Flux contamination
+
+(c) Solder wicking (d) Component skewing
+
+The soldering technique uses a fine-tipped Soldering
+iron to solder individual leads of a component i
+(a) Drag soldering
+(c) Hot air reflow
+A common example of a six-terminal SMD package jg
+
+(b) Wave soldering
+(d) Induction soldering
+
+(a) DIP (b) SOT-223
+
+(c) SOIC (d) SSOP
+
+ae is used for SMD placement or insertion on
+PCB.
+
+(a) Automatic component insertion
+
+(b) Automatic lead connectors
+
+(c) Component sorter
+
+(c) Wave soldering
+
+The purpose of a conformal coating in SMT assembly
+
+(a) To increase heat dissipation
+
+(b) To protect components from physical damage
+(c) To improve solder joint visibility
+
+(d) To insulate components electrically
+
+The common example of a three-terminal SMD
+package is .........
+
+(a) SOD-323 (b) TQFP
+
+(c) SOT-89 (d) DIP
+
+The primary purpose of a desoldering pump (solder
+sucker) in SMT rework is .........
+
+(a) To apply solder paste
+
+(b) To remove excess flux
+
+(c) To clean PCBs
+
+(d) To remove excess solder
+
+SMT assembly technique that allows for simultaneo®
+
+soldering of multiple components using a sind!
+solder wave is .........
+
+(a) Hand soldering
+
+(b) Wave soldering
+(c) Reflow soldering
+
+(d) Drag soldering
+As compared to !ead devices, SMDs are
+
+(a) Lower weight and lower dimensions
+(b) Lower weight and higher dimensions
+(c) Higher weight and lower dimensions
+(d) Higher weight and higher dimensions
+
+2.22
+
+f
+Nirali Prakas”
+

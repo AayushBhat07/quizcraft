@@ -1,0 +1,153 @@
+ing Trends in Electronics (S-VI)
+
+Advanced Processors and Technology
+
+A key limitation of Alis .........
+(a) Always accurate
+(b) Low development cost
+C) Ethical and privacy issues
+(d) Full creativity
+An example of Al application is
+(a) Welding
+(b) Brain-Machine Interfaces
+(9 Wood polishing
+(@ Circuit tracing
+155. ML allows computers to
+(a) Ignore data
+(b) Learn without explicit Programming
+(9 Sleep during training
+(d) Avoid patterns
+156. Unsupervised learning identifies
+(a) Labelled data (b) Hidden patterns
+(Q Fixed outputs (d) Compiler errors
+157. Reinforcement Learning involves
+(a) No feedback
+(b) Rewards and penalties
+(Q) Static environment only
+(d) Only labelled datasets
+158. Clustering is used in
+(a) Supervised learning
+(b) Unsupervised learning
+(9) Reinforcement learning
+(d) Human supervision
+159. A supervised learning algorithm example is
+(a) PCA (b) Clustering
+(c) Regression (d) SOM
+160. A typical application of RL is
+(@) OCR scanning (b) Driving and gaming
+(0) PCB etching (d) Motor rewinding
+161. DL architectures include
+(2) DBN and CNN
+(9) AND/OR logic
+162. DLis a subset of .........
+(@) Al (b) ML
+(©) RIsc (d) GPU
+163. Select the correct hierarchy
+(9) Alisinside ML, and ML is inside DL
+(©) MLis inside DL, and DL is inside Al
+© Dlisa part of ML, and ML is a part.of Al
+
+153.
+
+154.
+
+_ (b) DFT and FFT
+(d) RAM modules
+
+164. Al agents use actuators for
+
+165.
+
+166.
+
+167.
+
+168.
+
+169.
+
+170.
+
+L715
+
+172.
+
+173.
+
+174.
+
+175.
+
+(a) Thinking
+(c) Measuring voltage (d) Encryption
+The sequence of an Al agent is
+(a) Act > Sense - Reason
+
+(b) Reason > Act + Sense
+
+(c) Sense + Reason > Act
+
+(d) Start = End = Restart
+
+A self-driving car in a world with other autonomous
+cars is
+(a) Single-agent (b) Multi-agent
+
+(c) No-agent (d) Reactive-only system
+Multi-agent systems require
+(a) No communication
+
+(b) Coordination between agents
+(c) No autonomy
+
+(d) Software only
+
+Drone swarm operations represent
+(a) Single-agent (b) Multi-agent
+
+(c) Hybrid computing (d) Manual control only
+Multi-agent systems provide
+(a) Lower resilience (b) Higher scalability
+(c) Zero complexity (d) Single goal only
+MAS drawbacks include
+(a) Simple design
+
+(b) Complex synchronization
+(c) Minimal communication
+(d) No conflict between agents
+Qubits can be correlated due to
+(a) Decoherence (b) Entanglement
+(c) Supervision (d) Insulation
+Quantum interference is beneficial because it
+(a) Removes all states
+
+(b) Reinforces desired states
+
+(c) Stops parallelism
+
+(d) Increases hardware size
+
+Classical computing is limited due to
+(a) No transistors (b) Deterministic bit states
+(c) Using qubit logic (d) High noise
+
+Quantum computing excels at
+(a) Simple arithmetic (b) Complex optimization
+(c) Basic display control (d) LED dimming
+
+Re cecas is a field benefiting from quantum simulations.
+(b) Drug discovery
+
+(d) Car washing
+
+(b) Execution of actions
+
+(a) Tailoring
+(c)_Gardening
+
+(4) Al, ML, and: DL are all the same
+
+1.29
+
+Nirali Prakashan
+

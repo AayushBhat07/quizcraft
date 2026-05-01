@@ -1,0 +1,53 @@
+ing Trends in Electronics (S-VI)
+
+Next Generation Telecom Network
+
+77. MGC performs ......... 37. 5G offers typical speeds of .........
+(a) Media transcoding (a) 1-5 Mbps (b) 10-100 Mbps
+(b) Call routing and signalling (c) 200-1000 Mbps (d) 10 Gbps minimum
+(Q Fiber splicing 38. 5.5G provides .........
+(a) Optical regeneration (a) No IoT support (b) cm-level positioning
+2. AS executes ......... (c) Only 2G compatibility (d) No Al integration
+(@) Call agent functions 39. 5G uses which spectrum?
+(b) Business logic for services (a) Audio-frequency
+(Q DWDM multiplexing (b) Sub-6 GHz and mmWave
+(d) Router boot scripts (c) X-rays
+3, MGW typically handles ......... protocols, (d) Microwave ovens only
+(a) RTP (b) SCTP 40. Which technology enables high capacity in 5G?
+(Q SMTP (d) X.25 (a) CDMA
+30. MGC interacts with AS for ......... (b) Beamforming + Massive MIMO
+(a) Media transcoding (¢) WDM
+(b) Service logic execution (d)FDM only
+(Q) ONU registration 41. NGN-Core uses .........
+(@) Fiber attenuation control (a) Circuit switching (b) All-IP architecture
+31 Licensed spectrum is controlled by ......... Oe CeNA ge (¢) marie ae
+: 42. Control and media plane separation improves .........
+(a) ISPs (b) National regulators ameabieatentcton
+(Q) ONU vendors (d) OS developers va td
+: . ; (b) Flexibility and scalability
+32. Unlicensed spectrum requires devices to follow : ,
+(c) Transmitter life
+fe) Ra , ite 4 (d) Fiber bending radius
+4 a 5 ee 43. NGN Core supports QoS using me saree
+; : ; (a) DWDM (b) DiffServ and MPLS
+(9 National licensing (© Wi-Fi6 (d) SD cards
+(¢) Fiber compliance 44. NGN Core integrates .........
+33. Wi-Fi typically operates in ......... (a) Only wired networks
+(@) Licensed 700 MHz (b) Wired, wireless, and multimedia networks
+(b) 2.4, 5, 6 GHz (unlicensed) (©) Only mobile networks
+(9) PSTN bands (d) Only satellite systems
+(d) 4.5 GHz only 45. Network virtualization in NGN is enabled by .........
+4A major disadvantage of unlicensed spectrum is (a) OLT (b) SDN/NFV
+treteeee (c) PSTN switching (d) DSL filters
+(2) Very high cost (b) Guaranteed Qos 46. Select the advantage of NGN Core.
+(©) Interference (d) No short-range use (a) High operational cost
+3. 3G introduced ......... (b) Separate voice and data cores
+(8) Cloud-native cores (c) Fast service deployment
+(b) Packet-switched mobile internet (d) No interoperability
+(©) Massive MIMO 47. NGN Core security includes .........
+(4) Al-native networks (a) RF encryption only
+’ 4G architecture is ......-+- (b) Firewalls, authentication, policy control
+) All-tom (b) All-IP (c) Spectrum licensing
+: () SONET-based (d) MPLS-exclusive (d) Wi-Fi passwords only
+_——— 3.15 Nirali Prakashan
+

@@ -1,0 +1,55 @@
+Emerging Trends in Electronics (S-VI)
+
+Smart Manufacturing Processes and Too),
+
+10. The potential disadvantage of SMT in terms of
+Cate aie TIN hla ck) lan reliability is ........
+| dbl ace (a) Entiprett durability
+(a) Surface Mount Transistor (b) Lower susceptibility to vibration
+sd saetigmate-tehte a . (c) Less reliable connections in certain conditions
+(c) Synchronous Mounting ai o> (d) Improved thermal performance
+(d) Surface Mounting Terminal 11. The type of technology involves components with
+2. The soldering technique that involves direct contact leads inserted into holes in the PCB is .........
+with the component leads and PCB padsis ......... (a) Through-Hole Technology
+(a) Contactless Soldering (b) Non-contact Soldering (b) Surface Mount Technology
+(Q) Contact Soldering (d) Surface Soldering () Embedded Technology
+3. The primary advantage of SMT in terms of space (d) Integrated Circuit Technology
+utilization is ......... 12. The primary reason for using surface mount devices
+(a) Larger component size (SMD) in electronic circuits is .........
+(b) Smaller component size (a) Enhanced heat dissipation
+(c) Greater component weight (b) Increased component size
+(d) Reduced component density (C) Improved accessibility for testing
+4 The SMD package typically has three terminals and is (d) Space efficiency
+commonly used for transistors ......... 13. In SMT, the purpose of the solder paste applied to the
+(a) SOT-223 (b) SOIC PCB before component placement is .........
+(co) SOT-23 (d) BGA (a) To insulate components
+5. The potential disadvantage of SMT related to rework (b) To provide structural support
+a (c) To facilitate soldering during reflow
+(a) Easy and straightforward rework (d) To enhance component visibility
+(b) Difficulties in component replacement 14. The SMD package is characterized by a flat, square
+(c) Reduced risk of soldering errors shape and is often used for microcontrollers and
+(d) Lower rework costs processors is .........
+6. The soldering technique uses hot air for reflow (a) QFP (Quad Flat Package)
+without direct contact with the components ......... (b) SSOP (Shrink Small Outline Package)
+(a) Infrared Soldering (c) DIP (Dual Inline Package)
+(b) Contact Soldering (d) TQFP*(Thin Quad Flat Package)
+(c) Non-contact Soldering 15. The purpose of a reflow oven in SMT assembly is
+(d) UltrasonicSoldering: 2s -_
+7. The major advantage of automatic component fa) Te'coo! down seldenjeints
+insertion in SMT assembly is ......... (b) To clean PCBs
+(a) Increased manual labour (Qh Tovheat components and solder paste to melt
+? and form connections
+(b) Slower production speed Tables ;
+‘ pect components visually
+(©) Higher accuracy and efficiency 16. SMD package common Le
+itl et ly used for small sign@
+(d) Limited component compatibility transistors and diodes is .........
+8. The following is a common example of a two-terminal (a) SOT-223 (b) sot-a9
+SMD package for passive components ......... (c) TO-220 (d) TO-92
+(a) SOIC (b) BGA 17, The primary advantage of SMT regarding sign!
+(c) SOT-223 (d) 0402 integrity in electronic circuits is...
+9. The type of component often mounted using a BGA (a) Longer signal paths
+package is ......... (b) Higher susceptibility to interference
+(a) Resistor (b) Capacitor (c) Shorter signal paths
+(c) Microprocessor (d) Inductor (d) Greater signal distortion
+ani Nirali Prakash”

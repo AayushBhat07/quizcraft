@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* QuizCraft Dark Theme - New Palette */
+    --background: #1D1E2C;
+    --foreground: #F7EBEC;
+    --card: #252636;
+    --card-foreground: #F7EBEC;
+    --popover: #252636;
+    --popover-foreground: #F7EBEC;
+    --primary: #AC9FBB;
+    --primary-foreground: #1D1E2C;
+    --secondary: #59656F;
+    --secondary-foreground: #F7EBEC;
+    --muted: #59656F;
+    --muted-foreground: #DDBDD5;
+    --accent: #AC9FBB;
+    --accent-foreground: #1D1E2C;
+    --destructive: #e57373;
+    --destructive-foreground: #F7EBEC;
+    --border: #59656F;
+    --input: #59656F;
+    --ring: #AC9FBB;
+    --radius: 0.5rem;
+
+    /* QuizCraft Custom Colors */
+    --primary-accent: #AC9FBB;
+    --primary-glow: #AC9FBB / 0.15;
+    --surface: #252636;
+    --surface-bright: #59656F;
+    --surface-container: #1D1E2C;
+    --light-highlight: #DDBDD5;
+    --bright-accent: #F7EBEC;
+    --success: #81c784;
+    --error: #e57373;
+  }
+
+  .dark {
+    --background: #1D1E2C;
+    --foreground: #F7EBEC;
+    --card: #252636;
+    --card-foreground: #F7EBEC;
+    --primary: #AC9FBB;
+    --primary-foreground: #1D1E2C;
+    --secondary: #59656F;
+    --secondary-foreground: #F7EBEC;
+    --muted: #59656F;
+    --muted-foreground: #DDBDD5;
+    --accent: #AC9FBB;
+    --accent-foreground: #1D1E2C;
+    --destructive: #e57373;
+    --destructive-foreground: #F7EBEC;
+    --border: #59656F;
+    --input: #59656F;
+    --ring: #AC9FBB;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    background-color: #1D1E2C;
+    color: #F7EBEC;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lexend', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /* Primary accent glow effect for buttons */
+  .btn-primary {
+    background-color: #AC9FBB;
+    color: #1D1E2C;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .btn-primary:hover {
+    background-color: #DDBDD5;
+    box-shadow: 0 0 20px rgba(172, 159, 187, 0.4);
+  }
+
+  /* Card with subtle border */
+  .card-surface {
+    background-color: #252636;
+    border: 1px solid #59656F;
+  }
+
+  /* Quiz option card */
+  .quiz-option {
+    border: 1px solid #59656F;
+    background-color: #252636;
+    transition: all 0.2s;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+
+  .quiz-option:hover {
+    border-color: rgba(172, 159, 187, 0.5);
+  }
+
+  .quiz-option.selected {
+    border-color: #AC9FBB;
+    background-color: rgba(172, 159, 187, 0.1);
+    box-shadow: 0 0 15px rgba(172, 159, 187, 0.2);
+  }
+
+  /* Progress bar glow */
+  .progress-glow {
+    box-shadow: 0 0 10px rgba(129, 199, 132, 0.5);
+  }
+
+  /* Success/Correct color */
+  .text-success {
+    color: #81c784;
+  }
+
+  /* Error/Wrong color */
+  .text-error {
+    color: #e57373;
+  }
+
+  /* Surface layers */
+  .surface-lowest { background-color: #1D1E2C; }
+  .surface-low { background-color: #252636; }
+  .surface { background-color: #252636; }
+  .surface-high { background-color: #59656F; }
+  .surface-highest { background-color: #DDBDD5; }
+}

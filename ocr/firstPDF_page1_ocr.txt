@@ -1,0 +1,55 @@
+Advanced Processors and Technolog,
+
+Emerging Trends in Electronics (S-VI)
+
+be Absves in mobile devices an,
+
+GPUs are essential for
+
+1.4.4 Quantum Computing Applications = gaming consoles.
+* Education: Hands-on quantum algorithm training. (a) Data routing
+* Finance: Risk management, market simulation, fraud (b) Graphical requirements
+detection, portfolio optimization. (c) Power conversion
+* Al and ML: Accelerated data processing, NLP, image (d) Networking
+recognition, predictive analytics 7. Parallel processing capability of GPUs enables ....__.
+* Drug Discovery and Healthcare: Molecular (a) Sequential logic only
+modelling, drug design, protein folding. (b) Concurrent task handling
+* Cryptography and Cybersecurity: QKD, post (©) Reduced heat generation
+quantum cryptography. (d) Lower clock speed
+* Logistics and Supply Chain: Route optimization, | g — GDDR6 and HBM are associated with .........
+inventory management. (a) Power supply modules
+* Material Science: Atomic-level material simulation. (b) Display types
+* Climate Modelling and Sustainability: Weather (0) High-speed GPU memory
+simulation, emission analysis, renewablé energy grid (d) Instruction set
+integration. 9. CUDA is primarily used for .........
+* Scientific Discovery: Accelerated research in physics, (a) Power conversion —_(b) Parallel computing
+chemistry, biology. (c) Networking (d) Encryption
+10. Ray tracing in GPUs is used for .........
+Se riaata (c) Clock generation (d) Register control
+ON Stadt ingll Retage - 11. A CPUs internal layout and functional structure define
+(a) Data compression FS ots ae
+(b) Image rendering (a) Clock generator (b) Processor architecture
+(©) Keyboard control (c) Peripheral speed (d) Operating system
+(d) Power supply stabilization 12. Identify a NON CPU component .........
+2. Human vision requires a minimum of ......... frames (a) ALU (b) Control Unit
+per second. (c) Registers (d) LED Driver
+(a) 10 (b) 16 13. The fastest CPU cache level is .........
+(c) 30 (d) 60 (a) L1 (b) L2
+3. GPUs are increasingly integrated into high-end (c) 13 (d) Virtual memory
+processors such as ......... 14. RISC architecture uses .........
+(2) RISC-V only (b) PowerVR and MALI (a) Many complex instructions
+(c) AVR series (d) PIC controllers (b) Few simple instructions
+GPU stands for ......... (6) No instruction set
+(a) General Processing Unit i) aly floating-point instructions
+ib) Graphical Freccesinndiat iG) Pipelining Increases CPU performance | \\ eee
+; i (a) Lowering frequency
+(Q) Global Processing Unit F 1 :
+(b) Increasing overlap of instruction stages
+(d) General Purpose Unit (c) Reducing clock cycles to 0
+High-quality visuals in modern displays require (d) Shutting down inactive cores
+pages 16. Superscalar processors execute .........
+(a) Low data bandwidth (a) One instruction per cycle
+(b) Manual rendering (b) Multiple instructions per cycle
+(c) High memory bandwidth (c) No instructions in parallel
+(d) No processing unit (d) Only floating-point operations
+1.22 Nirali Prakashan

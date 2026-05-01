@@ -1,0 +1,187 @@
+Next Generation Telecom Network
+
+trends in Electronics (S-VI)
+
+-» AON requires ......++-
+a @ passive components only
+(o) Active powered switches
+rt) No routing
+(a) Only coax connections
+FTTH benefit reduces maintenance.
+
+(a) High EMI
+
+) Passive components
+
+(Q Complex routing tables
+(@) High thermal noise
+
+OLT supports protocols like
+
+‘ (a) GPON/EPON (b) CDMA
+(9 LTE (d) ISDN
++s, ONU upstream transmission uses .........
+(2) FDMA (b) TDMA
+(Q CSMA (d) OFDMA only
+
+FTTH immunity to EMI is due to
+
+(a) Copper shielding
+
+(b) Electric insulation
+
+(9 Use of light for transmission
+
+(d) High voltage
+
+MPLS supports Traffic Engineering by
+
+(a) Circuit switching
+
+{b) Controlling path selection with labels
+
+{9 Dropping packets
+
+{d) Increasing power
+
+In NGN, service separation allows
+
+(a) Faster TDM switching
+
+(6) New services without
+hardware
+
+(0) Removal of QoS
+
+{¢) No mobility support
+
+» Q0S mechanisms in NGN Transport include
+
+() Packet filtering and policing
+
+(0) Circuit switching
+
+(9) Fiber cleaning
+
+(9) Voltage boosting
+
+FTTH is a future-proof technology because
+
+'®) Fiber cables require daily maintenance
+
+1) Itsupports upgrades like 10G/25G PON
+
+©) Copper lasts longer
+
+i) Splitters are motorized
+
+for optical communication.
+(b) type of cable used
+
+changing underlying
+
+,
+
+82.
+
+83.
+
+84.
+
+85.
+
+86.
+
+87.
+
+88.
+
+89.
+
+90.
+
+91.
+
+92)
+
+93.
+
+SDH is a protocol of optical communication for
+layer.
+
+(a) Application (b) Network
+
+(c) Data link layer (d) Physical
+
+SDH protocol is applicable for
+(a) Copper media
+
+(b) Air media
+
+(c) Optical cable media
+
+(d) Satellite communication
+SDH is designed for ......... communication.
+
+(a) Packet switch (b) Circuit switch
+
+(c) Network switch (d) Hybrid switch.
+
+The first level of the synchronous digital hierarchy is
+known as
+
+(a) STM1 (b) OC1
+(c) STM-A (d) SDH 1
+
+The STM-1 frame is transmitted in exactly .........
+(a) 125 us (b) 1 sec
+
+(c) 8000 us (d) not fixed duration
+
+As STM 1 frame transmission duration is 125 us, so in
+
+each sec......... frames are transmitted.
+(a) 125 (b) 8000
+
+(c) 1 (d) 100000
+In SDH, STM 256 has data rate .........
+(a) 1.55 Mbps (b) 2.5 GBPS
+(c) 40 Gbps (d) 10 Gbps
+
+In SDH, all network elements (NEs) are synchronized
+using a common clock which ensures
+
+(a) minimal jitter and high-quality data transfer
+(b) more jitter and high-quality data transfer
+
+(c) minimal jitter and low quality data transfer
+
+(d) more jitter and low data transfer
+
+In OTN maximum data rate is .........
+
+(a) 40 Gbps (b) 10 Gbps
+
+(c) 100 Gbps (d) 800 Gbps
+
+OTN is based on......... technology.
+
+(a) TDM (b) FDM
+
+(c) DWDM (d) Asynchronous TDM
+
+For STM 4 equivalent SONET standard is
+(a) SONET 4 (b) OC 12
+
+(c) SONET 16 (d) SONET 12
+OTN is based on
+(a) Packet based switching
+(b) Circuit based switching
+(c) Network based switching
+(d) Data based switching
+
+(d) layer
+
+3.17
+
+Nirali Prakashan

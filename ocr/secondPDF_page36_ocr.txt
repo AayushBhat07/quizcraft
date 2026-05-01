@@ -1,0 +1,53 @@
+Drone Systems and Application,
+
+Emerging Trends in Electronics (S-V1)
+
+reduces drag, minimizes weight and
+
+oe pte ns 20 Pt reeuire prior permission i flown | 78 distributes payload effectively.
+(a) 150 ft (b) 50 ft (a) well designed propeller
+() 1km (d) 500 ft (b) well designed frame
+67. For drones, UAOP stands for ........ (c)_ rotor system
+(a) unmanned aircraft operator ermit d) ESC
+(b) unmanned aircraft : board antl 79, ws H-type drone frame number of motors are ......._
+(¢) universal aircraft operator permit (a) 2 (b) 4
+(d) unmanned auto Operator permit (0 6 (d) 0 a
+68. UIN and UAOP both are required for ......... 80. The efficiency, stability, and maneuverability of a
+(a) nano drone (b) micro drone drone depend on........-
+(©) small drone (d) all types of drones (a) drone frame (b) propeller
+69. Maximum permissible flying height for small drone is (0) battery (d) GCS
+es Ae 81. Aerodynamic thrust required for lift and movement is
+7 joverned by ........-
+~ esutgae ere a drone at (6) propeller
+70. DGCA licensing and pilot certification are essential for (c)_ battery (d) GCS
+a 6) mies 82. In drone system, balancing each propeller reduces
+id mall @). nano (a) vibration (b) thrust ;
+) as drones are capable of long-endurance ©) speed ; Ss working
+missions and used for defense. 83. For mini/micro drones, thrust per unit is .........
+(a) Medium (b) Micro (a) 100-300 g (b) 800-1500 g
+(c) Small (d) Nano (c) 1000-2000 g (d) sO S00 g
+72. For long-range surveillance and cargo delivery, | 84. For fixed wing drones, thrust per unit is .........
+ried (a) 100-300 g (b) 800-1500 g
+Sy aieup (b) Micro (c) 1000-2000 g (d) 300-800 g
+(c) Small (d) Large 85. Select correct characteristics of BLDC motors .........
+Ch pees type drone can be used as toy drone. (a) less maintenance and mechanical speed control
+(a) Nano (b) Micro (b) high efficiency and long life
+(c) Small (d) Large (c)_ high efficiency, mechanical commutation
+74. Drone system complexity is very high in ......... (d) large weight and more power consumption
+(a) single rotor (b) midi ites 86. In drone system, ESC gets input from .........
+(c) fixed wing (d) hybrid (a) motor (b) sensors
+7 ae is not a part of drone. ()_ flight controller (d) propeller
+(a) Frame fb) Propeller 87. In drone, ESC input is .........
+(c) Cooling system (d) Motor (@) AC signal iat
+eed Nea eed and electronics components eM signa} ; (d) high voltage
+(a) mechanical, € 88. As PWM width increases, ESC
+(b) only mechanical components (a) increases moto: a.
+i d electronics components r speed
+(c) mechanical an Rene (b) decreases motor speed
+(d) only a ites : it he increases due to ......... (C) controls camera supply
+77. Drone’s ie a Pp (d) takes more sensor input
+4 Sy designed frame i 4 ene Output of drone is...
+(c) ESC (©) 15V-soy (b) 5 V-12 VDC
+(d) GPS a (d) above 100 v DC
+
+Nirali Prakasha”

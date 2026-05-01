@@ -1,0 +1,157 @@
+Emerging Trends in Electronics (S-VI)
+
+Advanced Processors and Technology
+
+176. In finance, quantum computing is used for
+(a) Printing currency (b) Market risk simulation
+(c) ATM repair (d) Debit card activation
+177. Quantum Al accelerates
+(a) Manual data entry (b) Data analysis and ML
+(c) Paper scanning (d) Human labor
+178. Quantum cryptography supports
+(a) Weak passwords (b) QKD
+(Q. No encryption (d) Analog keys
+179. Quantum computers help optimize
+(a) Truck mileage only —(b) Supply chain routes
+(c) Wall painting (d) Car speedometers
+180. Quantum material science allows
+(a) Atomic level simulations
+{b) Floor cleaning
+(Q CNC cutting
+(d) Manual drilling
+181. ESP32 can run a simple web server using .........
+(2) No libraries (b) WiFi.h library
+(9) EEPROM.h (d) Servo.h
+182. analogRead() on ESP32 reads from .........
+(@) Digital pins only (b) ADC channels
+(Q) DAC output (d) PWM pins only
+183. ESP32 basic RGB LED control uses
+{@) analogWrite()
+(©) digitalSet()
+184. LM35 gives .........
+{a) Digital output (b) 10 mV per °C
+(Q 1Vper°c (d) No temperature value
+185. The pulseIn() function is used for
+(@) Measuring LED brightness
+(b) Reading echo pulse duration
+{9} Sending Wi-Fi packets
+(a) Configuring UART
+186. ESP32 deep sleep saves
+(2) Memory only (b) Power
+(9) Clock cycles (d) Program counter
+187. The ESP32 servo motor uses
+(@) GPIO13 (example code)
+(b) GPIOO
+({c) GPIO36
+(d) GPIO21
+188. ESP32 web server returns
+(a) PDF files
+(©) Binary only
+
+(b) tone()
+(d) delayWrite()
+
+(b) HTML content
+(d) Images only
+
+189.
+
+190.
+
+191.
+
+d2
+
+193.
+
+194,
+
+ICES,
+
+196.
+
+1975
+
+198.
+
+The I’°C LCD commonly uses address
+(a) 0x10 (b) 0 x 27
+() 0x01 (d) 0x99
+Counter variable in LCD example increases
+(a) On reset only
+
+(c) Every 10 ms
+
+GPUs improve AI because
+(a) They increase voltage
+(b) They have parallel compute cores
+(©) They include keyboards
+
+(d) They store more ROM
+
+CPUs use pipelining to
+(a) Slow down execution
+
+(b) Overlap instruction execution
+(c) Replace GPU tasks
+
+(d) Remove instruction fetch
+GPUs commonly support
+(a) HDMI and DisplayPort
+(b) Only USB
+
+(c) Only VGA
+
+(d) Only RF output
+Superscalar CPUs rely on
+(a) Serial execution
+
+(b) Instruction dispatch in parallel
+
+(c) Mechanical computation
+
+(d) Slow decode units
+
+GPU energy efficiency is managed by
+(a) Increasing heat
+
+(b) Optimized architecture
+
+(c) Removing fans
+
+(d) Low frequency
+
+Al systems require .........
+
+(a) Frequent human supervision
+
+(b) No data
+
+(c) Statistical learning models
+
+(d) Only hardware upgrades
+Unsupervised learning is preferred when
+(a) Labels are easily available
+
+(b) Data is small
+
+(c) Data labelling is expensive
+
+(d) Outputs are known
+Reinforcement learning must balance
+(a) Speed and heat
+
+(b) Exploration and exploitation
+
+(c) Input and output voltages
+
+(d) Labels and clusters
+
+(b) Every 1 second
+(d) Never
+
+See
+
+1.30
+
+Nirali Prakashan

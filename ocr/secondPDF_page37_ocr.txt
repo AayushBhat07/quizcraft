@@ -1,0 +1,187 @@
+Trends in Electronics (S-VI)
+
+two main types of BECs in drone are.........
+(a) Linear BEC, Switching BEC
+) AC BEC, DC BEC
+(@ UV BEC, HV BEC
+(¢) Fixed BEC, Floating BEC
+is called the brain of drone.
+
+(a) Frame (b) Motor
+| (Q) Flight controller (d) Battery
+Flight controllers get input from .........
+{a) propeller (b) on-board sensors
+{9 motor (d) frame
+Flight controller uses ......... to fine tune stability.
+
+{e) open loop control
+
+(©) approximation method
+
+{© PID control algorithm
+
+(6) ON/OFF control algorithm
+
+After processing data, flight controller sends control
+signals to .........
+
+(a) motors (b) ESC
+
+(0) battery (d) actuator
+
+ayes. isolates the camera from vibration providing
+smooth footage.
+
+{@) Motor (b) Frame
+
+(©) Gimbal (d) ESC
+
+In drone system, Gimbal is a.........
+
+{@) sensor
+
+(6) mechanical isolation device
+
+(©) type of camera
+
+(d) type of motor
+
+Gimbals are used to produce .........
+
+{@) vibration-free images (b) more data
+
+(©) fast data (d) double images
+Two types of gimbals used for drones are .........
+(2) mechanical and electronic
+
+(0) with brush and brushless
+
+(0) 2-axis and 3-axis
+
+(d) nano and micro
+
+- For excellent stability against vibration,
+Used,
+
+(@) 2-axis gimbal (b) 3-axis gimbal
+
+(9) electronic gimbal (d) non-rotating gimbal
+¥. Drone radio operates at ........-
+
+(a) 963 kHz or 1600 kHz
+
+(b) 2.4 gHz or 5.8 gHz
+
+(c) 860 MHz and 940 MHz
+
+(d) 1.2 gHz or 1.8 gHz
+
+101.
+
+102.
+
+103.
+
+104.
+
+105.
+
+106.
+
+107.
+
+108.
+
+109.
+
+110.
+
+111.
+
+112.
+
+| sg,
+
+Drone Systems and Applications
+Radio receiver decodes sj
+
+gnals and sends commands
+
+NG vie rseeh
+
+(a) flight controller (b) camera
+(c) ESC (d) motors
+Drone cameras are mounted on.........
+(a) gimbals (b) propellers
+(c) frame directly (d) motor
+FPV stands for .........
+
+(a) camera
+
+(b) type of drone
+(c) protocol (d) first-person view
+In drone system, PDB stands for
+
+(a) power distribution board
+(b) pulse distribution board
+(c) payload distribution board
+(d) parking day board
+Gyroscope sensor measures
+(a) wind velocity
+
+(c) speed of drone
+Altimeter sensor measures
+(a) wind velocity
+
+(c) speed of drone
+
+(b) angular velocity
+
+(d) direction of drone
+(b) angular velocity
+
+(d) atmospheric pressure
+
+For geofencing data ......... is used.
+(a) GPS (b) ESC
+(GEG (d) SMPS
+
+C rating refers to drone.........
+(a) camera consumption (b) battery rating
+(c) motor rating (d) class-C drone rating
+
+See sete ts C ratings are needed for high-performance
+drones.
+
+(a) Lower (b) Moderate
+
+(c) 00 (d) Higher
+
+Maximum battery current is ......... if 10 C and
+5000 mAh.
+
+(a) 500A (b) 5010 A
+
+(c) 50A (d) 5A
+
+Theoretical battery time for 5000 mAh, 10 Cis .........
+(a) 0.5 hr (b) 5 hr
+
+(c) 10 hr (d) 50 hr
+
+DGCA divides airspace for drone into .........
+
+(a) 2 (b) 5
+
+() 4 (d) 6
+
+DGCA zones for drone are .........
+
+(a) Nano, Micro, Small, Medium
+
+(b) A, B, C, D
+
+(c) Red, Yellow inner, Yellow outer, Green
+(d) East, West, North, South
+
+Nirali Prakashan

@@ -1,0 +1,183 @@
+_
+
+ds in Electronics (S-VI)
+
+Advanced Processors and Technology
+
+pease ere
+
+199. Multi-agent systems are ideal for
+(a) Single-goal tasks only
+(b) Decentralized decision-making
+(9 No communication tasks
+
+(d) Small fixed systems
+Quantum computing provides exponential advantage
+
+because
+(a) It uses classical parallelism
+
+(b) Qubits represent 2” states at once
+(9 It has slower clocks
+(d) It stores data in HDDs
+
+200.
+
+201. In an ESP32 Arduino sketch, which function runs only
+once at startup?
+(a) loopQ) (b) run()
+(Q) main() (d) setup()
+
+202. The loop() function in ESP32 programs
+
+(a) Executes only once
+
+(b) Executes repeatedly
+
+(Q. Never executes
+
+(d) Runs only in deep sleep
+
+ceeerce command reads analog input on ESP32.
+(a) digitalRead()
+
+(b) analogRead()
+
+(Q) readADC()
+
+(d) getAnalog()
+
+To write PWM values to an LED, we use
+(a) analogWrite()
+
+(b) digitalWrite() only
+
+(c) pwmOut()
+
+(d) writePWM()
+
+Which library is required to use Wi-Fi functions in
+ESP32?
+
+(a) ESP32Wifi.h
+
+(b) WiFi.h
+
+(c) Network32.h
+
+(d) ESPNet.h
+
+203.
+
+204,
+
+205.
+
+206. Which pin is commonly used for the built-in LED on
+the ESP32 Dev Board?
+(a) GPIOS (b) GPIOO
+() GPIo2 (d) GPIO22
+
+207. Which function is used to begin serial
+
+communication?
+(@) Serial.start(9600); (b) Serial.begin(9600);
+(9) Serial.open(9600); (4) Serial.write(9600);
+
+208.
+
+209.
+
+210.
+
+Zi
+
+212.
+
+2135
+
+214.
+
+215.
+
+216.
+
+PY,
+
+218.
+
+219:
+
+The pinMode() function is used to .........
+(a) Set ADC resolution
+
+(b) Configure a pin as INPUT or OUTPUT
+
+(c) Control Wi-Fi
+
+(d) Upload sketches
+
+iersvei is used to upload code to an ESP32.
+(a) UARTO (TX0/RXO) (b) Bluetooth
+
+(c) Wi-Fi (d) CAN interface
+GPIOO must be kept LOW for .........
+
+(a) Reset
+
+(b) Bootloader/programming mode
+
+(c) PWM mode
+
+(d) Deep sleep
+
+Find the function used to map ADC values
+(a) map() (b) convert()
+(c) adeMap() (d) valueMap()
+Select the function that controls a servo motor on
+
+(a) Servo.rotate() (b) myServo.spin()
+(c) myServo.write() (d) servoOut()
+The delay(1000) function pauses execution for
+(a) 1 microsecond (b) 1 millisecond
+(c) 1 second (d) 10 seconds
+Find command used to read distance in ultrasonic
+
+(a) distance() (b) getEcho()
+
+(c) pulseIn() (d) timeRead()
+
+Find command used to check if data is available in
+Serial Monitor
+
+(a) Serial.ready() : (b) Serial.get()
+
+(c) Serial.available() (d) Serial.present()
+Select interface required for PC LCD display is
+(a) Wi-Fi (b) SPI
+
+() PC (d) UART
+
+ESP32 PWM output can be generated using:
+(a) timerWrite() (b) analogWrite()
+(c) pwmStart() (d) gpioPWM()
+Identify pin typically used for reading temperature
+from an LM35
+(a) GPIO34 (b) GPIO12
+
+(c) GPIO8 (d) GPIO1
+
+For the successful compiling of following program
+find out the missing statement:
+
+void setup()
+
+{
+
+Serial.begin(115200);
+
+if (WiFi.begin("SSID", "password"))
+
+1.31
+
+Nirali Prakashan

@@ -1,0 +1,181 @@
+Emerging Trends in Electronics (S-VI)
+
+Next Generation Telecom Network
+
+48.
+
+49.
+
+50.
+
+51.
+
+52.
+
+53.
+
+5:
+
+56.
+
+57.
+
+58.
+
+eo)
+
+Network slicing is associated with
+(a) PSTN (b) NGN Core and 5G
+(c) Satellite TV (d) ADSL
+NGN Core supports migration from
+(a) SDH to FM radio
+(b) PSTN/ISDN to IP networks
+(c) Fiber to copper
+(d) Wi-Fi to PSTN
+A key benefit of NGN is
+(a) High latency
+(b) Efficient resource utilization
+(Q) No QoS
+(d) No application support
+MPLS forwards packets using
+(a) IP lookup only (b) Short labels
+(c) Circuit switching (d) Optical regeneration
+Ingress LSR is responsible for
+(a) Popping labels
+(b) Swapping labels
+(c) Pushing/applying MPLS labels
+(d) Discarding packets
+Select the function of LSR in MPLS.
+(a) Adds fiber splitters  (b) Swaps labels
+(c) Makes voice calls (d) Provides FEC
+MPLS supports
+(a) Video only
+(b) IPv4, IPv6, ATM, Frame Relay
+(c) Electrical switching only
+(d) Wi-Fi modulation
+Pop operation means
+(a) Adding a label
+(c) Multiplying labels
+MPLS enables
+(a) Faster forwarding
+(b) Ring topology only
+(c) Non-IP operations only
+(d) Spectrum licensing
+A disadvantage of MPLS is
+(a) Slow forwarding (b) High complexity
+(c) No QoS support (d) Only supports wireless
+The data base used in MPLS is
+
+(b) Removing a label
+(d) Encrypting labels
+
+(a) LFIB (b) DNS cache
+(c) ARP table (d) DHCP list
+Egress LSR .......--
+
+(a) Adds labels
+
+(b) Removes labels before sending to CE
+(c) Generates QoS classes
+
+(d) Splits optical power
+
+60.
+
+61.
+
+62.
+
+63.
+
+64.
+
+65.
+
+66.
+
+67.
+
+68.
+
+69.
+
+70.
+
+7.
+
+(b) SMS routing
+(d) Wi-Fi roaming
+
+MPLS is widely used for
+(a) Layer 3 VPNs
+
+(c) PSTN circuit setup
+FTTH uses
+(a) Copper access
+
+(b) Fiber directly to home
+
+(c) Microwave backhaul only
+
+(d) Coax-only
+
+Select the commonly used FTTH architecture.
+(a) SONET (b) PON
+
+(c) CDMA (d) TDM
+
+OLT is located at
+(a) Customer home (b) Mobile tower
+(©) Central office (d) ONU cabinet
+Passive splitters typically provide ratios like
+(a) 1:2 only (b) 1:4 to 1:64
+(c) 1:500 (d) 1:1 only
+ONU converts
+(a) Optical to Electrical signals
+(b) Radio to Laser
+
+(c) IP to TDM frames
+
+(d) OTN to MPLS
+
+FTTH supports distances up to
+
+(a) 1-2 km (b) 5-10 km
+(c) 20-60 km (d) 200 km
+Palio ftersi.< came
+
+(a) High latency (b) Susceptibility to EMI
+(c) Very high speed (d) Only analog support
+Dynamic Bandwidth Allocation (DBA) is performed in
+
+(a) ONU .
+
+(c) Splitter
+
+ONU types include .........
+(a) MIMO and OFDM (b) SFU and MDU
+(c) SDH and PDH (d) PSTN and ISDN
+The transmission medium used by FTTH is
+(a) Electric copper pairs
+(c) Fiber optic
+
+(b) OLT
+(d) Router
+
+(b) Multimode-only
+(d) Coaxial shielding
+
+Passive Optical Network is termed as “passive”
+because:
+
+(a) No electricity in distribution network
+(b) No optical signals
+
+(c) No data transmission
+
+(d)_No splitting
+
+3.16
+
+Nirali Prakasha"

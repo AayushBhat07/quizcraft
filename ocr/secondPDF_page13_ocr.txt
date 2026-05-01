@@ -1,0 +1,174 @@
+Trends in Electronics (S-V1)
+
+Smart Manufacturing Processes and Tools
+
+The following is a common example of a five-terminal
+sD package?
+
+@ DIP (b) TQFP
+
+oO soIc (d) SSOP
+
+In SMT, the term "pick-and-place" refers to
+@ Hand soldering technique
+
+ro) Manual component insertion
+
+@ Automated component placement on PCBs
+{@) Component removal during rework
+
+3. The type of soldering iron is commonly used for fine-
+
+ii. The purpose of a stencil in SMT assembly is
+
+pitch SMT components and delicate electronic work is
+
+{e) Gas-powered soldering iron
+
+(b) Pencil-shaped soldering iron
+
+{9 Hot air rework station
+
+{@) Temperature-controlled soldering iron
+
+(@) To apply solder paste to specific areas on the PCB
+(b) To clean solder joints
+
+{Q) To remove excess flux
+
+(@) To insulate components
+
+2 The SMD package is characterized by a small,
+
+fectangular shape and is commonly used for
+
+integrated circuits .........
+(@) DIP
+(b) SOP (Small Outline Package)
+(9 QFN (Quad Flat No-leads)
+(@) 70-220
+® The primary advantage of using a BGA (Ball Grid
+Array) package is .........
+(@) Easy rework
+(b) Improved thermal performance
+‘19 Larger footprint
+'9) Lower cost
+
+Non-contact method of desoldering in SMT
+
+(b) Soldering iron
+
+(d) Drag soldering
+ing in SMT assembly is
+
+ave soldering
+se of conformal coati
+
+e heat dissipation
+components from physical damage
+
+ove solder joint visibility
+
+26.
+
+e7,
+
+28.
+
+29:
+
+30.
+
+31.
+
+82,
+
+33?
+
+34.
+
+The following SMD package is commonly used for
+voltage regulators and power transistors .........
+
+(a) SOT-223 (b) TO-220
+
+(c) DIP (d) QFP
+
+In SMT, the acronym "PLCC" is
+(a) Plastic Leaded Chip Carrier
+(b) Power Line Communication Connector
+
+(c) Printed Logic Circuit Controller
+
+(d) Package Level Component Configuration
+
+The following is a characteristic of a QFN (Quad Flat
+No-leads) package .........
+
+(a) Cylindrical shape
+
+(b) Exposed metal pads on the bottom side
+
+(c) Leaded terminals
+
+(d) Multiple rows of pins
+
+The primary advantage of using a reflow soldering
+process in SMT assembly is
+(a) Enhanced manual control
+
+(b) Improved component visibility
+
+(c) Higher rework capability
+
+(d) Reduced manual labor
+
+The type of soldering technique uses ultrasonic
+vibrations to join components and PCBs is
+(a) Infrared Soldering (b) Wave Soldering
+
+(c) Ultrasonic Soldering (d) Induction Soldering
+The primary purpose of a reflow soldering oven in
+SMT assembly is to .........
+
+(a) melt solder and create connections
+
+(b) heat components before placement
+
+(c) remove excess solder
+
+(d) cool down solder joints
+
+The SMD package is characterized by a small
+rectangular body with J-shaped leads on two sides
+
+(a) SOIC (b) SOT-223
+
+(c) QFP (d) J-Lead
+
+In SMT, the primary advantage of using a stencil
+during the solder paste application process is to
+(a) Increase component size
+
+(b) Improve component visibility
+
+(©) Enhance solder joint quality
+
+(d) Reduce risk of flux contamination
+
+The purpose of a de-soldering wick or braid in SMT
+rework is .........
+
+(a) To apply solder paste
+
+(b) To remove excess flux
+
+(c) To clean PCBs
+
+(d) To remove excess solder
+
+te components electrically
+
+2.21
+
+Nirali Prakashan

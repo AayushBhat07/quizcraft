@@ -1,0 +1,172 @@
+14. 3-layer IoT architecture includes
+
+15. More detailed IoT architecture model is
+
+Trends in Electronics (S-V1)
+
+Industrial loT and Immersive Technologies
+
+JoT enables devices to
+Communicate and exchange data
+(b) Work offline only
+(@ Stop automation
+Replace sensors
+actuators in loT are used for
+{a) Data storage
+(b) Performing physical action
+(9 Human communication
+(d) Cloud programming
+JoT enables remote .........
+(a) Listening only (b) Monitoring and control
+{Q Stand-alone working (d) Internet shutdown
+CPS has strict requirement of
+(a) Veryslowresponse (b) Real-time performance
+(Q Nocommunication (d) No controllers
+Perception layer in IoT is responsible for
+{a) Business logic
+(b) Sensing and capturing physical data
+(9 Marketing
+(d) Billing
+. Network layer in IoT
+(a) Views sensor data
+(b) Transmits data
+(9 Controls business planning
+(d) Only supplies power
+. Application layer in IoT delivers
+(a) End user-specific services
+(b) Motor speed only
+(Q. Hardware outputs only
+(d) Software outputs
+
+(a) 10 layers
+
+(b) Only sensors
+
+(©) Perception, Network, Application
+
+(d) Perception, Business, Cloud only
+(a) 2-layer (b) 3-layer
+(c) 5-layer (d) No layer
+
+. In S-layer architecture, Transport layer
+(a) Stores data only (b) Transmits data
+(Cc) Hides sensors (d) Controls business rules
+Processing layer performs
+(a) Data processing and storage
+(b) Packaging only
+(9) Only wiring
+
+Transmitting data
+
+18.
+
+19.
+
+20.
+
+ON,
+
+22.
+
+23.
+
+24.
+
+DS,
+
+26.
+
+27;
+
+28.
+
+Business layer focuses on .........
+
+(a) Revenue and planning
+
+(b) Only PCB design
+
+(c) Battery health
+
+(d) Delivering application specific services
+S-layer architecture improves
+(a) Scalability
+(c) Paper work
+IoT allows connection to .........
+
+(a) Limited fixed devices (b) Any smart object
+(c) No machine (d) Only desktop PC
+IoT helps reduce
+(a) Power consumption (b) Communication range
+(c) Scalability (d) Cost
+
+IoT Sensor + PLC + SCADA = Cloud is a
+(a) Common data route
+
+(b) Wrong route
+
+(c) Modified Route
+
+(d) For manual communication
+Drawback of PLC-SCADA-Cloud route
+(a) Very easy (b) Proprietary software
+(c) Nocommunication (d) No sensors needed
+
+In IoT Sensor — Server — Cloud, server works as
+
+(b) Manual operation
+(d) Only cost
+
+(a) Actuator
+
+(c) Edge processing
+
+D2D means
+
+(a) Device to Developer
+
+(c) Data to Data
+
+Edge gateway performs
+
+(a) Receiving data, affecting changes to real world
+
+(b) Receiving data only
+
+(c) Affecting changes to real world only
+
+(d) Receiving data, affecting changes to real world
+and transmitting sensor data and receiving
+actuator commands
+
+Cloud tier handles
+
+(a) Performs analytics on the collected and stored
+data.
+
+(b) Receiving data only
+
+(c) Affecting changes to real world only
+
+(d) Transmitting data
+
+IoT allows
+
+(a) Disconnected devices
+
+(b) Autonomous data sharing
+
+(c) No electronics
+
+(d) Only lights
+
+(b) Gateway
+(d) Only Sensing
+
+(b) Device to Device
+(d) Design to Delivery
+
+Nirali Praka:
+
+4.23
+

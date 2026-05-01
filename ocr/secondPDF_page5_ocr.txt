@@ -1,0 +1,52 @@
+Emerging Trends in Electronics (S-VI)
+
+Advanced Processors and Technology
+
+82. GPIO25 supports ......... 94. Supervised learning requires .........
+(a) DAC (b) Ethernet (a) A teacher providing correct outputs
+(c) UARTO (d) Flash memory (b) No data
+83. GPIO2 is commonly used for ......... () Real-time sensor JESADASE
+(a) Ultrasonic sensor (b) Built-in LED (d) Byaiee nists ,
+(c) Reset (d) SPI Flash 95. Reinforcement learning agents learn through ........,
+84. GPIOO must be LOW during ......... CO gig ig
+(a) Wi-Fi transmission 4 oe, aa poe rs
+(b) Boot mode/programming (d) Random guesses
+(c) ADC conversion “96. MAS requires .........
+(d) Deep sleep (a) No synchronization
+85. ESP32 operating voltage range is ......... (b) Coordination among agents
+(a) 15V to 3.0V (b) 2.2 V to 3.6V (c) Only one decision maker
+() 5Vto12V (d) 3.3Vto12V (d) No environment
+86. ESP32 supports which interface for SD cards? 97. An autonomous vacuum cleaner operating alone is a
+(a) UART (6)iSDIOee ) HO Re ie een
+(Q CAN (d) USB (a) Multi-agent system  (b) Single-agent system
+87. ESP32 supports how many 8-bit DACs? (c) Reactive system (d) Non-agent system
+(a) None (b) One 98. Sensor input in an Al agent belongs to .........
+() Two (d) Three (a) Execution (b) Reasoning
+88. Touch sensors in ESP32 count ......... (9) Sensation ke) sEontrol
+(@ 0 (b) 5 99. A warehouse with many robots is an example of
+(c) Semi-agent (d) No agent
+) Pexsmmmentied For general tse 100. MAS is suitable for .........
+(b) Reserved and not recommended (a) Centralized systems only
+(¢) ADC-only (b) Decentralized, complex problems
+(d) Touch pins (c) No interaction
+90. ESP32 security features include ......... (d) Linear circuits
+(a) Only SHA-1 (b) Only DES 101. GPU parallelism mainly improves .........
+(c) AES, RSA, ECC (d) No encryption (a) Audio clarity (b) Graphics rendering
+91. Alcan operate ......... D (c) Power switching (d) Memory leakage
+(a) Only 8 hours per day 102. Programmable shaders in GPUs include .........
+(b) Only in daylight (a) Logic shaders
+() 24/7 (b) Pixel and vertex shaders
+(d) Only during low power (c) Resistive shaders
+92. A limitation of Al includes ......... (d) Frequency shaders
+(a) Increased creativity 103. Tensor cores in GPUs are used fof .........
+(b) No ethical issues (a) File storage (b) Al-related tasks
+(c) Lack of common sense ae (<) Sealing systems (d) Wi-Fi communication
+(d) Always correct decisions NY Link is used for .........
+93. An application of MLis ......... re peneate interfacing
+(a) Spam detection (b) Wood cutting ie) aaa ety
+(c) Paper folding (d) Mechanical drilling (d) Serial communication
+atmanne® tz i 1.26
+
+_
+
+Nirali Prakasha"

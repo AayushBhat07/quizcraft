@@ -1,0 +1,138 @@
+Next Generation Telecom Network
+
+Emerging Trends in Electronics (S-VI)
+
+Following is supported by ANI
+(a) Media transfer
+
+(b) Third-party OTT apps, no media transfer
+(2 Fiber management
+
+(d) Core routing
+
+Open Service Environment enables
+{a) Vendor lock-in
+
+(b) Legacy network isolation
+
+(©) Rapid creation of new services
+(Gd) Removal of APIs
+
+NGN feature ensures location-independent access is
+
+7.
+
+9.
+
+(b) Generalized mobility
+(d) FEC correction
+
+(a) Network slicing
+(Q PSTN interworking
+
+10. NGN functional architecture consists of ......... many
+Strata.
+(a) One (b) Two
+(Q Three (d) Four
+
+11. Gateways in NGN help in interworking with
+(a) Zoom only (b) PSTN and ISDN
+{Q) Only IP networks (d) Only wireless systems
+12. Media handling functions perform
+(a) IP addressing
+(b) Tone generation and transcoding
+(©) Optical splitting
+(d) MPLS label swapping
+13. RACF is used for
+(a) IP packet fragmentation
+(b) QoS control and resource reservation
+(9) Application hosting
+(d) ONU authentication
+14. NACF is responsible for
+(a) Label switching
+(b) IP layer authentication and address allocation
+(co) Service charging
+(d) OLT bandwidth allocation
+15. Service Control! Functions include components such
+
+(a) DWDM modules (b) PSTN/ISDN emulation
+(c) PON splitters (d) MPLS routers
+
+16. Content Delivery Functions refer to
+(a) Firewalls
+(b) CDNs delivering content efficiently
+(c) Access networks
+(d) PLL synchronizers
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+225
+
+235
+
+24.
+
+7¥
+
+26.
+
+Application Server (AS) interacts with MGC using
+
+(a) (b) SIP
+(c) DWDM (d) OFDMA
+Management functions in NGN include
+
+(a) MPLS label forwarding
+(b) Fault, configuration, accounting, performance,
+
+security
+(c) Modulation correction
+(d) Access split ratios
+End-user functions include
+(a) Only mobile phones
+(b) Only fiber terminals
+(0) Any fixed or mobile user equipment
+(d) Only PSTN telephones
+Select which is NOT a feature of NGN
+(a) End-to-end QoS
+(b) Converged services
+(c) Mandatory TDM switching
+(d) Layer separation
+Media Gateway handles
+(a) Only signaling
+(b) Only billing
+(c) Conversion of media formats
+(d) Fiber multiplexing
+MGW typically converts
+(a) MPLS to ATM
+(b) PSTN voice to IP packets
+(c) SDH to DWDM
+(d) 3G to 5G signals
+MGC is also known as
+(a) Softswitch (b) ONU
+(c) DSLAM (d) Firewall
+MGC communicates with MGW using
+(a) HTTP (b) MGCP or H.248
+() DWDM (d) PPPoE
+Application Servers host .........
+(a) Fiber control algorithms
+(b) Voicemail, IVR, conferencing apps
+(c) GPS synchronization
+(d) Power supply distribution
+Packetization in MGW means
+(a) Converting IP to optical
+(b) Breaking analog voice into IP packets
+(c) Generating OTN frames
+(d) Enhancing fiber bandwidth
+
+3.14
+
+Nirali Prakashan

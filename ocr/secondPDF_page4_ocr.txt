@@ -1,0 +1,49 @@
+Advanced Processors and Technology
+
+merging Trends in Electronics (S-VI)
+
+61. Entanglement refers to ......... 71. Quantum computing helps in drug discovery via
+(a) Wires connected physically fe vtteeeeee
+(b) Correlation between qubits (a) Audio processing (b) Molecular modeling
+(Q. Process of decoherence (c) Power circuits (d) Car braking systems
+(d) Loss of information 72. Quantum computing is beneficial in finance mainly
+62. Interference in quantum computing helps ......... Woe Sop
+(a) Cancel correct solutions (a) Tax collection (b) Market simulation
+(b) Reinforce correct solutions (c) Car sales (d) Manual accounting
+(0 Reduce memory size 73. Quantum ML accelerates .........
+(d) Increase voltage (a) Manual data entry (b) Data processing
+63. Classical bits can represent ......... ail lalla allen yi
+(@) Limited states 74. Climate modelling using quantum computing enables
+ee eously (a) Better weather simulation
+(Q. Probabilistic outcomes (b) Battery charging
+(d) Complex amplitudes (c) Traffic signal control
+64. Quantum computers show exponential power (d) Lighting control
+ess ce awe 75. Quantum computing improves cyber security through
+(b) n qubits = 2” states (a) Weak encryption (b) QKD
+(© They reduce power consumption (c) Removing encryption (d) Reducing key size
+a ed mn ie, a 76. In Arduino IDE, the ESP32 sketch file extension is
+. eS peepee nermoeryeh A PBR all a set edee
+. (a) Qubits (b) Superposition (a) .c (b) .cpp
+(Q Deterministic bits (d) Entanglement (©) .ino (d) txt
+Quantum parallelism is enabled by ......... 77. setup() function in Arduino runs .........
+{a) PCB routing (b) Superposition (a) Forever
+(Q) Binary registers (d) Clock pulses (b) Only once at start
+67. Error correction in quantum computing is ......... () When user presses reset
+Bie) Simple (d) Never
+straightforward 78. loop() function in Arduino .........
+_ (©) Complex and resource-heavy eae soy once
+Be otcequired (b) Runs repeatedly
+An example application of quantum computing is a i aac ks
+Se Mesivforsnatting ken ciscraphy 79. ESP32 supports Over-The-Air updates, known as
+_ (©) Basic arithmetic (d) Display control (a) OTB (b) OTA
+< D stands for ......... () OTR (d) OTM
+J Quantum Key Distribution 80. ESP32 programming tools include .........
+1) Quick Kinetic Decryption (a) Arduino IDE only
+{9 Quantum Kernel Decoder (b) ESP-IDF, Arduino IDE, MicroPython
+Quality Key Design (c) Notepad only
+MMon application area for quantum computing (d) BlueJ IDE
+2 81. GPIO36 is .........
+} Material science (b) Toy design (a) Output only (b) Input only
+9) Laundry appliances (d) Woodwork (0). Reserved (d) Boot pin
+1.25 ~ Nirali Prakashan
+

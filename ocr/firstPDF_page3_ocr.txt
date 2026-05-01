@@ -1,0 +1,55 @@
+Emerging Trends in Electronics (S-VI)
+
+x
+
+Advanced Processors and Techno}
+lo,
+
+41. Reinforcement learning learns through ......... 51. + a dl tals involve .........
+(a) Only one agen
+i. Se eeedita al (b) Multiple interacting agents
+(DNA sequencing (c) Hardware-only systems
+(a) No feedback (d) No communication
+42. MLisa subset of ........ 52. A single-agent chess program versus a human, i
+(a) Data science (b) Al faa a F |
+(c) Network security (d) Microcontrollers (a) Multi-agent system —(b) Single-agent Systern
+43. DLis mainly based on.......... (c) Distributed system (d) Technical system
+(a) Flowcharts (b) Neural networks 53. Multi-agent systems are suitable for .........
+(Q) Physical circuits (d) Wireless networks (a) Simple tasks only ]
+44. The relation between DL, ML and Al represents (b) Complex dynamic environments
+acs (c) Static environments only
+(a) Independence (d) No real-time operations
+(b) Hierarchical relationship 54. A benefit of multi-agent systems is .........
+(¢) No relation (a) System collapses if one agent fails
+(4) Opposite domains (b) Centralized control only
+45. PCA and ICA are used in......... (©) Scalability
+(a) Supervised learning (d) No synchronization required
+(b) Unsupervised learning 55. A drawback of multi-agent systems is .........
+{Q Reinforcement learning (a) Simple coordination
+(d) Deep learning (b) Minimal communication
+46. An agent uses sensors for ......... (c) Conflict among agents
+(a) Power amplification (d) No decision-making required
+(b) Gathering information 56. Quantum computing is based on .........
+* ee ae (a) Sessical mechanics (b) Quantum mechanics
+47. | OR gt 355-39 57 " io ae: ne es
+Se ieics eran ee ee ; is ee unit of quantum information (> oe ae
+(6) Contains only one intelligent agent () ae - ae
+(©) Requires negotiation 58. A qubit can represent
+(a) Depends on multi-agent support @ Onyo
+48. A traffic system with many autonomous cars is an (b) Only 1
+ee oF cic! (c) Oand 1 simultan |
+(a) Single-agent system (b) Multi-agent system (d) Only analo es
+(c) Static system (d) No-agent system EaMiina: mathem q : ; :
+49. A benefit of multi-agent systems is......... atical representation of a qubit us
+(@) No communication eal t}
+(b) Low scalability i eles at ¢
+(Cc) High resilience (©) Complex hd ‘
+(d) Single-thread execution (d) Fixed Io : si ' ity amplitudes
+50. The operational cycle of an Al agentis......... 60. Superpositi aes '
+(a) Sleep — Wake > Run : Besivonvallelisa qubit torhe :........
+(b) Sense — Reason — Act a pate state oy
+P Phsorve— Sleep m™ ae pti once
+{d) Ignore -» Execute (d) Always in error
+’ 1.24
+
+Nirali Prakash?"

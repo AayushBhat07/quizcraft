@@ -1,0 +1,62 @@
+nics (S-V1)
+Trends in Electro
+
+Drone Systems and Applications
+
+54. Weight of micro drone shall be
+wultirotor drone oa fi) athgle propeter (a) less than or equal to 250 g
+@ mpl Pre (d) infinite propellers (b) 250 to 2 kg
+(0 zero prope! nk. rotors (C) 2kg to 25 kg
+x3 Quadeopter dron (b) 444 (d) 25 kg to 150 kg
+a) 4 (d) 0 55. Weight of small drone shall be.
+oh drone has ......... rotors (a) less than or Equal to 250g
+— (b) 6+6 (b) 250 to 2kg
+4 ; (d) 2 (9) 2kg to 25 kg
+& Sew drone has ......... rotors. (d) 25 kg to 150 kg
+8 (b) 6 56. Weight of medium drone shallbe.....
+(0 4 (d) 2 (@) less than or equal to 250g
+4. For long flight duration, ......... type of drone is more (b) 250 to 2 kg
+suitable. () 2kg to 25 kg
+{a) rotary wing (b) multirotor (d) 25 kg to 150 kg
+(©) fixed wing (d) quadcopter 57. Weight of large drone will be ......_.
+
+. For large payloads, ......... type of drone is more (a) more than 150 kg (b) 2kg to 25 kg
+— , ’ (9) 25 kg to 150 kg (d) 0 kg to 10 kg
+ay wng Pmnultrotor 58. Select the type of drone if MTOW is 185 kg
+(© fixed wing (d) quadcopter faye Nane (b) Micro
+Rapid deployment is not possible for ......... (0 small iy’ Medias
+oy iil Pea tioter 59. Select the type of drone if MTOW is 1.85 kg.
+{© fixed wing (d) quadcopter .
+
+Oe ae . ; ' (a) Nano (b) Micro
+For applications like air taxis, urban congestion and :
+Passenger/cargo mobility solutions ......__ type of (o) Stall ; () Medel
+‘drone is suitable. 60. Select the type of drone if MTOW is 18.5 kg
+(@) rotary wing (b) multirotor (a) Nano (b) Micro
+{0 fixed wing (a) vtol (c) Small (d) Medium
+
+_ DGCA stands for... 61. Select the type of drone if MTOW is 58.5 kg
+(2) directorate general of civil aviation (a) Nano (b) Micro
+(b) direct general control on air force (c) Small (d) Medium
+(©) directorate general of communication and | 62. Select the type of drone if MTOW is 158.5 kg
+
+aviation ; (a) Large (b) Micro
+(@) directorate general of command air force (<) Small (d) Medium
+DGCA 21 classifies drones as ROLE es cive OSM ec, type of drone does not require prior
+(@) sensor used (b) aerodynamic design permission or registration if own below 50 ft.
+{c) MTOW (d) applications (a) Nano (b) Micrg
+
+» Total number of categories of drones defined by () Small Gy Medium
+DGCA are ......... 64. For drones, UIN stands for .........
+
+(@) 5 (b) 2 (a) unmanned aircraft identification number
+(9) 4 (d) 3 (b) unidentified number of drones
+Weight of nano drone shall be ......... (c) unmanned aadhar Identification number
+(a) less than or equal to 250g (d) universal aircraft identification number
+(b) 250 to 2 kg CO, ee type of drone does not recuulte UIN.
+(c) 2 kg to 25 kg (a) Large (b) Micro
+(d) 25 kg to 150 kg ()_Small che
+
+5.29
+
+Nirali Prakashan

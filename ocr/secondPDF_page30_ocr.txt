@@ -1,0 +1,152 @@
+trends in Electronics (S-VI)
+
+Industrial loT and Immersive Technologies
+
+15.0 pdds .......5
+@ Human creativity
+) Nothing new
+ce) More costs
+Increased human efforts
+
+Business benefit of I5.0 is .........
+(a) New business models
+(b) No innovation
+(Q Increased human dependability
+(@) More costs
+0, 15.0 applications .........
+
+@ AR/VR for worker training
+
+(b) No training
+
+(9 Remove workers
+
+{d) Increased Local storage
+01. RAMI 4.0 represents .........
+(@) Network architecture
+(b) Car design
+re) Manual industry
+_ (d) Smart factory architecture
+
+2. RAMI vertical axis describes .........
+‘@) Only Assets
+b) Only physical asset
+() Only PLC
+(d) Layers like Asset to Business
+RAMI horizontal axis describes .........
+(@) Product lifecycle (b) Battery life only
+) Car design only
+id) Product end cycle
+
+8
+
+(b) Human layer
+(d) Application layer
+(b) Only RS-232
+
+} (d) Wi-Fi
+
+Co puting layer .........
+
+Or control (d) Storage of data
+
+108
+
+109.
+
+110.
+
+sialil,
+
+112.
+
+113.
+
+114.
+
+115.
+
+116.
+
+117.
+
+. Cloud layer in 15.0 supports
+(a) Aland analytics
+
+(b) Routing data
+
+(c) Provided communication
+
+(d) Control and decision making
+Human-machine collaboration layer provides
+(a) Decision support
+(c) Empower people
+
+(b) No support
+(d) Resource efficiency
+
+Industry 5.0 includes .........
+(a) Cloud (b) CPS
+(c) Cobots (d) PLCs
+
+Immersive technology
+(a) Insertion of audio
+(b) Removes interaction between audio and video
+(c) Blends digital and real
+(d) Created video
+
+Virtual Reality (VR) is used for
+(a) Fully virtual environment
+(b) Enhance real world only
+(c) No display
+
+(d) Enhance video quality
+Augmented Reality (AR) is used for .........
+
+(a) Overlays information on real world
+
+(b) Blocks video
+
+(c) Only gaming
+
+(d) Computer generated environment
+
+Mixed Reality (MR) is used for .........
+
+(a) gaming
+
+(b) Only 2D
+
+(c) Only audio
+
+(d) Digital objects interact with real world
+Extended reality (XR) is used for .........
+
+(a) Umbrella for AR/VR/MR
+
+(b) Only AR
+
+(c) Only VR
+
+(d) For gaming
+
+Virtual Reality (VR) uses.......--
+
+(a) Head Mounted Display (HMD)
+
+(b) Sensors
+
+(c) Mobile
+
+(d) Virtual keypads
+
+Augmented Reality (AR) requires .......-.
+
+(a) Camera (b) Camera + sensors
+
+(c) Processing devices (d) Actuators
+
+4.27
+
+Nirali Prakashan
+

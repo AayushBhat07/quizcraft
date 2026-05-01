@@ -1,0 +1,96 @@
+a TL FL
+Emerging Trends in Electronics (§-V1)
+
+Drone Systems and Applicay
+Ons
+
+tight spaces, while fixed-wing or hybrid drones offer
+long-endurance flights for wide-area search missions.
+Integration of thermal cameras, night-vision sensors,
+and GPS-based waypoint navigation ensures effective
+Search operations in both daytime and nighttime
+conditions
+
+Delivery of Emergency Supplies: In disaster-stricken
+Fegions, drones can transport essential supplies such
+@s food, water, medicines. and first-aid kits to areas
+'naccessible by road. Hybrid and multi-rotor drones
+with payload capabilities enable timely relief delivery,
+specially in isolated communities or regions cut off by
+natural calamities. Temperature-controlled payload
+compartments are used for transporting medical
+supplies vaccines, or blood, ensuring their integrity
+Guring transit.
+
+Monitoring and Coordination: Drones provide live
+aerial footage to emergency response teams and
+command centers, aiding in decision-making and
+coordination of rescue efforts. By streaming real-time
+Gata, drones enable authorities to track ongoing
+operations, identify potential hazards, and plan
+evacuation routes efficiently. Integration with
+Geographic Information Systems (GIS) allows for
+mapping disaster zones and monitoring changes in
+terrain or water levels during flood events.
+
+Advantages of use of Drone in Disaster Management :
+
+Accelerates response times.
+
+3. | Road and Highway | Alignment planning | NHAI Drone
+Design and terrain Mapping Proj
+analysis
+4, | Railway and Geo-referenced PM Gali Shaki
+Corridor Mapping | datacollection for | Initiative
+alignment
+verification
+5, | 3DModeling and | Creation of digital Aarav Systems 3p
+Visualization twins for city City Mapping
+planning Program
+
+Other Emerging Application Areas :
+® The versatility of drones has expanded their role
+
+beyond traditional industrial and defense sectors into
+several emerging domains that directly contribute to
+public welfare, environmental sustainability, and
+infrastructure safety. These modern applications
+showcase the evolving innovation landscape of India’s
+drone ecosystem, supported by both government
+programs and indigenous technology startups.
+
+Environmental Monitoring :
+
+e Drones play a significant role in environmental
+conservation through forest fire detection, wildlife
+tracking, and air quality monitoring. Equipped with
+thermal cameras and gas sensors, UAVs can detect fire
+outbreaks early and transmit real-time imagers to
+forest departments. Drones are also being deployed
+for pollution mapping across urban regions. By
+
+* Post-disaster assessment, infrastructure inspection, integrating Particulate Matter (PM2.5 and PM10)
+and rebuilding planning. sensors, they can collect air quality data over large
+Enhances safety for rescue personnel. areas at different altitudes, helping agencies like the
+Increases the overall effectiveness of emergency Central Pollution Control Board (CPCB) to enhance
+operations. polltion surveillance strategies.
+
+* Ability to operate in hazardous and inaccessible o Agricultural Drones: Used under PM Kisan Drone
+environments makes them a __ transformative Yojana for pesticide and fertilizer spraying.
+technology in disaster preparedness, response, and © Survey of India Program: Deploying drones for
+recovery. land mapping (SvamitvaYojana).
+
+Table 5.19 : Key Drone Applications in o Disaster Management: NDRF and IAF deploy
+Indian Infrastructure Development drones for flood and landslide assessment.
+5 » Drone is called as UAV because it is a type of ......--
+1. | Land Surveying Generation of Aaray Unmanned (a) Unmanaged vehicle (b) Ultra air vehicle
+and Mapping topographic and | Systems - (c) Unmanned vehicle  (d) Ultra audio vehicle
+orthomosaic maps | Surveyort+ 2. Select the basic component for generating thrust
+F Monitoring ideaForge- ff tttteees
+2 ie construction NETRA V Series (a) Sensors
+progress and (b) Power distribution board
+compliance (c) Drone firmware
+(d) Motors
+5.26
+
+Nirali Prakash"

@@ -1,0 +1,73 @@
+ing Trends in Electronics (S-V1)
+
+Next Generation Telecom Network
+
+QIN is often called the “optical internet backbone’,
+
+" 5. DWDM Optical Layer Infrastructure: OTN and
+supporting terabit-level capacity, advanced error DWDM combined together provides multi-terabit
+correction, and multi-service transport. optical backbone,
+
+» OTN hierarchy 6. Military and Government Networks to provide
+> ODU0 > 1.25 Gbps secure, error-resilient optical transport.
+> ODU1 = 2.5 Gbps 3.6.7 Comparison between SDH and OTN
+> ODU2 > 10 Gbps Sr. Feature SDH OTN
+> ODU3 = 40 Gbps No.
+
+» ODU4 = 100 Gbps 1. Invention year 1990s-2000s 2000s-present
+
+> Above 1006: ODUflex, 2006/4006/8006 es Maximum speed | ~10-40 Gbps 100-800+ Gbps
+3.6.5 Features of OTN 3 Technology Synchronous Dense wavelength
+TDM division multiplexing
+
+3. Digital Wrapper Technology: It encapsulates client (DWDM)
+deta into OTN frames with overhead for Error Error handling Basic overhead | Advanced FEC
+ee nnotng and Payload integrity. Client types | E1, ATM, low- | Ethemet, IP, Fibre
+
+2. Employs Forward Error Correction (FEC): Iti improves rate signals Channel, SDH
+transmission distance up to hundreds of kilometers 6. Scalability Limited Very high (terabit-
+without regeneration. scale)
+
+3. Multi-Service Support: It transports Ethernet th Best use Metro/backhaul Core transport,
+(10G/40G/100G), 5G fronthaul/backhaul, Fibre Channel hyperscale networks
+(storage), SDH/SONET signals and IP/MPLS traffic.
+
+4, Dense Wavelength Division Multiplexing (DWDM)
+Compatible: DWDM allows multiple wavelengths | 1. NGNis primarilya......... network.
+
+(channels) on a single fiber at: 100G, 200G, 400G, (a) Circuit-switched (b) Packet-based
+800G. (c) Hybrid CDMA (d) Satellite-based
+
+5. High Scalability: It supports terabit-level bandwidth | 2. ......... term in NGN refers to the interface between |
+for hyperscale networks. applications and the network.
+
+6 OAM Capabilities: Advanced monitoring and @) UN (b) NNI
+Maintenance similar to SDH, but more powerful. (c) ANI (d) SNI
+
+Peihisenables dynamic bandwidth allocation. 3. The Transport Stratum in NGN is responsible for
+
+psa BE ena. (a) Service logic (b) User authentication
+. aaesaieget a5) poe intes (°C) Musical data transfer (d) Application hosting
+
+2 : : 4. The Service Stratum handles .........
+4G/5G Mobile Backhaul and Fronthau Pala iodi venice moat
+* OTN provides reliable, low-latency transport for: (b) QoS policing
+
+° 4GLTE EPC (c) Service control and session management
+© 5G C-RAN/Xhaul (d) Fiber signal regeneration
+° Massive IoT traffic BOs i, Aas interface connects NGN to customer devices.
+
+q Pata Centre Interconnection (DCI): Provides high- (a) SNI (b) UNI
+Peed links between large cloud datacenters (Google, (c) ANI (d) OLT
+
+q aq Azure), d 6. NNIis used to interconnect .........
+
+_ “Tansport of High-Bandwidth Services (a) Customer devices
+* 4K/8K broadcasting (b) ONUs
+
+Big data traffic (c) Different NGNs and PSTN/ISDN
+Enterprise VLAN services (d) Only Wi-Fi devices
+
+3.13
+
+Nirali Prakashan

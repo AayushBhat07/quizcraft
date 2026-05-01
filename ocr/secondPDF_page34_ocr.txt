@@ -1,0 +1,148 @@
+-
+
+Drone Systems and Application,
+
+Emerging Trends in Electronics (S-V1)
+
+24. Identify type of drone not classified on the basis of
+weight .........
+{@) Rotary wing (b) Nano
+25. As per aerodynamic design, identify correct group of
+drone type ........,
+(a) Nano, micro (b) Fixed wing, rotary wing
+(c) Micro, small (d) Medium, large
+26. As per weight, identify correct group of drone type
+(a) Nano, micro (b) Fixed wing, rotary wing
+(©) Rotary wing, hybrid (d) VTOL, hybrid
+27. Forward motion is essential in .........
+(a) Rotary wing drone
+(b) Quadcopter rotary wing drone
+() Hexacopter rotary wing drone
+(d) Fixed wing drone
+28. For take off, runways are essential for .........
+(a) Rotary wing drone
+(b) Quadcopter rotary wing drone
+(c) Hexacopter rotary wing drone
+(d) Fixed wing drone
+29. Spinning propellers are not available in .....:...
+(a) Rotary wing drone
+(b) Quadcopter rotary wing drone
+(c) Hexacopter rotary wing drone
+(d) Fixed wing drone
+30. Vertical take-off is not possible for .........
+(a) Fixed wing drone
+(b) Hybrid drone
+(Q) Rotary wing drone
+(d) Hexacopter rotary wing drone
+31. For landing, runways are essential for .........
+(a) Rotary wing drone
+(b) Quadcopter rotary wing drone
+(c) Hexacopter rotary wing drone
+(d) Fixed wing drone
+32. Vertical landing is not possible for.........
+(a) fixed wing drone
+(b) hybrid drone
+(c) rotary wing drone
+(d) hexacopter rotary wing drone
+33. Hovering is not possible for .........
+(a) fixed wing drone
+(b) hybrid drone
+(c) rotary wing drone
+(d) hexacopter rotary wing drone
+; 5.28
+
+34.
+
+35.
+
+36.
+
+37;
+
+38.
+
+39.
+
+40.
+
+41.
+
+Vertical landing is not possible for .........
+(a) fixed wing drone
+
+(b) hybrid drone
+
+(0) rotary wing drone
+
+(d) hexacopter rotary wing drone
+type of drone depends on aerodynamic lift,
+
+(a) Fixed wing
+
+(b) Hybrid drone
+
+(0) Rotary wing drone
+
+(d) Hexacopter rotary wing drone
+
+When continuous forward flight is more
+advantageous than hovering, thEfigesee7-+- drone is
+used.
+
+(a) fixed wing
+
+(b) hybrid drone
+
+(c) rotary wing drone
+
+(d) hexacopter rotary wing drone
+
+During hovering, drone shall .........
+
+(a) move forward
+
+(b) remain stable on ground
+
+(c) remain stable at fixed vertical distance
+
+(d) take round about certain object
+
+cee designs minimize drag, enabling faster flight
+and improved energy efficiency.
+
+(a) Rotary wing drone (b) Fixed wing drone
+
+(c) Nano drone (d) Micro drone
+
+In drone system, VTOL stands for .........
+
+(a) variable transducer online
+
+(b) variable take-off on land
+
+(c) vertical take-off and landing
+
+(d) variable transformer on load
+
+For aerial photography, industrial inspection,
+
+agriculture, and search-and-rescue missions, drone
+eee characteristic is essential.
+
+(a) low power consumption
+(b) hovering
+
+(c) lower weight
+
+(d) aerodynamic design
+
+in multitotor drone, varying the speed of individvel
+rotors is done by
+
+(a) propellers
+(b) battery
+
+(C) electronic speed controllers
+(d) thrust
+
+Nirali Prakash"

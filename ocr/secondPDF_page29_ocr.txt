@@ -1,0 +1,63 @@
+Emerging Trends in Electronics (S-VD)
+
+Industrial loT and Immersive Technolog,
+\
+
+7 87. IloT improves .......-- Wen
+5S. Smart greenhouse controls ......... (a) Productivity and reliability
+(a) Moisture Manual paperwork
+(b) Only soil colour MO ld ;
+(c) No automation
+(c) Temperature and humidity Number of employed Labours
+(d) Soil acidic nature GUN
+teri 88. Industry 1.0 used .......--
+76. Livestock monitoring uses ......... Steam power (b) Robots
+(a) RFID (b) Human intervention (a) : eA ‘ (d) Cloud
+: e
+(c) Only sensors (d) RFID and biosensors (@)) Intern snerodtieed
+89. Industry 2.0 introduced .........
+77. Supply chain loT reduces ......... NM astinctodhne
+; e
+(a) Losses (b) Product quality (a) g ;
+(b) Assembly line
+(c) Data (d) Transparency (Q) Mechanical production
+: ¢
+78. loT 1 ae ne ae (d) Small scale production
+hanged Eaton Industry 3.0 focused on.........
+i | d) Human efforts 90. iy,
+Spying me 4 Chee (a) Electronics and PLC (b) Steam only
+AS a oUt aes, 5 Peony (d) Robots
+” “a ene ivity 91. Industry 4.0 includes ........
+00 many networl ; (b) IoT
+ie (a) Logic system
+(c) Free network connectivity (orirsystem (d) Automated productio
+(d) No all 92. Industry 5.0 emphasizes .........
+Sm ID MENBS = ree: a) Human-robot collaboration
+(@) To improve profits (b) Waste management i Remove all humans
+(Q) Better resource use (d) improve soil quality () Only robots
+81. IoT in automotive gives ......... (d) IoT
+(a) More speedy vehicles (b) Road accidents 93. Cobots mean.........
+(c) No guidance (d) Road safety (a) Colorful robots (b) Collaborative robots
+82. Smart parking ......... (c) Coordinated Robot (d) Computer Robot
+(a) Guides drivers to empty space 94. Industry 5.0 is more .........
+(b) Hides parking (a) Human-centric (b) Paper-centric
+(c) Closes roads (c) Robot -centric (d) Machine centric
+(d) creates more parking slots 95. Benefit of I5.0is .........
+83. IoThelps......... (a) Sustainable production
+(a) Predictive decisions (b) Late decisions only (b) High waste
+(c) No decisions (d) Real-time decision (c) Only manual labour
+84. IoT in telecom improves ........ f (d) Increased cost
+(a) Service quality (b) Only signal noise 96. Industry 5.0 supports .........
+(c) More calls (d) Bandwidth — (a) One model only
+85. IoT in agriculture reduces ......... (b) Personalized mass customization
+(b) Output (c) Same product onh
+(a) Waste aia y
+(c) Smartness (d) Soil fertility (d) On demand products
+86. MoT stands for .......-- 97. 14.0 goalis.........
+(@) Indian Internet of Things (a) Remove machines
+(b) Indian IT Operator (b) Manual data entry
+(Q)_ International IoT Only (c) Smart automated factories
+(d) Industrial Internet of Things (d) More human to machine interaction
+4.26 ;
+
+Nirali Pra!

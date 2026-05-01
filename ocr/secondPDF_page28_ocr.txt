@@ -1,0 +1,153 @@
+‘ trends in Electronics (S-VI)
+
+Industrial loT and Immersive Technologies
+
+a 150 adds ...---++ ™
+a) Human creativity
+) Nothing new
+(9 More costs
+@ Increased human efforts
+pusiness benefit of I5.0is.........
+(a) New business models
+(b) No innovation
+oO Increased human dependability
+(d) More costs
+300. 15.0 applications .........
+(a) AR/VR for worker training
+(b) No training
+(c) Remove workers
+(d) Increased Local storage
+701. RAMI 4.0 represents .........
+(a) Network architecture
+(b) Car design
+(Q. Manual industry
+(d) Smart factory architecture
+102. RAMI vertical axis describes .........
+(a) Only Assets
+(b) Only physical asset
+(Q) Only PLC
+(d) Layers like Asset to Business
+103. RAMI horizontal axis describes .........
+(@) Product lifecycle (b) Battery life only
+(9) Car design only
+(@) Product end cycle
+104, Hierarchy axis includes .........
+() Connected World to Product
+(b) Only sensors
+(9). Only warehouse
+(¢) Only assets
+’ Slayer 15.0 bottom layer
+(@) Physical layer
+(© Only clouds
+
+(b) Human layer
+(d) Application layer
+
+' Network layer uses .........
+@) so (b) Only RS-232
+56, wi-rig (d) Wi-Fi
+
+~ 98 computing layer .........
+Real-time Processing (b) Sensing of data
+Actuator control (d) Storage of data
+
+108.
+
+109.
+
+110.
+
+atl,
+
+it,
+
+113.
+
+114.
+
+aly
+
+116.
+
+TOY 5,
+
+Cloud layer in 15.0 supports
+(a) Al and analytics
+
+(b) Routing data
+
+(c) Provided communication
+
+(d) Control and decision making
+Human-machine collaboration layer provides
+(a) Decision support (b) No support
+(c) Empower people (d) Resource efficiency
+
+Industry 5.0 includes .........
+
+(a) Cloud (b) CPS
+(c) Cobots (d) PLCs
+Immersive technology .........
+
+(a) Insertion of audio
+
+(b) Removes interaction between audio and video
+(c) Blends digital and real
+
+(d) Created video
+
+Virtual Reality (VR) is used for .........
+
+(a) Fully virtual environment
+
+(b) Enhance real world only
+
+(c) No display
+
+(d) Enhance video quality
+
+Augmented Reality (AR) is used for .........
+(a) Overlays information on real world
+(b) Blocks video
+
+(c) Only gaming
+
+(d) Computer generated environment
+Mixed Reality (MR) is used for .........
+
+(a) gaming
+
+(b) Only 2D
+
+(c) Only audio
+
+(d) Digital objects interact with real world
+Extended reality (XR) is used for .........
+(a) Umbrella for AR/VR/MR
+
+(b) Only AR
+
+(c) Only VR
+
+(d) For gaming
+
+Virtual Reality (VR) uses.........
+
+(a) Head Mounted Display (HMD)
+
+(b) Sensors
+
+(©) Mobile
+
+(d) Virtual keypads
+
+Augmented Reality (AR) requires .........
+(b) Camera + sensors
+
+(d) Actuators
+
+(a) Camera
+(c) Processing devices
+
+Nirali Prakashan
+

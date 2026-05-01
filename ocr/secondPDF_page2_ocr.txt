@@ -1,0 +1,164 @@
+Trends in Electronics (S-VD
+Advanced Processors and Technology
+7, WP stands for .........
+17. 28. ESP32 Bluetooth version supported
+
+(a) Instruction Level Processing
+(b) Inner Loop Processing
+( Instruction Level Parallelism
+(d) Intermediate Logic Protocol
+3. The scheduler in a superscalar CPU
+(a) Controls power supply
+(b) Identifies parallel executable instructions
+(Q. Increases clock frequency
+(d) Reduces cache size
+19. Out-of-order execution is used in
+(a) RISC only
+(b) CISC only
+(©) Superscalar processors
+(d) 8-bit microcontrollers
+20. A benefit of superscalar architecture is
+(a) Reduced instruction throughput
+(b) Higher execution speed
+(©) Increased bottlenecks
+(d) Elimination of pipelines
+21. ESP32 includes .........
+{a) No wireless interface
+(b) Only Ethernet
+() Wi-Fi and Bluetooth
+(d) Bluetooth only
+22. ESP32 internal SRAM is .........
+
+(a) 150 KB (b) 520 KB
+() 1MB (d) 10 MB
+23. ESP32 uses which core?
+(a) ARM7 (b) Tensilica Xtensa LX6
+
+(c) AVR Mega (d) MIPS R3000
+24, Maximum clock frequency of ESP32 is .........
+
+(@) 40 MHz (b) 80 MHz
+() 120 MHz (d) 240 MHz
+2. Esp32 has 00.0... DAC channels.
+(a) 0 (b) 1
+() 2 (d) 4
+26. Esp3o supports ......... programming environments.
+
+(8) Only Arduino IDE
+
+(b) Only MicroPython
+
+(0 Arduino IDE, ESP-IDF, MicroPython
+(4) Only Java
+
+29,
+
+30.
+
+31.
+
+32.
+
+33)
+
+34,
+
+355
+
+36.
+
+Wo
+
+38.
+
+39.
+
+40.
+
+(a) 2.0
+(C) 4.2 BR/EDR + BLE
+ESP32 Operating voltage is
+
+(b) 3.0
+(d) 5.3
+
+(a) 18V (b) 20V
+() 33V (d) 5V
+GPIOO is used for .........
+
+(a) Reset
+
+(b) Boot mode during programming
+() ADC only
+
+(d) PWM only
+
+ESP8266 has......... processor.
+
+(a) Dual-core
+
+(c) Quad-core
+
+ESP32 supports .........
+(a) Wi-Fi only (b) Only Bluetooth
+(c) Wi-Fi + Bluetooth (d) Infrared only
+ADC resolution of ESP32 is .........
+
+(b) Single-core
+(d) No core
+
+(a) 8-bit (b) 10-bit
+
+(c) 12-bit (d) 16-bit
+
+Touch sensors available in ESP8266 are .........
+(a) 0 (b) 2
+
+(9) 5 (d) 10
+
+ESP32 deep sleep consumption is approx. .........
+(a) 100 mA (b) 1 mA
+
+(c) 10 pA (d) 1pA
+
+Al aims to develop machines that can .........
+(a) Consume more power
+
+(b) Learn and reason like humans
+
+(c) Work without algorithms
+
+(d) Eliminate processors
+
+Al applications include .........
+
+(a) Handwritten recognition
+
+(b) Circuit soldering
+
+(c) PCB layout
+
+(d) Cable manufacturing
+
+ML was first defined by .........
+
+(a) Charles Babbage (b) Arthur Samuel
+(c) John von Neumann (d) Alan Turing
+
+Supervised learning uses .........
+(a) No data (b) Unlabelled data
+
+(c) Labelled data (d) Only audio data
+
+Unsupervised learning is mainly used for .........
+(a) Clustering (b) Power analysis
+
+(c) Bluetooth decoding (d) Ethernet switching
+
+21. GPI Pins available on ESP32 are up tO -.-.-+-+-
+— © r0 (b) 16
+(9 28 (d) 39
+
+1.23
+
+Nirali Prakashan

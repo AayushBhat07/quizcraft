@@ -1,0 +1,156 @@
+,
+
+ging Trends in Electronics (S-v1)
+
+Smart Manufacturing Processes and Tools
+
+Select the type of robot which can move
+independently across the factory floor using
+navigation systems, controllers and SENsors ........,
+{a) Articulated Robot
+(b) SCARA Robot
+(c) Autonomous Mobile Robot (AMR)
+(d) Cobots
+’ $3. ee type of robots are mainly used for pick-and-
+
+place, assembly, and precision operations.
+{a) Articulated Robot
+
+{(b) Autonomous Mobile Robot
+
+(Q SCARA Robot
+
+(d) Cobots
+
+$4, For complex 3D movements like welding, painting,
+and machining, are used.
+
+{a) Articulated Robot
+
+(b) Autonomous Mobile Robot
+(Q SCARA Robot
+
+(d) Cobots
+
+55. SMT has largely replaced
+that need to be small or flat.
+
+(@) Pin technology
+
+(b) Through-hole technology
+(¢) Plated technology
+
+(d) Hole technology
+
+especially in devices
+
+Bb. dn ......... , components are connected directly to the
+surface of the PCB.
+ @) SP (b) SMT
+
+(9 Pin-up component (d) Plug-in component
+
+7. Using SMT, density components can be placed
+on both sides of the circuit board.
+¢ (b) Lower
+(d) Zero
+
+Video editing (b) Industrial automation
+
+) Accounting (d) Blogging
+“-. tool is used for open-source circuit simulation.
+(b) Photoshop
+
+(d) Blender
+
+65.
+
+66.
+
+67.
+
+68.
+
+69.
+
+70.
+
+62.
+
+63.
+
+64.
+
+61. If SMD component has two leads and is specified as
+
+0603, this means
+(a) Length 0.6 mm, width 0.3 mm
+(b) Length 0.3 mm, width 0.6 mm
+(c) 06 ohm, 03 A rating
+
+(d) 06 volt, 03 A rating
+
+MNGN raiiee looks at all the design specifications of a
+PCB.
+
+(a) AOI (b) DFM
+
+(c) ESD (d) SMD
+
+In the solder paste printer, a mechanical fixture holds
+the PCB and in place.
+
+(a) Solder stencil (b) Solder paste
+
+(c) Solder flux (d) Solder gun
+
+Pett vee is an efficient inspection method for larger
+batch PCB assembly.
+(a) AOI
+
+(c) AXI
+
+(6) Manual inspection
+
+(d) Operator inspection
+ear tool is commonly used for PCB design in
+Open-source assembly/testing.
+
+(a) KiCad (b) Verilator
+
+(©) MATLAB (d) AutoCAD
+EPEAT does not audit which product category
+(a) Computers and displays
+
+(b) Imaging equipment
+
+(c) Mobile vanity
+
+(d) Mobile phone
+
+te es technology enables collaboration between
+humans and robots.
+
+(a) Cloud computing (b) Collaborative robots
+(c) 3D printing (d) RFID
+
+Robots in smart manufacturing cannot perform
+
+(a) Administrative tasks (b) Automation
+
+(c) Repetitive operations (d) Assembly of parts
+
+Due to growing global manufacturing waste of
+electronics, has to be addressed on priority.
+
+(a) Environmental impact (b) Political impact
+(d) Financial impact
+
+(c) Social impact
+WEEE or e-waste is
+(a) Waste Mechanical and Electronic Equipment
+(b) Waste Biological and Electronic Equipment
+(c) Waste Surgical and Electronic Equipment
+(d) Waste Electrical and Electronic Equipment
+
+Nirali Prakashan

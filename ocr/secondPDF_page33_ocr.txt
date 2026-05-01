@@ -1,0 +1,201 @@
+ng Trends in Electronics (S-V1)
+
+4
+
+OO
+
+For drone .......+ motor is preferred.
+
+(a) Induction (b) Traction
+
+{Q AC Three phase (d) Brushless DC
+
+for fixed wing and rotary wing drone, select the
+correct sentence
+
+@ Fixed wing drones are capable of hovering but
+
+rotary wing drones are not capable of hovering
+
+{b) Number of motors required for fixed wing drone
+
+are less than rotary wing drone
+
+{o Flight efficiency is lower for fixed wing drone as
+
+compared to rotary wing drone
+
+{@) Flight range is smaller in fixed wing drone as
+
+3.
+
+fa) 15% to 20%
+
+compared to rotary wing drone
+
+Efficiency of brushless
+application is .........
+
+motor used in drone
+
+(b) 30% to 35%
+{c) 50% to 60% (d) 85% to 90%
+Lower kV rating motors for drone offers
+{a) lower speed and lower torque
+
+(b) higher speed and lower torque
+
+{Q) higher speed and higher torque
+
+(d) lower speed and higher torque
+
+For normal drone operation, motor thrust to weight
+ratio shall be
+
+(@) 11 ~(b) 2:1
+(Q 1:2 (d) 1:4
+Select type of drone frame suitable for high payloads
+
+(a) H frame
+(QO Y frame
+
+(b) V frame
+(d) X frame
+
+_ Select type of drone frame suitable for balanced load
+
+and high stability
+(a) H frame
+(c) Y frame
+
+(b) V frame
+(d) X frame
+
+Select type of drone frame suitable for aerodynamics
+
+(a) Hand V frame (b) V and Y frame
+
+(C) Y and X frame (d) X and H frame
+
+On drone, LIDAR sensor is mounted for .........
+
+(a) temperature sensing
+
+(b) distance and terrain mapping
+
+(c) payload sensing
+
+(d) battery status
+
+For direction sensing on drone, ......--- sensor is used.
+(a) accelerometer (b) gyroscope
+
+(c) magnetometer (d) barometer
+
+13.
+
+14,
+
+wy,
+
+16.
+
+wW7/.
+
+18.
+
+il),
+
+20.
+
+21.
+
+22;
+
+Hh
+
+5.27
+
+Drone Systems and Applications
+In drone system, GCS is a
+
+(a) geographical communication system
+(b) ground control system
+
+(c) general communication system
+
+(d) group control system
+GCS for drone is available on
+(a) drone frame (b) drone ESC
+
+(c) ground (d) drone camera
+Drone payload does not include ........,
+
+(a) drone battery weight (b) GCS weight
+(c) drone camera weight (d)
+For drone, pilotis .........
+
+(a) always on board
+
+(b) for only nano drone onboard
+
+(c) always on ground
+
+(d) may be on board or on ground
+
+Select the factor on which drones are not classified
+
+(a) weight
+
+(c) colour of frame
+After integration with
+mapping disaster zones.
+(a) google pay
+
+(b) geographic information systems
+
+(c) camera
+
+(d) battery
+
+Meera: are used to reduce need for ground patrols in
+infrastructure security.
+
+(a) Drones (b) Smart guards
+
+(c) WSN (d) Automobiles
+
+In India for drone, major regulatory authority is
+
+drone sensor weight
+
+(b) number of wings
+(d) aerodynamic design
+drone allows for
+
+(a) DGCA (b) Air force of india
+
+(c) RTO (d) Police department
+DGCA rules for drone are commonly known as .........
+(a) DGCA 2021 (b) DGCA 1947
+
+(c) DGCA 2020 (d) DGCA apex
+
+As per aerodynamic design, identify type of drone
+(a) Nano
+
+(b) Fixed wing
+
+(c) Drone for photography
+
+(d) Micro
+
+Identify type of drone not classified on the basis of
+aerodynamic design ....--.--
+
+(a) Rotary wing (b) Hybrid drone
+
+(c) VTOL (d) Small
+
+Nirali Prakashan
+_

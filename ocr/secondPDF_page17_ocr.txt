@@ -1,0 +1,168 @@
+in Electronics (S-v1)
+
+Smart Manufacturing Processes and Tools
+
+i; _ ime allocated for reflow process is
+
+ieeeaag 45-75 50 (b) 60-120 sec
+i) 1-2 sec (d) 5-10 sec
+“ pighest temperature region is...
+
+(a) Ramp to soak (b) Ramp to peak
+€ Reflow process (d) Preheat and soak
+_ preheat zone temperature range is
+@ 100°C to 150°C _ (b) 200°C to 450°C
+(9 4500°C to 7000°C (d) -35°C to -15°C
+a4, Types of Pick and Place machines are .........
+Semiconductor and non-semiconductor
+Tiny components and large components
+
+; © Silicon and germanium components
+
+(@) Leaded components and SMDs
+
+ti-static tools are used to .........
+
+( a) Avoid ESD damage
+(0) Ease soldering
+Correct end-to-end manufacturing sequence:
+
+4
+
+Et
+
+(b) Provide cooling
+(d) Remove static energy
+
+) Stencil > Paste — PnP — Reflow — Inspection >
+Packaging A
+
+b) Stencil + Paste — Reflow — PnP — Inspection >
+
+caging
+
+ow > Stencil > Paste — PnP — Inspection >
+
+aging
+
+cil + Reflow — Inspection > Paste > PnP >
+
+caging
+
+flow soldering is done after .......-.
+
+; (b) Packaging
+
+(d) Stencil making
+
+ction
+and place
+FM I check is done.........
+efore manufacturing (b) After manufacturing
+
+(d) During quality control
+low soldering is
+
+\fter reflow
+fect sub-process sequence in ref
+
+am
+mp to soak — Preheat and soak > Ramp to
+leak — Reflow — Cooling
+
+: t and soak > Ramp to soak > Ramp to
+leak Reflow — Cooling
+
+eheat and soak —> Reflow — Ramp to soak >
+np to peak — Cooling
+
+J — Preheat — Reflo
+peak
+
+w — Ramp to soak >
+
+101.
+
+102.
+
+LY, ssisseves are self-navigating robots for material
+movement.
+(a) Cobot (b) SCARA
+(c) AMR (d) Articulated robot
+Type of robot for warehouse material handling is
+(a) Cobot (b) SCARA
+(c) AMR (d) Articulated robot
+Moving robotis.........
+(a) AMR (b) SCARA
+(c) Cobot (d) Articulated robot
+
+103.
+
+104.
+
+105.
+
+106.
+
+107.
+
+108.
+
+109.
+
+AMR is equipped with SLAM for .........
+
+(a) Object detection
+
+(b) Carrying objects
+
+(©) Simultaneous Localization and Mapping
+(d) Self-learning
+
+(a) Digital dashboard
+
+(b) House-man interface
+
+(c) Interface between two machines
+(d) One-way device
+
+HMI stands for .........
+
+(a) Human-Machine Interaction
+
+(b) Human-Machine Interface
+
+(c) Hardware-Machine Interface
+(d) Human Monitoring Interface
+HMI alarms indicate .........
+
+(a) Operator attendance
+
+(b) Abnormal process conditions
+
+(c) Data storage issues
+
+(d) Theme changes
+
+The graphical elements shown on an HMI are called
+
+(a) Widgets (b) Tags
+
+(c) Objects (d) Elements
+
+Layer of automation for HMLis .........
+
+(a) Field level (b) Control level
+(c) Supervisory level (d) Enterprise level
+Main purpose of HMI is to ........-
+
+(a) Control internet data
+
+(b) Visualize and control industrial processes
+(©) Store recipes only
+
+(d) Replace PLC programming
+
+2.25
+
+Nirali Prakashan

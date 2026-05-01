@@ -1,0 +1,119 @@
+_ Emerging Trends in Electronics (S-VI)
+
+Advanced Processors and Technology
+
+127. GPIO13 includes which feature .........
+(a) Boot mode
+(b) Used during boot, use with care
+(Q) Reset
+(d) Always pulled high
+128. Reserved pins (GPIO6-GPIO11) are connected to
+
+(a) Wi-Fi hardware (b) Flash memory
+(Q CPU clock (d) DAC
+129. GPIOLS must be .........
+(a) HIGH during boot (b) LOW during boot
+
+(©) Floating always (d) Pulled high by default
+130. GPIOO LOW is required for .........
+
+(a) ADC (b) PWM
+
+(Q) Program upload (d) Bluetooth
+131. FC SDA pin on ESP32 is typically .........
+
+(a) GPIO21 (b) GPIO1
+
+(Q GPIO25 (d) GPIO12
+132. °C SCL pin on ESP32 is typically .........
+
+(a) GPIO19 (b) GPIO22
+
+(co) GPIO2 (d) GPIO39
+
+133. ESP32 UARTO uses which pins .........
+(a) GPIO26 &GPIO27 = (b) GPIO36 & GPIO37
+(c) GPIO1 & GPIO3 (d) GPIOLS & GPIO14
+134. VIN pin generally accepts .........
+
+141,
+
+142.
+
+143.
+
+144.
+
+145.
+
+146.
+
+147.
+
+148.
+
+ESP32 is better suited for .........
+
+(a) Very simple Wi-Fi switches
+
+(b) Multitasking and Bluetooth applications
+(c) Only battery chargers
+
+(d) Only LED blinking
+
+Simple Wi-Fi projects prefer .........
+
+(a) ARM processor (b) ESP8266
+
+(c) ESP32 (d) FPGA
+
+ESP32 ADC2 pins have restrictions when .........
+(a) Bluetooth is ON (b) Wi-Fi is ON
+
+(c) Flash is erased (d) Deep sleep is active
+ESP32 Hall sensor is .........
+
+(a) Not available (b) Available
+
+(c) External only (d) Optional
+
+ESP32 supports capacitive touch with .........
+(a) 2 pins (b) 5 pins
+
+(Q. 7 pins (d) 10 pins
+
+Arduino IDE requires adding ESP32 board using
+
+(a) Serial monitor (b) Board Manager URL
+(c) Device Manager (d) Editor settings
+ESP32 sketches are uploaded through .........
+
+(a) GPIOO via Wi-Fi (b) UARTO
+
+(c) CAN interface (d) SPI pins
+Overlapping stages in pipelining include .........
+
+(a) 18V (b) 2.2V (a) Fetch, decode, execute
+(9 33V (d) 5V (b) Start, stop, restart
+135. ESP32 supports which security feature? (c) Burn-in test cycles
+(a) DES only (b) Internal lock fuse (d) Wi-Fi connect stages
+(Q) Secure boot (d) No security 149. A GPU feature enabling Al tasks is .........
+136. ESP8266 core type is ......... (a) RT cores (b) Tensor cores
+(a) Dual-core (b) Single-core (c) HDMI ports (d) Power rails
+(Cc) Quad-core (d) ARM cortex 150. Deep Learning uses primarily .........
+137. ESP8266 lacks which feature found in ESP32 ? (a) Flowcharts (b) Neural networks
+(a) Wi-Fi (b) GPIO pins (c) Logic gates (d) Counters
+(Q) Bluetooth (d) SPI 151. Al integrates concepts from .........
+138. ESP8266 ADC resolution is ......... (a) Physics only
+(a) 12-bit (b) 10-bit (b) Computer science, physiology, and philosophy
+(c) 8-bit (d) None of these (c) Mechanical engineering only
+139. ESP8266 touch sensors count......... (d) Architecture
+(a) 10 (b) 8 152. Al enables .........
+() 2 (d) 0 (a) Slower decision-making
+_ 140. ESP8266 deep sleep current is about ......... (b) Predictive system outputs
+(a) 10 pA (b) 20 pA (c) Manual calculations
+(c) 1mA (d) 100 mA (d) High system errors
+
+1,28
+
+Nirali Prakash@"

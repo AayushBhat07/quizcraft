@@ -1,0 +1,211 @@
+emerging T!
+
+105.
+
+106.
+
+107.
+
+108.
+
+109.
+
+110.
+
+111.
+
+112.
+
+413;
+
+114,
+
+rends in Electronics (S-VI)
+
+Advanced Processors and Technology
+
+GPU virtualization is useful for.........
+
+(a) Cloud gaming (b) Printer settings
+
+(9 Water cooling (d) Web browsing only
+Processor architecture influences
+(a) Keyboard response
+
+(b) Software compatibility
+
+() Screen colour
+
+(d) ADC voltage
+
+The unit responsible for sequencing instructions is
+
+(a)
+(©) Register
+
+Registers provide .........
+(a) Long-term storage
+(b) Slow data access
+
+(Q) High-speed temporary storage
+
+(d) Cloud memory
+
+Cache memory reduces .........
+
+(a) Battery life
+
+(b) Need for RAM
+
+(c) Access delay to main memory
+
+(d) Processor clock speed
+
+L3 cache is typically .........
+
+(a) Fastest and smallest
+
+(b) Shared among cores
+
+(CQ) Inside I/O controllers
+
+(d) Used for USB storage
+
+Instruction Set Architecture (ISA) defines .........
+
+(a) CPU clock speed
+
+(b) Executable operations
+
+(c) PCB size
+
+(d) Cooling method ;
+
+CISC processors typically use .........
+
+(a) Simple instructions
+
+(b) Complex instructions
+
+(©) No instructions
+
+(d) Only load/store operations
+
+Pipelining divides instruction execution into .........
+(@) Random loops (b) Overlapping stages
+(9 Electrical cycles only (d) Unrelated tasks
+
+A benefit of pipelining is
+(2) Reduced parallelism
+(b) Higher throughput
+(©) Reduced data storage
+
+(b) Control Unit
+(d) Cache
+
+—_1d) No instruction decode
+
+Ly
+
+116.
+
+117.
+
+118.
+
+19%
+
+120.
+
+2a:
+
+122.
+
+123:
+
+124.
+
+125.
+
+126.
+
+Superscalar processors dispatch instructions to
+
+(a) One execution unit only
+
+(b) Multiple execution units
+
+(c) Registers only
+
+(d) Only pipeline buffers
+
+Superscalar execution improves .........
+(a) Instruction throughput
+
+(b) Clock failure
+
+(c) Noise generation
+
+(d) Power dissipation only
+Out-of-order execution helps achieve
+(a) Idle CPU cycles
+
+(b) Better resource utilization
+
+(c) Increased bottlenecks
+
+(d) Instruction loss
+
+A typical application of superscalar architecture is
+
+(a) Washing machines
+
+(b) High-performance CPUs
+(c) Traffic lights
+
+(d) Simple calculators
+
+ESP32 is classified as a .........
+
+(a) Microprocessor (b) SoC microcontroller
+(c) DSP chip (d) FPGA board
+ESP32's Wi-Fi standard is .........
+
+(a) 802.11 a/b (b) 802.11 ac
+
+(c) 802.11 b/g/n (d) 802.11 ax
+
+ESP32 has how many ADCs? ;
+One 8-bit only
+
+(a) One 10-bit only (b)
+
+(c) Two 12-bit ADCs (d) No ADCs
+ESP32 DAC resolution is .........
+
+(a) 6-bit (b) 8-bit
+
+(c) 10-bit (d) 12-bit
+
+ESP32 supports multiple sleep modes for .........
+(a) Increasing speed (b) Reducing power
+(c) Increasing memory (d) Changing voltage
+AP AP programming environment does NOT support
+ESP32.
+
+(a) Arduino IDE (b) Lua
+
+(c) MicroPython (d) Raspberry Pi OS
+ESP32 GPIO count supports up to .........
+
+(a) 10 (b) 16
+
+(c) 28 (d) 39
+GPIO34—-GPIO39 pins are used primarily as .........
+(a) Output-only pins (b) Input-only pins
+
+(c) SPI flash pins (d) UART pins
+
+1.27
+
+Nirali Prakashan

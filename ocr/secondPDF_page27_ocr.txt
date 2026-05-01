@@ -1,0 +1,57 @@
+Emerging Trends in Electronics (S-VI)
+
+“=
+
+Industrial loT and Immersive Technolog,
+ie
+
+29. Main goal of lot 40. AWS stands for .........
+(a) Replace allhumans (b) Better decision making (a) Amazon Web Services
+(c) Connecting networks (d) Connecting people (b) Asia Web Support
+30. CPS uses (c) Artificial Wireless System
+(a) Sensors and actuators (d) Artificial Web Services
+(b) Only memory devices 41. AWS IoT Core supports .........
+(c) Only keyboards (a) MQTT (b) SMS
+(d) No electronics (c) Fax (d) None of these
+31. loT gives 42. AWS Greengrass enables .........
+(a) Transparency and performance (a) Edge computing (b) Cloud computing
+(b) No safety (c) Data computing (d) Storage of data
+(c) Only cost increase 43. Azure IoT Hub supports .........
+(d) Reduced reliability (a) Bi-directional communication
+32. IoT sensors convert data into ......... (b) Only upload
+(a) Mechanical force only (c) Only download
+(b) Digital signals (d) No messages
+(Q) Electrical signals papers 44. Azure IoT Edge is used for .........
+(d) Light only (a) Local Al and analytics (b) Only wiring
+33. loT requires ......... (c) Printing (d) Packaging
+(a) Internet connectivity 45. Device Twin in Azure stores .........
+(b) No communication (a) Digital copy of device state
+(©) Manual switching only (b) Only picture
+(d) Only Computers (c) Only manual book
+34. CPS is mainly used for ......... ig) Data
+, . : 46. GCP stands for.........
+(a) Real-time control (b) Offline processing only
+(oc) Entertainment (d) No control (a) poodle COUN EWG
+A (b) Graphical Car Processor
+35. IoT works using ......... (OW Global Car-Parts
+ee errs temvonans (d) Graphical Cloud Platform
+eee teyboards 47. GCP uses Cloud ......... for messaging.
+(Q) No cloud (a) SMS (b) Pub/Sub
+ae were tons (c) email (d) network
+36. Cloud computing offers resources ...... 2 48. ThingSpeak is developed by .........
+(a) On-demand (b) Only offline fa) Scale (uh Microcalt
+(Q) Never when needed (d) Through CDs (c) MathWorks (d) Tata
+37. Example of cloud usage is ......... 49. ThingSpeak stores IoT data into .........
+(a) Netflix (6). fan (a) Channels (b) Devices
+(co) Door latch (d) Screw (c) Motors (d) Memory
+38. Pay-as-you-use is called ......... 50. One channel in ThingSpeak allows ......... fields.
+(a) Measured service _—_(b) Prepaid service (a) 8 (b) 2
+(c) Free service (d) None of these () 1 (d) 100
+39. Cloud is essential for oT because it ......... 51. ThingSpeak is popular for .........
+(a) Collects and analyses data (a) Nuclear control
+(b) Deletes data (b) Aircraft control
+(©) Avoids connectivity (c) Education and small loT Projects
+(d) None of these (d) Storage
+Aa4 Nirali Prakash"
+
+a

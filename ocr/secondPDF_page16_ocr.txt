@@ -1,0 +1,186 @@
+Emerging Trends in Electronics (S-VI)
+
+Smart Manufacturing Processes and Too},
+
+71.
+
+72.
+
+73.
+
+74.
+
+76.
+
+78.
+
+79.
+
+80.
+
+and standards are used for certifying
+manufacturing material.
+
+(a) ROHS and EPEAT
+(c) IEEE and ASCII (d) TRIA and EPEAT
+
+EPEAT evaluates products
+environmental performance
+
+(a) Bronze, Silver, Mercury
+(b) Bronze, Nickel, Gold
+(c) Bronze, Silver, Gold
+(d) Bronze, Platinum, Gold
+
+In an articulated robot, each joint adds DOF for
+
+(a) Self-decoded working
+(b) Precise movements
+
+(b) FPEAT and RoHS
+
+into three tiers of
+
+(Q) Reducing power consumption
+(d) Autonomous activities
+
+SCARA robots have ......... axis.
+(a) 2 (b) 10
+(9 4 (d) 8
+
+SCARA robot structure is
+(a) Rigid in horizontal and vertical plane
+
+(b) Flexible in horizontal and vertical plane
+
+(Q) Flexible in vertical, rigid in horizontal plane
+(d) Rigid in vertical, flexible in horizontal plane
+Identify robot that will not hurt human being
+(a) Cobot (b) SCARA
+
+(co) AMR (d) Articulated robot
+Identify robot suitable for a compact workplace:
+
+(a) Cobot (b) SCARA
+
+(c) AMR (d) Articulated robot
+Identify robot suitable for transporting materials
+
+(a) Cobot (b) SCARA
+(c) AMR (d) Articulated robot
+OSAT stands for ........-
+
+(a) Open-Source Assembly and Testing
+
+(b) Open Satellite
+
+(c) Open Semiconductor Absorption and Testing
+(d) Online Satellite
+
+OSAT is mainly related to .........
+
+(a) Electronic servicing
+
+(b) Type of robot
+
+(c) IC packaging
+
+(d) Satellite communication
+
+81.
+
+82.
+
+83.
+
+84.
+
+85.
+
+86.
+
+87.
+
+88.
+
+89.
+
+90.
+
+RoHS standard is related to ...------
+
+(a) Communication system
+
+(b) Data processing
+
+(c) Restricted hazardous substances
+
+(d) Sound pollution standard
+
+Identify material NOT restricted by ROHS ........
+(a) Lead (b) Mercury
+
+(c) Cadmium (d) Copper
+
+ROHS restricts some materials because .........
+(a) They are rarely available
+
+(b) They are toxic to environment
+
+(c) They reduce component speed
+
+(d) They are expensive
+
+EPEAT is a standard for .........
+
+(a) Communication (b) Data transmission
+(c) Software
+Camera resolution of AOI machine should be ......
+
+(d) Electronics items
+
+(a) Smaller
+(c) Very high
+AOI cannot detect .........
+(a) Solder void
+(c) Solder short
+AXI cannot detect
+
+(b) Larger
+(d) Infinity
+
+(b) Solder excess
+(d) Solder bridges
+(a) Faulty component
+(b) Missing component
+(c) Misplaced component
+(d) Solder void
+Wave soldering is suitable for .........
+(a) Only through-hole devices
+(b) Both through-hole and SMD components
+(c) Only SMD components
+(d) Non-electronic components
+
+Two heating systems in reflow soldering machines a!
+
+(a) Ultrasonic and thermal heater
+
+(b) Solar and steam heater
+
+(c) Electric and induction heater
+
+(d) IR heater and vapor phase oven
+
+In reflow thermal profile, longest duration is ..
+(a) Ramp to soak
+
+(b) Ramp to peak
+(c) Reflow
+
+(d) Preheat and soak
+
+2.24
+
+Nirali Prakash”
+
+att
