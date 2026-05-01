@@ -1,276 +1,437 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { BookOpen, Trophy, TrendingUp, Zap } from "lucide-react";
+import { BookOpen, Trophy, TrendingUp, Zap, Target, Flame } from "lucide-react";
+import questionsData from "@/data/questions.json";
 
-const CHAPTERS = [
-  { name: "Advanced Processors and Technology", questions: 72 },
-  { name: "AI and Machine Learning", questions: 74 },
-  { name: "ESP32 Microcontroller", questions: 72 },
-];
+// ─── NEW WARM FIRE PALETTE ────────────────────────
+const C = {
+  bg:        "#1a1209",  // deep warm black
+  surface:   "#2a1a0a",  // dark warm brown
+  card:      "#3d2314",  // warm card surface
+  primary:   "#f6aa1c",  // golden amber
+  secondary: "#bc3908",  // orange-red
+  accent:    "#941b0c",  // deep red
+  muted:     "#8a7055",  // warm grey-brown
+  mutedFg:   "#c4a882",  // light warm tan
+  fg:        "#fff8f0",  // warm white
+  success:   "#81c784",  // green
+};
 
-const SUBJECTS = [
-  {
-    id: "ete",
-    name: "Emerging Trends in Electronics",
-    icon: "🔌",
-    chapters: 3,
-    questions: 218,
-    color: "bg-[#AC9FBB]/20 text-[#DDBDD5] border-[#AC9FBB]/30",
-  },
-];
+const CHAPTERS = questionsData.subject.chapters.map(ch => ({
+  name: ch.name,
+  questions: ch.questions.length,
+  id: ch.id
+}));
 
-const LEADERBOARD = [
-  { rank: 1, name: "Alex Chen", score: 12450, avatar: "👑" },
-  { rank: 2, name: "Sarah Kim", score: 11280, avatar: "🥈" },
-  { rank: 3, name: "Jordan Lee", score: 10940, avatar: "🥉" },
-];
+const TOTAL_QUESTIONS = CHAPTERS.reduce((s, c) => s + c.questions, 0);
 
 export default function HomePage() {
   const [name, setName] = useState("");
-  const [showChapters, setShowChapters] = useState(false);
+  const [userStats, setUserStats] = useState<{ totalQuizzes: number; bestScore: number; avgScore: number } | null>(null);
   const router = useRouter();
 
+  useEffect(() => {
+    const storedName = localStorage.getItem("quizcraft_name");
+    if (storedName) setName(storedName);
+
+    const attempts = JSON.parse(localStorage.getItem("quizcraft_attempts") || "[]");
+
+    if (attempts.length > 0) {
+      const scores = attempts.map((a: any) => Math.round((a.score / a.totalQuestions) * 100));
+      const best = Math.max(...scores);
+      const avg = Math.round(scores.reduce((s: number, v: number) => s + v, 0) / scores.length);
+
+      setUserStats({
+        totalQuizzes: attempts.length,
+        bestScore: best,
+        avgScore: avg
+      });
+    } else {
+      setUserStats(null);
+    }
+  }, []);
+
   const handleStartQuiz = () => {
-    if (!name.trim()) return;
-    // Store name in localStorage for later use
-    localStorage.setItem("quizcraft_name", name.trim());
+    const finalName = name.trim() || "Anonymous";
+    localStorage.setItem("quizcraft_name", finalName);
     localStorage.setItem("quizcraft_subject", "ete");
-    router.push(`/quiz?name=${encodeURIComponent(name.trim())}`);
+    router.push(`/quiz/ete?name=${encodeURIComponent(finalName)}`);
   };
 
+  const hasData = userStats !== null;
+
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#1D1E2C" }}>
-      {/* Background gradient */}
-      <div className="fixed inset-0 bg-gradient-to-br from-[#AC9FBB]/10 via-transparent to-[#59656F]/10 pointer-events-none" />
+    <div className="min-h-screen" style={{ backgroundColor: C.bg }}>
+      {/* Warm atmospheric gradient */}
+      <div
+        className="fixed inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at 30% 50%, rgba(188,57,8,0.08) 0%, transparent 55%), radial-gradient(ellipse at 70% 30%, rgba(246,170,28,0.05) 0%, transparent 50%)",
+        }}
+      />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-12">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h1 
-            className="text-5xl font-bold mb-3"
-            style={{ fontFamily: "Lexend, sans-serif", color: "#F7EBEC" }}
-          >
-            QuizCraft
-          </h1>
-          <p className="text-lg" style={{ color: "#DDBDD5" }}>
-            Emerging Trends in Electronics
-          </p>
-        </div>
+      <div className="relative z-10 min-h-screen flex flex-col">
+        <div className="flex-1 max-w-7xl mx-auto w-full px-6 py-10">
+          {/* ── SPLIT SCREEN LAYOUT ── */}
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 h-full items-start">
 
-        {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left: Name Input + Subject Card */}
-          <div className="lg:col-span-2 space-y-6">
-            {/* Name Input */}
-            <Card className="card-surface">
-              <CardContent className="p-6">
-                <label 
-                  className="block text-sm font-medium mb-2"
-                  style={{ color: "#DDBDD5", fontFamily: "Inter, sans-serif" }}
+            {/* ── LEFT PANEL (2/5 width) ── */}
+            <div className="lg:col-span-2 flex flex-col gap-6">
+              {/* Logo + Wordmark */}
+              <div className="flex items-center gap-3">
+                <div
+                  className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
+                  style={{ backgroundColor: C.primary }}
                 >
-                  Your Name
-                </label>
-                <Input
-                  placeholder="Enter your name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="bg-[#1D1E2C] border-[#59656F] text-white text-lg h-12"
-                  style={{ 
-                    fontFamily: "Inter, sans-serif",
-                    color: "#F7EBEC",
-                    backgroundColor: "#1D1E2C",
-                    borderColor: "#59656F"
-                  }}
-                />
-              </CardContent>
-            </Card>
+                  🔥
+                </div>
+                <div>
+                  <h1
+                    className="text-3xl font-bold leading-tight"
+                    style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                  >
+                    QuizCraft
+                  </h1>
+                  <p className="text-sm" style={{ color: C.mutedFg }}>
+                    Emerging Trends in Electronics
+                  </p>
+                </div>
+              </div>
 
-            {/* Subject Card */}
-            <div className="space-y-3">
-              <h2 
-                className="text-xl font-semibold"
-                style={{ fontFamily: "Lexend, sans-serif", color: "#F7EBEC" }}
-              >
-                Choose Your Subject
-              </h2>
-              
-              {/* ETE Subject Card */}
-              <Card
-                className="card-surface cursor-pointer transition-all hover:border-[#AC9FBB]/50"
-                onClick={() => setShowChapters(!showChapters)}
-              >
-                <CardContent className="p-5">
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-4">
-                      <span className="text-4xl">🔌</span>
-                      <div>
-                        <h3 
-                          className="text-lg font-semibold"
-                          style={{ fontFamily: "Lexend, sans-serif", color: "#F7EBEC" }}
-                        >
-                          Emerging Trends in Electronics
-                        </h3>
-                        <div className="flex items-center gap-2 mt-1">
-                          <Badge 
-                            variant="outline" 
-                            className="bg-[#AC9FBB]/20 text-[#DDBDD5] border-[#AC9FBB]/30"
-                            style={{ borderColor: "rgba(172, 159, 187, 0.3)" }}
-                          >
-                            3 Chapters
-                          </Badge>
-                          <Badge 
-                            variant="outline" 
-                            className="bg-[#59656F]/20 text-[#DDBDD5] border-[#59656F]/30"
-                            style={{ 
-                              backgroundColor: "rgba(89, 101, 111, 0.2)",
-                              borderColor: "rgba(89, 101, 111, 0.3)"
-                            }}
-                          >
-                            218 Qs
-                          </Badge>
-                        </div>
-                      </div>
-                    </div>
-                    <div 
-                      className="w-5 h-5 rounded-full border-2 border-[#AC9FBB] bg-[#AC9FBB]"
+              {/* Name Input Card */}
+              <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.card}` }}>
+                <CardContent className="p-5 space-y-4">
+                  <div>
+                    <label
+                      className="block text-xs font-semibold uppercase tracking-wider mb-2"
+                      style={{ color: C.mutedFg, fontFamily: "Lexend, sans-serif" }}
                     >
-                      <div className="w-full h-full rounded-full bg-white scale-50" />
-                    </div>
+                      Your Name
+                    </label>
+                    <Input
+                      placeholder="Enter your name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="h-12 text-base"
+                      style={{
+                        backgroundColor: C.card,
+                        borderColor: C.card,
+                        color: C.fg,
+                        fontFamily: "Inter, sans-serif",
+                      }}
+                    />
                   </div>
 
-                  {/* Chapter Breakdown */}
-                  {showChapters && (
-                    <div className="mt-4 pt-4 border-t border-[#59656F]/30">
-                      <p 
-                        className="text-sm font-medium mb-2"
-                        style={{ color: "#DDBDD5", fontFamily: "Inter, sans-serif" }}
+                  {name.trim() && (
+                    <p className="text-sm" style={{ color: C.primary }}>
+                      ✓ Ready to quiz, <strong>{name.trim()}</strong>!
+                    </p>
+                  )}
+                </CardContent>
+              </Card>
+
+              {/* Chapter List */}
+              <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.card}` }}>
+                <CardHeader className="pb-2">
+                  <CardTitle
+                    className="text-sm"
+                    style={{ fontFamily: "Lexend, sans-serif", color: C.mutedFg }}
+                  >
+                    {CHAPTERS.length} Chapters · {TOTAL_QUESTIONS} Questions
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-1">
+                  {CHAPTERS.map((ch, idx) => (
+                    <button
+                      key={idx}
+                      className="w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-left transition-all hover:scale-[1.01]"
+                      style={{
+                        backgroundColor: "transparent",
+                        border: `1px solid transparent`,
+                      }}
+                      onMouseEnter={e => {
+                        (e.currentTarget as HTMLElement).style.backgroundColor = `${C.primary}15`;
+                        (e.currentTarget as HTMLElement).style.borderColor = `${C.primary}40`;
+                      }}
+                      onMouseLeave={e => {
+                        (e.currentTarget as HTMLElement).style.backgroundColor = "transparent";
+                        (e.currentTarget as HTMLElement).style.borderColor = "transparent";
+                      }}
+                      onClick={() => {
+                        localStorage.setItem("quizcraft_selected_chapters", JSON.stringify([ch.id]));
+                        handleStartQuiz();
+                      }}
+                    >
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="w-6 h-6 rounded-md flex items-center justify-center text-xs font-bold"
+                          style={{
+                            backgroundColor: `${C.primary}25`,
+                            color: C.primary,
+                            fontFamily: "Lexend, sans-serif",
+                          }}
+                        >
+                          {idx + 1}
+                        </span>
+                        <span className="text-sm" style={{ color: C.fg }}>{ch.name}</span>
+                      </div>
+                      <span
+                        className="text-xs font-medium"
+                        style={{ color: C.mutedFg }}
                       >
-                        Chapter Breakdown
+                        {ch.questions} Qs
+                      </span>
+                    </button>
+                  ))}
+                </CardContent>
+              </Card>
+
+              {/* Start Button */}
+              <Button
+                onClick={handleStartQuiz}
+                disabled={!name.trim()}
+                className="w-full h-14 text-base font-semibold transition-all hover:brightness-110 disabled:opacity-40"
+                style={{
+                  backgroundColor: C.primary,
+                  color: C.bg,
+                  fontFamily: "Lexend, sans-serif",
+                }}
+              >
+                {name.trim() ? (
+                  <>
+                    <Zap className="w-5 h-5 mr-2" />
+                    Start Quiz — All Chapters
+                  </>
+                ) : (
+                  "Enter your name to begin"
+                )}
+              </Button>
+            </div>
+
+            {/* ── RIGHT PANEL (3/5 width) ── */}
+            <div className="lg:col-span-3 flex flex-col gap-5">
+
+              {/* Stats Grid */}
+              <div className="grid grid-cols-3 gap-4">
+                {/* Total Quizzes */}
+                <Card
+                  className="text-center p-5"
+                  style={{ backgroundColor: C.surface, border: `1px solid ${C.card}` }}
+                >
+                  <div
+                    className="w-10 h-10 rounded-lg mx-auto mb-3 flex items-center justify-center"
+                    style={{ backgroundColor: `${C.primary}20` }}
+                  >
+                    <Target className="w-5 h-5" style={{ color: C.primary }} />
+                  </div>
+                  {hasData ? (
+                    <>
+                      <p
+                        className="text-2xl font-bold"
+                        style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                      >
+                        {userStats.totalQuizzes}
                       </p>
-                      <div className="space-y-2">
-                        {CHAPTERS.map((chapter, index) => (
-                          <div 
-                            key={index}
-                            className="flex items-center justify-between text-sm"
-                            style={{ color: "#DDBDD5" }}
-                          >
-                            <span>{chapter.name}</span>
-                            <span 
-                              className="font-medium"
-                              style={{ color: "#AC9FBB" }}
+                      <p className="text-xs mt-1" style={{ color: C.mutedFg }}>Quizzes Taken</p>
+                    </>
+                  ) : (
+                    <p className="text-2xl font-bold" style={{ color: C.muted }}>—</p>
+                  )}
+                </Card>
+
+                {/* Best Score */}
+                <Card
+                  className="text-center p-5"
+                  style={{ backgroundColor: C.surface, border: `1px solid ${C.card}` }}
+                >
+                  <div
+                    className="w-10 h-10 rounded-lg mx-auto mb-3 flex items-center justify-center"
+                    style={{ backgroundColor: `${C.success}20` }}
+                  >
+                    <Trophy className="w-5 h-5" style={{ color: C.success }} />
+                  </div>
+                  {hasData ? (
+                    <>
+                      <p
+                        className="text-2xl font-bold"
+                        style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                      >
+                        {userStats.bestScore}%
+                      </p>
+                      <p className="text-xs mt-1" style={{ color: C.mutedFg }}>Best Score</p>
+                    </>
+                  ) : (
+                    <p className="text-2xl font-bold" style={{ color: C.muted }}>—</p>
+                  )}
+                </Card>
+
+                {/* Avg Score */}
+                <Card
+                  className="text-center p-5"
+                  style={{ backgroundColor: C.surface, border: `1px solid ${C.card}` }}
+                >
+                  <div
+                    className="w-10 h-10 rounded-lg mx-auto mb-3 flex items-center justify-center"
+                    style={{ backgroundColor: `${C.secondary}20` }}
+                  >
+                    <TrendingUp className="w-5 h-5" style={{ color: C.secondary }} />
+                  </div>
+                  {hasData ? (
+                    <>
+                      <p
+                        className="text-2xl font-bold"
+                        style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                      >
+                        {userStats.avgScore}%
+                      </p>
+                      <p className="text-xs mt-1" style={{ color: C.mutedFg }}>Avg Score</p>
+                    </>
+                  ) : (
+                    <p className="text-2xl font-bold" style={{ color: C.muted }}>—</p>
+                  )}
+                </Card>
+              </div>
+
+              {/* Progress / Empty State Card */}
+              <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.card}` }}>
+                <CardHeader>
+                  <CardTitle
+                    className="text-base"
+                    style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                  >
+                    {name.trim() ? `${name.trim()}'s Progress` : "Your Progress"}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {hasData ? (
+                    <div className="space-y-4">
+                      {/* Score ring visual */}
+                      <div className="flex items-center gap-6">
+                        <div className="relative w-20 h-20">
+                          <svg className="w-full h-full transform -rotate-90" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="42" stroke={C.card} strokeWidth="8" fill="none" />
+                            <circle
+                              cx="50" cy="50" r="42"
+                              stroke={C.primary}
+                              strokeWidth="8"
+                              fill="none"
+                              strokeDasharray={`${(userStats.avgScore / 100) * 263.9} 263.9`}
+                              strokeLinecap="round"
+                            />
+                          </svg>
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <span
+                              className="text-lg font-bold"
+                              style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
                             >
-                              {chapter.questions} Qs
+                              {userStats.avgScore}%
                             </span>
                           </div>
-                        ))}
+                        </div>
+                        <div className="flex-1 space-y-2">
+                          <div className="flex justify-between text-sm">
+                            <span style={{ color: C.mutedFg }}>Quizzes</span>
+                            <span style={{ color: C.fg, fontFamily: "Lexend, sans-serif" }}>{userStats.totalQuizzes}</span>
+                          </div>
+                          <div className="flex justify-between text-sm">
+                            <span style={{ color: C.mutedFg }}>Best</span>
+                            <span style={{ color: C.primary, fontFamily: "Lexend, sans-serif" }}>{userStats.bestScore}%</span>
+                          </div>
+                          <div className="flex justify-between text-sm">
+                            <span style={{ color: C.mutedFg }}>Average</span>
+                            <span style={{ color: C.fg, fontFamily: "Lexend, sans-serif" }}>{userStats.avgScore}%</span>
+                          </div>
+                        </div>
                       </div>
+
+                      <Button
+                        variant="outline"
+                        className="w-full text-sm"
+                        style={{
+                          borderColor: `${C.primary}50`,
+                          color: C.primary,
+                          fontFamily: "Lexend, sans-serif",
+                        }}
+                        onClick={() => router.push("/leaderboard")}
+                      >
+                        View Full Leaderboard →
+                      </Button>
+                    </div>
+                  ) : (
+                    /* Empty state */
+                    <div className="text-center py-6">
+                      <div
+                        className="w-14 h-14 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl"
+                        style={{ backgroundColor: `${C.primary}15` }}
+                      >
+                        🔥
+                      </div>
+                      <h3
+                        className="text-lg font-semibold mb-2"
+                        style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                      >
+                        {name.trim() ? "Ready to begin?" : "Start your journey"}
+                      </h3>
+                      <p className="text-sm mb-5" style={{ color: C.mutedFg }}>
+                        {name.trim()
+                          ? "Take your first quiz and your stats will appear here."
+                          : "Enter your name above and take your first quiz to start tracking progress."}
+                      </p>
+                      <Button
+                        onClick={handleStartQuiz}
+                        className="text-sm"
+                        style={{
+                          backgroundColor: C.primary,
+                          color: C.bg,
+                          fontFamily: "Lexend, sans-serif",
+                        }}
+                      >
+                        <Zap className="w-4 h-4 mr-2" />
+                        {name.trim() ? "Take Your First Quiz" : "Get Started"}
+                      </Button>
                     </div>
                   )}
                 </CardContent>
               </Card>
-            </div>
 
-            {/* Start Quiz Button */}
-            <Button
-              onClick={handleStartQuiz}
-              disabled={!name.trim()}
-              className="w-full h-14 text-lg font-semibold transition-all hover:shadow-lg disabled:opacity-40"
-              style={{ 
-                fontFamily: "Lexend, sans-serif",
-                backgroundColor: "#AC9FBB",
-                color: "#1D1E2C"
-              }}
-            >
-              {name.trim() ? (
-                <>
-                  <Zap className="w-5 h-5 mr-2" />
-                  Start Quiz — Emerging Trends in Electronics
-                </>
-              ) : (
-                "Enter your name to begin"
-              )}
-            </Button>
-          </div>
-
-          {/* Right: Quick Stats + Mini Leaderboard */}
-          <div className="space-y-6">
-            {/* Quick Stats */}
-            <Card className="card-surface">
-              <CardHeader className="pb-3">
-                <CardTitle 
-                  className="text-lg"
-                  style={{ fontFamily: "Lexend, sans-serif", color: "#F7EBEC" }}
-                >
-                  Your Stats
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-[#AC9FBB]/20">
-                    <TrendingUp className="w-5 h-5" style={{ color: "#AC9FBB" }} />
-                  </div>
-                  <div>
-                    <p className="text-sm" style={{ color: "#DDBDD5" }}>Total Quizzes</p>
-                    <p className="text-xl font-bold" style={{ color: "#F7EBEC" }}>12</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-[#81c784]/20">
-                    <Trophy className="w-5 h-5 text-[#81c784]" />
-                  </div>
-                  <div>
-                    <p className="text-sm" style={{ color: "#DDBDD5" }}>Avg Score</p>
-                    <p className="text-xl font-bold" style={{ color: "#F7EBEC" }}>78%</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-[#DDBDD5]/20">
-                    <BookOpen className="w-5 h-5 text-[#DDBDD5]" />
-                  </div>
-                  <div>
-                    <p className="text-sm" style={{ color: "#DDBDD5" }}>Best Score</p>
-                    <p className="text-xl font-bold" style={{ color: "#F7EBEC" }}>92%</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Mini Leaderboard */}
-            <Card className="card-surface">
-              <CardHeader className="pb-3">
-                <CardTitle 
-                  className="text-lg"
-                  style={{ fontFamily: "Lexend, sans-serif", color: "#F7EBEC" }}
-                >
-                  🏆 Top Performers
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                {LEADERBOARD.map((user) => (
-                  <div key={user.rank} className="flex items-center gap-3">
-                    <span className="text-xl">{user.avatar}</span>
-                    <div className="flex-1">
-                      <p className="font-medium" style={{ color: "#F7EBEC" }}>{user.name}</p>
-                    </div>
-                    <span className="font-bold" style={{ color: "#AC9FBB" }}>{user.score.toLocaleString()}</span>
-                  </div>
-                ))}
-                <Button 
-                  variant="ghost" 
-                  className="w-full text-sm hover:text-white"
-                  style={{ color: "#59656F" }}
+              {/* Quick Links */}
+              <div className="flex gap-3">
+                <Button
+                  variant="outline"
+                  className="flex-1"
+                  style={{
+                    borderColor: C.card,
+                    color: C.mutedFg,
+                    fontFamily: "Lexend, sans-serif",
+                    backgroundColor: C.surface,
+                  }}
                   onClick={() => router.push("/leaderboard")}
                 >
-                  View Full Leaderboard →
+                  <Trophy className="w-4 h-4 mr-2" />
+                  Leaderboard
                 </Button>
-              </CardContent>
-            </Card>
+                <Button
+                  variant="outline"
+                  className="flex-1"
+                  style={{
+                    borderColor: C.card,
+                    color: C.mutedFg,
+                    fontFamily: "Lexend, sans-serif",
+                    backgroundColor: C.surface,
+                  }}
+                >
+                  <BookOpen className="w-4 h-4 mr-2" />
+                  All Questions
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

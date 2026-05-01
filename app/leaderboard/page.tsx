@@ -14,39 +14,23 @@ import {
   Calendar,
   Hash,
 } from "lucide-react";
+import type { StoredAttempt } from "@/lib/quizData";
 
-// Colors
+// ─── NEW PALETTE (warm fire tones) ─────────────────
 const C = {
-  bg: "#1D1E2C",
-  surface: "#252636",
-  accent: "#AC9FBB",
-  secondary: "#59656F",
-  light: "#F7EBEC",
-  muted: "#DDBDD5",
-  success: "#81c784",
-  error: "#e57373",
+  bg:        "#1a1209",  // deep warm black
+  surface:   "#2a1a0a",  // dark warm brown
+  surface2:  "#3d2314",  // lighter warm card
+  primary:   "#f6aa1c",  // golden amber  ← main accent
+  secondary: "#bc3908",  // orange-red
+  accent:    "#941b0c",  // deep red
+  muted:     "#8a7055",  // warm grey-brown
+  mutedFg:   "#c4a882",  // light warm tan
+  fg:        "#fff8f0",  // warm white
+  success:   "#81c784",  // keep green for correct
+  error:     "#e57373",  // keep red for wrong
+  warn:      "#f6aa1c",  // amber for warnings
 };
-
-// Mock placeholder users
-const MOCK_USERS = [
-  { name: "Rahul V.", score: 94, quizzes: 8, lastDate: 1747563000000 },
-  { name: "Priya S.", score: 91, quizzes: 12, lastDate: 1747646400000 },
-  { name: "Ankit M.", score: 87, quizzes: 6, lastDate: 1747559400000 },
-  { name: "Sneha K.", score: 82, quizzes: 9, lastDate: 1747632000000 },
-  { name: "Vikram R.", score: 78, quizzes: 5, lastDate: 1747531200000 },
-];
-
-interface AttemptEntry {
-  id: string;
-  date: number;
-  score: number;
-  total: number;
-  percentage: number;
-  timeTaken: number;
-  chapters: Record<string, { correct: number; total: number }>;
-  weakTopics: string[];
-  wrongQuestionIds: string[];
-}
 
 interface LeaderboardEntry {
   name: string;
@@ -73,8 +57,8 @@ function RankMedal({ rank }: { rank: number }) {
     <span
       className="w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold"
       style={{
-        backgroundColor: C.surface,
-        color: C.muted,
+        backgroundColor: C.surface2,
+        color: C.mutedFg,
         fontFamily: "Lexend, sans-serif",
       }}
     >
@@ -86,18 +70,18 @@ function RankMedal({ rank }: { rank: number }) {
 function ScoreBar({ score }: { score: number }) {
   return (
     <div className="flex items-center gap-3">
-      <div className="flex-1 h-2 rounded-full overflow-hidden" style={{ backgroundColor: C.surface }}>
+      <div className="flex-1 h-2 rounded-full overflow-hidden" style={{ backgroundColor: C.surface2 }}>
         <div
           className="h-2 rounded-full transition-all duration-500"
           style={{
             width: `${score}%`,
-            backgroundColor: score >= 80 ? C.success : score >= 60 ? C.accent : C.error,
+            backgroundColor: score >= 80 ? C.success : score >= 60 ? C.primary : C.error,
           }}
         />
       </div>
       <span
         className="text-sm font-bold w-12 text-right"
-        style={{ fontFamily: "Lexend, sans-serif", color: C.light }}
+        style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
       >
         {score}%
       </span>
@@ -109,7 +93,7 @@ export default function LeaderboardPage() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<"weekly" | "alltime">("alltime");
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
-  const [isEmpty, setIsEmpty] = useState(false);
+  const [isEmpty, setIsEmpty] = useState(true);
   const [userName, setUserName] = useState("");
 
   useEffect(() => {
@@ -119,94 +103,56 @@ export default function LeaderboardPage() {
     const raw = localStorage.getItem("quizcraft_attempts");
     if (!raw) {
       setIsEmpty(true);
-      setEntries(
-        MOCK_USERS.map((u) => ({
-          name: u.name,
-          topScore: u.score,
-          totalQuizzes: u.quizzes,
-          lastAttempt: u.lastDate,
-        }))
-      );
+      setEntries([]);
       return;
     }
 
     try {
-      const attempts: AttemptEntry[] = JSON.parse(raw);
+      const attempts: StoredAttempt[] = JSON.parse(raw);
 
       if (attempts.length === 0) {
         setIsEmpty(true);
-        setEntries(
-          MOCK_USERS.map((u) => ({
-            name: u.name,
-            topScore: u.score,
-            totalQuizzes: u.quizzes,
-            lastAttempt: u.lastDate,
-          }))
-        );
+        setEntries([]);
         return;
       }
 
-      // Week boundaries
       const now = Date.now();
       const oneWeekAgo = now - 7 * 24 * 60 * 60 * 1000;
 
-      // Aggregate by name
-      const byName: Record<
-        string,
-        { topScore: number; totalQuizzes: number; lastAttempt: number }
-      > = {};
+      const byName: Record<string, { topScore: number; totalQuizzes: number; lastAttempt: number }> = {};
 
       attempts.forEach((a) => {
-        const n = name || "You";
+        const n = a.userName || name || "You";
         if (!byName[n]) {
           byName[n] = { topScore: 0, totalQuizzes: 0, lastAttempt: 0 };
         }
-        byName[n].topScore = Math.max(byName[n].topScore, a.percentage);
+        byName[n].topScore = Math.max(byName[n].topScore, Math.round((a.score / a.totalQuestions) * 100));
         byName[n].totalQuizzes += 1;
-        byName[n].lastAttempt = Math.max(byName[n].lastAttempt, a.date);
+        byName[n].lastAttempt = Math.max(byName[n].lastAttempt, a.timestamp);
       });
 
-      // Build real entries
-      const realEntries: LeaderboardEntry[] = Object.entries(byName).map(
-        ([n, data]) => ({
-          name: n,
-          topScore: data.topScore,
-          totalQuizzes: data.totalQuizzes,
-          lastAttempt: data.lastAttempt,
-          isCurrentUser: n === name,
-        })
-      );
-
-      // Add mock users
-      const mockEntries: LeaderboardEntry[] = MOCK_USERS.map((u) => ({
-        name: u.name,
-        topScore: u.score,
-        totalQuizzes: u.quizzes,
-        lastAttempt: u.lastDate,
+      const realEntries: LeaderboardEntry[] = Object.entries(byName).map(([n, data]) => ({
+        name: n,
+        topScore: data.topScore,
+        totalQuizzes: data.totalQuizzes,
+        lastAttempt: data.lastAttempt,
+        isCurrentUser: n === name,
       }));
 
-      const allEntries = [...realEntries, ...mockEntries];
+      // Sort by top score desc
+      realEntries.sort((a, b) => b.topScore - a.topScore);
 
       // Filter weekly if needed
       const filtered =
         activeTab === "weekly"
-          ? allEntries.filter((e) => e.lastAttempt >= oneWeekAgo)
-          : allEntries;
-
-      // Sort by top score desc
-      filtered.sort((a, b) => b.topScore - a.topScore);
+          ? realEntries.filter((e) => e.lastAttempt >= oneWeekAgo)
+          : realEntries;
 
       setEntries(filtered);
+      setIsEmpty(filtered.length === 0);
     } catch {
       setIsEmpty(true);
-      setEntries(
-        MOCK_USERS.map((u) => ({
-          name: u.name,
-          topScore: u.score,
-          totalQuizzes: u.quizzes,
-          lastAttempt: u.lastDate,
-        }))
-      );
+      setEntries([]);
     }
   }, [activeTab]);
 
@@ -217,189 +163,203 @@ export default function LeaderboardPage() {
       className="min-h-screen p-6"
       style={{ backgroundColor: C.bg, fontFamily: "Inter, sans-serif" }}
     >
-      <div className="max-w-3xl mx-auto space-y-6">
+      {/* Background gradient */}
+      <div
+        className="fixed inset-0 pointer-events-none"
+        style={{
+          background: "radial-gradient(ellipse at 50% 0%, rgba(240,170,28,0.06) 0%, transparent 60%)",
+        }}
+      />
+
+      <div className="relative z-10 max-w-3xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-center gap-3">
           <Button
             variant="ghost"
             size="icon"
             onClick={() => router.push("/")}
-            style={{ color: C.muted }}
+            style={{ color: C.mutedFg }}
           >
             <ArrowLeft className="w-5 h-5" />
           </Button>
           <h1
             className="text-2xl font-bold"
-            style={{ fontFamily: "Lexend, sans-serif", color: C.light }}
+            style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
           >
             🏆 Leaderboard
           </h1>
         </div>
 
-        {/* Empty state message */}
+        {/* Empty state — no mock data */}
         {isEmpty && (
-          <div
-            className="flex items-center gap-2 p-3 rounded-lg text-sm"
-            style={{ backgroundColor: `${C.accent}22`, color: C.accent }}
+          <Card
+            className="p-8 text-center"
+            style={{ backgroundColor: C.surface, border: `1px solid ${C.surface2}` }}
           >
-            <Trophy className="w-4 h-4" />
-            Be the first to take a quiz!
-          </div>
-        )}
-
-        {/* Tabs */}
-        <Tabs
-          value={activeTab}
-          onValueChange={(v) => setActiveTab(v as "weekly" | "alltime")}
-        >
-          <TabsList
-            className="grid w-full grid-cols-2"
-            style={{
-              backgroundColor: C.surface,
-              border: `1px solid ${C.secondary}`,
-            }}
-          >
-            <TabsTrigger
-              value="weekly"
+            <div className="text-5xl mb-4">📋</div>
+            <h3
+              className="text-xl font-semibold mb-2"
+              style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+            >
+              No scores yet
+            </h3>
+            <p className="mb-6" style={{ color: C.mutedFg }}>
+              Be the first to take a quiz and claim the #1 spot!
+            </p>
+            <Button
+              onClick={() => router.push("/")}
               style={{
+                backgroundColor: C.primary,
+                color: C.bg,
                 fontFamily: "Lexend, sans-serif",
-                color: activeTab === "weekly" ? C.light : C.muted,
               }}
             >
-              <Calendar className="w-4 h-4 mr-2" />
-              Weekly
-            </TabsTrigger>
-            <TabsTrigger
-              value="alltime"
-              style={{
-                fontFamily: "Lexend, sans-serif",
-                color: activeTab === "alltime" ? C.light : C.muted,
-              }}
-            >
-              <TrendingUp className="w-4 h-4 mr-2" />
-              All Time
-            </TabsTrigger>
-          </TabsList>
-
-          <TabsContent value={activeTab} className="mt-4 space-y-3">
-            {entries.length === 0 ? (
-              <Card
-                className="p-8 text-center"
-                style={{ backgroundColor: C.surface, border: `1px solid ${C.secondary}` }}
-              >
-                <div className="text-4xl mb-3">📊</div>
-                <p style={{ color: C.muted }}>
-                  No activity this week. Take a quiz to get on the board!
-                </p>
-              </Card>
-            ) : (
-              entries.map((entry, idx) => {
-                const rank = idx + 1;
-                const isTop3 = rank <= 3;
-
-                return (
-                  <Card
-                    key={entry.name}
-                    style={{
-                      backgroundColor: isTop3 ? `${C.surface}` : C.surface,
-                      border: entry.isCurrentUser
-                        ? `2px solid ${C.accent}`
-                        : `1px solid ${C.secondary}`,
-                    }}
-                  >
-                    <CardContent className="p-4">
-                      <div className="flex items-center gap-4">
-                        {/* Rank */}
-                        <RankMedal rank={rank} />
-
-                        {/* Name + badges */}
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span
-                              className="font-semibold text-base truncate"
-                              style={{
-                                fontFamily: "Lexend, sans-serif",
-                                color: entry.isCurrentUser ? C.accent : C.light,
-                              }}
-                            >
-                              {entry.name}
-                            </span>
-                            {entry.isCurrentUser && (
-                              <Badge
-                                variant="outline"
-                                className="text-xs"
-                                style={{
-                                  borderColor: C.accent,
-                                  color: C.accent,
-                                }}
-                              >
-                                You
-                              </Badge>
-                            )}
-                          </div>
-                          <div
-                            className="flex items-center gap-3 mt-1 text-xs"
-                            style={{ color: C.muted }}
-                          >
-                            <span className="flex items-center gap-1">
-                              <Hash className="w-3 h-3" />
-                              {entry.totalQuizzes} quizzes
-                            </span>
-                            <span>{formatDate(entry.lastAttempt)}</span>
-                          </div>
-                        </div>
-
-                        {/* Score bar */}
-                        <div className="w-36 hidden sm:block">
-                          <ScoreBar score={entry.topScore} />
-                        </div>
-
-                        {/* Score badge for mobile */}
-                        <div
-                          className="sm:hidden text-sm font-bold"
-                          style={{ fontFamily: "Lexend, sans-serif", color: C.light }}
-                        >
-                          {entry.topScore}%
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })
-            )}
-          </TabsContent>
-        </Tabs>
-
-        {/* Stats summary */}
-        {userName && (
-          <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.secondary}` }}>
-            <CardContent className="p-4">
-              <p className="text-sm" style={{ color: C.muted }}>
-                Your best score:{" "}
-                <span
-                  className="font-bold"
-                  style={{ fontFamily: "Lexend, sans-serif", color: C.accent }}
-                >
-                  {entries.find((e) => e.isCurrentUser)?.topScore ?? "—"}%
-                </span>{" "}
-                · Total quizzes taken:{" "}
-                <span
-                  className="font-bold"
-                  style={{ fontFamily: "Lexend, sans-serif", color: C.light }}
-                >
-                  {entries.find((e) => e.isCurrentUser)?.totalQuizzes ?? 0}
-                </span>
-              </p>
-            </CardContent>
+              Take Your First Quiz
+            </Button>
           </Card>
         )}
 
-        {/* Take quiz CTA */}
+        {/* Tabs — only show if data exists */}
+        {!isEmpty && (
+          <>
+            <Tabs
+              value={activeTab}
+              onValueChange={(v) => setActiveTab(v as "weekly" | "alltime")}
+            >
+              <TabsList
+                className="grid w-full grid-cols-2"
+                style={{
+                  backgroundColor: C.surface,
+                  border: `1px solid ${C.surface2}`,
+                }}
+              >
+                <TabsTrigger
+                  value="weekly"
+                  style={{
+                    fontFamily: "Lexend, sans-serif",
+                    color: activeTab === "weekly" ? C.fg : C.mutedFg,
+                  }}
+                >
+                  <Calendar className="w-4 h-4 mr-2" />
+                  This Week
+                </TabsTrigger>
+                <TabsTrigger
+                  value="alltime"
+                  style={{
+                    fontFamily: "Lexend, sans-serif",
+                    color: activeTab === "alltime" ? C.fg : C.mutedFg,
+                  }}
+                >
+                  <TrendingUp className="w-4 h-4 mr-2" />
+                  All Time
+                </TabsTrigger>
+              </TabsList>
+
+              <TabsContent value={activeTab} className="mt-4 space-y-3">
+                {entries.map((entry, idx) => {
+                  const rank = idx + 1;
+                  const isTop3 = rank <= 3;
+
+                  return (
+                    <Card
+                      key={entry.name}
+                      style={{
+                        backgroundColor: isTop3 ? C.surface : C.surface,
+                        border: entry.isCurrentUser
+                          ? `2px solid ${C.primary}`
+                          : `1px solid ${C.surface2}`,
+                      }}
+                    >
+                      <CardContent className="p-4">
+                        <div className="flex items-center gap-4">
+                          <RankMedal rank={rank} />
+
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <span
+                                className="font-semibold text-base truncate"
+                                style={{
+                                  fontFamily: "Lexend, sans-serif",
+                                  color: entry.isCurrentUser ? C.primary : C.fg,
+                                }}
+                              >
+                                {entry.name}
+                              </span>
+                              {entry.isCurrentUser && (
+                                <Badge
+                                  variant="outline"
+                                  className="text-xs"
+                                  style={{
+                                    borderColor: C.primary,
+                                    color: C.primary,
+                                  }}
+                                >
+                                  You
+                                </Badge>
+                              )}
+                            </div>
+                            <div
+                              className="flex items-center gap-3 mt-1 text-xs"
+                              style={{ color: C.mutedFg }}
+                            >
+                              <span className="flex items-center gap-1">
+                                <Hash className="w-3 h-3" />
+                                {entry.totalQuizzes} quizzes
+                              </span>
+                              <span>{formatDate(entry.lastAttempt)}</span>
+                            </div>
+                          </div>
+
+                          <div className="w-36 hidden sm:block">
+                            <ScoreBar score={entry.topScore} />
+                          </div>
+
+                          <div
+                            className="sm:hidden text-sm font-bold"
+                            style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
+                          >
+                            {entry.topScore}%
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </TabsContent>
+            </Tabs>
+
+            {/* Your rank summary */}
+            {hasCurrentUser && (
+              <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.surface2}` }}>
+                <CardContent className="p-4">
+                  <p className="text-sm" style={{ color: C.mutedFg }}>
+                    Your best score:{" "}
+                    <span
+                      className="font-bold"
+                      style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
+                    >
+                      {entries.find((e) => e.isCurrentUser)?.topScore ?? "—"}%
+                    </span>{" "}
+                    · Total quizzes taken:{" "}
+                    <span
+                      className="font-bold"
+                      style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                    >
+                      {entries.find((e) => e.isCurrentUser)?.totalQuizzes ?? 0}
+                    </span>
+                  </p>
+                </CardContent>
+              </Card>
+            )}
+          </>
+        )}
+
+        {/* CTA */}
         <Button
           onClick={() => router.push("/")}
           className="w-full"
           style={{
-            backgroundColor: C.accent,
+            backgroundColor: C.primary,
             color: C.bg,
             fontFamily: "Lexend, sans-serif",
           }}

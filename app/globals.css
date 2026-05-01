@@ -6,58 +6,54 @@
 
 @layer base {
   :root {
-    /* QuizCraft Dark Theme - New Palette */
-    --background: #1D1E2C;
-    --foreground: #F7EBEC;
-    --card: #252636;
-    --card-foreground: #F7EBEC;
-    --popover: #252636;
-    --popover-foreground: #F7EBEC;
-    --primary: #AC9FBB;
-    --primary-foreground: #1D1E2C;
-    --secondary: #59656F;
-    --secondary-foreground: #F7EBEC;
-    --muted: #59656F;
-    --muted-foreground: #DDBDD5;
-    --accent: #AC9FBB;
-    --accent-foreground: #1D1E2C;
-    --destructive: #e57373;
-    --destructive-foreground: #F7EBEC;
-    --border: #59656F;
-    --input: #59656F;
-    --ring: #AC9FBB;
-    --radius: 0.5rem;
+    /* QuizCraft — Warm Fire Palette */
+    --background:    #1a1209;
+    --foreground:    #fff8f0;
+    --card:          #2a1a0a;
+    --card-foreground: #fff8f0;
+    --popover:       #2a1a0a;
+    --popover-foreground: #fff8f0;
+    --primary:       #f6aa1c;
+    --primary-foreground: #1a1209;
+    --secondary:     #bc3908;
+    --secondary-foreground: #fff8f0;
+    --muted:         #8a7055;
+    --muted-foreground: #c4a882;
+    --accent:        #941b0c;
+    --accent-foreground: #fff8f0;
+    --destructive:   #e57373;
+    --destructive-foreground: #fff8f0;
+    --border:        #3d2314;
+    --input:         #3d2314;
+    --ring:          #f6aa1c;
+    --radius:        0.5rem;
 
-    /* QuizCraft Custom Colors */
-    --primary-accent: #AC9FBB;
-    --primary-glow: #AC9FBB / 0.15;
-    --surface: #252636;
-    --surface-bright: #59656F;
-    --surface-container: #1D1E2C;
-    --light-highlight: #DDBDD5;
-    --bright-accent: #F7EBEC;
-    --success: #81c784;
-    --error: #e57373;
+    /* QuizCraft extras */
+    --surface:       #2a1a0a;
+    --surface-2:     #3d2314;
+    --success:        #81c784;
+    --error:         #e57373;
+    --warn:          #f6aa1c;
   }
 
   .dark {
-    --background: #1D1E2C;
-    --foreground: #F7EBEC;
-    --card: #252636;
-    --card-foreground: #F7EBEC;
-    --primary: #AC9FBB;
-    --primary-foreground: #1D1E2C;
-    --secondary: #59656F;
-    --secondary-foreground: #F7EBEC;
-    --muted: #59656F;
-    --muted-foreground: #DDBDD5;
-    --accent: #AC9FBB;
-    --accent-foreground: #1D1E2C;
-    --destructive: #e57373;
-    --destructive-foreground: #F7EBEC;
-    --border: #59656F;
-    --input: #59656F;
-    --ring: #AC9FBB;
+    --background:    #1a1209;
+    --foreground:    #fff8f0;
+    --card:          #2a1a0a;
+    --card-foreground: #fff8f0;
+    --primary:       #f6aa1c;
+    --primary-foreground: #1a1209;
+    --secondary:     #bc3908;
+    --secondary-foreground: #fff8f0;
+    --muted:         #8a7055;
+    --muted-foreground: #c4a882;
+    --accent:        #941b0c;
+    --accent-foreground: #fff8f0;
+    --destructive:   #e57373;
+    --destructive-foreground: #fff8f0;
+    --border:        #3d2314;
+    --input:         #3d2314;
+    --ring:          #f6aa1c;
   }
 }
 
@@ -65,7 +61,7 @@
   * {
     @apply border-border;
   }
-  
+
   html {
     font-family: 'Inter', system-ui, sans-serif;
   }
@@ -73,8 +69,8 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
-    background-color: #1D1E2C;
-    color: #F7EBEC;
+    background-color: #1a1209;
+    color: #fff8f0;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -84,29 +80,26 @@
 }
 
 @layer components {
-  /* Primary accent glow effect for buttons */
   .btn-primary {
-    background-color: #AC9FBB;
-    color: #1D1E2C;
+    background-color: #f6aa1c;
+    color: #1a1209;
     font-weight: 600;
     transition: all 0.2s;
   }
 
   .btn-primary:hover {
-    background-color: #DDBDD5;
-    box-shadow: 0 0 20px rgba(172, 159, 187, 0.4);
+    background-color: #fbb84d;
+    box-shadow: 0 0 20px rgba(246, 170, 28, 0.4);
   }
 
-  /* Card with subtle border */
   .card-surface {
-    background-color: #252636;
-    border: 1px solid #59656F;
+    background-color: #2a1a0a;
+    border: 1px solid #3d2314;
   }
 
-  /* Quiz option card */
   .quiz-option {
-    border: 1px solid #59656F;
-    background-color: #252636;
+    border: 1px solid #3d2314;
+    background-color: #2a1a0a;
     transition: all 0.2s;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -114,34 +107,24 @@
   }
 
   .quiz-option:hover {
-    border-color: rgba(172, 159, 187, 0.5);
+    border-color: rgba(246, 170, 28, 0.5);
   }
 
   .quiz-option.selected {
-    border-color: #AC9FBB;
-    background-color: rgba(172, 159, 187, 0.1);
-    box-shadow: 0 0 15px rgba(172, 159, 187, 0.2);
+    border-color: #f6aa1c;
+    background-color: rgba(246, 170, 28, 0.1);
+    box-shadow: 0 0 15px rgba(246, 170, 28, 0.2);
   }
 
-  /* Progress bar glow */
   .progress-glow {
     box-shadow: 0 0 10px rgba(129, 199, 132, 0.5);
   }
 
-  /* Success/Correct color */
-  .text-success {
-    color: #81c784;
-  }
+  .text-success  { color: #81c784; }
+  .text-error    { color: #e57373; }
 
-  /* Error/Wrong color */
-  .text-error {
-    color: #e57373;
-  }
-
-  /* Surface layers */
-  .surface-lowest { background-color: #1D1E2C; }
-  .surface-low { background-color: #252636; }
-  .surface { background-color: #252636; }
-  .surface-high { background-color: #59656F; }
-  .surface-highest { background-color: #DDBDD5; }
+  .surface-lowest { background-color: #1a1209; }
+  .surface-low    { background-color: #2a1a0a; }
+  .surface        { background-color: #2a1a0a; }
+  .surface-high   { background-color: #3d2314; }
 }

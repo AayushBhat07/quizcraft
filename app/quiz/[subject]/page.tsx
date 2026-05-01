@@ -52,17 +52,17 @@ const TIMER_SECS = 60;
 
 // ─── Styles (inline for the new palette) ──────────
 const s = {
-  bg: "#1D1E2C",
-  card: "#252636",
-  cardBorder: "#59656F",
-  primary: "#AC9FBB",
-  primaryFg: "#1D1E2C",
-  muted: "#59656F",
-  mutedFg: "#DDBDD5",
-  fg: "#F7EBEC",
-  success: "#81c784",
-  error: "#e57373",
-  warn: "#ffb74d",
+  bg:        "#1a1209",
+  card:      "#2a1a0a",
+  cardBorder:"#3d2314",
+  primary:   "#f6aa1c",
+  primaryFg: "#1a1209",
+  muted:     "#8a7055",
+  mutedFg:   "#c4a882",
+  fg:        "#fff8f0",
+  success:   "#81c784",
+  error:     "#e57373",
+  warn:      "#f6aa1c",
 };
 
 export default function QuizPage() {
