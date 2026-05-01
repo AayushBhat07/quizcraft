@@ -90,7 +90,12 @@ export default function QuizPage() {
     if (!localStorage.getItem("quizcraft_name")) {
       router.replace("/");
     }
-  }, [router]);
+    // Reset phase when subject changes
+    setPhase("setup");
+    setQuizQuestions([]);
+    setCurrentIdx(0);
+    setAnswers({});
+  }, [router, subjectId]);
 
   // ─── Name validation ───────────────────────────
   const userName = localStorage.getItem("quizcraft_name") ?? "";
@@ -169,7 +174,9 @@ export default function QuizPage() {
   const handleStartQuiz = () => {
     saveQuizPrefs(prefs);
     const pool = buildQuizPool(subjectId, prefs);
+    console.log("[Quiz] subjectId:", subjectId, "pool size:", pool.length, "prefs:", JSON.stringify(prefs));
     const questions = pool.slice(0, prefs.questionCount > 0 ? prefs.questionCount : pool.length);
+    console.log("[Quiz] selected questions:", questions.length, "first:", questions[0]?.text?.slice(0, 40));
     setQuizQuestions(questions);
     setCurrentIdx(0);
     setAnswers({});
