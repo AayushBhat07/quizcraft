@@ -244,6 +244,10 @@ export default function QuizPage() {
 
     saveAttempt(storedAttempt);
     localStorage.setItem("quizcraft_last_attempt", JSON.stringify(storedAttempt));
+    // Also save to quizcraft_attempts array for home page stats
+    const existingAttempts = JSON.parse(localStorage.getItem("quizcraft_attempts") || "[]");
+    existingAttempts.unshift(storedAttempt);
+    localStorage.setItem("quizcraft_attempts", JSON.stringify(existingAttempts));
     updateUserStatsAfterQuiz(result.score, result.total, result.weakTopics);
 
     // Save anonymous attempt to global leaderboard (non-blocking)
@@ -515,7 +519,7 @@ export default function QuizPage() {
               <Button
                 variant="outline"
                 className="flex-1"
-                onClick={() => router.push("/?_=" + Date.now())}
+                onClick={() => router.push("/")}
               >
                 <ArrowLeft className="w-4 h-4 mr-2" />
                 Home
@@ -523,7 +527,7 @@ export default function QuizPage() {
               <Button
                 className="flex-1"
                 style={{ backgroundColor: s.primary, color: s.primaryFg }}
-                onClick={() => router.push(`/results/${"last"}`)}
+                onClick={() => router.push("/results/last")}
               >
                 View Details
                 <ChevronRight className="w-4 h-4 ml-2" />

@@ -97,6 +97,7 @@ export default function ResultsPage() {
   const params = useParams();
   const router = useRouter();
   const attemptId = params.attemptId as string;
+  const isLastAttempt = attemptId === "last";
 
   const [attempt, setAttempt] = useState<StoredAttempt | null>(null);
   const [qMap, setQMap] = useState<Map<string, any> | null>(null);
@@ -106,18 +107,24 @@ export default function ResultsPage() {
   useEffect(() => {
     setQMap(getQuestionMap());
 
-    const stored = localStorage.getItem("quizcraft_last_attempt");
+    const storageKey = isLastAttempt ? "quizcraft_last_attempt" : "quizcraft_last_attempt";
+    const stored = localStorage.getItem(storageKey);
     if (!stored) {
       setNotFound(true);
       return;
     }
     try {
       const data: StoredAttempt = JSON.parse(stored);
+      // Only use this attempt if it matches the requested ID, or if we're looking for "last"
+      if (!isLastAttempt && data.id !== attemptId) {
+        setNotFound(true);
+        return;
+      }
       setAttempt(data);
     } catch {
       setNotFound(true);
     }
-  }, [attemptId]);
+  }, [attemptId, isLastAttempt]);
 
   if (notFound) {
     return (
