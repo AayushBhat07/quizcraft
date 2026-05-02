@@ -5,7 +5,6 @@ import { useParams, useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   ArrowLeft,
   Clock,
@@ -19,56 +18,276 @@ import {
   BookOpen,
   RotateCcw,
   Home,
-  AlertTriangle,
-  AlertCircle,
   Flame,
   Star,
+  Lightbulb,
 } from "lucide-react";
 
-// Placeholder quiz data — same as quiz page
-const PLACEHOLDER_QUESTIONS = [
-  {
-    id: "q1",
-    text: "What is the SI unit of force?",
-    options: { A: "Joule", B: "Newton", C: "Watt", D: "Pascal" },
-    correctAnswer: "B",
-    topic: "Kinematics",
-    chapterName: "Mechanics",
-  },
-  {
-    id: "q2",
-    text: "Which law states that for every action, there is an equal and opposite reaction?",
-    options: { A: "First Law", B: "Second Law", C: "Third Law", D: "Law of Gravitation" },
-    correctAnswer: "C",
-    topic: "Laws of Motion",
-    chapterName: "Mechanics",
-  },
-  {
-    id: "q3",
-    text: "The acceleration due to gravity on Earth is approximately:",
-    options: { A: "8.8 m/s²", B: "9.8 m/s²", C: "10.8 m/s²", D: "11.8 m/s²" },
-    correctAnswer: "B",
-    topic: "Gravitation",
-    chapterName: "Gravitation",
-  },
-  {
-    id: "q4",
-    text: "Which of the following is a scalar quantity?",
-    options: { A: "Velocity", B: "Acceleration", C: "Force", D: "Mass" },
-    correctAnswer: "D",
-    topic: "Kinematics",
-    chapterName: "Mechanics",
-  },
-  {
-    id: "q5",
-    text: "Momentum is defined as:",
-    options: { A: "Force × Time", B: "Mass × Velocity", C: "Mass × Acceleration", D: "Force × Distance" },
-    correctAnswer: "B",
-    topic: "Laws of Motion",
-    chapterName: "Mechanics",
-  },
-];
+// ─── Load real questions from JSON ─────────────────────────────────────────────
+import questionsData from "@/data/questions.json";
 
+type RawQuestion = {
+  id: string;
+  text: string;
+  options?: { A: string; B: string; C: string; D: string };
+  correctAnswer: string;
+  topic: string;
+};
+
+type RawChapter = {
+  id: string;
+  name: string;
+  questions: RawQuestion[];
+};
+
+type RawSubject = {
+  id: string;
+  name: string;
+  chapters: RawChapter[];
+};
+
+type QuestionsData = Record<string, RawSubject>;
+
+function getAllQuestions(): RawQuestion[] {
+  const raw = questionsData as unknown as { subject?: RawSubject; subjects?: RawSubject[] };
+  if (raw.subject) return raw.subject.chapters.flatMap((c: RawChapter) => c.questions);
+  if (Array.isArray(raw.subjects)) {
+    return raw.subjects.flatMap((s: RawSubject) => s.chapters.flatMap((c: RawChapter) => c.questions));
+  }
+  return Object.values(raw as QuestionsData).flatMap((s: RawSubject) => s.chapters.flatMap((c: RawChapter) => c.questions));
+}
+
+function getQuestionMap(): Map<string, RawQuestion & { chapterName: string }> {
+  const raw = questionsData as any;
+  const map = new Map<string, RawQuestion & { chapterName: string }>();
+
+  let subjects: RawSubject[] = [];
+  if (Array.isArray(raw.subjects)) {
+    subjects = raw.subjects;
+  } else if (raw.subject) {
+    subjects = [raw.subject];
+  }
+
+  for (const s of subjects) {
+    for (const c of s.chapters) {
+      for (const q of c.questions) {
+        map.set(q.id, { ...q, chapterName: c.name });
+      }
+    }
+  }
+  return map;
+}
+
+// ─── Explanations for Chapter 4 (General Computer Science) new-q* questions ───
+// These are verified domain-knowledge 1-line explanations.
+const newQExplanations: Record<string, string> = {
+  "new-q1": "GPU handles parallel visual computations, not general-purpose sequential tasks.",
+  "new-q2": "The CPU's internal architecture determines how efficiently it executes instructions.",
+  "new-q3": "Multicore processors allow parallel instruction streams, improving throughput.",
+  "new-q4": "Hyper-threading lets one physical core handle two threads by sharing execution units.",
+  "new-q5": "ARM's low-power design makes it ideal for mobile and embedded devices.",
+  "new-q6": "Cache memory sits between the CPU and main memory to reduce access latency.",
+  "new-q7": "The memory hierarchy places registers closest to the CPU, then cache, then RAM.",
+  "new-q8": "Cache hits occur when requested data is found in faster cache memory.",
+  "new-q9": "The memory wall is the growing speed gap between CPU and main memory.",
+  "new-q10": "Register access takes a single CPU cycle, making it the fastest memory type.",
+  "new-q11": "Cache locality exploits temporal and spatial patterns in memory access.",
+  "new-q12": "Write-back defers writing to main memory until the cache line is evicted.",
+  "new-q13": "TLB speeds up virtual-to-physical address translation for frequently accessed pages.",
+  "new-q14": "DRAM stores each bit as a charge in a capacitor, requiring periodic refresh.",
+  "new-q15": "SRAM uses flip-flops to store bits — faster but more expensive than DRAM.",
+  "new-q16": "Cache associativity determines how freely a block can be placed in the cache.",
+  "new-q17": "L1 cache is the smallest and fastest, closest to the CPU core.",
+  "new-q18": "Cache line size affects both spatial locality and bandwidth efficiency.",
+  "new-q19": "The replacement policy decides which cache block to evict when a new block arrives.",
+  "new-q20": "Write-through writes to both cache and main memory simultaneously.",
+  "new-q21": "Memory bandwidth is the maximum rate at which data can be read from memory.",
+  "new-q22": "Prefetching loads data into cache before it's explicitly requested by the CPU.",
+  "new-q23": "Cache coherency ensures all CPU cores see the same data for the same memory location.",
+  "new-q24": "MESI protocol uses four states (Modified, Exclusive, Shared, Invalid) to maintain cache coherency.",
+  "new-q25": "A cache miss triggers a memory access that takes dozens of CPU cycles.",
+  "new-q26": "Instruction cache stores frequently used program instructions for faster fetching.",
+  "new-q27": "A bus is a shared communication channel connecting CPU, memory, and peripherals.",
+  "new-q28": "DMA allows peripherals to transfer data directly to memory without CPU intervention.",
+  "new-q29": "Memory-mapped I/O uses the same address bus for both memory and device registers.",
+  "new-q30": "Polling repeatedly checks device status, while interrupts notify the CPU on events.",
+  "new-q31": "Interrupts are hardware signals that pause the CPU to handle I/O events.",
+  "new-q32": "The interrupt handler is a specific routine the OS executes when an interrupt fires.",
+  "new-q33": "I/O devices use handshaking signals to coordinate data transfer with the CPU.",
+  "new-q34": "Buffered I/O uses a memory buffer to decouple fast CPU from slower I/O devices.",
+  "new-q35": "Direct memory access (DMA) bypasses the CPU for bulk data transfers.",
+  "new-q36": "The northbridge historically connected the CPU, memory, and high-speed graphics bus.",
+  "new-q37": "The southbridge handles slower I/O devices like USB, audio, and storage.",
+  "new-q38": "PCI Express uses point-to-point serial lanes, replacing the older parallel bus architecture.",
+  "new-q39": "Chipset components manage data flow between the CPU and all peripheral buses.",
+  "new-q40": "The front-side bus (FSB) connected the CPU to the northbridge in older architectures.",
+  "new-q41": "Hypertransport and Infinity Fabric are high-speed CPU-to-CPU and CPU-to-memory links.",
+  "new-q42": "DIMM modules contain multiple DRAM chips arranged in a 64-bit data width.",
+  "new-q43": "ECC memory detects and corrects single-bit errors in stored data.",
+  "new-q44": "Dual-channel memory doubles the bandwidth by using two memory modules in parallel.",
+  "new-q45": "RAM frequency determines how fast data can be read from or written to memory.",
+  "new-q46": "CAS latency measures the delay between a memory command and the first data available.",
+  "new-q47": "Memory timings (CL, tRCD, tRP) define the performance characteristics of DRAM.",
+  "new-q48": "XMP profiles let users enable faster than standard memory timings in BIOS.",
+  "new-q49": "Non-volatile memory retains data without power, unlike volatile DRAM and SRAM.",
+  "new-q50": "NVRAM combines the speed of DRAM with the persistence of flash memory.",
+  "new-q51": "Memory fragmentation occurs when free space becomes non-contiguous over time.",
+  "new-q52": "Virtual memory extends available RAM using disk space as temporary storage.",
+  "new-q53": "Page tables translate virtual addresses to physical addresses in virtual memory systems.",
+  "new-q54": "Page replacement algorithms decide which memory pages to evict under memory pressure.",
+  "new-q55": "The working set is the set of pages a process actively uses in a given time window.",
+  "new-q56": "Thrashing occurs when the system spends more time swapping pages than executing instructions.",
+  "new-q57": "Memory paging moves pages between RAM and disk storage to manage physical memory limits.",
+  "new-q58": "Large pages (huge pages) reduce TLB misses by mapping more memory per TLB entry.",
+  "new-q59": "Memory overcommit allows the system to allocate more virtual memory than physical RAM.",
+  "new-q60": "Memory compression stores rarely used pages in a compressed form within RAM.",
+  "new-q61": "KSM (Kernel Same-page Merging) deduplicates identical memory pages across processes.",
+  "new-q62": "NUMA systems give each CPU its own local memory for lower latency.",
+  "new-q63": "Memory hot-plugging allows adding RAM to a running system without rebooting.",
+  "new-q64": "Memory mirroring duplicates data across two channels for fault tolerance.",
+  "new-q65": "Copy-on-write defers duplication of memory pages until one process modifies them.",
+  "new-q66": "Process isolation ensures one process cannot access another's private memory.",
+  "new-q67": "Address space layout randomization (ASLR) randomizes memory addresses to prevent exploits.",
+  "new-q68": "Kernel address space layout randomization (KASLR) extends ASLR to kernel memory.",
+  "new-q69": "Memory pinning prevents pages from being swapped out for real-time performance.",
+  "new-q70": "Memory zones (dma32, normal) divide memory based on hardware addressing capabilities.",
+  "new-q71": "Slab allocation pre-allocates object caches to speed up kernel memory requests.",
+  "new-q72": "Memory cgroups limit the RAM each group of processes can use.",
+  "new-q73": "OOM killer terminates the largest memory-consuming process when RAM is exhausted.",
+  "new-q74": "/proc/meminfo reports detailed memory usage statistics in Linux systems.",
+  "new-q75": "The commit limit in Linux represents the total virtual memory that can be allocated.",
+  "new-q76": "Memory-mapped files map file contents directly into the process's virtual address space.",
+  "new-q77": "CoW forks share memory pages until either parent or child writes to them.",
+  "new-q78": "kswapd reclaims memory by evicting least-recently-used pages.",
+  "new-q79": "dirty ratios control when the kernel writes modified pages back to disk.",
+  "new-q80": "Transparent hugepages automatically use 2MB pages to reduce TLB pressure.",
+  "new-q81": "GPU architecture uses thousands of small cores for parallel workloads.",
+  "new-q82": "Shader cores in a GPU execute the same instruction across many pixels simultaneously.",
+  "new-q83": "CUDA cores are NVIDIA's parallel processing units for general GPU computing.",
+  "new-q84": "A compute unit in AMD GPUs groups multiple stream processors together.",
+  "new-q85": "GPU memory bandwidth is critical for feeding data to thousands of parallel cores.",
+  "new-q86": "GDDR memory is designed for high bandwidth, not low latency.",
+  "new-q87": "Tensor cores accelerate matrix operations used in deep learning workloads.",
+  "new-q88": "Ray tracing cores accelerate real-time ray tracing for realistic lighting.",
+  "new-q89": "GPU memory hierarchy includes global, shared, and registers for different access patterns.",
+  "new-q90": "Shared memory in GPUs is a fast on-chip memory accessible by all threads in a block.",
+  "new-q91": "Warp divergence occurs when threads in a warp take different execution paths.",
+  "new-q92": "Occupancy measures how many warps are active on a GPU compute unit.",
+  "new-q93": "GPU pipelines overlap memory operations with computation to hide latency.",
+  "new-q94": "Unified memory allows CPU and GPU to share the same virtual address space.",
+  "new-q95": "Zero-copy lets the GPU access system memory directly without copying.",
+  "new-q96": "Peer-to-peer GPU communication transfers data directly between GPUs.",
+  "new-q97": "GPU virtualization splits a physical GPU into multiple virtual GPUs.",
+  "new-q98": "MIG (Multi-Instance GPU) divides a GPU into isolated compute instances.",
+  "new-q99": "GPU scheduling decides which kernels run on which cores at any given time.",
+  "new-q100": "Graphics pipelines convert 3D scenes into 2D images for display on screens.",
+  "new-q101": "Vertex shaders transform 3D coordinates and apply lighting calculations.",
+  "new-q102": "Fragment shaders compute the color and other attributes of each pixel.",
+  "new-q103": "Rasterization converts vector geometry into pixel fragments for screen display.",
+  "new-q104": "Z-buffering tracks the depth of each pixel to correctly render overlapping objects.",
+  "new-q105": "Anti-aliasing smooths jagged edges by sampling multiple points per pixel.",
+  "new-q106": "Bloom adds a glow effect around bright areas to simulate real-world light.",
+  "new-q107": "Ambient occlusion darkens corners and crevices to add depth to scenes.",
+  "new-q108": "Tessellation subdivides polygons into smaller triangles for smoother geometry.",
+  "new-q109": "Screen-space reflections use the already-rendered image to approximate reflections.",
+  "new-q110": "Motion blur simulates the streaking of fast-moving objects in a scene.",
+  "new-q111": "Ray tracing follows light rays from the camera through the scene for realistic images.",
+  "new-q112": "Path tracing extends ray tracing by simulating the full path of light through a scene.",
+  "new-q113": "Global illumination models how light bounces between all surfaces in a scene.",
+  "new-q114": "Radiometry measures light energy as it travels through space.",
+  "new-q115": "BRDF (Bidirectional Reflectance Distribution Function) describes how light reflects off surfaces.",
+  "new-q116": "Physically Based Rendering (PBR) uses realistic material and lighting models.",
+  "new-q117": "Metalness controls whether a surface behaves as a metal or a dielectric.",
+  "new-q118": "Roughness determines how sharp or blurry reflections appear on a surface.",
+  "new-q119": "Emissive materials emit light rather than reflecting it from other sources.",
+  "new-q120": "Subsurface scattering simulates light penetrating translucent materials like skin.",
+  "new-q121": "Texture mapping applies 2D images to 3D surfaces for detail.",
+  "new-q122": "Normal mapping encodes surface detail as RGB values without adding geometry.",
+  "new-q123": "Displacement mapping actually moves vertices to match surface bump details.",
+  "new-q124": "Cube maps are 6 textures that surround a point to represent environment lighting.",
+  "new-q125": "Mipmapping pre-computes smaller versions of textures to prevent aliasing.",
+  "new-q126": "Anisotropic filtering improves texture quality on surfaces angled to the viewer.",
+  "new-q127": "Texture atlases pack many small textures into one large texture to reduce draw calls.",
+  "new-q128": "Virtual texturing streams texture data on demand to support large worlds.",
+  "new-q129": "Bindless graphics allows shaders to access any texture without binding it to a slot.",
+  "new-q130": "Graphics command buffers queue rendering operations for asynchronous submission.",
+  "new-q131": "Fences synchronize between the GPU and CPU to track when work is complete.",
+  "new-q132": "Double buffering renders to one frame while displaying another to avoid tearing.",
+  "new-q133": "Vertical sync (v-sync) locks frame rate to the monitor's refresh rate.",
+  "new-q134": "Triple buffering adds a third buffer to reduce stuttering when v-sync is on.",
+  "new-q135": "Frame time is how long a frame takes to render; lower is better.",
+  "new-q136": "GPU usage percentage shows how much of the GPU's capacity is being utilized.",
+  "new-q137": "GPU temperature affects clock speed via thermal throttling to prevent damage.",
+  "new-q138": "Power limits cap GPU performance to manage heat and electricity consumption.",
+  "new-q139": "Boost clock increases GPU frequency dynamically when temperature and power allow.",
+  "new-q140": "Founders Edition GPUs use reference designs from the GPU manufacturer.",
+  "new-q141": "Aftermarket coolers use larger fans and better heatsinks for lower temperatures.",
+  "new-q142": "Liquid cooling removes heat by circulating coolant through a radiator.",
+  "new-q143": "GPU dying gasp is the last signal sent before power loss for graceful shutdown.",
+  "new-q144": "Resizable BAR lets the CPU access the full GPU memory in one transaction.",
+  "new-q145": "DLSS (Deep Learning Super Sampling) uses AI to upscale lower-resolution images.",
+  "new-q146": "FSR (FidelityFX Super Resolution) is AMD's open-source upscaling technology.",
+  "new-q147": "NIS (NVIDIA Image Scaling) is NVIDIA's open-source upscaling solution.",
+  "new-q148": "Ray tracing DNNs use deep learning to denoise sparse ray tracing samples.",
+  "new-q149": "Game Ready drivers are optimized for specific game releases.",
+  "new-q150": "Studio drivers prioritize stability and performance in creative applications.",
+  "new-q151": "GPU bios updates can unlock more power limits or improve compatibility.",
+  "new-q152": "PCIe generation determines maximum bandwidth: PCIe 3.0 = 8 GT/s, PCIe 4.0 = 16 GT/s.",
+  "new-q153": "Resizable BAR requires both GPU and CPU support to function.",
+  "new-q154": "NVLink enables high-speed GPU-to-GPU communication for parallel workloads.",
+  "new-q155": "SLI (Scalable Link Interface) used to combine multiple NVIDIA GPUs.",
+  "new-q156": "CrossFire used to combine multiple AMD GPUs.",
+  "new-q157": "DirectX 12 enables low-level GPU control for better multi-threaded performance.",
+  "new-q158": "Vulkan provides cross-platform low-overhead access to GPU hardware.",
+  "new-q159": "OpenGL is an older graphics API with broader driver support.",
+  "new-q160": "Metal is Apple's GPU framework for iOS and macOS applications.",
+  "new-q161": "Compute shaders are GPU programs designed for general parallel computation.",
+  "new-q162": "TensorFlow and PyTorch use GPUs for accelerated deep learning training.",
+  "new-q163": "CUDA is NVIDIA's proprietary parallel computing platform and API.",
+  "new-q164": "OpenCL is an open standard for heterogeneous parallel computing.",
+  "new-q165": "HIP translates CUDA code to run on AMD GPUs.",
+  "new-q166": "ROCm is AMD's open-source GPU computing platform.",
+  "new-q167": "GPU performance per watt measures efficiency of compute per energy consumed.",
+  "new-q168": "GPUdie size correlates with transistor count and thermal output.",
+  "new-q169": "Yield rate determines how many functional chips are produced per wafer.",
+  "new-q170": "TSMC and Samsung are the primary contract manufacturers for GPUs.",
+  "new-q171": "FinFET transistors replaced planar transistors at 16nm to reduce leakage.",
+  "new-q172": "Chip stacking (2.5D/3D) places memory and logic in the same package.",
+  "new-q173": "CoWoS (Chip on Wafer on Substrate) is TSMC's packaging technology.",
+  "new-q174": "HBM (High Bandwidth Memory) stacks memory chips vertically for massive bandwidth.",
+  "new-q175": "HBM2E stacks memory layers to achieve terabytes per second of bandwidth.",
+  "new-q176": "GDDR6X uses PAM4 signaling to double data rate compared to GDDR6.",
+  "new-q177": "Infinity Cache is an on-chip SRAM cache in AMD RDNA 2 GPUs.",
+  "new-q178": "RT cores accelerate bounding volume hierarchy traversal for ray tracing.",
+  "new-q179": "Mesh shaders replace the traditional geometry pipeline with a programmable model.",
+  "new-q180": "Variable rate shading adjusts shading rate across the screen to save GPU power.",
+  "new-q181": "Sampler feedback tracks which texture regions are actually used by the application.",
+  "new-q182": "DirectStorage optimizes loading game assets directly from NVMe to GPU.",
+  "new-q183": "Shader compilation converts high-level shader code into GPU machine code.",
+  "new-q184": "SPIR-V is an intermediate representation for GPU shader binaries.",
+  "new-q185": "Async compute allows independent GPU tasks to run simultaneously.",
+  "new-q186": "Timestamp queries measure how long specific GPU operations take.",
+  "new-q187": "Present barriers prevent the screen from updating until rendering is complete.",
+  "new-q188": "GPU trace analysis identifies bottlenecks in graphics pipeline performance.",
+  "new-q189": "Nsight Graphics profiles GPU frame-by-frame to identify performance issues.",
+  "new-q190": "Render graphs abstract GPU resource management for cleaner code.",
+  "new-q191": "Command lists group GPU operations for efficient batch submission.",
+  "new-q192": "Descriptor tables define resource views (textures, buffers) for shaders.",
+  "new-q193": "Pipeline state objects cache all fixed-function settings for faster switching.",
+  "new-q194": "Scratch memory is fast local storage on the GPU for temporary data.",
+  "new-q195": "Constant memory holds data that doesn't change across all threads.",
+  "new-q196": "Thread blocks group threads that can share resources and synchronize.",
+  "new-q197": "Grid dimensions define how many thread blocks launch for a kernel.",
+  "new-q198": "Global memory has high latency; use shared memory to improve performance.",
+  "new-q199": "Bank conflicts occur when multiple threads access the same shared memory bank.",
+  "new-q200": "Coalesced memory access combines requests from multiple threads into fewer transactions.",
+  "new-q201": "GPU atomics allow threads to safely update shared memory locations.",
+  "new-q202": "Stream compaction reorders data to remove invalid or unwanted entries.",
+  "new-q203": "Reduction operations combine all elements into a single result (e.g., sum).",
+  "new-q204": "Scan operations compute running totals across an array of elements.",
+};
+
+// ─── Interfaces ─────────────────────────────────────────────────────────────────
 interface AttemptData {
   id: string;
   date: number;
@@ -89,8 +308,10 @@ interface WrongQuestion {
   correctAnswer: string;
   topic: string;
   chapterName: string;
+  explanation: string;
 }
 
+// ─── Color palette ─────────────────────────────────────────────────────────────
 const C = {
   bg: "#1D1E2C",
   surface: "#252636",
@@ -103,33 +324,32 @@ const C = {
   amber: "#FFB74D",
 };
 
+// ─── Helpers ────────────────────────────────────────────────────────────────────
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
   return `${m}:${s.toString().padStart(2, "0")}`;
 }
 
-// ─── Circular Score Ring ──────────────────────────────────────────────────────
+function getExplanation(qId: string, fallback: string): string {
+  return newQExplanations[qId] ?? fallback;
+}
+
+// ─── Circular Score Ring ───────────────────────────────────────────────────────
 function ScoreCircle({ percentage, size = 180 }: { percentage: number; size?: number }) {
   const radius = (size - 24) / 2;
   const circumference = 2 * Math.PI * radius;
   const offset = circumference - (percentage / 100) * circumference;
-  const color =
-    percentage >= 70 ? C.success : percentage >= 50 ? C.amber : C.error;
+  const color = percentage >= 70 ? C.success : percentage >= 50 ? C.amber : C.error;
 
   return (
     <div className="relative flex items-center justify-center">
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
         <circle cx={size / 2} cy={size / 2} r={radius} fill="none" stroke={C.surface} strokeWidth="10" />
         <circle
-          cx={size / 2}
-          cy={size / 2}
-          r={radius}
-          fill="none"
-          stroke={color}
-          strokeWidth="10"
-          strokeLinecap="round"
-          strokeDasharray={circumference}
+          cx={size / 2} cy={size / 2} r={radius}
+          fill="none" stroke={color} strokeWidth="10"
+          strokeLinecap="round" strokeDasharray={circumference}
           strokeDashoffset={offset}
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
           style={{ transition: "stroke-dashoffset 1s ease-out" }}
@@ -145,11 +365,10 @@ function ScoreCircle({ percentage, size = 180 }: { percentage: number; size?: nu
   );
 }
 
-// ─── Chapter Score Ring (small) ───────────────────────────────────────────────
-function ChapterRing({ correct, total }: { correct: number; total: number }) {
+// ─── Chapter Score Ring (small) ────────────────────────────────────────────────
+function ChapterRing({ correct, total, size = 52 }: { correct: number; total: number; size?: number }) {
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
-  const size = 52;
-  const r = 20;
+  const r = (size - 12) / 2;
   const circ = 2 * Math.PI * r;
   const offset = circ - (pct / 100) * circ;
   const color = pct >= 70 ? C.success : pct >= 50 ? C.amber : C.error;
@@ -159,42 +378,14 @@ function ChapterRing({ correct, total }: { correct: number; total: number }) {
       <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
         <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={C.surface} strokeWidth="4" />
         <circle
-          cx={size / 2}
-          cy={size / 2}
-          r={r}
-          fill="none"
-          stroke={color}
-          strokeWidth="4"
-          strokeLinecap="round"
-          strokeDasharray={circ}
+          cx={size / 2} cy={size / 2} r={r}
+          fill="none" stroke={color} strokeWidth="4"
+          strokeLinecap="round" strokeDasharray={circ}
           strokeDashoffset={offset}
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
         />
       </svg>
-      <span
-        className="absolute text-xs font-bold"
-        style={{ fontFamily: "Lexend, sans-serif", color: C.light }}
-      >
-        {pct}%
-      </span>
-    </div>
-  );
-}
-
-// ─── Heatmap Cell ─────────────────────────────────────────────────────────────
-function HeatmapCell({ topic, score }: { topic: string; score: number }) {
-  const color = score >= 70 ? C.success : score >= 50 ? C.amber : C.error;
-  const pct = score;
-  return (
-    <div
-      className="flex flex-col items-center justify-center p-2 rounded-lg cursor-default transition-all hover:scale-105"
-      style={{ backgroundColor: `${color}22`, border: `1px solid ${color}44`, minWidth: 72 }}
-      title={`${topic}: ${pct}%`}
-    >
-      <span className="text-xs font-medium truncate max-w-full" style={{ color: C.light, fontFamily: "Lexend, sans-serif" }}>
-        {topic}
-      </span>
-      <span className="text-xs font-bold" style={{ color }}>
+      <span className="absolute text-xs font-bold" style={{ fontFamily: "Lexend, sans-serif", color: C.light }}>
         {pct}%
       </span>
     </div>
@@ -220,23 +411,29 @@ export default function ResultsPage() {
     try {
       const data: AttemptData = JSON.parse(stored);
       setAttempt(data);
+
+      const qMap = getQuestionMap();
+      const answersRaw = localStorage.getItem("quizcraft_answers");
+      const answers: Record<string, string> = answersRaw ? JSON.parse(answersRaw) : {};
+
       const wrong: WrongQuestion[] = data.wrongQuestionIds
         .map((id) => {
-          const q = PLACEHOLDER_QUESTIONS.find((pq) => pq.id === id);
+          const q = qMap.get(id);
           if (!q) return null;
-          const answersRaw = localStorage.getItem("quizcraft_answers");
-          const answers = answersRaw ? JSON.parse(answersRaw) : {};
+          const fallbackExplanation = `Review the fundamentals of "${q.topic}" for better understanding.`;
           return {
             id: q.id,
             text: q.text,
-            options: q.options,
+            options: q.options ?? { A: "", B: "", C: "", D: "" },
             yourAnswer: answers[q.id] || "?",
             correctAnswer: q.correctAnswer,
             topic: q.topic,
             chapterName: q.chapterName,
+            explanation: getExplanation(q.id, fallbackExplanation),
           } as WrongQuestion;
         })
         .filter(Boolean) as WrongQuestion[];
+
       setWrongQuestions(wrong);
     } catch {
       setNotFound(true);
@@ -282,70 +479,36 @@ export default function ResultsPage() {
       total: data.total,
       pct: data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0,
     }))
-    .sort((a, b) => a.pct - b.pct); // worst first
+    .sort((a, b) => a.pct - b.pct);
 
-  // Build chapter summary line
   const worst = chapterData[0];
   const best = chapterData[chapterData.length - 1];
   const chapterSummary =
     chapterData.length > 0
       ? best.pct >= 70
-        ? `🏆 You aced ${best.name} — keep pushing on ${worst.name}!`
-        : `📚 Focus on ${worst.name} — that's where the gaps are.`
+        ? `🏆 You aced ${best.name} — keep pushing on ${worst?.name}!`
+        : `📚 Focus on ${worst?.name} — that's where the gaps are.`
       : "";
 
-  // ── Weak topics heatmap (from wrong questions grouped by chapter) ────────
-  type TopicScore = { topic: string; correct: number; total: number };
-  const topicMap: Record<string, TopicScore> = {};
-  PLACEHOLDER_QUESTIONS.forEach((q) => {
-    const chapter = q.chapterName;
-    const topic = q.topic;
-    if (!topicMap[chapter]) topicMap[chapter] = {} as any;
-    // We'll track per-topic via a flat map
+  // ── Weak topics (topic name → chapter name) from wrong questions ─────────
+  // Build topic→chapter map from wrongQuestions
+  const topicChapterMap: Record<string, string> = {};
+  const topicWrongCount: Record<string, number> = {};
+  wrongQuestions.forEach((wq) => {
+    topicChapterMap[wq.topic] = wq.chapterName;
+    topicWrongCount[wq.topic] = (topicWrongCount[wq.topic] ?? 0) + 1;
   });
 
-  // Build heatmap data: group topics by chapter, find % correct per topic
-  const topicByChapter: Record<string, { topic: string; correct: number; total: number }[]> = {};
-  PLACEHOLDER_QUESTIONS.forEach((q) => {
-    const chapter = q.chapterName;
-    if (!topicByChapter[chapter]) topicByChapter[chapter] = [];
-    const existing = topicByChapter[chapter].find((t) => t.topic === q.topic);
-    if (existing) {
-      existing.total += 1;
-      if (q.correctAnswer === attempt.wrongQuestionIds.includes(q.id)) {
-        // if this question was answered wrong
-      }
-      // Simpler: track from wrongQuestions which topics are weak
-    } else {
-      topicByChapter[chapter].push({ topic: q.topic, correct: 0, total: 1 });
-    }
-  });
-
-  // Mark weak topics based on weakTopics array
-  const weakTopicSet = new Set(attempt.weakTopics);
-  // Build final heatmap: each topic shows how many wrong out of total
-  // We'll just mark topics that appear in weakTopics as weak (red),
-  // otherwise green if not in wrong list (for demo data)
-  const allTopicsSet = new Set(PLACEHOLDER_QUESTIONS.map((q) => q.topic));
-  const allTopicsList = Array.from(allTopicsSet).map((topic) => {
-    const wasWrong = weakTopicSet.has(topic);
-    return { topic, score: wasWrong ? 30 : 85 }; // placeholder scores
-  });
-
-  // Group heatmap topics by chapter from PLACEHOLDER_QUESTIONS
-  const heatmapChapters: Record<string, { topic: string; score: number }[]> = {};
-  PLACEHOLDER_QUESTIONS.forEach((q) => {
-    if (!heatmapChapters[q.chapterName]) heatmapChapters[q.chapterName] = [];
-    const already = heatmapChapters[q.chapterName].find((t) => t.topic === q.topic);
-    if (!already) {
-      const wasWrong = weakTopicSet.has(q.topic);
-      heatmapChapters[q.chapterName].push({ topic: q.topic, score: wasWrong ? 30 : 85 });
-    }
-  });
+  const weakTopicList = Object.keys(topicWrongCount).map((topic) => ({
+    topic,
+    chapter: topicChapterMap[topic] ?? "Unknown",
+    wrongCount: topicWrongCount[topic],
+  })).sort((a, b) => b.wrongCount - a.wrongCount);
 
   return (
     <div className="min-h-screen p-6" style={{ backgroundColor: C.bg, fontFamily: "Inter, sans-serif" }}>
       <div className="max-w-3xl mx-auto space-y-6">
+
         {/* Header */}
         <div className="flex items-center gap-3">
           <Button variant="ghost" size="icon" onClick={() => router.push("/")} style={{ color: C.muted }}>
@@ -392,7 +555,7 @@ export default function ResultsPage() {
           </CardContent>
         </Card>
 
-        {/* ── B. Chapter Performance ──────────────────────────────────────────── */}
+        {/* ── B. Chapter Performance ────────────────────────────────────────── */}
         {chapterData.length > 0 && (
           <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.secondary}` }}>
             <CardHeader>
@@ -406,7 +569,6 @@ export default function ResultsPage() {
               )}
             </CardHeader>
             <CardContent>
-              {/* Desktop: ring + row per chapter */}
               <div className="hidden sm:block space-y-3">
                 {chapterData.map((ch) => {
                   const color = ch.pct >= 70 ? C.success : ch.pct >= 50 ? C.amber : C.error;
@@ -477,40 +639,46 @@ export default function ResultsPage() {
           </Card>
         )}
 
-        {/* ── C. Weak Topics Heatmap ───────────────────────────────────────────── */}
-        {Object.keys(heatmapChapters).length > 0 && (
+        {/* ── C. Topics to Improve (clean list) ──────────────────────────────── */}
+        {weakTopicList.length > 0 && (
           <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.secondary}` }}>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2" style={{ fontFamily: "Lexend, sans-serif", color: C.light }}>
-                🔥 Topic Heatmap
+                🔥 Topics to Improve
               </CardTitle>
               <p className="text-sm mt-0.5" style={{ color: C.muted }}>
-                Color shows how well you know each topic
+                Focus your study on these specific topics
               </p>
             </CardHeader>
-            <CardContent className="space-y-4">
-              {Object.entries(heatmapChapters).map(([chapter, topics]) => {
-                const avgPct = Math.round(topics.reduce((s, t) => s + t.score, 0) / topics.length);
-                const chColor = avgPct >= 70 ? C.success : avgPct >= 50 ? C.amber : C.error;
-                return (
-                  <div key={chapter}>
-                    <div className="flex items-center gap-2 mb-2">
-                      <BookOpen className="w-4 h-4" style={{ color: chColor }} />
-                      <span className="text-sm font-medium" style={{ fontFamily: "Lexend, sans-serif", color: chColor }}>
-                        {chapter}
-                      </span>
-                      <span className="text-xs ml-auto" style={{ color: C.muted }}>
-                        {avgPct}% avg
-                      </span>
+            <CardContent>
+              <div className="space-y-2">
+                {weakTopicList.map(({ topic, chapter, wrongCount }) => (
+                  <div
+                    key={topic}
+                    className="flex items-center gap-3 p-3 rounded-xl transition-all hover:scale-[1.01]"
+                    style={{ backgroundColor: C.bg, border: `1px solid ${C.secondary}44` }}
+                  >
+                    <Flame className="w-4 h-4 flex-shrink-0" style={{ color: C.error }} />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline gap-2">
+                        <span className="font-medium text-sm" style={{ fontFamily: "Lexend, sans-serif", color: C.light }}>
+                          {topic}
+                        </span>
+                        <span className="text-xs flex-shrink-0" style={{ color: C.muted }}>
+                          {chapter}
+                        </span>
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                      {topics.map((t) => (
-                        <HeatmapCell key={t.topic} topic={t.topic} score={t.score} />
-                      ))}
-                    </div>
+                    <Badge
+                      variant="outline"
+                      className="text-xs flex-shrink-0"
+                      style={{ borderColor: `${C.error}66`, color: C.error }}
+                    >
+                      {wrongCount} wrong
+                    </Badge>
                   </div>
-                );
-              })}
+                ))}
+              </div>
             </CardContent>
           </Card>
         )}
@@ -570,9 +738,9 @@ export default function ResultsPage() {
                   {/* Expanded detail */}
                   {expandedWrong[wq.id] && (
                     <div className="px-4 pb-4 space-y-3 border-t" style={{ borderColor: `${C.secondary}44` }}>
+
                       {/* Correct vs Your Answer comparison */}
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-3">
-                        {/* Your wrong answer */}
                         <div
                           className="p-3 rounded-lg border-l-4"
                           style={{ backgroundColor: `${C.error}11`, borderLeftColor: C.error }}
@@ -584,7 +752,6 @@ export default function ResultsPage() {
                             {wq.yourAnswer}. {wq.options[wq.yourAnswer]}
                           </div>
                         </div>
-                        {/* Correct answer */}
                         <div
                           className="p-3 rounded-lg border-l-4"
                           style={{ backgroundColor: `${C.success}11`, borderLeftColor: C.success }}
@@ -649,12 +816,23 @@ export default function ResultsPage() {
                         })}
                       </div>
 
+                      {/* Explanation (lightbulb box) */}
+                      <div
+                        className="flex gap-3 p-3 rounded-lg"
+                        style={{ backgroundColor: `${C.amber}11`, border: `1px solid ${C.amber}33` }}
+                      >
+                        <Lightbulb className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: C.amber }} />
+                        <p className="text-sm" style={{ color: C.muted }}>
+                          {wq.explanation}
+                        </p>
+                      </div>
+
                       {/* Retest button */}
                       <Button
                         size="sm"
                         onClick={() => {
                           localStorage.setItem("quizcraft_retest_topic", wq.topic);
-                          const subject = localStorage.getItem("quizcraft_subject") || "ete";
+                          const subject = localStorage.getItem("quizcraft_subject") || "ete-textbook";
                           router.push(`/quiz/${subject}`);
                         }}
                         className="w-full sm:w-auto"
@@ -682,7 +860,7 @@ export default function ResultsPage() {
             onClick={() => {
               const retestIds = attempt.wrongQuestionIds.slice(0, 25);
               localStorage.setItem("quizcraft_retest_ids", JSON.stringify(retestIds));
-              const subject = localStorage.getItem("quizcraft_subject") || "ete";
+              const subject = localStorage.getItem("quizcraft_subject") || "ete-textbook";
               router.push(`/quiz/${subject}`);
             }}
             disabled={attempt.wrongQuestionIds.length === 0}
@@ -699,7 +877,7 @@ export default function ResultsPage() {
             variant="outline"
             onClick={() => {
               localStorage.removeItem("quizcraft_retest_ids");
-              const subject = localStorage.getItem("quizcraft_subject") || "ete";
+              const subject = localStorage.getItem("quizcraft_subject") || "ete-textbook";
               router.push(`/quiz/${subject}`);
             }}
             style={{

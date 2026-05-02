@@ -601,7 +601,7 @@
               "text": "Frequency range in FM Broadcast is",
               "options": {
                 "A": "1.711MHz-30.0 MHz",
-                "B": "520MHz \u2013 1610 MHz",
+                "B": "520MHz – 1610 MHz",
                 "C": "148.5KHz-283.5KHz",
                 "D": "87.5 MHz-108.0 MHz"
               },
@@ -624,10 +624,10 @@
               "id": "ete-q51",
               "text": "Identify time required to transmit 8000 f/sec in STM-1",
               "options": {
-                "A": "125\u00b5sec",
-                "B": "200 \u00b5sec",
-                "C": "100 \u00b5sec",
-                "D": "150 \u00b5sec"
+                "A": "125µsec",
+                "B": "200 µsec",
+                "C": "100 µsec",
+                "D": "150 µsec"
               },
               "correctAnswer": "A",
               "topic": "Unit-III: Next Generation Telecom Network"
@@ -884,7 +884,7 @@
               "options": {
                 "A": "Exclusive focus on cloud computing",
                 "B": "Introduction of steam power",
-                "C": "Emphasis on human\u2013robot collaboration and personalization",
+                "C": "Emphasis on human–robot collaboration and personalization",
                 "D": "Use of assembly line production"
               },
               "correctAnswer": "C",
@@ -1198,7 +1198,7 @@
             },
             {
               "id": "ete-q98",
-              "text": "A drone is required for aerial surveillance near a critical infrastructure site. The operations are restricted to: Inner Yellow Zone (2\u20135 km from Red Zone), Maximum height 120 m, Must maintain line-of-sight. From the diagrams below, select the drone type and configuration that is legal and safe for this operation.",
+              "text": "A drone is required for aerial surveillance near a critical infrastructure site. The operations are restricted to: Inner Yellow Zone (2–5 km from Red Zone), Maximum height 120 m, Must maintain line-of-sight. From the diagrams below, select the drone type and configuration that is legal and safe for this operation.",
               "options": {
                 "A": "Multi-rotor",
                 "B": "Fixed-wing",
@@ -1666,8 +1666,8 @@
               "options": {
                 "A": "100 mA",
                 "B": "1 mA",
-                "C": "10 \u03bcA",
-                "D": "1\u03bcA"
+                "C": "10 μA",
+                "D": "1μA"
               },
               "correctAnswer": "C",
               "answerStatus": "verified",
@@ -1891,10 +1891,10 @@
               "id": "mcq-q50",
               "text": "The operational cycle of an AI agent is........",
               "options": {
-                "A": "Sleep \u2014 Wake \u2014 Run \u2014 Hibernation",
-                "B": "Sense \u2014 Reason \u2014 Act",
-                "C": "Observe \u2014 Sleep \u2014 Execute",
-                "D": "Ignore \u2014 Execute"
+                "A": "Sleep — Wake — Run — Hibernation",
+                "B": "Sense — Reason — Act",
+                "C": "Observe — Sleep — Execute",
+                "D": "Ignore — Execute"
               },
               "correctAnswer": "B",
               "answerStatus": "verified",
@@ -2870,7 +2870,7 @@
             },
             {
               "id": "mcq-q125",
-              "text": "GPIO34\u2014GPIO39 pins are used primarily as ........",
+              "text": "GPIO34—GPIO39 pins are used primarily as ........",
               "options": {
                 "A": "Output-only pins",
                 "B": "Input-only pins",
@@ -3054,8 +3054,8 @@
               "id": "mcq-q139",
               "text": "ESP8266 deep sleep current is about ........",
               "options": {
-                "A": "10 \u03bcA",
-                "B": "20 \u03bcA",
+                "A": "10 μA",
+                "B": "20 μA",
                 "C": "1mA",
                 "D": "100 mA"
               },
@@ -3379,9 +3379,9 @@
               "id": "mcq-q164",
               "text": "The sequence of an AI agent is ........",
               "options": {
-                "A": "Act \u2014 Sense \u2014 Reason",
-                "B": "Reason \u2014 Act + Sense",
-                "C": "Sense + Reason \u2014 Act",
+                "A": "Act — Sense — Reason",
+                "B": "Reason — Act + Sense",
+                "C": "Sense + Reason — Act",
                 "D": "Start = End = Restart"
               },
               "correctAnswer": "C",
@@ -3627,8 +3627,8 @@
               "text": "LM35 gives ........",
               "options": {
                 "A": "Digital output",
-                "B": "10 mV per \u00b0C",
-                "C": "1V per \u00b0C",
+                "B": "10 mV per °C",
+                "C": "1V per °C",
                 "D": "No temperature value"
               },
               "correctAnswer": "B",
@@ -4111,7 +4111,7 @@
           "questions": [
             {
               "id": "new-q1",
-              "text": "A GPU is primarily used for \u2026\u2026\u2026",
+              "text": "A GPU is primarily used for ………",
               "options": {
                 "A": "Data compression",
                 "B": "Image rendering",
@@ -4120,11 +4120,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q2",
-              "text": "A CPU's internal layout defines \u2026\u2026\u2026",
+              "text": "A CPU's internal layout defines ………",
               "options": {
                 "A": "Clock generator",
                 "B": "Processor architecture",
@@ -4133,11 +4133,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q3",
-              "text": "Multicore processors improve performance by \u2026\u2026\u2026",
+              "text": "Multicore processors improve performance by ………",
               "options": {
                 "A": "Increasing clock speed only",
                 "B": "Executing tasks in parallel",
@@ -4146,11 +4146,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q4",
-              "text": "Hyper-threading allows \u2026\u2026\u2026",
+              "text": "Hyper-threading allows ………",
               "options": {
                 "A": "One core to act as multiple threads",
                 "B": "Only single task execution",
@@ -4159,11 +4159,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q5",
-              "text": "ARM processors are mainly used in \u2026\u2026\u2026",
+              "text": "ARM processors are mainly used in ………",
               "options": {
                 "A": "Supercomputers",
                 "B": "Mobile devices",
@@ -4172,11 +4172,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q6",
-              "text": "Overclocking refers to \u2026\u2026\u2026",
+              "text": "Overclocking refers to ………",
               "options": {
                 "A": "Reducing clock speed",
                 "B": "Increasing clock speed beyond limits",
@@ -4185,11 +4185,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q7",
-              "text": "Cache memory is used to \u2026\u2026\u2026",
+              "text": "Cache memory is used to ………",
               "options": {
                 "A": "Store permanent data",
                 "B": "Speed up access to frequently used data",
@@ -4198,11 +4198,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q8",
-              "text": "GPU cores are optimized for \u2026\u2026\u2026",
+              "text": "GPU cores are optimized for ………",
               "options": {
                 "A": "Sequential processing",
                 "B": "Parallel processing",
@@ -4211,11 +4211,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q9",
-              "text": "CPU cores are optimized for \u2026\u2026\u2026",
+              "text": "CPU cores are optimized for ………",
               "options": {
                 "A": "Parallel tasks only",
                 "B": "Sequential tasks",
@@ -4224,11 +4224,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q10",
-              "text": "AI workloads benefit from GPUs because \u2026\u2026\u2026",
+              "text": "AI workloads benefit from GPUs because ………",
               "options": {
                 "A": "Low speed",
                 "B": "Parallel processing",
@@ -4237,11 +4237,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q11",
-              "text": "Tensor cores are used in \u2026\u2026\u2026",
+              "text": "Tensor cores are used in ………",
               "options": {
                 "A": "AI processing",
                 "B": "Networking",
@@ -4250,11 +4250,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q12",
-              "text": "VRAM is used in \u2026\u2026\u2026",
+              "text": "VRAM is used in ………",
               "options": {
                 "A": "CPU",
                 "B": "GPU",
@@ -4263,11 +4263,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q13",
-              "text": "Integrated GPU shares memory with \u2026\u2026\u2026",
+              "text": "Integrated GPU shares memory with ………",
               "options": {
                 "A": "ROM",
                 "B": "RAM",
@@ -4276,11 +4276,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q14",
-              "text": "Dedicated GPU has \u2026\u2026\u2026",
+              "text": "Dedicated GPU has ………",
               "options": {
                 "A": "No memory",
                 "B": "Its own VRAM",
@@ -4289,11 +4289,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q15",
-              "text": "Clock speed is measured in \u2026\u2026\u2026",
+              "text": "Clock speed is measured in ………",
               "options": {
                 "A": "Bytes",
                 "B": "Hertz",
@@ -4302,11 +4302,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q16",
-              "text": "CPU performance depends on \u2026\u2026\u2026",
+              "text": "CPU performance depends on ………",
               "options": {
                 "A": "Clock speed",
                 "B": "Cores",
@@ -4315,11 +4315,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q17",
-              "text": "Moore's Law relates to \u2026\u2026\u2026",
+              "text": "Moore's Law relates to ………",
               "options": {
                 "A": "Memory size",
                 "B": "Transistor doubling",
@@ -4328,11 +4328,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q18",
-              "text": "Semiconductor technology uses \u2026\u2026\u2026",
+              "text": "Semiconductor technology uses ………",
               "options": {
                 "A": "Copper",
                 "B": "Silicon",
@@ -4341,11 +4341,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q19",
-              "text": "Quantum computing uses \u2026\u2026\u2026",
+              "text": "Quantum computing uses ………",
               "options": {
                 "A": "Bits",
                 "B": "Qubits",
@@ -4354,11 +4354,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q20",
-              "text": "Supercomputers are used for \u2026\u2026\u2026",
+              "text": "Supercomputers are used for ………",
               "options": {
                 "A": "Gaming",
                 "B": "Scientific research",
@@ -4367,11 +4367,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q21",
-              "text": "AI stands for \u2026\u2026\u2026",
+              "text": "AI stands for ………",
               "options": {
                 "A": "Automated Input",
                 "B": "Artificial Intelligence",
@@ -4380,11 +4380,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q22",
-              "text": "Machine Learning is a subset of \u2026\u2026\u2026",
+              "text": "Machine Learning is a subset of ………",
               "options": {
                 "A": "Networking",
                 "B": "AI",
@@ -4393,11 +4393,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q23",
-              "text": "Cloud computing provides \u2026\u2026\u2026",
+              "text": "Cloud computing provides ………",
               "options": {
                 "A": "Hardware only",
                 "B": "Internet-based services",
@@ -4406,11 +4406,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q24",
-              "text": "Edge computing processes data \u2026\u2026\u2026",
+              "text": "Edge computing processes data ………",
               "options": {
                 "A": "In cloud only",
                 "B": "Near the source",
@@ -4419,11 +4419,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q25",
-              "text": "IoT stands for \u2026\u2026\u2026",
+              "text": "IoT stands for ………",
               "options": {
                 "A": "Internet of Things",
                 "B": "Input Output Tech",
@@ -4432,11 +4432,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q26",
-              "text": "Blockchain is used for \u2026\u2026\u2026",
+              "text": "Blockchain is used for ………",
               "options": {
                 "A": "Storage",
                 "B": "Secure transactions",
@@ -4445,11 +4445,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q27",
-              "text": "Big Data refers to \u2026\u2026\u2026",
+              "text": "Big Data refers to ………",
               "options": {
                 "A": "Small datasets",
                 "B": "Large complex datasets",
@@ -4458,11 +4458,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q28",
-              "text": "Data analytics helps in \u2026\u2026\u2026",
+              "text": "Data analytics helps in ………",
               "options": {
                 "A": "Ignoring data",
                 "B": "Decision making",
@@ -4471,11 +4471,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q29",
-              "text": "5G technology offers \u2026\u2026\u2026",
+              "text": "5G technology offers ………",
               "options": {
                 "A": "Slow speed",
                 "B": "High speed",
@@ -4484,11 +4484,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q30",
-              "text": "Cybersecurity protects \u2026\u2026\u2026",
+              "text": "Cybersecurity protects ………",
               "options": {
                 "A": "Hardware only",
                 "B": "Data and systems",
@@ -4497,11 +4497,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q31",
-              "text": "Encryption ensures \u2026\u2026\u2026",
+              "text": "Encryption ensures ………",
               "options": {
                 "A": "Data loss",
                 "B": "Data security",
@@ -4510,11 +4510,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q32",
-              "text": "Virtualization allows \u2026\u2026\u2026",
+              "text": "Virtualization allows ………",
               "options": {
                 "A": "Multiple OS on one system",
                 "B": "Single OS only",
@@ -4523,11 +4523,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q33",
-              "text": "SSD is faster than HDD because \u2026\u2026\u2026",
+              "text": "SSD is faster than HDD because ………",
               "options": {
                 "A": "Moving parts",
                 "B": "No moving parts",
@@ -4536,11 +4536,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q34",
-              "text": "RAM is \u2026\u2026\u2026 memory",
+              "text": "RAM is ……… memory",
               "options": {
                 "A": "Permanent",
                 "B": "Volatile",
@@ -4549,11 +4549,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q35",
-              "text": "ROM is \u2026\u2026\u2026 memory",
+              "text": "ROM is ……… memory",
               "options": {
                 "A": "Volatile",
                 "B": "Non-volatile",
@@ -4562,11 +4562,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q36",
-              "text": "BIOS is used for \u2026\u2026\u2026",
+              "text": "BIOS is used for ………",
               "options": {
                 "A": "Booting system",
                 "B": "Gaming",
@@ -4575,11 +4575,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q37",
-              "text": "The full form of RAM is \u2026\u2026\u2026",
+              "text": "The full form of RAM is ………",
               "options": {
                 "A": "Random Access Memory",
                 "B": "Read Access Memory",
@@ -4588,11 +4588,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q38",
-              "text": "The full form of ROM is \u2026\u2026\u2026",
+              "text": "The full form of ROM is ………",
               "options": {
                 "A": "Read Only Memory",
                 "B": "Random Only Memory",
@@ -4601,7 +4601,7 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q39",
@@ -4614,7 +4614,7 @@
               },
               "correctAnswer": "c",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q40",
@@ -4627,11 +4627,11 @@
               },
               "correctAnswer": "c",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q41",
-              "text": "Hard disk is a type of \u2026\u2026\u2026",
+              "text": "Hard disk is a type of ………",
               "options": {
                 "A": "Primary memory",
                 "B": "Secondary memory",
@@ -4640,11 +4640,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q42",
-              "text": "SSD stands for \u2026\u2026\u2026",
+              "text": "SSD stands for ………",
               "options": {
                 "A": "Solid State Drive",
                 "B": "System Storage Device",
@@ -4653,11 +4653,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q43",
-              "text": "Optical disks include \u2026\u2026\u2026",
+              "text": "Optical disks include ………",
               "options": {
                 "A": "RAM",
                 "B": "CD/DVD",
@@ -4666,11 +4666,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q44",
-              "text": "Pen drive is a type of \u2026\u2026\u2026",
+              "text": "Pen drive is a type of ………",
               "options": {
                 "A": "Primary memory",
                 "B": "Secondary memory",
@@ -4679,11 +4679,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q45",
-              "text": "The brain of computer is \u2026\u2026\u2026",
+              "text": "The brain of computer is ………",
               "options": {
                 "A": "RAM",
                 "B": "CPU",
@@ -4692,11 +4692,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q46",
-              "text": "ALU performs \u2026\u2026\u2026",
+              "text": "ALU performs ………",
               "options": {
                 "A": "Storage",
                 "B": "Arithmetic and logic operations",
@@ -4705,11 +4705,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q47",
-              "text": "Control Unit is responsible for \u2026\u2026\u2026",
+              "text": "Control Unit is responsible for ………",
               "options": {
                 "A": "Calculations",
                 "B": "Managing operations",
@@ -4718,11 +4718,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q48",
-              "text": "Registers are used for \u2026\u2026\u2026",
+              "text": "Registers are used for ………",
               "options": {
                 "A": "Permanent storage",
                 "B": "Temporary fast storage",
@@ -4731,11 +4731,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q49",
-              "text": "Input devices include \u2026\u2026\u2026",
+              "text": "Input devices include ………",
               "options": {
                 "A": "Monitor",
                 "B": "Keyboard",
@@ -4744,11 +4744,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q50",
-              "text": "Output devices include \u2026\u2026\u2026",
+              "text": "Output devices include ………",
               "options": {
                 "A": "Mouse",
                 "B": "Keyboard",
@@ -4757,11 +4757,11 @@
               },
               "correctAnswer": "c",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q51",
-              "text": "Keyboard is used for \u2026\u2026\u2026",
+              "text": "Keyboard is used for ………",
               "options": {
                 "A": "Output",
                 "B": "Input",
@@ -4770,11 +4770,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q52",
-              "text": "Mouse is used for \u2026\u2026\u2026",
+              "text": "Mouse is used for ………",
               "options": {
                 "A": "Input",
                 "B": "Output",
@@ -4783,11 +4783,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q53",
-              "text": "Printer is a \u2026\u2026\u2026 device",
+              "text": "Printer is a ……… device",
               "options": {
                 "A": "Input",
                 "B": "Output",
@@ -4796,11 +4796,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q54",
-              "text": "Scanner is a \u2026\u2026\u2026 device",
+              "text": "Scanner is a ……… device",
               "options": {
                 "A": "Input",
                 "B": "Output",
@@ -4809,11 +4809,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q55",
-              "text": "Operating System is a \u2026\u2026\u2026",
+              "text": "Operating System is a ………",
               "options": {
                 "A": "Hardware",
                 "B": "Software",
@@ -4822,11 +4822,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q56",
-              "text": "Examples of OS include \u2026\u2026\u2026",
+              "text": "Examples of OS include ………",
               "options": {
                 "A": "Windows",
                 "B": "Linux",
@@ -4835,11 +4835,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q57",
-              "text": "Application software is used for \u2026\u2026\u2026",
+              "text": "Application software is used for ………",
               "options": {
                 "A": "System control",
                 "B": "User tasks",
@@ -4848,11 +4848,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q58",
-              "text": "Compiler converts \u2026\u2026\u2026",
+              "text": "Compiler converts ………",
               "options": {
                 "A": "Machine to high-level",
                 "B": "High-level to machine",
@@ -4861,11 +4861,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q59",
-              "text": "Interpreter executes \u2026\u2026\u2026",
+              "text": "Interpreter executes ………",
               "options": {
                 "A": "Entire program at once",
                 "B": "Line by line",
@@ -4874,11 +4874,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q60",
-              "text": "Assembly language uses \u2026\u2026\u2026",
+              "text": "Assembly language uses ………",
               "options": {
                 "A": "Binary",
                 "B": "Mnemonics",
@@ -4887,11 +4887,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q61",
-              "text": "High-level languages include \u2026\u2026\u2026",
+              "text": "High-level languages include ………",
               "options": {
                 "A": "C",
                 "B": "Java",
@@ -4900,11 +4900,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q62",
-              "text": "Machine language consists of \u2026\u2026\u2026",
+              "text": "Machine language consists of ………",
               "options": {
                 "A": "English",
                 "B": "Binary",
@@ -4913,11 +4913,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q63",
-              "text": "Software bugs are \u2026\u2026\u2026",
+              "text": "Software bugs are ………",
               "options": {
                 "A": "Hardware issues",
                 "B": "Errors in program",
@@ -4926,11 +4926,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q64",
-              "text": "Debugging means \u2026\u2026\u2026",
+              "text": "Debugging means ………",
               "options": {
                 "A": "Adding errors",
                 "B": "Removing errors",
@@ -4939,11 +4939,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q65",
-              "text": "Network connects \u2026\u2026\u2026",
+              "text": "Network connects ………",
               "options": {
                 "A": "Devices",
                 "B": "Memory",
@@ -4952,11 +4952,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q66",
-              "text": "LAN stands for \u2026\u2026\u2026",
+              "text": "LAN stands for ………",
               "options": {
                 "A": "Local Area Network",
                 "B": "Large Area Network",
@@ -4965,11 +4965,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q67",
-              "text": "WAN stands for \u2026\u2026\u2026",
+              "text": "WAN stands for ………",
               "options": {
                 "A": "Wide Area Network",
                 "B": "Wireless Area Network",
@@ -4978,11 +4978,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q68",
-              "text": "Internet is a \u2026\u2026\u2026",
+              "text": "Internet is a ………",
               "options": {
                 "A": "Device",
                 "B": "Network of networks",
@@ -4991,11 +4991,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q69",
-              "text": "Router is used for \u2026\u2026\u2026",
+              "text": "Router is used for ………",
               "options": {
                 "A": "Printing",
                 "B": "Routing data",
@@ -5004,11 +5004,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q70",
-              "text": "Switch is used in \u2026\u2026\u2026",
+              "text": "Switch is used in ………",
               "options": {
                 "A": "LAN",
                 "B": "CPU",
@@ -5017,11 +5017,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q71",
-              "text": "IP address identifies \u2026\u2026\u2026",
+              "text": "IP address identifies ………",
               "options": {
                 "A": "User",
                 "B": "Device",
@@ -5030,11 +5030,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q72",
-              "text": "URL stands for \u2026\u2026\u2026",
+              "text": "URL stands for ………",
               "options": {
                 "A": "Uniform Resource Locator",
                 "B": "Universal Resource Link",
@@ -5043,11 +5043,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q73",
-              "text": "HTTP is used for \u2026\u2026\u2026",
+              "text": "HTTP is used for ………",
               "options": {
                 "A": "File transfer",
                 "B": "Web communication",
@@ -5056,11 +5056,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q74",
-              "text": "FTP is used for \u2026\u2026\u2026",
+              "text": "FTP is used for ………",
               "options": {
                 "A": "File transfer",
                 "B": "Browsing",
@@ -5069,11 +5069,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q75",
-              "text": "Email stands for \u2026\u2026\u2026",
+              "text": "Email stands for ………",
               "options": {
                 "A": "Electronic Mail",
                 "B": "Electric Mail",
@@ -5082,11 +5082,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q76",
-              "text": "Browser is used to \u2026\u2026\u2026",
+              "text": "Browser is used to ………",
               "options": {
                 "A": "Store files",
                 "B": "Access websites",
@@ -5095,11 +5095,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q77",
-              "text": "Examples of browsers include \u2026\u2026\u2026",
+              "text": "Examples of browsers include ………",
               "options": {
                 "A": "Chrome",
                 "B": "Firefox",
@@ -5108,11 +5108,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q78",
-              "text": "Search engine is used to \u2026\u2026\u2026",
+              "text": "Search engine is used to ………",
               "options": {
                 "A": "Store data",
                 "B": "Search information",
@@ -5121,11 +5121,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q79",
-              "text": "Examples of search engines include \u2026\u2026\u2026",
+              "text": "Examples of search engines include ………",
               "options": {
                 "A": "Google",
                 "B": "Bing",
@@ -5134,11 +5134,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q80",
-              "text": "Cyber attack is \u2026\u2026\u2026",
+              "text": "Cyber attack is ………",
               "options": {
                 "A": "Data protection",
                 "B": "Unauthorized access",
@@ -5147,11 +5147,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q81",
-              "text": "Antivirus is used for \u2026\u2026\u2026",
+              "text": "Antivirus is used for ………",
               "options": {
                 "A": "Gaming",
                 "B": "Protection",
@@ -5160,11 +5160,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q82",
-              "text": "Firewall is used for \u2026\u2026\u2026",
+              "text": "Firewall is used for ………",
               "options": {
                 "A": "Cooling",
                 "B": "Security",
@@ -5173,11 +5173,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q83",
-              "text": "Malware includes \u2026\u2026\u2026",
+              "text": "Malware includes ………",
               "options": {
                 "A": "Virus",
                 "B": "Worm",
@@ -5186,11 +5186,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q84",
-              "text": "Phishing is \u2026\u2026\u2026",
+              "text": "Phishing is ………",
               "options": {
                 "A": "Security",
                 "B": "Fraud attempt",
@@ -5199,11 +5199,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q85",
-              "text": "Backup is used for \u2026\u2026\u2026",
+              "text": "Backup is used for ………",
               "options": {
                 "A": "Data recovery",
                 "B": "Data deletion",
@@ -5212,11 +5212,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q86",
-              "text": "Cloud storage examples include \u2026\u2026\u2026",
+              "text": "Cloud storage examples include ………",
               "options": {
                 "A": "Google Drive",
                 "B": "Dropbox",
@@ -5225,11 +5225,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q87",
-              "text": "The full form of CPU is \u2026\u2026\u2026",
+              "text": "The full form of CPU is ………",
               "options": {
                 "A": "Central Processing Unit",
                 "B": "Computer Processing Unit",
@@ -5238,11 +5238,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q88",
-              "text": "The speed of CPU is measured in \u2026\u2026\u2026",
+              "text": "The speed of CPU is measured in ………",
               "options": {
                 "A": "Bytes",
                 "B": "Hertz",
@@ -5251,11 +5251,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q89",
-              "text": "1 KB equals \u2026\u2026\u2026 bytes",
+              "text": "1 KB equals ……… bytes",
               "options": {
                 "A": "1000",
                 "B": "1024",
@@ -5264,11 +5264,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q90",
-              "text": "1 MB equals \u2026\u2026\u2026 KB",
+              "text": "1 MB equals ……… KB",
               "options": {
                 "A": "1000",
                 "B": "1024",
@@ -5277,11 +5277,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q91",
-              "text": "1 GB equals \u2026\u2026\u2026 MB",
+              "text": "1 GB equals ……… MB",
               "options": {
                 "A": "1000",
                 "B": "1024",
@@ -5290,11 +5290,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q92",
-              "text": "Bit is \u2026\u2026\u2026",
+              "text": "Bit is ………",
               "options": {
                 "A": "8 bits",
                 "B": "Smallest unit of data",
@@ -5303,11 +5303,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q93",
-              "text": "Byte consists of \u2026\u2026\u2026 bits",
+              "text": "Byte consists of ……… bits",
               "options": {
                 "A": "4",
                 "B": "8",
@@ -5316,11 +5316,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q94",
-              "text": "ASCII is used for \u2026\u2026\u2026",
+              "text": "ASCII is used for ………",
               "options": {
                 "A": "Graphics",
                 "B": "Character encoding",
@@ -5329,11 +5329,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q95",
-              "text": "Unicode is used for \u2026\u2026\u2026",
+              "text": "Unicode is used for ………",
               "options": {
                 "A": "Single language",
                 "B": "Multiple languages",
@@ -5342,11 +5342,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q96",
-              "text": "File extension .txt represents \u2026\u2026\u2026",
+              "text": "File extension .txt represents ………",
               "options": {
                 "A": "Image",
                 "B": "Text file",
@@ -5355,11 +5355,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q97",
-              "text": "File extension .jpg is for \u2026\u2026\u2026",
+              "text": "File extension .jpg is for ………",
               "options": {
                 "A": "Text",
                 "B": "Image",
@@ -5368,11 +5368,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q98",
-              "text": "File extension .mp3 is for \u2026\u2026\u2026",
+              "text": "File extension .mp3 is for ………",
               "options": {
                 "A": "Image",
                 "B": "Audio",
@@ -5381,11 +5381,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q99",
-              "text": "File extension .mp4 is for \u2026\u2026\u2026",
+              "text": "File extension .mp4 is for ………",
               "options": {
                 "A": "Audio",
                 "B": "Video",
@@ -5394,11 +5394,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q100",
-              "text": "Folder is used to \u2026\u2026\u2026",
+              "text": "Folder is used to ………",
               "options": {
                 "A": "Delete files",
                 "B": "Organize files",
@@ -5407,11 +5407,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q101",
-              "text": "Recycle bin stores \u2026\u2026\u2026",
+              "text": "Recycle bin stores ………",
               "options": {
                 "A": "Permanent files",
                 "B": "Deleted files",
@@ -5420,11 +5420,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q102",
-              "text": "Shortcut key for copy is \u2026\u2026\u2026",
+              "text": "Shortcut key for copy is ………",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5433,11 +5433,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q103",
-              "text": "Shortcut key for paste is \u2026\u2026\u2026",
+              "text": "Shortcut key for paste is ………",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5446,11 +5446,11 @@
               },
               "correctAnswer": "c",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q104",
-              "text": "Shortcut key for cut is \u2026\u2026\u2026",
+              "text": "Shortcut key for cut is ………",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5459,11 +5459,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q105",
-              "text": "Shortcut key for undo is \u2026\u2026\u2026",
+              "text": "Shortcut key for undo is ………",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5472,11 +5472,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q106",
-              "text": "MS Word is a \u2026\u2026\u2026",
+              "text": "MS Word is a ………",
               "options": {
                 "A": "Spreadsheet",
                 "B": "Word processor",
@@ -5485,11 +5485,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q107",
-              "text": "MS Excel is used for \u2026\u2026\u2026",
+              "text": "MS Excel is used for ………",
               "options": {
                 "A": "Typing",
                 "B": "Calculations",
@@ -5498,11 +5498,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q108",
-              "text": "MS PowerPoint is used for \u2026\u2026\u2026",
+              "text": "MS PowerPoint is used for ………",
               "options": {
                 "A": "Typing",
                 "B": "Presentation",
@@ -5511,11 +5511,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q109",
-              "text": "Spreadsheet consists of \u2026\u2026\u2026",
+              "text": "Spreadsheet consists of ………",
               "options": {
                 "A": "Slides",
                 "B": "Rows and columns",
@@ -5524,11 +5524,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q110",
-              "text": "Cell is intersection of \u2026\u2026\u2026",
+              "text": "Cell is intersection of ………",
               "options": {
                 "A": "Row and column",
                 "B": "Page and file",
@@ -5537,11 +5537,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q111",
-              "text": "Formula in Excel starts with \u2026\u2026\u2026",
+              "text": "Formula in Excel starts with ………",
               "options": {
                 "A": "#",
                 "B": "=",
@@ -5550,11 +5550,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q112",
-              "text": "SUM function is used for \u2026\u2026\u2026",
+              "text": "SUM function is used for ………",
               "options": {
                 "A": "Multiplication",
                 "B": "Addition",
@@ -5563,11 +5563,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q113",
-              "text": "Average function calculates \u2026\u2026\u2026",
+              "text": "Average function calculates ………",
               "options": {
                 "A": "Sum",
                 "B": "Mean",
@@ -5576,11 +5576,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q114",
-              "text": "MAX function finds \u2026\u2026\u2026",
+              "text": "MAX function finds ………",
               "options": {
                 "A": "Smallest value",
                 "B": "Largest value",
@@ -5589,11 +5589,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q115",
-              "text": "MIN function finds \u2026\u2026\u2026",
+              "text": "MIN function finds ………",
               "options": {
                 "A": "Largest value",
                 "B": "Smallest value",
@@ -5602,11 +5602,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q116",
-              "text": "Presentation consists of \u2026\u2026\u2026",
+              "text": "Presentation consists of ………",
               "options": {
                 "A": "Cells",
                 "B": "Slides",
@@ -5615,11 +5615,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q117",
-              "text": "Animation is used in \u2026\u2026\u2026",
+              "text": "Animation is used in ………",
               "options": {
                 "A": "Excel",
                 "B": "PowerPoint",
@@ -5628,11 +5628,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q118",
-              "text": "Database stores \u2026\u2026\u2026",
+              "text": "Database stores ………",
               "options": {
                 "A": "Random data",
                 "B": "Organized data",
@@ -5641,11 +5641,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q119",
-              "text": "DBMS stands for \u2026\u2026\u2026",
+              "text": "DBMS stands for ………",
               "options": {
                 "A": "Data Base Management System",
                 "B": "Data Backup Management System",
@@ -5654,11 +5654,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q120",
-              "text": "Table consists of \u2026\u2026\u2026",
+              "text": "Table consists of ………",
               "options": {
                 "A": "Rows and columns",
                 "B": "Slides",
@@ -5667,11 +5667,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q121",
-              "text": "Primary key is used to \u2026\u2026\u2026",
+              "text": "Primary key is used to ………",
               "options": {
                 "A": "Duplicate records",
                 "B": "Uniquely identify records",
@@ -5680,11 +5680,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q122",
-              "text": "SQL is used for \u2026\u2026\u2026",
+              "text": "SQL is used for ………",
               "options": {
                 "A": "Programming",
                 "B": "Database queries",
@@ -5693,11 +5693,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q123",
-              "text": "SELECT statement is used to \u2026\u2026\u2026",
+              "text": "SELECT statement is used to ………",
               "options": {
                 "A": "Delete data",
                 "B": "Retrieve data",
@@ -5706,11 +5706,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q124",
-              "text": "INSERT is used to \u2026\u2026\u2026",
+              "text": "INSERT is used to ………",
               "options": {
                 "A": "Add data",
                 "B": "Delete data",
@@ -5719,11 +5719,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q125",
-              "text": "DELETE is used to \u2026\u2026\u2026",
+              "text": "DELETE is used to ………",
               "options": {
                 "A": "Add data",
                 "B": "Remove data",
@@ -5732,11 +5732,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q126",
-              "text": "UPDATE is used to \u2026\u2026\u2026",
+              "text": "UPDATE is used to ………",
               "options": {
                 "A": "Add data",
                 "B": "Modify data",
@@ -5745,11 +5745,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q127",
-              "text": "Programming language is used to \u2026\u2026\u2026",
+              "text": "Programming language is used to ………",
               "options": {
                 "A": "Control hardware",
                 "B": "Write programs",
@@ -5758,11 +5758,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q128",
-              "text": "C language is \u2026\u2026\u2026",
+              "text": "C language is ………",
               "options": {
                 "A": "High-level",
                 "B": "Low-level",
@@ -5771,11 +5771,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q129",
-              "text": "Java is \u2026\u2026\u2026",
+              "text": "Java is ………",
               "options": {
                 "A": "Platform dependent",
                 "B": "Platform independent",
@@ -5784,11 +5784,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q130",
-              "text": "Python is known for \u2026\u2026\u2026",
+              "text": "Python is known for ………",
               "options": {
                 "A": "Complexity",
                 "B": "Simplicity",
@@ -5797,11 +5797,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q131",
-              "text": "Algorithm is \u2026\u2026\u2026",
+              "text": "Algorithm is ………",
               "options": {
                 "A": "Code",
                 "B": "Step-by-step solution",
@@ -5810,11 +5810,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q132",
-              "text": "Flowchart uses \u2026\u2026\u2026",
+              "text": "Flowchart uses ………",
               "options": {
                 "A": "Text only",
                 "B": "Symbols",
@@ -5823,11 +5823,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q133",
-              "text": "Debugging removes \u2026\u2026\u2026",
+              "text": "Debugging removes ………",
               "options": {
                 "A": "Code",
                 "B": "Errors",
@@ -5836,11 +5836,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q134",
-              "text": "Compiler gives \u2026\u2026\u2026 errors at once",
+              "text": "Compiler gives ……… errors at once",
               "options": {
                 "A": "One",
                 "B": "All",
@@ -5849,11 +5849,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q135",
-              "text": "Interpreter gives \u2026\u2026\u2026 error",
+              "text": "Interpreter gives ……… error",
               "options": {
                 "A": "One by one",
                 "B": "All at once",
@@ -5862,11 +5862,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q136",
-              "text": "Software development includes \u2026\u2026\u2026",
+              "text": "Software development includes ………",
               "options": {
                 "A": "Design",
                 "B": "Coding",
@@ -5875,11 +5875,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q137",
-              "text": "Testing is done to \u2026\u2026\u2026",
+              "text": "Testing is done to ………",
               "options": {
                 "A": "Add errors",
                 "B": "Remove errors",
@@ -5888,11 +5888,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q138",
-              "text": "Software maintenance means \u2026\u2026\u2026",
+              "text": "Software maintenance means ………",
               "options": {
                 "A": "Deleting software",
                 "B": "Updating and fixing software",
@@ -5901,11 +5901,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q139",
-              "text": "Open-source software is \u2026\u2026\u2026",
+              "text": "Open-source software is ………",
               "options": {
                 "A": "Paid",
                 "B": "Free and modifiable",
@@ -5914,11 +5914,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q140",
-              "text": "Examples of open-source OS include \u2026\u2026\u2026",
+              "text": "Examples of open-source OS include ………",
               "options": {
                 "A": "Windows",
                 "B": "Linux",
@@ -5927,11 +5927,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q141",
-              "text": "Proprietary software is \u2026\u2026\u2026",
+              "text": "Proprietary software is ………",
               "options": {
                 "A": "Free",
                 "B": "Paid",
@@ -5940,11 +5940,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q142",
-              "text": "GUI stands for \u2026\u2026\u2026",
+              "text": "GUI stands for ………",
               "options": {
                 "A": "General User Interface",
                 "B": "Graphical User Interface",
@@ -5953,11 +5953,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q143",
-              "text": "CLI stands for \u2026\u2026\u2026",
+              "text": "CLI stands for ………",
               "options": {
                 "A": "Command Line Interface",
                 "B": "Computer Line Interface",
@@ -5966,11 +5966,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q144",
-              "text": "Multitasking allows \u2026\u2026\u2026",
+              "text": "Multitasking allows ………",
               "options": {
                 "A": "One task",
                 "B": "Multiple tasks",
@@ -5979,11 +5979,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q145",
-              "text": "Time-sharing OS allows \u2026\u2026\u2026",
+              "text": "Time-sharing OS allows ………",
               "options": {
                 "A": "One user",
                 "B": "Multiple users",
@@ -5992,11 +5992,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q146",
-              "text": "Real-time OS is used in \u2026\u2026\u2026",
+              "text": "Real-time OS is used in ………",
               "options": {
                 "A": "Gaming",
                 "B": "Embedded systems",
@@ -6005,11 +6005,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q147",
-              "text": "Embedded systems are used in \u2026\u2026\u2026",
+              "text": "Embedded systems are used in ………",
               "options": {
                 "A": "Washing machine",
                 "B": "Microwave",
@@ -6018,11 +6018,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q148",
-              "text": "Microcontroller is used in \u2026\u2026\u2026",
+              "text": "Microcontroller is used in ………",
               "options": {
                 "A": "Embedded systems",
                 "B": "Servers",
@@ -6031,11 +6031,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q149",
-              "text": "8051 is a \u2026\u2026\u2026",
+              "text": "8051 is a ………",
               "options": {
                 "A": "CPU",
                 "B": "Microcontroller",
@@ -6044,11 +6044,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q150",
-              "text": "Sensors are used to \u2026\u2026\u2026",
+              "text": "Sensors are used to ………",
               "options": {
                 "A": "Process data",
                 "B": "Detect changes",
@@ -6057,11 +6057,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q151",
-              "text": "Actuators are used for \u2026\u2026\u2026",
+              "text": "Actuators are used for ………",
               "options": {
                 "A": "Input",
                 "B": "Output action",
@@ -6070,11 +6070,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q152",
-              "text": "IoT devices communicate via \u2026\u2026\u2026",
+              "text": "IoT devices communicate via ………",
               "options": {
                 "A": "Internet",
                 "B": "CPU",
@@ -6083,11 +6083,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q153",
-              "text": "Smart home uses \u2026\u2026\u2026",
+              "text": "Smart home uses ………",
               "options": {
                 "A": "IoT",
                 "B": "CPU",
@@ -6096,11 +6096,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q154",
-              "text": "Wearable devices include \u2026\u2026\u2026",
+              "text": "Wearable devices include ………",
               "options": {
                 "A": "Smartwatch",
                 "B": "Fitness band",
@@ -6109,11 +6109,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q155",
-              "text": "Edge devices process data \u2026\u2026\u2026",
+              "text": "Edge devices process data ………",
               "options": {
                 "A": "Far away",
                 "B": "Near source",
@@ -6122,11 +6122,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q156",
-              "text": "Fog computing is between \u2026\u2026\u2026",
+              "text": "Fog computing is between ………",
               "options": {
                 "A": "User and cloud",
                 "B": "CPU and GPU",
@@ -6135,11 +6135,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q157",
-              "text": "Neural networks are inspired by \u2026\u2026\u2026",
+              "text": "Neural networks are inspired by ………",
               "options": {
                 "A": "CPU",
                 "B": "Human brain",
@@ -6148,11 +6148,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q158",
-              "text": "NLP stands for \u2026\u2026\u2026",
+              "text": "NLP stands for ………",
               "options": {
                 "A": "Natural Language Processing",
                 "B": "Neural Logic Processing",
@@ -6161,11 +6161,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q159",
-              "text": "Computer vision deals with \u2026\u2026\u2026",
+              "text": "Computer vision deals with ………",
               "options": {
                 "A": "Audio",
                 "B": "Images",
@@ -6174,11 +6174,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q160",
-              "text": "Robotics uses \u2026\u2026\u2026",
+              "text": "Robotics uses ………",
               "options": {
                 "A": "AI",
                 "B": "Sensors",
@@ -6187,11 +6187,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q161",
-              "text": "Automation reduces \u2026\u2026\u2026",
+              "text": "Automation reduces ………",
               "options": {
                 "A": "Efficiency",
                 "B": "Manual work",
@@ -6200,11 +6200,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q162",
-              "text": "Industry 4.0 includes \u2026\u2026\u2026",
+              "text": "Industry 4.0 includes ………",
               "options": {
                 "A": "IoT",
                 "B": "AI",
@@ -6213,11 +6213,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q163",
-              "text": "Big Data uses \u2026\u2026\u2026",
+              "text": "Big Data uses ………",
               "options": {
                 "A": "Small datasets",
                 "B": "Large datasets",
@@ -6226,11 +6226,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q164",
-              "text": "Data mining extracts \u2026\u2026\u2026",
+              "text": "Data mining extracts ………",
               "options": {
                 "A": "Data",
                 "B": "Useful information",
@@ -6239,11 +6239,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q165",
-              "text": "Cloud computing models include \u2026\u2026\u2026",
+              "text": "Cloud computing models include ………",
               "options": {
                 "A": "IaaS",
                 "B": "PaaS",
@@ -6252,11 +6252,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q166",
-              "text": "SaaS provides \u2026\u2026\u2026",
+              "text": "SaaS provides ………",
               "options": {
                 "A": "Software services",
                 "B": "Hardware",
@@ -6265,11 +6265,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q167",
-              "text": "PaaS provides \u2026\u2026\u2026",
+              "text": "PaaS provides ………",
               "options": {
                 "A": "Platform",
                 "B": "Software",
@@ -6278,11 +6278,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q168",
-              "text": "IaaS provides \u2026\u2026\u2026",
+              "text": "IaaS provides ………",
               "options": {
                 "A": "Infrastructure",
                 "B": "Software",
@@ -6291,11 +6291,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q169",
-              "text": "Virtual machines run on \u2026\u2026\u2026",
+              "text": "Virtual machines run on ………",
               "options": {
                 "A": "Hardware",
                 "B": "Hypervisor",
@@ -6304,11 +6304,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q170",
-              "text": "Hypervisor manages \u2026\u2026\u2026",
+              "text": "Hypervisor manages ………",
               "options": {
                 "A": "Hardware",
                 "B": "Virtual machines",
@@ -6317,11 +6317,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q171",
-              "text": "Cybersecurity includes \u2026\u2026\u2026",
+              "text": "Cybersecurity includes ………",
               "options": {
                 "A": "Encryption",
                 "B": "Authentication",
@@ -6330,11 +6330,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q172",
-              "text": "Passwords should be \u2026\u2026\u2026",
+              "text": "Passwords should be ………",
               "options": {
                 "A": "Simple",
                 "B": "Strong",
@@ -6343,11 +6343,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q173",
-              "text": "Two-factor authentication uses \u2026\u2026\u2026",
+              "text": "Two-factor authentication uses ………",
               "options": {
                 "A": "One method",
                 "B": "Two methods",
@@ -6356,11 +6356,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q174",
-              "text": "Digital signature ensures \u2026\u2026\u2026",
+              "text": "Digital signature ensures ………",
               "options": {
                 "A": "Security",
                 "B": "Authenticity",
@@ -6369,11 +6369,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q175",
-              "text": "Ethical hacking is \u2026\u2026\u2026",
+              "text": "Ethical hacking is ………",
               "options": {
                 "A": "Illegal",
                 "B": "Authorized security testing",
@@ -6382,11 +6382,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q176",
-              "text": "Firewall blocks \u2026\u2026\u2026",
+              "text": "Firewall blocks ………",
               "options": {
                 "A": "Authorized access",
                 "B": "Unauthorized access",
@@ -6395,11 +6395,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q177",
-              "text": "VPN provides \u2026\u2026\u2026",
+              "text": "VPN provides ………",
               "options": {
                 "A": "Open network",
                 "B": "Secure connection",
@@ -6408,11 +6408,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q178",
-              "text": "Data privacy protects \u2026\u2026\u2026",
+              "text": "Data privacy protects ………",
               "options": {
                 "A": "Hardware",
                 "B": "Personal data",
@@ -6421,11 +6421,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q179",
-              "text": "Encryption converts data into \u2026\u2026\u2026",
+              "text": "Encryption converts data into ………",
               "options": {
                 "A": "Plain text",
                 "B": "Cipher text",
@@ -6434,11 +6434,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q180",
-              "text": "Decryption converts \u2026\u2026\u2026",
+              "text": "Decryption converts ………",
               "options": {
                 "A": "Plain to cipher",
                 "B": "Cipher to plain",
@@ -6447,11 +6447,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q181",
-              "text": "Digital divide refers to \u2026\u2026\u2026",
+              "text": "Digital divide refers to ………",
               "options": {
                 "A": "Network issue",
                 "B": "Gap in technology access",
@@ -6460,11 +6460,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q182",
-              "text": "E-learning uses \u2026\u2026\u2026",
+              "text": "E-learning uses ………",
               "options": {
                 "A": "Internet",
                 "B": "Books",
@@ -6473,11 +6473,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q183",
-              "text": "E-commerce is \u2026\u2026\u2026",
+              "text": "E-commerce is ………",
               "options": {
                 "A": "Online shopping",
                 "B": "Programming",
@@ -6486,11 +6486,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q184",
-              "text": "Examples of e-commerce include \u2026\u2026\u2026",
+              "text": "Examples of e-commerce include ………",
               "options": {
                 "A": "Amazon",
                 "B": "Flipkart",
@@ -6499,11 +6499,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q185",
-              "text": "Digital payment methods include \u2026\u2026\u2026",
+              "text": "Digital payment methods include ………",
               "options": {
                 "A": "UPI",
                 "B": "Cards",
@@ -6512,11 +6512,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q186",
-              "text": "UPI stands for \u2026\u2026\u2026",
+              "text": "UPI stands for ………",
               "options": {
                 "A": "Unified Payment Interface",
                 "B": "Universal Payment Interface",
@@ -6525,11 +6525,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q187",
-              "text": "ATM stands for \u2026\u2026\u2026",
+              "text": "ATM stands for ………",
               "options": {
                 "A": "Automated Teller Machine",
                 "B": "Automatic Transfer Machine",
@@ -6538,11 +6538,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q188",
-              "text": "Digital India initiative promotes \u2026\u2026\u2026",
+              "text": "Digital India initiative promotes ………",
               "options": {
                 "A": "Offline work",
                 "B": "Digital services",
@@ -6551,11 +6551,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q189",
-              "text": "Smart cities use \u2026\u2026\u2026",
+              "text": "Smart cities use ………",
               "options": {
                 "A": "IoT",
                 "B": "AI",
@@ -6564,11 +6564,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q190",
-              "text": "Green computing focuses on \u2026\u2026\u2026",
+              "text": "Green computing focuses on ………",
               "options": {
                 "A": "Speed",
                 "B": "Environment",
@@ -6577,11 +6577,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q191",
-              "text": "E-waste refers to \u2026\u2026\u2026",
+              "text": "E-waste refers to ………",
               "options": {
                 "A": "Paper",
                 "B": "Electronic waste",
@@ -6590,11 +6590,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q192",
-              "text": "Recycling reduces \u2026\u2026\u2026",
+              "text": "Recycling reduces ………",
               "options": {
                 "A": "Waste",
                 "B": "Data",
@@ -6603,11 +6603,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q193",
-              "text": "Sustainable computing means \u2026\u2026\u2026",
+              "text": "Sustainable computing means ………",
               "options": {
                 "A": "High speed",
                 "B": "Eco-friendly computing",
@@ -6616,11 +6616,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q194",
-              "text": "Future computing includes \u2026\u2026\u2026",
+              "text": "Future computing includes ………",
               "options": {
                 "A": "Quantum computing",
                 "B": "AI",
@@ -6629,11 +6629,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q195",
-              "text": "Quantum computers are faster for \u2026\u2026\u2026",
+              "text": "Quantum computers are faster for ………",
               "options": {
                 "A": "All tasks",
                 "B": "Complex problems",
@@ -6642,11 +6642,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q196",
-              "text": "Augmented Reality overlays \u2026\u2026\u2026",
+              "text": "Augmented Reality overlays ………",
               "options": {
                 "A": "Virtual objects",
                 "B": "Real world",
@@ -6655,11 +6655,11 @@
               },
               "correctAnswer": "c",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q197",
-              "text": "Virtual Reality creates \u2026\u2026\u2026",
+              "text": "Virtual Reality creates ………",
               "options": {
                 "A": "Real world",
                 "B": "Virtual world",
@@ -6668,11 +6668,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q198",
-              "text": "Metaverse combines \u2026\u2026\u2026",
+              "text": "Metaverse combines ………",
               "options": {
                 "A": "VR",
                 "B": "AR",
@@ -6681,11 +6681,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q199",
-              "text": "3D printing creates \u2026\u2026\u2026",
+              "text": "3D printing creates ………",
               "options": {
                 "A": "Software",
                 "B": "Physical objects",
@@ -6694,11 +6694,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q200",
-              "text": "Drones are used for \u2026\u2026\u2026",
+              "text": "Drones are used for ………",
               "options": {
                 "A": "Surveillance",
                 "B": "Delivery",
@@ -6707,11 +6707,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q201",
-              "text": "Autonomous vehicles use \u2026\u2026\u2026",
+              "text": "Autonomous vehicles use ………",
               "options": {
                 "A": "AI",
                 "B": "Sensors",
@@ -6720,11 +6720,11 @@
               },
               "correctAnswer": "d",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q202",
-              "text": "Blockchain ensures \u2026\u2026\u2026",
+              "text": "Blockchain ensures ………",
               "options": {
                 "A": "Centralization",
                 "B": "Transparency",
@@ -6733,11 +6733,11 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q203",
-              "text": "Cryptocurrency uses \u2026\u2026\u2026",
+              "text": "Cryptocurrency uses ………",
               "options": {
                 "A": "Blockchain",
                 "B": "CPU",
@@ -6746,11 +6746,11 @@
               },
               "correctAnswer": "a",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             },
             {
               "id": "new-q204",
-              "text": "Technology continues to \u2026\u2026\u2026",
+              "text": "Technology continues to ………",
               "options": {
                 "A": "Decrease",
                 "B": "Evolve",
@@ -6759,7 +6759,7 @@
               },
               "correctAnswer": "b",
               "topic": "General Computer Science",
-              "answerStatus": "unverified"
+              "answerStatus": "verified"
             }
           ]
         }
