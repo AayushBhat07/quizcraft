@@ -2,25 +2,28 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "@/lib/firebase";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { BookOpen, Trophy, TrendingUp, Zap, Target, Flame } from "lucide-react";
+import { BookOpen, Trophy, TrendingUp, Zap, Target, Flame, User, LogIn } from "lucide-react";
 import questionsData from "@/data/questions.json";
+import AuthModal from "@/components/AuthModal";
+import { getFirestoreStats } from "@/lib/firebaseHelpers";
 
-// ─── NEW WARM FIRE PALETTE ────────────────────────
 const C = {
-  bg:        "#1a1209",  // deep warm black
-  surface:   "#2a1a0a",  // dark warm brown
-  card:      "#3d2314",  // warm card surface
-  primary:   "#f6aa1c",  // golden amber
-  secondary: "#bc3908",  // orange-red
-  accent:    "#941b0c",  // deep red
-  muted:     "#8a7055",  // warm grey-brown
-  mutedFg:   "#c4a882",  // light warm tan
-  fg:        "#fff8f0",  // warm white
-  success:   "#81c784",  // green
+  bg:        "#1a1209",
+  surface:   "#2a1a0a",
+  card:      "#3d2314",
+  primary:   "#f6aa1c",
+  secondary: "#bc3908",
+  accent:    "#941b0c",
+  muted:     "#8a7055",
+  mutedFg:   "#c4a882",
+  fg:        "#fff8f0",
+  success:   "#81c784",
 };
 
 const ALL_SUBJECTS = questionsData.subjects;
@@ -29,6 +32,8 @@ export default function HomePage() {
   const [name, setName] = useState("");
   const [selectedSubjectIdx, setSelectedSubjectIdx] = useState(0);
   const [userStats, setUserStats] = useState<{ totalQuizzes: number; bestScore: number; avgScore: number } | null>(null);
+  const [authModalOpen, setAuthModalOpen] = useState(false);
+  const [firebaseUser, setFirebaseUser] = useState<{ email: string } | null>(null);
   const router = useRouter();
 
   const SELECTED_SUBJECT = ALL_SUBJECTS[selectedSubjectIdx];
@@ -39,10 +44,24 @@ export default function HomePage() {
   }));
   const TOTAL_QUESTIONS = CHAPTERS.reduce((s, c) => s + c.questions, 0);
 
-  const loadStats = () => {
+  const loadStats = async () => {
     const storedName = localStorage.getItem("quizcraft_name");
     if (storedName) setName(storedName);
-    else return;
+
+    // If signed in with Firebase, try to load from Firestore
+    if (firebaseUser) {
+      const fsStats = await getFirestoreStats();
+      if (fsStats) {
+        setUserStats(fsStats);
+        return;
+      }
+    }
+
+    // Fall back to localStorage (guest mode)
+    if (!storedName) {
+      setUserStats(null);
+      return;
+    }
 
     const attempts = JSON.parse(localStorage.getItem("quizcraft_attempts") || "[]");
     if (attempts.length > 0) {
@@ -51,21 +70,30 @@ export default function HomePage() {
       const avg = Math.round(scores.reduce((s: number, v: number) => s + v, 0) / scores.length);
       setUserStats({ totalQuizzes: attempts.length, bestScore: best, avgScore: avg });
     } else {
-      // No quizzes yet — show name with placeholder stats
       setUserStats({ totalQuizzes: 0, bestScore: 0, avgScore: 0 });
     }
   };
 
+  // Listen for Firebase auth state
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setFirebaseUser(user ? { email: user.email || "" } : null);
+    });
+    return () => unsubscribe();
+  }, []);
+
+  // Load stats on mount and whenever auth or name changes
   useEffect(() => {
     loadStats();
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [firebaseUser]);
 
   // Re-load stats when returning from quiz (navigation without full reload)
   useEffect(() => {
     const handleShowStats = () => loadStats();
     window.addEventListener("focus", handleShowStats);
     return () => window.removeEventListener("focus", handleShowStats);
-  }, []);
+  }, [loadStats]);
 
   const handleStartQuiz = () => {
     const finalName = name.trim() || "Anonymous";
@@ -73,6 +101,12 @@ export default function HomePage() {
     const subj = ALL_SUBJECTS[selectedSubjectIdx];
     localStorage.setItem("quizcraft_subject", subj.id);
     router.push(`/quiz/${subj.id}?name=${encodeURIComponent(finalName)}`);
+  };
+
+  const handleSignedIn = (email: string) => {
+    setFirebaseUser(email ? { email } : null);
+    // Reload stats after sign in
+    setTimeout(loadStats, 500);
   };
 
   const hasData = userStats !== null;
@@ -114,6 +148,32 @@ export default function HomePage() {
                     Emerging Trends in Electronics
                   </p>
                 </div>
+              </div>
+
+              {/* Auth button */}
+              <div className="flex items-center gap-2">
+                {firebaseUser ? (
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-lg" style={{ backgroundColor: `${C.success}22` }}>
+                    <User className="w-4 h-4" style={{ color: C.success }} />
+                    <span className="text-sm" style={{ color: C.success }}>{firebaseUser.email}</span>
+                  </div>
+                ) : (
+                  <Button
+                    onClick={() => setAuthModalOpen(true)}
+                    variant="outline"
+                    size="sm"
+                    className="text-sm"
+                    style={{
+                      borderColor: `${C.primary}50`,
+                      color: C.primary,
+                      fontFamily: "Lexend, sans-serif",
+                      backgroundColor: "transparent",
+                    }}
+                  >
+                    <LogIn className="w-4 h-4 mr-2" />
+                    Sign In
+                  </Button>
+                )}
               </div>
 
               {/* Name Input Card */}
@@ -466,6 +526,13 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Auth Modal */}
+      <AuthModal
+        open={authModalOpen}
+        onClose={() => setAuthModalOpen(false)}
+        onSignedIn={handleSignedIn}
+      />
     </div>
   );
 }

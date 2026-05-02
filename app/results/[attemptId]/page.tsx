@@ -864,6 +864,7 @@ export default function ResultsPage() {
               router.push(`/quiz/${subject}`);
             }}
             disabled={attempt.wrongQuestionIds.length === 0}
+            className="w-full min-h-[48px] text-sm"
             style={{
               backgroundColor: C.accent,
               color: C.bg,
@@ -880,6 +881,7 @@ export default function ResultsPage() {
               const subject = localStorage.getItem("quizcraft_subject") || "ete-textbook";
               router.push(`/quiz/${subject}`);
             }}
+            className="w-full min-h-[48px]"
             style={{
               borderColor: C.secondary,
               color: C.light,
@@ -892,6 +894,7 @@ export default function ResultsPage() {
           <Button
             variant="outline"
             onClick={() => router.push("/")}
+            className="w-full min-h-[48px]"
             style={{
               borderColor: C.secondary,
               color: C.light,

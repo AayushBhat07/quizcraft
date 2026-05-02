@@ -33,6 +33,7 @@ import {
   type QuizPrefs,
   type StoredAttempt,
 } from "@/lib/quizData";
+import { saveAttemptToFirestore } from "@/lib/firebaseHelpers";
 
 // ─── Fisher-Yates shuffle (local) ────────────────
 function shuffleInPlace<T>(arr: T[]): T[] {
@@ -238,6 +239,9 @@ export default function QuizPage() {
     localStorage.setItem("quizcraft_last_attempt", JSON.stringify(storedAttempt));
     updateUserStatsAfterQuiz(result.score, result.total, result.weakTopics);
 
+    // Save to Firestore if user is signed in (non-blocking)
+    saveAttemptToFirestore(storedAttempt).catch(console.warn);
+
     // Store result for results page
     localStorage.setItem("quizcraft_last_result", JSON.stringify(result));
     setPhase("complete");
@@ -305,7 +309,7 @@ export default function QuizPage() {
                   <button
                     key={n}
                     onClick={() => setPrefs((p) => ({ ...p, questionCount: n }))}
-                    className="py-2 px-3 rounded-lg text-sm font-medium transition-all"
+                    className="py-2 px-3 rounded-lg text-sm font-medium transition-all min-h-[48px]"
                     style={{
                       backgroundColor: prefs.questionCount === n ? s.primary : s.bg,
                       color: prefs.questionCount === n ? s.primaryFg : s.mutedFg,
@@ -317,7 +321,7 @@ export default function QuizPage() {
                 ))}
                 <button
                   onClick={() => setPrefs((p) => ({ ...p, questionCount: totalQuestions }))}
-                  className="py-2 px-3 rounded-lg text-sm font-medium transition-all"
+                  className="py-2 px-3 rounded-lg text-sm font-medium transition-all min-h-[48px]"
                   style={{
                     backgroundColor: prefs.questionCount === totalQuestions ? s.primary : s.bg,
                     color: prefs.questionCount === totalQuestions ? s.primaryFg : s.mutedFg,
@@ -359,7 +363,7 @@ export default function QuizPage() {
                     <button
                       key={ch.id}
                       onClick={() => toggleChapter(ch.id)}
-                      className="w-full flex items-center gap-3 p-3 rounded-lg text-left transition-all"
+                      className="w-full flex items-center gap-3 p-3 rounded-lg text-left transition-all min-h-[48px]"
                       style={{
                         backgroundColor: selected ? "rgba(172,159,187,0.1)" : s.bg,
                         border: `1px solid ${selected ? s.primary : s.cardBorder}`,
@@ -686,7 +690,7 @@ export default function QuizPage() {
                     <button
                       key={key}
                       onClick={() => handleSelectAnswer(key)}
-                      className="w-full flex items-center gap-3 p-4 rounded-lg text-left transition-all"
+                      className="w-full flex items-center gap-3 p-4 rounded-lg text-left transition-all min-h-[48px]"
                       style={{
                         backgroundColor: isSelected
                           ? "rgba(172,159,187,0.15)"
@@ -702,6 +706,7 @@ export default function QuizPage() {
                           backgroundColor: isSelected ? s.primary : "transparent",
                           color: isSelected ? s.primaryFg : s.mutedFg,
                           border: `1.5px solid ${isSelected ? s.primary : s.cardBorder}`,
+                          minHeight: "2rem",
                         }}
                       >
                         {key}
