@@ -1,3 +1,4 @@
+// Replace the getLeaderboard function in lib/firebaseHelpers.ts
 import { collection, addDoc, getDocs, orderBy, limit, query } from "firebase/firestore";
 import { db } from "./firebase";
 
@@ -20,14 +21,16 @@ export async function saveAttemptToFirestore(data: {
 export async function getLeaderboard(limitCount = 50): Promise<any[]> {
   try {
     const q = query(collection(db, "attempts"), orderBy("percentage", "desc"), limit(limitCount));
-    // Add timeout fallback
+    // Add timeout fallback - 3 seconds max
     const timeoutPromise = new Promise<never>((_, reject) =>
-      setTimeout(() => reject(new Error("Firestore timeout")), 5000)
+      setTimeout(() => reject(new Error("Firestore timeout")), 3000)
     );
     const snap = await Promise.race([getDocs(q), timeoutPromise]);
-    return (snap as any).docs.map((doc: any) => ({ id: doc.id, ...doc.data() }));
+    const docs = (snap as any).docs;
+    if (docs.length === 0) return [];
+    return docs.map((doc: any) => ({ id: doc.id, ...doc.data() }));
   } catch (e) {
-    console.warn("QuizCraft: getLeaderboard failed, falling back to localStorage", e);
+    console.warn("QuizCraft: getLeaderboard failed, returning empty array", e);
     return [];
   }
 }
