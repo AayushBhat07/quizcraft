@@ -51,7 +51,8 @@ export default function HomePage() {
       const avg = Math.round(scores.reduce((s: number, v: number) => s + v, 0) / scores.length);
       setUserStats({ totalQuizzes: attempts.length, bestScore: best, avgScore: avg });
     } else {
-      setUserStats(null);
+      // No quizzes yet — show name with placeholder stats
+      setUserStats({ totalQuizzes: 0, bestScore: 0, avgScore: 0 });
     }
   };
 

@@ -235,6 +235,7 @@ export default function QuizPage() {
     };
 
     saveAttempt(storedAttempt);
+    localStorage.setItem("quizcraft_last_attempt", JSON.stringify(storedAttempt));
     updateUserStatsAfterQuiz(result.score, result.total, result.weakTopics);
 
     // Store result for results page
