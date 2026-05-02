@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "@/lib/firebase";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -16,10 +14,10 @@ import {
   Calendar,
   Hash,
   Loader2,
-  CloudOff,
+  User,
 } from "lucide-react";
+import { getLeaderboard, saveAttemptToFirestore } from "@/lib/firebaseHelpers";
 import type { StoredAttempt } from "@/lib/quizData";
-import { getLeaderboard, type LeaderboardEntry } from "@/lib/firebaseHelpers";
 
 const C = {
   bg:        "#1a1209",
@@ -36,6 +34,21 @@ const C = {
   warn:      "#f6aa1c",
 };
 
+interface LeaderboardEntry {
+  id: string;
+  name: string;
+  subjectId: string;
+  score: number;
+  totalQuestions: number;
+  percentage: number;
+  timestamp: number;
+  isCurrentUser?: boolean;
+}
+
+const SUBJECT_NAMES: Record<string, string> = {
+  ete: "Emerging Trends in Electronics",
+};
+
 function formatDate(ts: number): string {
   const d = new Date(ts);
   return d.toLocaleDateString("en-IN", {
@@ -43,6 +56,17 @@ function formatDate(ts: number): string {
     month: "short",
     year: "numeric",
   });
+}
+
+function timeAgo(ts: number): string {
+  const diff = Date.now() - ts;
+  const mins = Math.floor(diff / 60000);
+  const hrs = Math.floor(diff / 3600000);
+  const days = Math.floor(diff / 86400000);
+  if (days > 0) return `${days}d ago`;
+  if (hrs > 0) return `${hrs}h ago`;
+  if (mins > 0) return `${mins}m ago`;
+  return "just now";
 }
 
 function RankMedal({ rank }: { rank: number }) {
@@ -87,102 +111,97 @@ function ScoreBar({ score }: { score: number }) {
 
 export default function LeaderboardPage() {
   const router = useRouter();
-  const [activeTab, setActiveTab] = useState<"weekly" | "alltime">("alltime");
+  const [activeTab, setActiveTab] = useState<string>("all");
   const [entries, setEntries] = useState<LeaderboardEntry[]>([]);
   const [localEntries, setLocalEntries] = useState<LeaderboardEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [isEmpty, setIsEmpty] = useState(true);
-  const [firebaseUser, setFirebaseUser] = useState<any>(null);
+  const [isUsingFs, setIsUsingFs] = useState(false);
   const [userName, setUserName] = useState("");
 
+  // Load Firestore leaderboard
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setFirebaseUser(user);
-    });
-    return () => unsubscribe();
-  }, []);
-
-  useEffect(() => {
-    const name = localStorage.getItem("quizcraft_name") || "";
-    setUserName(name);
-
-    // Load local entries
-    const raw = localStorage.getItem("quizcraft_attempts");
-    if (raw) {
-      try {
-        const attempts: StoredAttempt[] = JSON.parse(raw);
-        const now = Date.now();
-        const oneWeekAgo = now - 7 * 24 * 60 * 60 * 1000;
-
-        const byName: Record<string, { topScore: number; totalQuizzes: number; lastAttempt: number }> = {};
-        attempts.forEach((a) => {
-          const n = a.userName || name || "You";
-          if (!byName[n]) byName[n] = { topScore: 0, totalQuizzes: 0, lastAttempt: 0 };
-          byName[n].topScore = Math.max(byName[n].topScore, Math.round((a.score / a.totalQuestions) * 100));
-          byName[n].totalQuizzes += 1;
-          byName[n].lastAttempt = Math.max(byName[n].lastAttempt, a.timestamp);
-        });
-
-        const realEntries: LeaderboardEntry[] = Object.entries(byName).map(([n, data]) => ({
-          odId: n,
-          userName: n,
-          topScore: data.topScore,
-          totalQuizzes: data.totalQuizzes,
-          lastAttempt: data.lastAttempt,
-          isCurrentUser: n === name,
-        }));
-
-        realEntries.sort((a, b) => b.topScore - a.topScore);
-
-        const filtered =
-          activeTab === "weekly"
-            ? realEntries.filter((e) => e.lastAttempt >= oneWeekAgo)
-            : realEntries;
-
-        setLocalEntries(filtered);
-      } catch {
-        setLocalEntries([]);
-      }
-    }
-  }, [activeTab]);
-
-  // Load Firestore leaderboard when tab changes
-  useEffect(() => {
-    if (!firebaseUser) {
-      setIsLoading(false);
-      return;
-    }
-
     setIsLoading(true);
-    getLeaderboard(20)
+    getLeaderboard(100)
       .then((fsEntries) => {
-        const now = Date.now();
-        const oneWeekAgo = now - 7 * 24 * 60 * 60 * 1000;
+        if (!fsEntries || fsEntries.length === 0) {
+          setEntries([]);
+          return;
+        }
+        const name = localStorage.getItem("quizcraft_name") || "";
+        setUserName(name);
+        setIsUsingFs(true);
 
-        const filtered =
-          activeTab === "weekly"
-            ? fsEntries.filter((e) => e.lastAttempt >= oneWeekAgo)
-            : fsEntries;
-
-        // Add isCurrentUser flag
-        const withCurrentUser = filtered.map((e) => ({
+        const withUser = fsEntries.map((e: any) => ({
           ...e,
-          isCurrentUser: e.odId === firebaseUser.uid,
+          isCurrentUser: e.name === name && name !== "",
         }));
 
-        setEntries(withCurrentUser);
-        setIsEmpty(withCurrentUser.length === 0);
+        setEntries(withUser as LeaderboardEntry[]);
       })
       .catch(() => {
-        setEntries([]);
-        setIsEmpty(true);
+        setIsUsingFs(false);
+        // Fall back to localStorage
+        const raw = localStorage.getItem("quizcraft_attempts");
+        if (raw) {
+          try {
+            const attempts: StoredAttempt[] = JSON.parse(raw);
+            const name = localStorage.getItem("quizcraft_name") || "";
+            setUserName(name);
+            const byName: Record<string, LeaderboardEntry> = {};
+            attempts.forEach((a) => {
+              const n = a.userName || name || "You";
+              const pct = Math.round((a.score / a.totalQuestions) * 100);
+              if (!byName[n] || byName[n].percentage < pct) {
+                byName[n] = {
+                  id: a.id,
+                  name: n,
+                  subjectId: a.subjectId,
+                  score: a.score,
+                  totalQuestions: a.totalQuestions,
+                  percentage: pct,
+                  timestamp: a.timestamp,
+                  isCurrentUser: n === name && name !== "",
+                };
+              }
+            });
+            const sorted = Object.values(byName).sort((a, b) => b.percentage - a.percentage);
+            setLocalEntries(sorted);
+          } catch {
+            setLocalEntries([]);
+          }
+        }
       })
       .finally(() => setIsLoading(false));
-  }, [activeTab, firebaseUser]);
+  }, [activeTab]);
 
-  const displayEntries = firebaseUser ? entries : localEntries;
-  const isEmptyFinal = firebaseUser ? isEmpty : localEntries.length === 0;
-  const hasCurrentUser = displayEntries.some((e) => (e as any).isCurrentUser);
+  // Also push current user's last attempt to Firestore on load
+  useEffect(() => {
+    const lastAttemptRaw = localStorage.getItem("quizcraft_last_attempt");
+    if (!lastAttemptRaw) return;
+    try {
+      const attempt: StoredAttempt = JSON.parse(lastAttemptRaw);
+      const name = localStorage.getItem("quizcraft_name") || attempt.userName || "Anonymous";
+      saveAttemptToFirestore({
+        name,
+        subjectId: attempt.subjectId,
+        score: attempt.score,
+        totalQuestions: attempt.totalQuestions,
+        percentage: Math.round((attempt.score / attempt.totalQuestions) * 100),
+        weakTopics: attempt.weakTopics || [],
+        timestamp: attempt.timestamp,
+      }).catch(() => {});
+    } catch {}
+  }, []);
+
+  // Compute display entries with active tab filter
+  const allEntries = isUsingFs ? entries : localEntries;
+  const filteredEntries = activeTab === "all"
+    ? allEntries
+    : allEntries.filter((e) => e.subjectId === activeTab);
+
+  // Rank filtered list
+  const rankedEntries = filteredEntries.map((e, idx) => ({ ...e, rank: idx + 1 }));
+  const hasCurrentUser = rankedEntries.some((e) => e.isCurrentUser);
 
   return (
     <div
@@ -216,19 +235,31 @@ export default function LeaderboardPage() {
           </h1>
         </div>
 
-        {/* Firestore indicator */}
-        {firebaseUser && (
-          <div
-            className="flex items-center gap-2 text-xs px-3 py-1.5 rounded-full w-fit"
-            style={{ backgroundColor: `${C.success}22`, color: C.success }}
-          >
-            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: C.success }} />
-            Synced from Firestore
+        {/* Firestore / Local indicator */}
+        <div
+          className="flex items-center gap-2 text-xs px-3 py-1.5 rounded-full w-fit"
+          style={{
+            backgroundColor: isUsingFs ? `${C.success}22` : `${C.muted}22`,
+            color: isUsingFs ? C.success : C.muted,
+          }}
+        >
+          <span
+            className="w-2 h-2 rounded-full"
+            style={{ backgroundColor: isUsingFs ? C.success : C.muted }}
+          />
+          {isUsingFs ? "Global · Anyone can contribute" : "Local · Only your device"}
+        </div>
+
+        {/* Loading */}
+        {isLoading && (
+          <div className="flex items-center justify-center py-12 gap-3" style={{ color: C.mutedFg }}>
+            <Loader2 className="w-5 h-5 animate-spin" />
+            <span className="text-sm">Loading leaderboard...</span>
           </div>
         )}
 
         {/* Empty state */}
-        {isEmptyFinal && !isLoading && (
+        {!isLoading && rankedEntries.length === 0 && (
           <Card
             className="p-8 text-center"
             style={{ backgroundColor: C.surface, border: `1px solid ${C.surface2}` }}
@@ -241,9 +272,7 @@ export default function LeaderboardPage() {
               No scores yet
             </h3>
             <p className="mb-6" style={{ color: C.mutedFg }}>
-              {firebaseUser
-                ? "Be the first to take a quiz and claim the #1 spot!"
-                : "Sign in to join the global leaderboard and see scores from all devices."}
+              Be the first to take a quiz and claim the #1 spot!
             </p>
             <Button
               onClick={() => router.push("/")}
@@ -258,146 +287,140 @@ export default function LeaderboardPage() {
           </Card>
         )}
 
-        {/* Loading */}
-        {isLoading && firebaseUser && (
-          <div className="flex items-center justify-center py-12 gap-3" style={{ color: C.mutedFg }}>
-            <Loader2 className="w-5 h-5 animate-spin" />
-            <span className="text-sm">Loading global leaderboard...</span>
-          </div>
-        )}
-
-        {/* Tabs */}
-        {!isEmptyFinal && !isLoading && (
-          <Tabs
-            value={activeTab}
-            onValueChange={(v) => setActiveTab(v as "weekly" | "alltime")}
-          >
-            <TabsList
-              className="grid w-full grid-cols-2"
-              style={{
-                backgroundColor: C.surface,
-                border: `1px solid ${C.surface2}`,
-              }}
-            >
-              <TabsTrigger
-                value="weekly"
+        {/* Tabs + Leaderboard */}
+        {!isLoading && rankedEntries.length > 0 && (
+          <>
+            {/* Subject filter tabs */}
+            <Tabs value={activeTab} onValueChange={setActiveTab}>
+              <TabsList
+                className="grid w-full"
                 style={{
-                  fontFamily: "Lexend, sans-serif",
-                  color: activeTab === "weekly" ? C.fg : C.mutedFg,
+                  backgroundColor: C.surface,
+                  border: `1px solid ${C.surface2}`,
+                  gridTemplateColumns: `repeat(${Math.min(allEntries.length, 5)}, 1fr)`,
                 }}
               >
-                <Calendar className="w-4 h-4 mr-2" />
-                This Week
-              </TabsTrigger>
-              <TabsTrigger
-                value="alltime"
-                style={{
-                  fontFamily: "Lexend, sans-serif",
-                  color: activeTab === "alltime" ? C.fg : C.mutedFg,
-                }}
-              >
-                <TrendingUp className="w-4 h-4 mr-2" />
-                All Time
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value={activeTab} className="mt-4 space-y-3">
-              {displayEntries.map((entry, idx) => {
-                const rank = idx + 1;
-                const isTop3 = rank <= 3;
-                const e = entry as any;
-
-                return (
-                  <Card
-                    key={e.odId || e.userName}
+                <TabsTrigger
+                  value="all"
+                  style={{
+                    fontFamily: "Lexend, sans-serif",
+                    color: activeTab === "all" ? C.fg : C.mutedFg,
+                  }}
+                >
+                  <TrendingUp className="w-4 h-4 mr-2" />
+                  All
+                </TabsTrigger>
+                {/* Dynamic subject tabs */}
+                {[...Array.from(new Map(allEntries.map(e => [e.subjectId, e])).entries())].map(([sid, e]) => (
+                  <TabsTrigger
+                    key={sid}
+                    value={sid}
                     style={{
-                      backgroundColor: C.surface,
-                      border: e.isCurrentUser
-                        ? `2px solid ${C.primary}`
-                        : `1px solid ${C.surface2}`,
+                      fontFamily: "Lexend, sans-serif",
+                      color: activeTab === sid ? C.fg : C.mutedFg,
                     }}
                   >
-                    <CardContent className="p-4">
-                      <div className="flex items-center gap-4">
-                        <RankMedal rank={rank} />
+                    {SUBJECT_NAMES[sid] || sid}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
 
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span
-                              className="font-semibold text-base truncate"
-                              style={{
-                                fontFamily: "Lexend, sans-serif",
-                                color: e.isCurrentUser ? C.primary : C.fg,
-                              }}
-                            >
-                              {e.userName}
-                            </span>
-                            {e.isCurrentUser && (
-                              <Badge
-                                variant="outline"
-                                className="text-xs"
+              <TabsContent value={activeTab} className="mt-4 space-y-3">
+                {rankedEntries.map((entry) => {
+                  const rank = entry.rank;
+                  return (
+                    <Card
+                      key={entry.id || entry.name + entry.timestamp}
+                      style={{
+                        backgroundColor: C.surface,
+                        border: entry.isCurrentUser
+                          ? `2px solid ${C.primary}`
+                          : `1px solid ${C.surface2}`,
+                      }}
+                    >
+                      <CardContent className="p-4">
+                        <div className="flex items-center gap-4">
+                          <RankMedal rank={rank} />
+
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <span
+                                className="font-semibold text-base truncate"
                                 style={{
-                                  borderColor: C.primary,
-                                  color: C.primary,
+                                  fontFamily: "Lexend, sans-serif",
+                                  color: entry.isCurrentUser ? C.primary : C.fg,
                                 }}
                               >
-                                You
-                              </Badge>
-                            )}
+                                {entry.name}
+                              </span>
+                              {entry.isCurrentUser && (
+                                <Badge
+                                  variant="outline"
+                                  className="text-xs"
+                                  style={{
+                                    borderColor: C.primary,
+                                    color: C.primary,
+                                  }}
+                                >
+                                  You
+                                </Badge>
+                              )}
+                            </div>
+                            <div
+                              className="flex items-center gap-3 mt-1 text-xs"
+                              style={{ color: C.mutedFg }}
+                            >
+                              <span className="flex items-center gap-1">
+                                <Hash className="w-3 h-3" />
+                                {entry.score}/{entry.totalQuestions}
+                              </span>
+                              <span>{timeAgo(entry.timestamp)}</span>
+                              <span>{formatDate(entry.timestamp)}</span>
+                            </div>
                           </div>
+
+                          <div className="w-36 hidden sm:block">
+                            <ScoreBar score={entry.percentage} />
+                          </div>
+
                           <div
-                            className="flex items-center gap-3 mt-1 text-xs"
-                            style={{ color: C.mutedFg }}
+                            className="sm:hidden text-sm font-bold"
+                            style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
                           >
-                            <span className="flex items-center gap-1">
-                              <Hash className="w-3 h-3" />
-                              {e.totalQuizzes} quizzes
-                            </span>
-                            <span>{formatDate(e.lastAttempt)}</span>
+                            {entry.percentage}%
                           </div>
                         </div>
+                      </CardContent>
+                    </Card>
+                  );
+                })}
+              </TabsContent>
+            </Tabs>
 
-                        <div className="w-36 hidden sm:block">
-                          <ScoreBar score={e.topScore} />
-                        </div>
-
-                        <div
-                          className="sm:hidden text-sm font-bold"
-                          style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
-                        >
-                          {e.topScore}%
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </TabsContent>
-          </Tabs>
-        )}
-
-        {/* Your rank summary */}
-        {hasCurrentUser && !isLoading && (
-          <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.surface2}` }}>
-            <CardContent className="p-4">
-              <p className="text-sm" style={{ color: C.mutedFg }}>
-                Your best score:{" "}
-                <span
-                  className="font-bold"
-                  style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
-                >
-                  {displayEntries.find((e: any) => e.isCurrentUser)?.topScore ?? "—"}%
-                </span>{" "}
-                · Total quizzes taken:{" "}
-                <span
-                  className="font-bold"
-                  style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
-                >
-                  {displayEntries.find((e: any) => e.isCurrentUser)?.totalQuizzes ?? 0}
-                </span>
-              </p>
-            </CardContent>
-          </Card>
+            {/* Your rank summary */}
+            {hasCurrentUser && (
+              <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.surface2}` }}>
+                <CardContent className="p-4">
+                  <p className="text-sm" style={{ color: C.mutedFg }}>
+                    Your best score:{" "}
+                    <span
+                      className="font-bold"
+                      style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
+                    >
+                      {rankedEntries.find((e) => e.isCurrentUser)?.percentage ?? "—"}%
+                    </span>{" "}
+                    · Rank #{" "}
+                    <span
+                      className="font-bold"
+                      style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
+                    >
+                      {rankedEntries.find((e) => e.isCurrentUser)?.rank ?? "—"}
+                    </span>
+                  </p>
+                </CardContent>
+              </Card>
+            )}
+          </>
         )}
 
         {/* CTA */}

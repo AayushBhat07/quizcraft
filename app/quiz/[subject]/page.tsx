@@ -239,8 +239,16 @@ export default function QuizPage() {
     localStorage.setItem("quizcraft_last_attempt", JSON.stringify(storedAttempt));
     updateUserStatsAfterQuiz(result.score, result.total, result.weakTopics);
 
-    // Save to Firestore if user is signed in (non-blocking)
-    saveAttemptToFirestore(storedAttempt).catch(console.warn);
+    // Save anonymous attempt to global leaderboard (non-blocking)
+    saveAttemptToFirestore({
+      name: userName,
+      subjectId,
+      score: result.score,
+      totalQuestions: result.total,
+      percentage: Math.round((result.score / result.total) * 100),
+      weakTopics: result.weakTopics,
+      timestamp: Date.now(),
+    }).catch(console.warn);
 
     // Store result for results page
     localStorage.setItem("quizcraft_last_result", JSON.stringify(result));
