@@ -10,7 +10,7 @@
         "C": "Keyboard control",
         "D": "Power supply stabilization"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -23,7 +23,7 @@
         "C": "Peripheral speed",
         "D": "Operating system"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -36,7 +36,7 @@
         "C": "Reducing memory",
         "D": "Eliminating cache"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -49,7 +49,7 @@
         "C": "Removal of cache",
         "D": "Slower processing"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -62,7 +62,7 @@
         "C": "Mainframes",
         "D": "Servers only"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -75,7 +75,7 @@
         "C": "Removing CPU",
         "D": "Lowering voltage"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -88,7 +88,7 @@
         "C": "Replace RAM",
         "D": "Remove instructions"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -101,7 +101,7 @@
         "C": "Storage",
         "D": "Cooling"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -114,7 +114,7 @@
         "C": "Graphics only",
         "D": "Storage"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -127,7 +127,7 @@
         "C": "Small memory",
         "D": "No cores"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -140,7 +140,7 @@
         "C": "Storage",
         "D": "Power supply"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -153,7 +153,7 @@
         "C": "ROM",
         "D": "BIOS"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -166,7 +166,7 @@
         "C": "SSD",
         "D": "BIOS"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -179,7 +179,7 @@
         "C": "No cores",
         "D": "Only CPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -192,7 +192,7 @@
         "C": "Volts",
         "D": "Amps"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -205,7 +205,7 @@
         "C": "Cache",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -218,7 +218,7 @@
         "C": "Power usage",
         "D": "Cooling"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -231,7 +231,7 @@
         "C": "Iron",
         "D": "Plastic"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -244,7 +244,7 @@
         "C": "Bytes",
         "D": "Registers"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -257,7 +257,7 @@
         "C": "Typing",
         "D": "Browsing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -270,7 +270,7 @@
         "C": "Analog Interface",
         "D": "Advanced Integration"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -283,7 +283,7 @@
         "C": "Hardware",
         "D": "BIOS"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -296,7 +296,7 @@
         "C": "CPU only",
         "D": "GPU only"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -309,7 +309,7 @@
         "C": "In CPU only",
         "D": "Offline only"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -322,7 +322,7 @@
         "C": "Integrated Operations",
         "D": "Internal Object Tech"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -335,7 +335,7 @@
         "C": "Cooling",
         "D": "Networking"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -348,7 +348,7 @@
         "C": "RAM",
         "D": "ROM"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -361,7 +361,7 @@
         "C": "Cooling",
         "D": "Power supply"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -374,7 +374,7 @@
         "C": "No network",
         "D": "Low bandwidth"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -387,7 +387,7 @@
         "C": "CPU",
         "D": "GPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -400,7 +400,7 @@
         "C": "Slow speed",
         "D": "Heat"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -413,7 +413,7 @@
         "C": "No OS",
         "D": "Hardware removal"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -426,7 +426,7 @@
         "C": "Bigger size",
         "D": "Less memory"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -439,7 +439,7 @@
         "C": "Optical",
         "D": "Magnetic"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -452,7 +452,7 @@
         "C": "Temporary",
         "D": "Cache"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -465,7 +465,7 @@
         "C": "Storage",
         "D": "Networking"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -478,7 +478,7 @@
         "C": "Rapid Access Module",
         "D": "Run Access Memory"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -491,7 +491,7 @@
         "C": "Rapid Output Memory",
         "D": "Run Only Memory"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -504,7 +504,7 @@
         "C": "Cache",
         "D": "Hard Disk"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -517,7 +517,7 @@
         "C": "ROM",
         "D": "Register"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -530,7 +530,7 @@
         "C": "Cache",
         "D": "Register"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -543,7 +543,7 @@
         "C": "Secondary Storage Disk",
         "D": "Solid Storage Disk"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -556,7 +556,7 @@
         "C": "Cache",
         "D": "Register"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -569,7 +569,7 @@
         "C": "Cache",
         "D": "CPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -582,7 +582,7 @@
         "C": "Hard disk",
         "D": "Monitor"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -595,7 +595,7 @@
         "C": "Input",
         "D": "Output"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -608,7 +608,7 @@
         "C": "Storage",
         "D": "Display"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -621,7 +621,7 @@
         "C": "Display",
         "D": "Input"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -634,7 +634,7 @@
         "C": "Printer",
         "D": "Speaker"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -647,7 +647,7 @@
         "C": "Monitor",
         "D": "Scanner"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -660,7 +660,7 @@
         "C": "Storage",
         "D": "Processing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -673,7 +673,7 @@
         "C": "Storage",
         "D": "Processing"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -686,7 +686,7 @@
         "C": "Storage",
         "D": "Processing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -699,7 +699,7 @@
         "C": "Storage",
         "D": "Processing"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -712,7 +712,7 @@
         "C": "Device",
         "D": "Memory"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -725,7 +725,7 @@
         "C": "macOS",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -738,7 +738,7 @@
         "C": "Booting",
         "D": "Hardware design"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -751,7 +751,7 @@
         "C": "Binary to decimal",
         "D": "Decimal to binary"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -764,7 +764,7 @@
         "C": "No execution",
         "D": "Hardware"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -777,7 +777,7 @@
         "C": "English",
         "D": "Numbers only"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -790,7 +790,7 @@
         "C": "Python",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -803,7 +803,7 @@
         "C": "Symbols",
         "D": "Words"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -816,7 +816,7 @@
         "C": "Devices",
         "D": "Memory"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -829,7 +829,7 @@
         "C": "Running program",
         "D": "Stopping system"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -842,7 +842,7 @@
         "C": "CPU",
         "D": "GPU"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -855,7 +855,7 @@
         "C": "Long Area Network",
         "D": "Logical Area Network"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -868,7 +868,7 @@
         "C": "Wired Area Network",
         "D": "Web Area Network"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -881,7 +881,7 @@
         "C": "Software",
         "D": "Memory"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -894,7 +894,7 @@
         "C": "Storage",
         "D": "Input"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -907,7 +907,7 @@
         "C": "GPU",
         "D": "RAM"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -920,7 +920,7 @@
         "C": "Software",
         "D": "Memory"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -933,7 +933,7 @@
         "C": "Unique Resource Locator",
         "D": "Uniform Resource Link"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -946,7 +946,7 @@
         "C": "Email",
         "D": "Storage"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -959,7 +959,7 @@
         "C": "Printing",
         "D": "Gaming"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -972,7 +972,7 @@
         "C": "Easy Mail",
         "D": "External Mail"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -985,7 +985,7 @@
         "C": "Compile code",
         "D": "Debug programs"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -998,7 +998,7 @@
         "C": "Edge",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1011,7 +1011,7 @@
         "C": "Compile code",
         "D": "Design hardware"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1024,7 +1024,7 @@
         "C": "Yahoo",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1037,7 +1037,7 @@
         "C": "Data storage",
         "D": "Networking"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1050,7 +1050,7 @@
         "C": "Storage",
         "D": "Printing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1063,7 +1063,7 @@
         "C": "Storage",
         "D": "Input"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1076,7 +1076,7 @@
         "C": "Trojan",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1089,7 +1089,7 @@
         "C": "Storage",
         "D": "Networking"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1102,7 +1102,7 @@
         "C": "Data creation",
         "D": "Data loss"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1115,7 +1115,7 @@
         "C": "OneDrive",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1128,7 +1128,7 @@
         "C": "Central Program Unit",
         "D": "Control Processing Unit"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1141,7 +1141,7 @@
         "C": "Pixels",
         "D": "Volts"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1154,7 +1154,7 @@
         "C": "512",
         "D": "2048"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1167,7 +1167,7 @@
         "C": "512",
         "D": "2048"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1180,7 +1180,7 @@
         "C": "512",
         "D": "2048"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1193,7 +1193,7 @@
         "C": "Largest unit",
         "D": "Memory device"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1206,7 +1206,7 @@
         "C": "16",
         "D": "32"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1219,7 +1219,7 @@
         "C": "Networking",
         "D": "Storage"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1232,7 +1232,7 @@
         "C": "Storage only",
         "D": "Networking"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1245,7 +1245,7 @@
         "C": "Audio",
         "D": "Video"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1258,7 +1258,7 @@
         "C": "Audio",
         "D": "Video"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1271,7 +1271,7 @@
         "C": "Video",
         "D": "Text"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1284,7 +1284,7 @@
         "C": "Text",
         "D": "Image"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1297,7 +1297,7 @@
         "C": "Process data",
         "D": "Compile code"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1310,7 +1310,7 @@
         "C": "System files",
         "D": "Programs"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1323,7 +1323,7 @@
         "C": "Ctrl + V",
         "D": "Ctrl + Z"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1336,7 +1336,7 @@
         "C": "Ctrl + V",
         "D": "Ctrl + Z"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1349,7 +1349,7 @@
         "C": "Ctrl + V",
         "D": "Ctrl + Z"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1362,7 +1362,7 @@
         "C": "Ctrl + V",
         "D": "Ctrl + Z"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1375,7 +1375,7 @@
         "C": "Database",
         "D": "Browser"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1388,7 +1388,7 @@
         "C": "Browsing",
         "D": "Drawing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1401,7 +1401,7 @@
         "C": "Programming",
         "D": "Storage"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1414,7 +1414,7 @@
         "C": "Pages",
         "D": "Files"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1427,7 +1427,7 @@
         "C": "CPU and RAM",
         "D": "Input and output"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1440,7 +1440,7 @@
         "C": "$",
         "D": "&"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1453,7 +1453,7 @@
         "C": "Division",
         "D": "Subtraction"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1466,7 +1466,7 @@
         "C": "Maximum",
         "D": "Minimum"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1479,7 +1479,7 @@
         "C": "Average",
         "D": "Sum"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1492,7 +1492,7 @@
         "C": "Average",
         "D": "Sum"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1505,7 +1505,7 @@
         "C": "Rows",
         "D": "Columns"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1518,7 +1518,7 @@
         "C": "Word",
         "D": "Notepad"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1531,7 +1531,7 @@
         "C": "Images only",
         "D": "Audio only"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1544,7 +1544,7 @@
         "C": "Digital Base Management System",
         "D": "Data Binary Management System"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1557,7 +1557,7 @@
         "C": "Pages",
         "D": "Files"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1570,7 +1570,7 @@
         "C": "Delete records",
         "D": "Sort data"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1583,7 +1583,7 @@
         "C": "Networking",
         "D": "Hardware"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1596,7 +1596,7 @@
         "C": "Insert data",
         "D": "Update data"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1609,7 +1609,7 @@
         "C": "Update data",
         "D": "Retrieve data"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1622,7 +1622,7 @@
         "C": "Update data",
         "D": "Retrieve data"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1635,7 +1635,7 @@
         "C": "Delete data",
         "D": "Retrieve data"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1648,7 +1648,7 @@
         "C": "Store data",
         "D": "Browse internet"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1661,7 +1661,7 @@
         "C": "Machine",
         "D": "Assembly"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1674,7 +1674,7 @@
         "C": "Hardware",
         "D": "OS"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1687,7 +1687,7 @@
         "C": "Hardware",
         "D": "Networking"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1700,7 +1700,7 @@
         "C": "Error",
         "D": "Output"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1713,7 +1713,7 @@
         "C": "Numbers",
         "D": "Code"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1726,7 +1726,7 @@
         "C": "Data",
         "D": "Memory"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1739,7 +1739,7 @@
         "C": "None",
         "D": "Partial"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1752,7 +1752,7 @@
         "C": "None",
         "D": "Multiple"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1765,7 +1765,7 @@
         "C": "Testing",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1778,7 +1778,7 @@
         "C": "Compile code",
         "D": "Store data"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1791,7 +1791,7 @@
         "C": "Installing software",
         "D": "Designing hardware"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1804,7 +1804,7 @@
         "C": "Hardware",
         "D": "Closed"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1817,7 +1817,7 @@
         "C": "macOS",
         "D": "DOS"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1830,7 +1830,7 @@
         "C": "Open",
         "D": "Public"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1843,7 +1843,7 @@
         "C": "Global User Interface",
         "D": "Graphic Unit Interface"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1856,7 +1856,7 @@
         "C": "Central Line Interface",
         "D": "Code Line Interface"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1869,7 +1869,7 @@
         "C": "No task",
         "D": "Hardware task"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1882,7 +1882,7 @@
         "C": "No user",
         "D": "Hardware control"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1895,7 +1895,7 @@
         "C": "Typing",
         "D": "Browsing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1908,7 +1908,7 @@
         "C": "Cars",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1921,7 +1921,7 @@
         "C": "Mainframes",
         "D": "Supercomputers"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1934,7 +1934,7 @@
         "C": "GPU",
         "D": "RAM"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1947,7 +1947,7 @@
         "C": "Store data",
         "D": "Display output"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1960,7 +1960,7 @@
         "C": "Storage",
         "D": "Processing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1973,7 +1973,7 @@
         "C": "RAM",
         "D": "BIOS"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1986,7 +1986,7 @@
         "C": "GPU",
         "D": "RAM"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -1999,7 +1999,7 @@
         "C": "Smart glasses",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2012,7 +2012,7 @@
         "C": "Offline only",
         "D": "In cloud"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2025,7 +2025,7 @@
         "C": "RAM and ROM",
         "D": "Input and output"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2038,7 +2038,7 @@
         "C": "GPU",
         "D": "RAM"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2051,7 +2051,7 @@
         "C": "Network Language Processing",
         "D": "Natural Logic Program"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2064,7 +2064,7 @@
         "C": "Text",
         "D": "Storage"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2077,7 +2077,7 @@
         "C": "Actuators",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2090,7 +2090,7 @@
         "C": "Output",
         "D": "Speed"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2103,7 +2103,7 @@
         "C": "Automation",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2116,7 +2116,7 @@
         "C": "No data",
         "D": "Temporary data"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2129,7 +2129,7 @@
         "C": "Hardware",
         "D": "Programs"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2142,7 +2142,7 @@
         "C": "SaaS",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2155,7 +2155,7 @@
         "C": "CPU",
         "D": "GPU"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2168,7 +2168,7 @@
         "C": "Hardware",
         "D": "Network"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2181,7 +2181,7 @@
         "C": "Platform",
         "D": "Network"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2194,7 +2194,7 @@
         "C": "CPU",
         "D": "GPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2207,7 +2207,7 @@
         "C": "OS",
         "D": "Data"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2220,7 +2220,7 @@
         "C": "Authorization",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2233,7 +2233,7 @@
         "C": "Short",
         "D": "Reused"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2246,7 +2246,7 @@
         "C": "No method",
         "D": "Password only"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2259,7 +2259,7 @@
         "C": "Integrity",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2272,7 +2272,7 @@
         "C": "Virus creation",
         "D": "Data theft"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2285,7 +2285,7 @@
         "C": "Data",
         "D": "Hardware"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2298,7 +2298,7 @@
         "C": "Storage",
         "D": "Processing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2311,7 +2311,7 @@
         "C": "CPU",
         "D": "GPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2324,7 +2324,7 @@
         "C": "Binary",
         "D": "Numbers"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2337,7 +2337,7 @@
         "C": "Binary to decimal",
         "D": "Decimal to binary"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2350,7 +2350,7 @@
         "C": "Hardware problem",
         "D": "Software error"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2363,7 +2363,7 @@
         "C": "Hardware",
         "D": "CPU"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2376,7 +2376,7 @@
         "C": "Storage",
         "D": "Networking"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2389,7 +2389,7 @@
         "C": "eBay",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2402,7 +2402,7 @@
         "C": "Net banking",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2415,7 +2415,7 @@
         "C": "Unique Payment Interface",
         "D": "Unified Processing Interface"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2428,7 +2428,7 @@
         "C": "Advanced Teller Machine",
         "D": "Auto Transaction Machine"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2441,7 +2441,7 @@
         "C": "Hardware",
         "D": "CPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2454,7 +2454,7 @@
         "C": "Data analytics",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2467,7 +2467,7 @@
         "C": "Storage",
         "D": "CPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2480,7 +2480,7 @@
         "C": "Plastic",
         "D": "Food"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2493,7 +2493,7 @@
         "C": "Speed",
         "D": "Storage"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2506,7 +2506,7 @@
         "C": "Low storage",
         "D": "No CPU"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2519,7 +2519,7 @@
         "C": "Robotics",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2532,7 +2532,7 @@
         "C": "Typing",
         "D": "Browsing"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2545,7 +2545,7 @@
         "C": "Both",
         "D": "None"
       },
-      "correctAnswer": "c",
+      "correctAnswer": "C",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2558,7 +2558,7 @@
         "C": "Both",
         "D": "None"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2571,7 +2571,7 @@
         "C": "Internet",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2584,7 +2584,7 @@
         "C": "Data",
         "D": "Programs"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2597,7 +2597,7 @@
         "C": "Photography",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2610,7 +2610,7 @@
         "C": "Algorithms",
         "D": "All of the above"
       },
-      "correctAnswer": "d",
+      "correctAnswer": "D",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2623,7 +2623,7 @@
         "C": "Deletion",
         "D": "Hardware"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2636,7 +2636,7 @@
         "C": "RAM",
         "D": "BIOS"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "A",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     },
@@ -2649,7 +2649,7 @@
         "C": "Stop",
         "D": "Slow"
       },
-      "correctAnswer": "b",
+      "correctAnswer": "B",
       "topic": "General Computer Science",
       "answerStatus": "unverified"
     }

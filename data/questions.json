@@ -263,7 +263,7 @@
                 "C": "plated technology",
                 "D": "hole technology"
               },
-              "correctAnswer": "B",
+              "correctAnswer": "A",
               "topic": "Unit-II: Smart Manufacturing Processes and Tools"
             },
             {
@@ -601,7 +601,7 @@
               "text": "Frequency range in FM Broadcast is",
               "options": {
                 "A": "1.711MHz-30.0 MHz",
-                "B": "520MHz – 1610 MHz",
+                "B": "520MHz \u2013 1610 MHz",
                 "C": "148.5KHz-283.5KHz",
                 "D": "87.5 MHz-108.0 MHz"
               },
@@ -624,10 +624,10 @@
               "id": "ete-q51",
               "text": "Identify time required to transmit 8000 f/sec in STM-1",
               "options": {
-                "A": "125µsec",
-                "B": "200 µsec",
-                "C": "100 µsec",
-                "D": "150 µsec"
+                "A": "125\u00b5sec",
+                "B": "200 \u00b5sec",
+                "C": "100 \u00b5sec",
+                "D": "150 \u00b5sec"
               },
               "correctAnswer": "A",
               "topic": "Unit-III: Next Generation Telecom Network"
@@ -884,7 +884,7 @@
               "options": {
                 "A": "Exclusive focus on cloud computing",
                 "B": "Introduction of steam power",
-                "C": "Emphasis on human–robot collaboration and personalization",
+                "C": "Emphasis on human\u2013robot collaboration and personalization",
                 "D": "Use of assembly line production"
               },
               "correctAnswer": "C",
@@ -1198,7 +1198,7 @@
             },
             {
               "id": "ete-q98",
-              "text": "A drone is required for aerial surveillance near a critical infrastructure site. The operations are restricted to: Inner Yellow Zone (2–5 km from Red Zone), Maximum height 120 m, Must maintain line-of-sight. From the diagrams below, select the drone type and configuration that is legal and safe for this operation.",
+              "text": "A drone is required for aerial surveillance near a critical infrastructure site. The operations are restricted to: Inner Yellow Zone (2\u20135 km from Red Zone), Maximum height 120 m, Must maintain line-of-sight. From the diagrams below, select the drone type and configuration that is legal and safe for this operation.",
               "options": {
                 "A": "Multi-rotor",
                 "B": "Fixed-wing",
@@ -1666,8 +1666,8 @@
               "options": {
                 "A": "100 mA",
                 "B": "1 mA",
-                "C": "10 μA",
-                "D": "1μA"
+                "C": "10 \u03bcA",
+                "D": "1\u03bcA"
               },
               "correctAnswer": "C",
               "answerStatus": "verified",
@@ -1891,10 +1891,10 @@
               "id": "mcq-q50",
               "text": "The operational cycle of an AI agent is........",
               "options": {
-                "A": "Sleep — Wake — Run — Hibernation",
-                "B": "Sense — Reason — Act",
-                "C": "Observe — Sleep — Execute",
-                "D": "Ignore — Execute"
+                "A": "Sleep \u2014 Wake \u2014 Run \u2014 Hibernation",
+                "B": "Sense \u2014 Reason \u2014 Act",
+                "C": "Observe \u2014 Sleep \u2014 Execute",
+                "D": "Ignore \u2014 Execute"
               },
               "correctAnswer": "B",
               "answerStatus": "verified",
@@ -2870,7 +2870,7 @@
             },
             {
               "id": "mcq-q125",
-              "text": "GPIO34—GPIO39 pins are used primarily as ........",
+              "text": "GPIO34\u2014GPIO39 pins are used primarily as ........",
               "options": {
                 "A": "Output-only pins",
                 "B": "Input-only pins",
@@ -3054,8 +3054,8 @@
               "id": "mcq-q139",
               "text": "ESP8266 deep sleep current is about ........",
               "options": {
-                "A": "10 μA",
-                "B": "20 μA",
+                "A": "10 \u03bcA",
+                "B": "20 \u03bcA",
                 "C": "1mA",
                 "D": "100 mA"
               },
@@ -3379,9 +3379,9 @@
               "id": "mcq-q164",
               "text": "The sequence of an AI agent is ........",
               "options": {
-                "A": "Act — Sense — Reason",
-                "B": "Reason — Act + Sense",
-                "C": "Sense + Reason — Act",
+                "A": "Act \u2014 Sense \u2014 Reason",
+                "B": "Reason \u2014 Act + Sense",
+                "C": "Sense + Reason \u2014 Act",
                 "D": "Start = End = Restart"
               },
               "correctAnswer": "C",
@@ -3627,8 +3627,8 @@
               "text": "LM35 gives ........",
               "options": {
                 "A": "Digital output",
-                "B": "10 mV per °C",
-                "C": "1V per °C",
+                "B": "10 mV per \u00b0C",
+                "C": "1V per \u00b0C",
                 "D": "No temperature value"
               },
               "correctAnswer": "B",
@@ -4111,7 +4111,7 @@
           "questions": [
             {
               "id": "new-q1",
-              "text": "A GPU is primarily used for ………",
+              "text": "A GPU is primarily used for \u2026\u2026\u2026",
               "options": {
                 "A": "Data compression",
                 "B": "Image rendering",
@@ -4124,7 +4124,7 @@
             },
             {
               "id": "new-q2",
-              "text": "A CPU's internal layout defines ………",
+              "text": "A CPU's internal layout defines \u2026\u2026\u2026",
               "options": {
                 "A": "Clock generator",
                 "B": "Processor architecture",
@@ -4137,7 +4137,7 @@
             },
             {
               "id": "new-q3",
-              "text": "Multicore processors improve performance by ………",
+              "text": "Multicore processors improve performance by \u2026\u2026\u2026",
               "options": {
                 "A": "Increasing clock speed only",
                 "B": "Executing tasks in parallel",
@@ -4150,7 +4150,7 @@
             },
             {
               "id": "new-q4",
-              "text": "Hyper-threading allows ………",
+              "text": "Hyper-threading allows \u2026\u2026\u2026",
               "options": {
                 "A": "One core to act as multiple threads",
                 "B": "Only single task execution",
@@ -4163,7 +4163,7 @@
             },
             {
               "id": "new-q5",
-              "text": "ARM processors are mainly used in ………",
+              "text": "ARM processors are mainly used in \u2026\u2026\u2026",
               "options": {
                 "A": "Supercomputers",
                 "B": "Mobile devices",
@@ -4176,7 +4176,7 @@
             },
             {
               "id": "new-q6",
-              "text": "Overclocking refers to ………",
+              "text": "Overclocking refers to \u2026\u2026\u2026",
               "options": {
                 "A": "Reducing clock speed",
                 "B": "Increasing clock speed beyond limits",
@@ -4189,7 +4189,7 @@
             },
             {
               "id": "new-q7",
-              "text": "Cache memory is used to ………",
+              "text": "Cache memory is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Store permanent data",
                 "B": "Speed up access to frequently used data",
@@ -4202,7 +4202,7 @@
             },
             {
               "id": "new-q8",
-              "text": "GPU cores are optimized for ………",
+              "text": "GPU cores are optimized for \u2026\u2026\u2026",
               "options": {
                 "A": "Sequential processing",
                 "B": "Parallel processing",
@@ -4215,7 +4215,7 @@
             },
             {
               "id": "new-q9",
-              "text": "CPU cores are optimized for ………",
+              "text": "CPU cores are optimized for \u2026\u2026\u2026",
               "options": {
                 "A": "Parallel tasks only",
                 "B": "Sequential tasks",
@@ -4228,7 +4228,7 @@
             },
             {
               "id": "new-q10",
-              "text": "AI workloads benefit from GPUs because ………",
+              "text": "AI workloads benefit from GPUs because \u2026\u2026\u2026",
               "options": {
                 "A": "Low speed",
                 "B": "Parallel processing",
@@ -4241,7 +4241,7 @@
             },
             {
               "id": "new-q11",
-              "text": "Tensor cores are used in ………",
+              "text": "Tensor cores are used in \u2026\u2026\u2026",
               "options": {
                 "A": "AI processing",
                 "B": "Networking",
@@ -4254,7 +4254,7 @@
             },
             {
               "id": "new-q12",
-              "text": "VRAM is used in ………",
+              "text": "VRAM is used in \u2026\u2026\u2026",
               "options": {
                 "A": "CPU",
                 "B": "GPU",
@@ -4267,7 +4267,7 @@
             },
             {
               "id": "new-q13",
-              "text": "Integrated GPU shares memory with ………",
+              "text": "Integrated GPU shares memory with \u2026\u2026\u2026",
               "options": {
                 "A": "ROM",
                 "B": "RAM",
@@ -4280,7 +4280,7 @@
             },
             {
               "id": "new-q14",
-              "text": "Dedicated GPU has ………",
+              "text": "Dedicated GPU has \u2026\u2026\u2026",
               "options": {
                 "A": "No memory",
                 "B": "Its own VRAM",
@@ -4293,7 +4293,7 @@
             },
             {
               "id": "new-q15",
-              "text": "Clock speed is measured in ………",
+              "text": "Clock speed is measured in \u2026\u2026\u2026",
               "options": {
                 "A": "Bytes",
                 "B": "Hertz",
@@ -4306,7 +4306,7 @@
             },
             {
               "id": "new-q16",
-              "text": "CPU performance depends on ………",
+              "text": "CPU performance depends on \u2026\u2026\u2026",
               "options": {
                 "A": "Clock speed",
                 "B": "Cores",
@@ -4319,7 +4319,7 @@
             },
             {
               "id": "new-q17",
-              "text": "Moore's Law relates to ………",
+              "text": "Moore's Law relates to \u2026\u2026\u2026",
               "options": {
                 "A": "Memory size",
                 "B": "Transistor doubling",
@@ -4332,7 +4332,7 @@
             },
             {
               "id": "new-q18",
-              "text": "Semiconductor technology uses ………",
+              "text": "Semiconductor technology uses \u2026\u2026\u2026",
               "options": {
                 "A": "Copper",
                 "B": "Silicon",
@@ -4345,7 +4345,7 @@
             },
             {
               "id": "new-q19",
-              "text": "Quantum computing uses ………",
+              "text": "Quantum computing uses \u2026\u2026\u2026",
               "options": {
                 "A": "Bits",
                 "B": "Qubits",
@@ -4358,7 +4358,7 @@
             },
             {
               "id": "new-q20",
-              "text": "Supercomputers are used for ………",
+              "text": "Supercomputers are used for \u2026\u2026\u2026",
               "options": {
                 "A": "Gaming",
                 "B": "Scientific research",
@@ -4371,7 +4371,7 @@
             },
             {
               "id": "new-q21",
-              "text": "AI stands for ………",
+              "text": "AI stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Automated Input",
                 "B": "Artificial Intelligence",
@@ -4384,7 +4384,7 @@
             },
             {
               "id": "new-q22",
-              "text": "Machine Learning is a subset of ………",
+              "text": "Machine Learning is a subset of \u2026\u2026\u2026",
               "options": {
                 "A": "Networking",
                 "B": "AI",
@@ -4397,7 +4397,7 @@
             },
             {
               "id": "new-q23",
-              "text": "Cloud computing provides ………",
+              "text": "Cloud computing provides \u2026\u2026\u2026",
               "options": {
                 "A": "Hardware only",
                 "B": "Internet-based services",
@@ -4410,7 +4410,7 @@
             },
             {
               "id": "new-q24",
-              "text": "Edge computing processes data ………",
+              "text": "Edge computing processes data \u2026\u2026\u2026",
               "options": {
                 "A": "In cloud only",
                 "B": "Near the source",
@@ -4423,7 +4423,7 @@
             },
             {
               "id": "new-q25",
-              "text": "IoT stands for ………",
+              "text": "IoT stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Internet of Things",
                 "B": "Input Output Tech",
@@ -4436,7 +4436,7 @@
             },
             {
               "id": "new-q26",
-              "text": "Blockchain is used for ………",
+              "text": "Blockchain is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Storage",
                 "B": "Secure transactions",
@@ -4449,7 +4449,7 @@
             },
             {
               "id": "new-q27",
-              "text": "Big Data refers to ………",
+              "text": "Big Data refers to \u2026\u2026\u2026",
               "options": {
                 "A": "Small datasets",
                 "B": "Large complex datasets",
@@ -4462,7 +4462,7 @@
             },
             {
               "id": "new-q28",
-              "text": "Data analytics helps in ………",
+              "text": "Data analytics helps in \u2026\u2026\u2026",
               "options": {
                 "A": "Ignoring data",
                 "B": "Decision making",
@@ -4475,7 +4475,7 @@
             },
             {
               "id": "new-q29",
-              "text": "5G technology offers ………",
+              "text": "5G technology offers \u2026\u2026\u2026",
               "options": {
                 "A": "Slow speed",
                 "B": "High speed",
@@ -4488,7 +4488,7 @@
             },
             {
               "id": "new-q30",
-              "text": "Cybersecurity protects ………",
+              "text": "Cybersecurity protects \u2026\u2026\u2026",
               "options": {
                 "A": "Hardware only",
                 "B": "Data and systems",
@@ -4501,7 +4501,7 @@
             },
             {
               "id": "new-q31",
-              "text": "Encryption ensures ………",
+              "text": "Encryption ensures \u2026\u2026\u2026",
               "options": {
                 "A": "Data loss",
                 "B": "Data security",
@@ -4514,7 +4514,7 @@
             },
             {
               "id": "new-q32",
-              "text": "Virtualization allows ………",
+              "text": "Virtualization allows \u2026\u2026\u2026",
               "options": {
                 "A": "Multiple OS on one system",
                 "B": "Single OS only",
@@ -4527,7 +4527,7 @@
             },
             {
               "id": "new-q33",
-              "text": "SSD is faster than HDD because ………",
+              "text": "SSD is faster than HDD because \u2026\u2026\u2026",
               "options": {
                 "A": "Moving parts",
                 "B": "No moving parts",
@@ -4540,7 +4540,7 @@
             },
             {
               "id": "new-q34",
-              "text": "RAM is ……… memory",
+              "text": "RAM is \u2026\u2026\u2026 memory",
               "options": {
                 "A": "Permanent",
                 "B": "Volatile",
@@ -4553,7 +4553,7 @@
             },
             {
               "id": "new-q35",
-              "text": "ROM is ……… memory",
+              "text": "ROM is \u2026\u2026\u2026 memory",
               "options": {
                 "A": "Volatile",
                 "B": "Non-volatile",
@@ -4566,7 +4566,7 @@
             },
             {
               "id": "new-q36",
-              "text": "BIOS is used for ………",
+              "text": "BIOS is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Booting system",
                 "B": "Gaming",
@@ -4579,7 +4579,7 @@
             },
             {
               "id": "new-q37",
-              "text": "The full form of RAM is ………",
+              "text": "The full form of RAM is \u2026\u2026\u2026",
               "options": {
                 "A": "Random Access Memory",
                 "B": "Read Access Memory",
@@ -4592,7 +4592,7 @@
             },
             {
               "id": "new-q38",
-              "text": "The full form of ROM is ………",
+              "text": "The full form of ROM is \u2026\u2026\u2026",
               "options": {
                 "A": "Read Only Memory",
                 "B": "Random Only Memory",
@@ -4631,7 +4631,7 @@
             },
             {
               "id": "new-q41",
-              "text": "Hard disk is a type of ………",
+              "text": "Hard disk is a type of \u2026\u2026\u2026",
               "options": {
                 "A": "Primary memory",
                 "B": "Secondary memory",
@@ -4644,7 +4644,7 @@
             },
             {
               "id": "new-q42",
-              "text": "SSD stands for ………",
+              "text": "SSD stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Solid State Drive",
                 "B": "System Storage Device",
@@ -4657,7 +4657,7 @@
             },
             {
               "id": "new-q43",
-              "text": "Optical disks include ………",
+              "text": "Optical disks include \u2026\u2026\u2026",
               "options": {
                 "A": "RAM",
                 "B": "CD/DVD",
@@ -4670,7 +4670,7 @@
             },
             {
               "id": "new-q44",
-              "text": "Pen drive is a type of ………",
+              "text": "Pen drive is a type of \u2026\u2026\u2026",
               "options": {
                 "A": "Primary memory",
                 "B": "Secondary memory",
@@ -4683,7 +4683,7 @@
             },
             {
               "id": "new-q45",
-              "text": "The brain of computer is ………",
+              "text": "The brain of computer is \u2026\u2026\u2026",
               "options": {
                 "A": "RAM",
                 "B": "CPU",
@@ -4696,7 +4696,7 @@
             },
             {
               "id": "new-q46",
-              "text": "ALU performs ………",
+              "text": "ALU performs \u2026\u2026\u2026",
               "options": {
                 "A": "Storage",
                 "B": "Arithmetic and logic operations",
@@ -4709,7 +4709,7 @@
             },
             {
               "id": "new-q47",
-              "text": "Control Unit is responsible for ………",
+              "text": "Control Unit is responsible for \u2026\u2026\u2026",
               "options": {
                 "A": "Calculations",
                 "B": "Managing operations",
@@ -4722,7 +4722,7 @@
             },
             {
               "id": "new-q48",
-              "text": "Registers are used for ………",
+              "text": "Registers are used for \u2026\u2026\u2026",
               "options": {
                 "A": "Permanent storage",
                 "B": "Temporary fast storage",
@@ -4735,7 +4735,7 @@
             },
             {
               "id": "new-q49",
-              "text": "Input devices include ………",
+              "text": "Input devices include \u2026\u2026\u2026",
               "options": {
                 "A": "Monitor",
                 "B": "Keyboard",
@@ -4748,7 +4748,7 @@
             },
             {
               "id": "new-q50",
-              "text": "Output devices include ………",
+              "text": "Output devices include \u2026\u2026\u2026",
               "options": {
                 "A": "Mouse",
                 "B": "Keyboard",
@@ -4761,7 +4761,7 @@
             },
             {
               "id": "new-q51",
-              "text": "Keyboard is used for ………",
+              "text": "Keyboard is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Output",
                 "B": "Input",
@@ -4774,7 +4774,7 @@
             },
             {
               "id": "new-q52",
-              "text": "Mouse is used for ………",
+              "text": "Mouse is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Input",
                 "B": "Output",
@@ -4787,7 +4787,7 @@
             },
             {
               "id": "new-q53",
-              "text": "Printer is a ……… device",
+              "text": "Printer is a \u2026\u2026\u2026 device",
               "options": {
                 "A": "Input",
                 "B": "Output",
@@ -4800,7 +4800,7 @@
             },
             {
               "id": "new-q54",
-              "text": "Scanner is a ……… device",
+              "text": "Scanner is a \u2026\u2026\u2026 device",
               "options": {
                 "A": "Input",
                 "B": "Output",
@@ -4813,7 +4813,7 @@
             },
             {
               "id": "new-q55",
-              "text": "Operating System is a ………",
+              "text": "Operating System is a \u2026\u2026\u2026",
               "options": {
                 "A": "Hardware",
                 "B": "Software",
@@ -4826,7 +4826,7 @@
             },
             {
               "id": "new-q56",
-              "text": "Examples of OS include ………",
+              "text": "Examples of OS include \u2026\u2026\u2026",
               "options": {
                 "A": "Windows",
                 "B": "Linux",
@@ -4839,7 +4839,7 @@
             },
             {
               "id": "new-q57",
-              "text": "Application software is used for ………",
+              "text": "Application software is used for \u2026\u2026\u2026",
               "options": {
                 "A": "System control",
                 "B": "User tasks",
@@ -4852,7 +4852,7 @@
             },
             {
               "id": "new-q58",
-              "text": "Compiler converts ………",
+              "text": "Compiler converts \u2026\u2026\u2026",
               "options": {
                 "A": "Machine to high-level",
                 "B": "High-level to machine",
@@ -4865,7 +4865,7 @@
             },
             {
               "id": "new-q59",
-              "text": "Interpreter executes ………",
+              "text": "Interpreter executes \u2026\u2026\u2026",
               "options": {
                 "A": "Entire program at once",
                 "B": "Line by line",
@@ -4878,7 +4878,7 @@
             },
             {
               "id": "new-q60",
-              "text": "Assembly language uses ………",
+              "text": "Assembly language uses \u2026\u2026\u2026",
               "options": {
                 "A": "Binary",
                 "B": "Mnemonics",
@@ -4891,7 +4891,7 @@
             },
             {
               "id": "new-q61",
-              "text": "High-level languages include ………",
+              "text": "High-level languages include \u2026\u2026\u2026",
               "options": {
                 "A": "C",
                 "B": "Java",
@@ -4904,7 +4904,7 @@
             },
             {
               "id": "new-q62",
-              "text": "Machine language consists of ………",
+              "text": "Machine language consists of \u2026\u2026\u2026",
               "options": {
                 "A": "English",
                 "B": "Binary",
@@ -4917,7 +4917,7 @@
             },
             {
               "id": "new-q63",
-              "text": "Software bugs are ………",
+              "text": "Software bugs are \u2026\u2026\u2026",
               "options": {
                 "A": "Hardware issues",
                 "B": "Errors in program",
@@ -4930,7 +4930,7 @@
             },
             {
               "id": "new-q64",
-              "text": "Debugging means ………",
+              "text": "Debugging means \u2026\u2026\u2026",
               "options": {
                 "A": "Adding errors",
                 "B": "Removing errors",
@@ -4943,7 +4943,7 @@
             },
             {
               "id": "new-q65",
-              "text": "Network connects ………",
+              "text": "Network connects \u2026\u2026\u2026",
               "options": {
                 "A": "Devices",
                 "B": "Memory",
@@ -4956,7 +4956,7 @@
             },
             {
               "id": "new-q66",
-              "text": "LAN stands for ………",
+              "text": "LAN stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Local Area Network",
                 "B": "Large Area Network",
@@ -4969,7 +4969,7 @@
             },
             {
               "id": "new-q67",
-              "text": "WAN stands for ………",
+              "text": "WAN stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Wide Area Network",
                 "B": "Wireless Area Network",
@@ -4982,7 +4982,7 @@
             },
             {
               "id": "new-q68",
-              "text": "Internet is a ………",
+              "text": "Internet is a \u2026\u2026\u2026",
               "options": {
                 "A": "Device",
                 "B": "Network of networks",
@@ -4995,7 +4995,7 @@
             },
             {
               "id": "new-q69",
-              "text": "Router is used for ………",
+              "text": "Router is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Printing",
                 "B": "Routing data",
@@ -5008,7 +5008,7 @@
             },
             {
               "id": "new-q70",
-              "text": "Switch is used in ………",
+              "text": "Switch is used in \u2026\u2026\u2026",
               "options": {
                 "A": "LAN",
                 "B": "CPU",
@@ -5021,7 +5021,7 @@
             },
             {
               "id": "new-q71",
-              "text": "IP address identifies ………",
+              "text": "IP address identifies \u2026\u2026\u2026",
               "options": {
                 "A": "User",
                 "B": "Device",
@@ -5034,7 +5034,7 @@
             },
             {
               "id": "new-q72",
-              "text": "URL stands for ………",
+              "text": "URL stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Uniform Resource Locator",
                 "B": "Universal Resource Link",
@@ -5047,7 +5047,7 @@
             },
             {
               "id": "new-q73",
-              "text": "HTTP is used for ………",
+              "text": "HTTP is used for \u2026\u2026\u2026",
               "options": {
                 "A": "File transfer",
                 "B": "Web communication",
@@ -5060,7 +5060,7 @@
             },
             {
               "id": "new-q74",
-              "text": "FTP is used for ………",
+              "text": "FTP is used for \u2026\u2026\u2026",
               "options": {
                 "A": "File transfer",
                 "B": "Browsing",
@@ -5073,7 +5073,7 @@
             },
             {
               "id": "new-q75",
-              "text": "Email stands for ………",
+              "text": "Email stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Electronic Mail",
                 "B": "Electric Mail",
@@ -5086,7 +5086,7 @@
             },
             {
               "id": "new-q76",
-              "text": "Browser is used to ………",
+              "text": "Browser is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Store files",
                 "B": "Access websites",
@@ -5099,7 +5099,7 @@
             },
             {
               "id": "new-q77",
-              "text": "Examples of browsers include ………",
+              "text": "Examples of browsers include \u2026\u2026\u2026",
               "options": {
                 "A": "Chrome",
                 "B": "Firefox",
@@ -5112,7 +5112,7 @@
             },
             {
               "id": "new-q78",
-              "text": "Search engine is used to ………",
+              "text": "Search engine is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Store data",
                 "B": "Search information",
@@ -5125,7 +5125,7 @@
             },
             {
               "id": "new-q79",
-              "text": "Examples of search engines include ………",
+              "text": "Examples of search engines include \u2026\u2026\u2026",
               "options": {
                 "A": "Google",
                 "B": "Bing",
@@ -5138,7 +5138,7 @@
             },
             {
               "id": "new-q80",
-              "text": "Cyber attack is ………",
+              "text": "Cyber attack is \u2026\u2026\u2026",
               "options": {
                 "A": "Data protection",
                 "B": "Unauthorized access",
@@ -5151,7 +5151,7 @@
             },
             {
               "id": "new-q81",
-              "text": "Antivirus is used for ………",
+              "text": "Antivirus is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Gaming",
                 "B": "Protection",
@@ -5164,7 +5164,7 @@
             },
             {
               "id": "new-q82",
-              "text": "Firewall is used for ………",
+              "text": "Firewall is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Cooling",
                 "B": "Security",
@@ -5177,7 +5177,7 @@
             },
             {
               "id": "new-q83",
-              "text": "Malware includes ………",
+              "text": "Malware includes \u2026\u2026\u2026",
               "options": {
                 "A": "Virus",
                 "B": "Worm",
@@ -5190,7 +5190,7 @@
             },
             {
               "id": "new-q84",
-              "text": "Phishing is ………",
+              "text": "Phishing is \u2026\u2026\u2026",
               "options": {
                 "A": "Security",
                 "B": "Fraud attempt",
@@ -5203,7 +5203,7 @@
             },
             {
               "id": "new-q85",
-              "text": "Backup is used for ………",
+              "text": "Backup is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Data recovery",
                 "B": "Data deletion",
@@ -5216,7 +5216,7 @@
             },
             {
               "id": "new-q86",
-              "text": "Cloud storage examples include ………",
+              "text": "Cloud storage examples include \u2026\u2026\u2026",
               "options": {
                 "A": "Google Drive",
                 "B": "Dropbox",
@@ -5229,7 +5229,7 @@
             },
             {
               "id": "new-q87",
-              "text": "The full form of CPU is ………",
+              "text": "The full form of CPU is \u2026\u2026\u2026",
               "options": {
                 "A": "Central Processing Unit",
                 "B": "Computer Processing Unit",
@@ -5242,7 +5242,7 @@
             },
             {
               "id": "new-q88",
-              "text": "The speed of CPU is measured in ………",
+              "text": "The speed of CPU is measured in \u2026\u2026\u2026",
               "options": {
                 "A": "Bytes",
                 "B": "Hertz",
@@ -5255,7 +5255,7 @@
             },
             {
               "id": "new-q89",
-              "text": "1 KB equals ……… bytes",
+              "text": "1 KB equals \u2026\u2026\u2026 bytes",
               "options": {
                 "A": "1000",
                 "B": "1024",
@@ -5268,7 +5268,7 @@
             },
             {
               "id": "new-q90",
-              "text": "1 MB equals ……… KB",
+              "text": "1 MB equals \u2026\u2026\u2026 KB",
               "options": {
                 "A": "1000",
                 "B": "1024",
@@ -5281,7 +5281,7 @@
             },
             {
               "id": "new-q91",
-              "text": "1 GB equals ……… MB",
+              "text": "1 GB equals \u2026\u2026\u2026 MB",
               "options": {
                 "A": "1000",
                 "B": "1024",
@@ -5294,7 +5294,7 @@
             },
             {
               "id": "new-q92",
-              "text": "Bit is ………",
+              "text": "Bit is \u2026\u2026\u2026",
               "options": {
                 "A": "8 bits",
                 "B": "Smallest unit of data",
@@ -5307,7 +5307,7 @@
             },
             {
               "id": "new-q93",
-              "text": "Byte consists of ……… bits",
+              "text": "Byte consists of \u2026\u2026\u2026 bits",
               "options": {
                 "A": "4",
                 "B": "8",
@@ -5320,7 +5320,7 @@
             },
             {
               "id": "new-q94",
-              "text": "ASCII is used for ………",
+              "text": "ASCII is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Graphics",
                 "B": "Character encoding",
@@ -5333,7 +5333,7 @@
             },
             {
               "id": "new-q95",
-              "text": "Unicode is used for ………",
+              "text": "Unicode is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Single language",
                 "B": "Multiple languages",
@@ -5346,7 +5346,7 @@
             },
             {
               "id": "new-q96",
-              "text": "File extension .txt represents ………",
+              "text": "File extension .txt represents \u2026\u2026\u2026",
               "options": {
                 "A": "Image",
                 "B": "Text file",
@@ -5359,7 +5359,7 @@
             },
             {
               "id": "new-q97",
-              "text": "File extension .jpg is for ………",
+              "text": "File extension .jpg is for \u2026\u2026\u2026",
               "options": {
                 "A": "Text",
                 "B": "Image",
@@ -5372,7 +5372,7 @@
             },
             {
               "id": "new-q98",
-              "text": "File extension .mp3 is for ………",
+              "text": "File extension .mp3 is for \u2026\u2026\u2026",
               "options": {
                 "A": "Image",
                 "B": "Audio",
@@ -5385,7 +5385,7 @@
             },
             {
               "id": "new-q99",
-              "text": "File extension .mp4 is for ………",
+              "text": "File extension .mp4 is for \u2026\u2026\u2026",
               "options": {
                 "A": "Audio",
                 "B": "Video",
@@ -5398,7 +5398,7 @@
             },
             {
               "id": "new-q100",
-              "text": "Folder is used to ………",
+              "text": "Folder is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Delete files",
                 "B": "Organize files",
@@ -5411,7 +5411,7 @@
             },
             {
               "id": "new-q101",
-              "text": "Recycle bin stores ………",
+              "text": "Recycle bin stores \u2026\u2026\u2026",
               "options": {
                 "A": "Permanent files",
                 "B": "Deleted files",
@@ -5424,7 +5424,7 @@
             },
             {
               "id": "new-q102",
-              "text": "Shortcut key for copy is ………",
+              "text": "Shortcut key for copy is \u2026\u2026\u2026",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5437,7 +5437,7 @@
             },
             {
               "id": "new-q103",
-              "text": "Shortcut key for paste is ………",
+              "text": "Shortcut key for paste is \u2026\u2026\u2026",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5450,7 +5450,7 @@
             },
             {
               "id": "new-q104",
-              "text": "Shortcut key for cut is ………",
+              "text": "Shortcut key for cut is \u2026\u2026\u2026",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5463,7 +5463,7 @@
             },
             {
               "id": "new-q105",
-              "text": "Shortcut key for undo is ………",
+              "text": "Shortcut key for undo is \u2026\u2026\u2026",
               "options": {
                 "A": "Ctrl + X",
                 "B": "Ctrl + C",
@@ -5476,7 +5476,7 @@
             },
             {
               "id": "new-q106",
-              "text": "MS Word is a ………",
+              "text": "MS Word is a \u2026\u2026\u2026",
               "options": {
                 "A": "Spreadsheet",
                 "B": "Word processor",
@@ -5489,7 +5489,7 @@
             },
             {
               "id": "new-q107",
-              "text": "MS Excel is used for ………",
+              "text": "MS Excel is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Typing",
                 "B": "Calculations",
@@ -5502,7 +5502,7 @@
             },
             {
               "id": "new-q108",
-              "text": "MS PowerPoint is used for ………",
+              "text": "MS PowerPoint is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Typing",
                 "B": "Presentation",
@@ -5515,7 +5515,7 @@
             },
             {
               "id": "new-q109",
-              "text": "Spreadsheet consists of ………",
+              "text": "Spreadsheet consists of \u2026\u2026\u2026",
               "options": {
                 "A": "Slides",
                 "B": "Rows and columns",
@@ -5528,7 +5528,7 @@
             },
             {
               "id": "new-q110",
-              "text": "Cell is intersection of ………",
+              "text": "Cell is intersection of \u2026\u2026\u2026",
               "options": {
                 "A": "Row and column",
                 "B": "Page and file",
@@ -5541,7 +5541,7 @@
             },
             {
               "id": "new-q111",
-              "text": "Formula in Excel starts with ………",
+              "text": "Formula in Excel starts with \u2026\u2026\u2026",
               "options": {
                 "A": "#",
                 "B": "=",
@@ -5554,7 +5554,7 @@
             },
             {
               "id": "new-q112",
-              "text": "SUM function is used for ………",
+              "text": "SUM function is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Multiplication",
                 "B": "Addition",
@@ -5567,7 +5567,7 @@
             },
             {
               "id": "new-q113",
-              "text": "Average function calculates ………",
+              "text": "Average function calculates \u2026\u2026\u2026",
               "options": {
                 "A": "Sum",
                 "B": "Mean",
@@ -5580,7 +5580,7 @@
             },
             {
               "id": "new-q114",
-              "text": "MAX function finds ………",
+              "text": "MAX function finds \u2026\u2026\u2026",
               "options": {
                 "A": "Smallest value",
                 "B": "Largest value",
@@ -5593,7 +5593,7 @@
             },
             {
               "id": "new-q115",
-              "text": "MIN function finds ………",
+              "text": "MIN function finds \u2026\u2026\u2026",
               "options": {
                 "A": "Largest value",
                 "B": "Smallest value",
@@ -5606,7 +5606,7 @@
             },
             {
               "id": "new-q116",
-              "text": "Presentation consists of ………",
+              "text": "Presentation consists of \u2026\u2026\u2026",
               "options": {
                 "A": "Cells",
                 "B": "Slides",
@@ -5619,7 +5619,7 @@
             },
             {
               "id": "new-q117",
-              "text": "Animation is used in ………",
+              "text": "Animation is used in \u2026\u2026\u2026",
               "options": {
                 "A": "Excel",
                 "B": "PowerPoint",
@@ -5632,7 +5632,7 @@
             },
             {
               "id": "new-q118",
-              "text": "Database stores ………",
+              "text": "Database stores \u2026\u2026\u2026",
               "options": {
                 "A": "Random data",
                 "B": "Organized data",
@@ -5645,7 +5645,7 @@
             },
             {
               "id": "new-q119",
-              "text": "DBMS stands for ………",
+              "text": "DBMS stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Data Base Management System",
                 "B": "Data Backup Management System",
@@ -5658,7 +5658,7 @@
             },
             {
               "id": "new-q120",
-              "text": "Table consists of ………",
+              "text": "Table consists of \u2026\u2026\u2026",
               "options": {
                 "A": "Rows and columns",
                 "B": "Slides",
@@ -5671,7 +5671,7 @@
             },
             {
               "id": "new-q121",
-              "text": "Primary key is used to ………",
+              "text": "Primary key is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Duplicate records",
                 "B": "Uniquely identify records",
@@ -5684,7 +5684,7 @@
             },
             {
               "id": "new-q122",
-              "text": "SQL is used for ………",
+              "text": "SQL is used for \u2026\u2026\u2026",
               "options": {
                 "A": "Programming",
                 "B": "Database queries",
@@ -5697,7 +5697,7 @@
             },
             {
               "id": "new-q123",
-              "text": "SELECT statement is used to ………",
+              "text": "SELECT statement is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Delete data",
                 "B": "Retrieve data",
@@ -5710,7 +5710,7 @@
             },
             {
               "id": "new-q124",
-              "text": "INSERT is used to ………",
+              "text": "INSERT is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Add data",
                 "B": "Delete data",
@@ -5723,7 +5723,7 @@
             },
             {
               "id": "new-q125",
-              "text": "DELETE is used to ………",
+              "text": "DELETE is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Add data",
                 "B": "Remove data",
@@ -5736,7 +5736,7 @@
             },
             {
               "id": "new-q126",
-              "text": "UPDATE is used to ………",
+              "text": "UPDATE is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Add data",
                 "B": "Modify data",
@@ -5749,7 +5749,7 @@
             },
             {
               "id": "new-q127",
-              "text": "Programming language is used to ………",
+              "text": "Programming language is used to \u2026\u2026\u2026",
               "options": {
                 "A": "Control hardware",
                 "B": "Write programs",
@@ -5762,7 +5762,7 @@
             },
             {
               "id": "new-q128",
-              "text": "C language is ………",
+              "text": "C language is \u2026\u2026\u2026",
               "options": {
                 "A": "High-level",
                 "B": "Low-level",
@@ -5775,7 +5775,7 @@
             },
             {
               "id": "new-q129",
-              "text": "Java is ………",
+              "text": "Java is \u2026\u2026\u2026",
               "options": {
                 "A": "Platform dependent",
                 "B": "Platform independent",
@@ -5788,7 +5788,7 @@
             },
             {
               "id": "new-q130",
-              "text": "Python is known for ………",
+              "text": "Python is known for \u2026\u2026\u2026",
               "options": {
                 "A": "Complexity",
                 "B": "Simplicity",
@@ -5801,7 +5801,7 @@
             },
             {
               "id": "new-q131",
-              "text": "Algorithm is ………",
+              "text": "Algorithm is \u2026\u2026\u2026",
               "options": {
                 "A": "Code",
                 "B": "Step-by-step solution",
@@ -5814,7 +5814,7 @@
             },
             {
               "id": "new-q132",
-              "text": "Flowchart uses ………",
+              "text": "Flowchart uses \u2026\u2026\u2026",
               "options": {
                 "A": "Text only",
                 "B": "Symbols",
@@ -5827,7 +5827,7 @@
             },
             {
               "id": "new-q133",
-              "text": "Debugging removes ………",
+              "text": "Debugging removes \u2026\u2026\u2026",
               "options": {
                 "A": "Code",
                 "B": "Errors",
@@ -5840,7 +5840,7 @@
             },
             {
               "id": "new-q134",
-              "text": "Compiler gives ……… errors at once",
+              "text": "Compiler gives \u2026\u2026\u2026 errors at once",
               "options": {
                 "A": "One",
                 "B": "All",
@@ -5853,7 +5853,7 @@
             },
             {
               "id": "new-q135",
-              "text": "Interpreter gives ……… error",
+              "text": "Interpreter gives \u2026\u2026\u2026 error",
               "options": {
                 "A": "One by one",
                 "B": "All at once",
@@ -5866,7 +5866,7 @@
             },
             {
               "id": "new-q136",
-              "text": "Software development includes ………",
+              "text": "Software development includes \u2026\u2026\u2026",
               "options": {
                 "A": "Design",
                 "B": "Coding",
@@ -5879,7 +5879,7 @@
             },
             {
               "id": "new-q137",
-              "text": "Testing is done to ………",
+              "text": "Testing is done to \u2026\u2026\u2026",
               "options": {
                 "A": "Add errors",
                 "B": "Remove errors",
@@ -5892,7 +5892,7 @@
             },
             {
               "id": "new-q138",
-              "text": "Software maintenance means ………",
+              "text": "Software maintenance means \u2026\u2026\u2026",
               "options": {
                 "A": "Deleting software",
                 "B": "Updating and fixing software",
@@ -5905,7 +5905,7 @@
             },
             {
               "id": "new-q139",
-              "text": "Open-source software is ………",
+              "text": "Open-source software is \u2026\u2026\u2026",
               "options": {
                 "A": "Paid",
                 "B": "Free and modifiable",
@@ -5918,7 +5918,7 @@
             },
             {
               "id": "new-q140",
-              "text": "Examples of open-source OS include ………",
+              "text": "Examples of open-source OS include \u2026\u2026\u2026",
               "options": {
                 "A": "Windows",
                 "B": "Linux",
@@ -5931,7 +5931,7 @@
             },
             {
               "id": "new-q141",
-              "text": "Proprietary software is ………",
+              "text": "Proprietary software is \u2026\u2026\u2026",
               "options": {
                 "A": "Free",
                 "B": "Paid",
@@ -5944,7 +5944,7 @@
             },
             {
               "id": "new-q142",
-              "text": "GUI stands for ………",
+              "text": "GUI stands for \u2026\u2026\u2026",
               "options": {
                 "A": "General User Interface",
                 "B": "Graphical User Interface",
@@ -5957,7 +5957,7 @@
             },
             {
               "id": "new-q143",
-              "text": "CLI stands for ………",
+              "text": "CLI stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Command Line Interface",
                 "B": "Computer Line Interface",
@@ -5970,7 +5970,7 @@
             },
             {
               "id": "new-q144",
-              "text": "Multitasking allows ………",
+              "text": "Multitasking allows \u2026\u2026\u2026",
               "options": {
                 "A": "One task",
                 "B": "Multiple tasks",
@@ -5983,7 +5983,7 @@
             },
             {
               "id": "new-q145",
-              "text": "Time-sharing OS allows ………",
+              "text": "Time-sharing OS allows \u2026\u2026\u2026",
               "options": {
                 "A": "One user",
                 "B": "Multiple users",
@@ -5996,7 +5996,7 @@
             },
             {
               "id": "new-q146",
-              "text": "Real-time OS is used in ………",
+              "text": "Real-time OS is used in \u2026\u2026\u2026",
               "options": {
                 "A": "Gaming",
                 "B": "Embedded systems",
@@ -6009,7 +6009,7 @@
             },
             {
               "id": "new-q147",
-              "text": "Embedded systems are used in ………",
+              "text": "Embedded systems are used in \u2026\u2026\u2026",
               "options": {
                 "A": "Washing machine",
                 "B": "Microwave",
@@ -6022,7 +6022,7 @@
             },
             {
               "id": "new-q148",
-              "text": "Microcontroller is used in ………",
+              "text": "Microcontroller is used in \u2026\u2026\u2026",
               "options": {
                 "A": "Embedded systems",
                 "B": "Servers",
@@ -6035,7 +6035,7 @@
             },
             {
               "id": "new-q149",
-              "text": "8051 is a ………",
+              "text": "8051 is a \u2026\u2026\u2026",
               "options": {
                 "A": "CPU",
                 "B": "Microcontroller",
@@ -6048,7 +6048,7 @@
             },
             {
               "id": "new-q150",
-              "text": "Sensors are used to ………",
+              "text": "Sensors are used to \u2026\u2026\u2026",
               "options": {
                 "A": "Process data",
                 "B": "Detect changes",
@@ -6061,7 +6061,7 @@
             },
             {
               "id": "new-q151",
-              "text": "Actuators are used for ………",
+              "text": "Actuators are used for \u2026\u2026\u2026",
               "options": {
                 "A": "Input",
                 "B": "Output action",
@@ -6074,7 +6074,7 @@
             },
             {
               "id": "new-q152",
-              "text": "IoT devices communicate via ………",
+              "text": "IoT devices communicate via \u2026\u2026\u2026",
               "options": {
                 "A": "Internet",
                 "B": "CPU",
@@ -6087,7 +6087,7 @@
             },
             {
               "id": "new-q153",
-              "text": "Smart home uses ………",
+              "text": "Smart home uses \u2026\u2026\u2026",
               "options": {
                 "A": "IoT",
                 "B": "CPU",
@@ -6100,7 +6100,7 @@
             },
             {
               "id": "new-q154",
-              "text": "Wearable devices include ………",
+              "text": "Wearable devices include \u2026\u2026\u2026",
               "options": {
                 "A": "Smartwatch",
                 "B": "Fitness band",
@@ -6113,7 +6113,7 @@
             },
             {
               "id": "new-q155",
-              "text": "Edge devices process data ………",
+              "text": "Edge devices process data \u2026\u2026\u2026",
               "options": {
                 "A": "Far away",
                 "B": "Near source",
@@ -6126,7 +6126,7 @@
             },
             {
               "id": "new-q156",
-              "text": "Fog computing is between ………",
+              "text": "Fog computing is between \u2026\u2026\u2026",
               "options": {
                 "A": "User and cloud",
                 "B": "CPU and GPU",
@@ -6139,7 +6139,7 @@
             },
             {
               "id": "new-q157",
-              "text": "Neural networks are inspired by ………",
+              "text": "Neural networks are inspired by \u2026\u2026\u2026",
               "options": {
                 "A": "CPU",
                 "B": "Human brain",
@@ -6152,7 +6152,7 @@
             },
             {
               "id": "new-q158",
-              "text": "NLP stands for ………",
+              "text": "NLP stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Natural Language Processing",
                 "B": "Neural Logic Processing",
@@ -6165,7 +6165,7 @@
             },
             {
               "id": "new-q159",
-              "text": "Computer vision deals with ………",
+              "text": "Computer vision deals with \u2026\u2026\u2026",
               "options": {
                 "A": "Audio",
                 "B": "Images",
@@ -6178,7 +6178,7 @@
             },
             {
               "id": "new-q160",
-              "text": "Robotics uses ………",
+              "text": "Robotics uses \u2026\u2026\u2026",
               "options": {
                 "A": "AI",
                 "B": "Sensors",
@@ -6191,7 +6191,7 @@
             },
             {
               "id": "new-q161",
-              "text": "Automation reduces ………",
+              "text": "Automation reduces \u2026\u2026\u2026",
               "options": {
                 "A": "Efficiency",
                 "B": "Manual work",
@@ -6204,7 +6204,7 @@
             },
             {
               "id": "new-q162",
-              "text": "Industry 4.0 includes ………",
+              "text": "Industry 4.0 includes \u2026\u2026\u2026",
               "options": {
                 "A": "IoT",
                 "B": "AI",
@@ -6217,7 +6217,7 @@
             },
             {
               "id": "new-q163",
-              "text": "Big Data uses ………",
+              "text": "Big Data uses \u2026\u2026\u2026",
               "options": {
                 "A": "Small datasets",
                 "B": "Large datasets",
@@ -6230,7 +6230,7 @@
             },
             {
               "id": "new-q164",
-              "text": "Data mining extracts ………",
+              "text": "Data mining extracts \u2026\u2026\u2026",
               "options": {
                 "A": "Data",
                 "B": "Useful information",
@@ -6243,7 +6243,7 @@
             },
             {
               "id": "new-q165",
-              "text": "Cloud computing models include ………",
+              "text": "Cloud computing models include \u2026\u2026\u2026",
               "options": {
                 "A": "IaaS",
                 "B": "PaaS",
@@ -6256,7 +6256,7 @@
             },
             {
               "id": "new-q166",
-              "text": "SaaS provides ………",
+              "text": "SaaS provides \u2026\u2026\u2026",
               "options": {
                 "A": "Software services",
                 "B": "Hardware",
@@ -6269,7 +6269,7 @@
             },
             {
               "id": "new-q167",
-              "text": "PaaS provides ………",
+              "text": "PaaS provides \u2026\u2026\u2026",
               "options": {
                 "A": "Platform",
                 "B": "Software",
@@ -6282,7 +6282,7 @@
             },
             {
               "id": "new-q168",
-              "text": "IaaS provides ………",
+              "text": "IaaS provides \u2026\u2026\u2026",
               "options": {
                 "A": "Infrastructure",
                 "B": "Software",
@@ -6295,7 +6295,7 @@
             },
             {
               "id": "new-q169",
-              "text": "Virtual machines run on ………",
+              "text": "Virtual machines run on \u2026\u2026\u2026",
               "options": {
                 "A": "Hardware",
                 "B": "Hypervisor",
@@ -6308,7 +6308,7 @@
             },
             {
               "id": "new-q170",
-              "text": "Hypervisor manages ………",
+              "text": "Hypervisor manages \u2026\u2026\u2026",
               "options": {
                 "A": "Hardware",
                 "B": "Virtual machines",
@@ -6321,7 +6321,7 @@
             },
             {
               "id": "new-q171",
-              "text": "Cybersecurity includes ………",
+              "text": "Cybersecurity includes \u2026\u2026\u2026",
               "options": {
                 "A": "Encryption",
                 "B": "Authentication",
@@ -6334,7 +6334,7 @@
             },
             {
               "id": "new-q172",
-              "text": "Passwords should be ………",
+              "text": "Passwords should be \u2026\u2026\u2026",
               "options": {
                 "A": "Simple",
                 "B": "Strong",
@@ -6347,7 +6347,7 @@
             },
             {
               "id": "new-q173",
-              "text": "Two-factor authentication uses ………",
+              "text": "Two-factor authentication uses \u2026\u2026\u2026",
               "options": {
                 "A": "One method",
                 "B": "Two methods",
@@ -6360,7 +6360,7 @@
             },
             {
               "id": "new-q174",
-              "text": "Digital signature ensures ………",
+              "text": "Digital signature ensures \u2026\u2026\u2026",
               "options": {
                 "A": "Security",
                 "B": "Authenticity",
@@ -6373,7 +6373,7 @@
             },
             {
               "id": "new-q175",
-              "text": "Ethical hacking is ………",
+              "text": "Ethical hacking is \u2026\u2026\u2026",
               "options": {
                 "A": "Illegal",
                 "B": "Authorized security testing",
@@ -6386,7 +6386,7 @@
             },
             {
               "id": "new-q176",
-              "text": "Firewall blocks ………",
+              "text": "Firewall blocks \u2026\u2026\u2026",
               "options": {
                 "A": "Authorized access",
                 "B": "Unauthorized access",
@@ -6399,7 +6399,7 @@
             },
             {
               "id": "new-q177",
-              "text": "VPN provides ………",
+              "text": "VPN provides \u2026\u2026\u2026",
               "options": {
                 "A": "Open network",
                 "B": "Secure connection",
@@ -6412,7 +6412,7 @@
             },
             {
               "id": "new-q178",
-              "text": "Data privacy protects ………",
+              "text": "Data privacy protects \u2026\u2026\u2026",
               "options": {
                 "A": "Hardware",
                 "B": "Personal data",
@@ -6425,7 +6425,7 @@
             },
             {
               "id": "new-q179",
-              "text": "Encryption converts data into ………",
+              "text": "Encryption converts data into \u2026\u2026\u2026",
               "options": {
                 "A": "Plain text",
                 "B": "Cipher text",
@@ -6438,7 +6438,7 @@
             },
             {
               "id": "new-q180",
-              "text": "Decryption converts ………",
+              "text": "Decryption converts \u2026\u2026\u2026",
               "options": {
                 "A": "Plain to cipher",
                 "B": "Cipher to plain",
@@ -6451,7 +6451,7 @@
             },
             {
               "id": "new-q181",
-              "text": "Digital divide refers to ………",
+              "text": "Digital divide refers to \u2026\u2026\u2026",
               "options": {
                 "A": "Network issue",
                 "B": "Gap in technology access",
@@ -6464,7 +6464,7 @@
             },
             {
               "id": "new-q182",
-              "text": "E-learning uses ………",
+              "text": "E-learning uses \u2026\u2026\u2026",
               "options": {
                 "A": "Internet",
                 "B": "Books",
@@ -6477,7 +6477,7 @@
             },
             {
               "id": "new-q183",
-              "text": "E-commerce is ………",
+              "text": "E-commerce is \u2026\u2026\u2026",
               "options": {
                 "A": "Online shopping",
                 "B": "Programming",
@@ -6490,7 +6490,7 @@
             },
             {
               "id": "new-q184",
-              "text": "Examples of e-commerce include ………",
+              "text": "Examples of e-commerce include \u2026\u2026\u2026",
               "options": {
                 "A": "Amazon",
                 "B": "Flipkart",
@@ -6503,7 +6503,7 @@
             },
             {
               "id": "new-q185",
-              "text": "Digital payment methods include ………",
+              "text": "Digital payment methods include \u2026\u2026\u2026",
               "options": {
                 "A": "UPI",
                 "B": "Cards",
@@ -6516,7 +6516,7 @@
             },
             {
               "id": "new-q186",
-              "text": "UPI stands for ………",
+              "text": "UPI stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Unified Payment Interface",
                 "B": "Universal Payment Interface",
@@ -6529,7 +6529,7 @@
             },
             {
               "id": "new-q187",
-              "text": "ATM stands for ………",
+              "text": "ATM stands for \u2026\u2026\u2026",
               "options": {
                 "A": "Automated Teller Machine",
                 "B": "Automatic Transfer Machine",
@@ -6542,7 +6542,7 @@
             },
             {
               "id": "new-q188",
-              "text": "Digital India initiative promotes ………",
+              "text": "Digital India initiative promotes \u2026\u2026\u2026",
               "options": {
                 "A": "Offline work",
                 "B": "Digital services",
@@ -6555,7 +6555,7 @@
             },
             {
               "id": "new-q189",
-              "text": "Smart cities use ………",
+              "text": "Smart cities use \u2026\u2026\u2026",
               "options": {
                 "A": "IoT",
                 "B": "AI",
@@ -6568,7 +6568,7 @@
             },
             {
               "id": "new-q190",
-              "text": "Green computing focuses on ………",
+              "text": "Green computing focuses on \u2026\u2026\u2026",
               "options": {
                 "A": "Speed",
                 "B": "Environment",
@@ -6581,7 +6581,7 @@
             },
             {
               "id": "new-q191",
-              "text": "E-waste refers to ………",
+              "text": "E-waste refers to \u2026\u2026\u2026",
               "options": {
                 "A": "Paper",
                 "B": "Electronic waste",
@@ -6594,7 +6594,7 @@
             },
             {
               "id": "new-q192",
-              "text": "Recycling reduces ………",
+              "text": "Recycling reduces \u2026\u2026\u2026",
               "options": {
                 "A": "Waste",
                 "B": "Data",
@@ -6607,7 +6607,7 @@
             },
             {
               "id": "new-q193",
-              "text": "Sustainable computing means ………",
+              "text": "Sustainable computing means \u2026\u2026\u2026",
               "options": {
                 "A": "High speed",
                 "B": "Eco-friendly computing",
@@ -6620,7 +6620,7 @@
             },
             {
               "id": "new-q194",
-              "text": "Future computing includes ………",
+              "text": "Future computing includes \u2026\u2026\u2026",
               "options": {
                 "A": "Quantum computing",
                 "B": "AI",
@@ -6633,7 +6633,7 @@
             },
             {
               "id": "new-q195",
-              "text": "Quantum computers are faster for ………",
+              "text": "Quantum computers are faster for \u2026\u2026\u2026",
               "options": {
                 "A": "All tasks",
                 "B": "Complex problems",
@@ -6646,7 +6646,7 @@
             },
             {
               "id": "new-q196",
-              "text": "Augmented Reality overlays ………",
+              "text": "Augmented Reality overlays \u2026\u2026\u2026",
               "options": {
                 "A": "Virtual objects",
                 "B": "Real world",
@@ -6659,7 +6659,7 @@
             },
             {
               "id": "new-q197",
-              "text": "Virtual Reality creates ………",
+              "text": "Virtual Reality creates \u2026\u2026\u2026",
               "options": {
                 "A": "Real world",
                 "B": "Virtual world",
@@ -6672,7 +6672,7 @@
             },
             {
               "id": "new-q198",
-              "text": "Metaverse combines ………",
+              "text": "Metaverse combines \u2026\u2026\u2026",
               "options": {
                 "A": "VR",
                 "B": "AR",
@@ -6685,7 +6685,7 @@
             },
             {
               "id": "new-q199",
-              "text": "3D printing creates ………",
+              "text": "3D printing creates \u2026\u2026\u2026",
               "options": {
                 "A": "Software",
                 "B": "Physical objects",
@@ -6698,7 +6698,7 @@
             },
             {
               "id": "new-q200",
-              "text": "Drones are used for ………",
+              "text": "Drones are used for \u2026\u2026\u2026",
               "options": {
                 "A": "Surveillance",
                 "B": "Delivery",
@@ -6711,7 +6711,7 @@
             },
             {
               "id": "new-q201",
-              "text": "Autonomous vehicles use ………",
+              "text": "Autonomous vehicles use \u2026\u2026\u2026",
               "options": {
                 "A": "AI",
                 "B": "Sensors",
@@ -6724,7 +6724,7 @@
             },
             {
               "id": "new-q202",
-              "text": "Blockchain ensures ………",
+              "text": "Blockchain ensures \u2026\u2026\u2026",
               "options": {
                 "A": "Centralization",
                 "B": "Transparency",
@@ -6737,7 +6737,7 @@
             },
             {
               "id": "new-q203",
-              "text": "Cryptocurrency uses ………",
+              "text": "Cryptocurrency uses \u2026\u2026\u2026",
               "options": {
                 "A": "Blockchain",
                 "B": "CPU",
@@ -6750,7 +6750,7 @@
             },
             {
               "id": "new-q204",
-              "text": "Technology continues to ………",
+              "text": "Technology continues to \u2026\u2026\u2026",
               "options": {
                 "A": "Decrease",
                 "B": "Evolve",

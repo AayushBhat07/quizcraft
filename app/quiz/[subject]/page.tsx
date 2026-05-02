@@ -34,6 +34,7 @@ import {
   type StoredAttempt,
 } from "@/lib/quizData";
 import { saveAttemptToFirestore } from "@/lib/firebaseHelpers";
+import { eteExplanations } from "@/lib/eteExplanations";
 
 // ─── Fisher-Yates shuffle (local) ────────────────
 function shuffleInPlace<T>(arr: T[]): T[] {
@@ -82,6 +83,7 @@ export default function QuizPage() {
   const [timeLeft, setTimeLeft] = useState(TIMER_SECS);
   const [timerActive, setTimerActive] = useState(false);
   const [questionCount] = useState(getTotalQuestionCount(subjectId));
+  const [startTime] = useState<number>(() => Date.now());
   const userStats = getUserStats();
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -221,6 +223,9 @@ export default function QuizPage() {
     const result = computeQuizResult(quizQuestions, answers);
     const userName = localStorage.getItem("quizcraft_name") ?? "";
 
+    const endTime = Date.now();
+    const timeTaken = Math.round((endTime - startTime) / 1000);
+
     const storedAttempt: StoredAttempt = {
       id: result.attemptId,
       userName,
@@ -233,6 +238,8 @@ export default function QuizPage() {
       completed: true,
       answers,
       questionCount: quizQuestions.length,
+      timeTaken,
+      percentage: result.percentage,
     };
 
     saveAttempt(storedAttempt);
@@ -537,40 +544,84 @@ export default function QuizPage() {
             {quizQuestions.map((q, idx) => {
               const userAns = answers[q.id];
               const isCorrect = userAns === q.correctAnswer;
+              const explanation = eteExplanations[q.id];
               return (
                 <div
                   key={q.id}
-                  className="flex items-start gap-3 p-3 rounded-lg"
+                  className="flex flex-col gap-2 p-3 rounded-lg"
                   style={{ backgroundColor: s.bg }}
                 >
-                  <div className="mt-0.5">
-                    {isCorrect
-                      ? <CheckCircle className="w-5 h-5" style={{ color: s.success }} />
-                      : <XCircle className="w-5 h-5" style={{ color: s.error }} />
-                    }
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-sm font-medium" style={{ color: s.fg }}>
-                      Q{idx + 1}: {q.text}
-                    </p>
-                    <div className="flex gap-2 mt-2 flex-wrap">
-                      {Object.entries(q.options ?? {}).map(([key, val]) => {
-                        let variant: "default" | "destructive" | "outline" = "outline";
-                        let extra = "";
-                        if (key === q.correctAnswer) {
-                          variant = "default";
-                          extra = " ✓";
-                        } else if (key === userAns && !isCorrect) {
-                          variant = "destructive";
-                        }
-                        return (
-                          <Badge key={key} variant={variant} className="text-xs">
-                            {key}. {val}{extra}
-                          </Badge>
-                        );
-                      })}
+                  {/* Question header */}
+                  <div className="flex items-start gap-3">
+                    <div className="mt-0.5">
+                      {isCorrect
+                        ? <CheckCircle className="w-5 h-5" style={{ color: s.success }} />
+                        : <XCircle className="w-5 h-5" style={{ color: s.error }} />
+                      }
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-sm font-medium" style={{ color: s.fg }}>
+                        Q{idx + 1}: {q.text}
+                      </p>
                     </div>
                   </div>
+
+                  {/* Options */}
+                  <div className="flex flex-col gap-1.5 pl-8">
+                    {Object.entries(q.options ?? {}).map(([key, val]) => {
+                      const isCorrectOption = key === q.correctAnswer;
+                      const isWrongSelected = key === userAns && !isCorrect;
+
+                      if (isCorrectOption) {
+                        return (
+                          <div
+                            key={key}
+                            className="flex items-center gap-2 px-3 py-2 rounded-lg"
+                            style={{ backgroundColor: `${s.success}22`, border: `1px solid ${s.success}66` }}
+                          >
+                            <span className="font-bold text-sm" style={{ color: s.success }}>✅</span>
+                            <span className="text-sm font-medium" style={{ color: s.success }}>
+                              {key}. {val}
+                            </span>
+                          </div>
+                        );
+                      } else if (isWrongSelected) {
+                        return (
+                          <div
+                            key={key}
+                            className="flex items-center gap-2 px-3 py-2 rounded-lg"
+                            style={{ backgroundColor: `${s.error}22`, border: `1px solid ${s.error}66` }}
+                          >
+                            <span className="font-bold text-sm" style={{ color: s.error }}>❌</span>
+                            <span className="text-sm font-medium line-through" style={{ color: s.error }}>
+                              {key}. {val}
+                            </span>
+                          </div>
+                        );
+                      } else {
+                        return (
+                          <div
+                            key={key}
+                            className="flex items-center gap-2 px-3 py-2 rounded-lg"
+                            style={{ backgroundColor: `${s.muted}11`, border: `1px solid ${s.cardBorder}` }}
+                          >
+                            <span className="text-sm" style={{ color: s.mutedFg }}>{key}. {val}</span>
+                          </div>
+                        );
+                      }
+                    })}
+                  </div>
+
+                  {/* Explanation for wrong answers */}
+                  {!isCorrect && explanation && (
+                    <div
+                      className="flex gap-2 px-3 py-2 rounded-lg ml-8 text-xs"
+                      style={{ backgroundColor: `${s.warn}15`, border: `1px solid ${s.warn}44` }}
+                    >
+                      <span style={{ color: s.warn }}>💡</span>
+                      <span style={{ color: s.mutedFg }}>{explanation}</span>
+                    </div>
+                  )}
                 </div>
               );
             })}

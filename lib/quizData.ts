@@ -166,6 +166,8 @@ export interface StoredAttempt extends QuizAttempt {
   userName: string;
   answers: Record<string, string>; // questionId → selected option
   questionCount: number;
+  timeTaken?: number; // seconds
+  percentage?: number; // 0-100
 }
 
 export function saveAttempt(attempt: StoredAttempt): void {
