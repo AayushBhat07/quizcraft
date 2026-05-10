@@ -6764,6 +6764,5340 @@
           ]
         }
       ]
+    },
+    {
+      "id": "os-operating-systems",
+      "name": "Operating Systems",
+      "chapters": [
+        {
+          "id": "os-operating-systems-ch-1",
+          "name": "Operating System Fundamentals",
+          "questions": [
+            {
+              "id": "os-q1",
+              "text": "The main function of an operating system is",
+              "options": {
+                "A": "To compile programs",
+                "B": "To manage hardware and software resources",
+                "C": "To design circuits",
+                "D": "To store permanent data"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q2",
+              "text": "Which of the following is not an operating system?",
+              "options": {
+                "A": "Windows",
+                "B": "Linux",
+                "C": "Oracle",
+                "D": "macOS"
+              },
+              "correctAnswer": "C",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q3",
+              "text": "Process management deals with",
+              "options": {
+                "A": "Files",
+                "B": "Memory",
+                "C": "Execution of processes",
+                "D": "Input devices"
+              },
+              "correctAnswer": "C",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q4",
+              "text": "Memory management is responsible for",
+              "options": {
+                "A": "CPU scheduling",
+                "B": "Allocation of memory",
+                "C": "File storage",
+                "D": "Input"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q5",
+              "text": "File system is used to",
+              "options": {
+                "A": "Execute programs",
+                "B": "Organize files",
+                "C": "Manage CPU",
+                "D": "Control memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q6",
+              "text": "Scheduling determines",
+              "options": {
+                "A": "Which process runs next",
+                "B": "Memory size",
+                "C": "Disk storage",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q7",
+              "text": "Round Robin is a type of",
+              "options": {
+                "A": "Memory allocation",
+                "B": "Scheduling algorithm",
+                "C": "File system",
+                "D": "Hardware"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q8",
+              "text": "Deadlock occurs when",
+              "options": {
+                "A": "CPU is free",
+                "B": "Processes wait indefinitely",
+                "C": "Memory is empty",
+                "D": "No process runs"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q9",
+              "text": "Virtual memory is used to",
+              "options": {
+                "A": "Increase CPU speed",
+                "B": "Extend RAM using disk",
+                "C": "Store files",
+                "D": "Control input"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q10",
+              "text": "Paging is used in",
+              "options": {
+                "A": "CPU",
+                "B": "Memory management",
+                "C": "File system",
+                "D": "Input"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q11",
+              "text": "Segmentation divides memory into",
+              "options": {
+                "A": "Pages",
+                "B": "Segments",
+                "C": "Blocks",
+                "D": "Files"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q12",
+              "text": "Thrashing occurs due to",
+              "options": {
+                "A": "Low CPU usage",
+                "B": "Excessive paging",
+                "C": "High memory",
+                "D": "Input errors"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q13",
+              "text": "Kernel is the",
+              "options": {
+                "A": "Interface",
+                "B": "Core",
+                "C": "Application",
+                "D": "Device"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q14",
+              "text": "Shell acts as",
+              "options": {
+                "A": "Hardware",
+                "B": "Interface between user and kernel",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q15",
+              "text": "Multiprogramming increases",
+              "options": {
+                "A": "CPU utilization",
+                "B": "Memory",
+                "C": "Disk",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q16",
+              "text": "Multithreading allows",
+              "options": {
+                "A": "Single task",
+                "B": "Multiple threads",
+                "C": "No execution",
+                "D": "Hardware"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q17",
+              "text": "Process is",
+              "options": {
+                "A": "Program in execution",
+                "B": "Memory",
+                "C": "File",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q18",
+              "text": "Context switching means",
+              "options": {
+                "A": "Changing memory",
+                "B": "Switching processes",
+                "C": "Deleting process",
+                "D": "Input"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q19",
+              "text": "Semaphore is used for",
+              "options": {
+                "A": "Memory",
+                "B": "Synchronization",
+                "C": "File",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q20",
+              "text": "Critical section is",
+              "options": {
+                "A": "Shared resource",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "File"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q21",
+              "text": "Deadlock prevention avoids",
+              "options": {
+                "A": "Circular wait",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "File"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q22",
+              "text": "Starvation means",
+              "options": {
+                "A": "No process",
+                "B": "Process waits indefinitely",
+                "C": "CPU idle",
+                "D": "Memory full"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q23",
+              "text": "Priority scheduling executes",
+              "options": {
+                "A": "Highest priority first",
+                "B": "Lowest first",
+                "C": "Random",
+                "D": "FIFO"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q24",
+              "text": "FIFO scheduling is",
+              "options": {
+                "A": "Complex",
+                "B": "Simple",
+                "C": "Random",
+                "D": "Parallel"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q25",
+              "text": "Disk scheduling improves",
+              "options": {
+                "A": "CPU",
+                "B": "Disk performance",
+                "C": "Memory",
+                "D": "Input"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q26",
+              "text": "FCFS stands for",
+              "options": {
+                "A": "First Come First Serve",
+                "B": "First Call First Serve",
+                "C": "Fast Come Fast Serve",
+                "D": "File Control System"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q27",
+              "text": "SSTF is",
+              "options": {
+                "A": "Scheduling",
+                "B": "Disk scheduling",
+                "C": "Memory",
+                "D": "File"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q28",
+              "text": "SCAN algorithm is",
+              "options": {
+                "A": "CPU scheduling",
+                "B": "Disk scheduling",
+                "C": "Memory",
+                "D": "Input"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q29",
+              "text": "RAID is used for",
+              "options": {
+                "A": "CPU",
+                "B": "Storage reliability",
+                "C": "Memory",
+                "D": "Input"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q30",
+              "text": "File allocation methods include",
+              "options": {
+                "A": "Contiguous",
+                "B": "Linked",
+                "C": "Indexed",
+                "D": "All"
+              },
+              "correctAnswer": "D",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q31",
+              "text": "Contiguous allocation requires",
+              "options": {
+                "A": "Continuous memory blocks",
+                "B": "Random blocks",
+                "C": "No memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q32",
+              "text": "Linked allocation uses",
+              "options": {
+                "A": "Pointers",
+                "B": "Arrays",
+                "C": "CPU",
+                "D": "Registers"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q33",
+              "text": "Indexed allocation uses",
+              "options": {
+                "A": "Index block",
+                "B": "Linked list",
+                "C": "CPU",
+                "D": "RAM"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q34",
+              "text": "File system stores",
+              "options": {
+                "A": "Programs",
+                "B": "Files",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q35",
+              "text": "Directory is used to",
+              "options": {
+                "A": "Execute files",
+                "B": "Organize files",
+                "C": "Delete memory",
+                "D": "Control CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q36",
+              "text": "Single-level directory has",
+              "options": {
+                "A": "One directory",
+                "B": "Multiple directories",
+                "C": "No directory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q37",
+              "text": "Two-level directory improves",
+              "options": {
+                "A": "Storage",
+                "B": "File organization",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q38",
+              "text": "Tree structure directory is",
+              "options": {
+                "A": "Linear",
+                "B": "Hierarchical",
+                "C": "Circular",
+                "D": "Random"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q39",
+              "text": "Protection in OS ensures",
+              "options": {
+                "A": "Speed",
+                "B": "Security",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q40",
+              "text": "Access control defines",
+              "options": {
+                "A": "Who can access resources",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q41",
+              "text": "Authentication verifies",
+              "options": {
+                "A": "Identity",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "File"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q42",
+              "text": "Authorization determines",
+              "options": {
+                "A": "Access rights",
+                "B": "Identity",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q43",
+              "text": "Encryption is used for",
+              "options": {
+                "A": "Speed",
+                "B": "Security",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q44",
+              "text": "Decryption converts",
+              "options": {
+                "A": "Plain to cipher",
+                "B": "Cipher to plain",
+                "C": "Binary to decimal",
+                "D": "Decimal to binary"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q45",
+              "text": "OS security prevents",
+              "options": {
+                "A": "Authorized access",
+                "B": "Unauthorized access",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q46",
+              "text": "Virus is a type of",
+              "options": {
+                "A": "Hardware",
+                "B": "Malware",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q47",
+              "text": "Worm spreads",
+              "options": {
+                "A": "Manually",
+                "B": "Automatically",
+                "C": "Through CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q48",
+              "text": "Trojan is",
+              "options": {
+                "A": "Safe program",
+                "B": "Malicious disguised program",
+                "C": "Hardware",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q49",
+              "text": "Antivirus software is used to",
+              "options": {
+                "A": "Create virus",
+                "B": "Detect and remove malware",
+                "C": "Store data",
+                "D": "Process data"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            },
+            {
+              "id": "os-q50",
+              "text": "Firewall protects",
+              "options": {
+                "A": "CPU",
+                "B": "Network",
+                "C": "Memory",
+                "D": "File"
+              },
+              "correctAnswer": "B",
+              "topic": "Operating System Fundamentals"
+            }
+          ]
+        },
+        {
+          "id": "os-operating-systems-ch-2",
+          "name": "Process & Memory Management",
+          "questions": [
+            {
+              "id": "os-q51",
+              "text": "Warm boot means",
+              "options": {
+                "A": "Power ON",
+                "B": "Restart system",
+                "C": "Shutdown",
+                "D": "Sleep"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q52",
+              "text": "Bootloader is used to",
+              "options": {
+                "A": "Load OS",
+                "B": "Store files",
+                "C": "Process data",
+                "D": "Manage memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q53",
+              "text": "Interrupt is a",
+              "options": {
+                "A": "Signal",
+                "B": "Memory",
+                "C": "File",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q54",
+              "text": "Interrupt handling is done by",
+              "options": {
+                "A": "CPU",
+                "B": "OS",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q55",
+              "text": "System call provides",
+              "options": {
+                "A": "User interface",
+                "B": "Interface to OS services",
+                "C": "Hardware",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q56",
+              "text": "System programs include",
+              "options": {
+                "A": "Compiler",
+                "B": "Editor",
+                "C": "File manager",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q57",
+              "text": "Device driver controls",
+              "options": {
+                "A": "Hardware device",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "File"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q58",
+              "text": "I/O devices are managed by",
+              "options": {
+                "A": "OS",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q59",
+              "text": "Buffering is used to",
+              "options": {
+                "A": "Store temporary data",
+                "B": "Process data",
+                "C": "Delete data",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q60",
+              "text": "Spooling is used for",
+              "options": {
+                "A": "Printing",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q61",
+              "text": "Cache memory improves",
+              "options": {
+                "A": "Speed",
+                "B": "Memory",
+                "C": "Disk",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q62",
+              "text": "Virtualization allows",
+              "options": {
+                "A": "Multiple OS",
+                "B": "Single OS",
+                "C": "No OS",
+                "D": "Hardware removal"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q63",
+              "text": "Distributed system consists of",
+              "options": {
+                "A": "Single computer",
+                "B": "Multiple computers",
+                "C": "CPU only",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q64",
+              "text": "Network OS manages",
+              "options": {
+                "A": "Network resources",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q65",
+              "text": "Client-server model includes",
+              "options": {
+                "A": "Client",
+                "B": "Server",
+                "C": "Network",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q66",
+              "text": "Peer-to-peer network has",
+              "options": {
+                "A": "Central server",
+                "B": "No central server",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q67",
+              "text": "Distributed OS provides",
+              "options": {
+                "A": "Resource sharing",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q68",
+              "text": "Real-time systems require",
+              "options": {
+                "A": "Fast response",
+                "B": "Slow response",
+                "C": "No response",
+                "D": "Random response"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q69",
+              "text": "Hard real-time system has",
+              "options": {
+                "A": "Strict deadlines",
+                "B": "Flexible deadlines",
+                "C": "No deadlines",
+                "D": "Random deadlines"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q70",
+              "text": "Soft real-time system has",
+              "options": {
+                "A": "Strict deadlines",
+                "B": "Flexible deadlines",
+                "C": "No deadlines",
+                "D": "Random deadlines"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q71",
+              "text": "Embedded OS is used in",
+              "options": {
+                "A": "Devices",
+                "B": "Servers",
+                "C": "Mainframes",
+                "D": "Supercomputers"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q72",
+              "text": "Mobile OS examples include",
+              "options": {
+                "A": "Android",
+                "B": "iOS",
+                "C": "Both",
+                "D": "None"
+              },
+              "correctAnswer": "C",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q73",
+              "text": "Android is based on",
+              "options": {
+                "A": "Windows",
+                "B": "Linux",
+                "C": "macOS",
+                "D": "DOS"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q74",
+              "text": "iOS is developed by",
+              "options": {
+                "A": "Google",
+                "B": "Apple",
+                "C": "Microsoft",
+                "D": "IBM"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q75",
+              "text": "Windows OS is developed by",
+              "options": {
+                "A": "Apple",
+                "B": "Microsoft",
+                "C": "Google",
+                "D": "IBM"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q76",
+              "text": "Linux is",
+              "options": {
+                "A": "Open-source",
+                "B": "Paid",
+                "C": "Closed",
+                "D": "Proprietary"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q77",
+              "text": "Kernel types include",
+              "options": {
+                "A": "Monolithic",
+                "B": "Microkernel",
+                "C": "Hybrid",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q78",
+              "text": "Microkernel provides",
+              "options": {
+                "A": "Minimal services",
+                "B": "Full services",
+                "C": "No services",
+                "D": "Hardware"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q79",
+              "text": "Monolithic kernel includes",
+              "options": {
+                "A": "All services",
+                "B": "Minimal services",
+                "C": "No services",
+                "D": "Hardware"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q80",
+              "text": "System performance is measured by",
+              "options": {
+                "A": "Throughput",
+                "B": "Response time",
+                "C": "Utilization",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q81",
+              "text": "Scalability means",
+              "options": {
+                "A": "Ability to grow",
+                "B": "Reduce",
+                "C": "Stop",
+                "D": "Slow"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q82",
+              "text": "Reliability means",
+              "options": {
+                "A": "Accuracy",
+                "B": "Failure",
+                "C": "Slow",
+                "D": "Random"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q83",
+              "text": "Availability means",
+              "options": {
+                "A": "System uptime",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q84",
+              "text": "Fault tolerance means",
+              "options": {
+                "A": "No error",
+                "B": "Handle errors",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q85",
+              "text": "Load balancing distributes",
+              "options": {
+                "A": "Workload",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q86",
+              "text": "Parallel systems use",
+              "options": {
+                "A": "Multiple CPUs",
+                "B": "Single CPU",
+                "C": "No CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q87",
+              "text": "Cluster computing uses",
+              "options": {
+                "A": "Group of computers",
+                "B": "Single computer",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q88",
+              "text": "Grid computing uses",
+              "options": {
+                "A": "Distributed resources",
+                "B": "Single CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q89",
+              "text": "Cloud computing provides",
+              "options": {
+                "A": "Services over internet",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q90",
+              "text": "Virtual memory uses",
+              "options": {
+                "A": "Disk",
+                "B": "CPU",
+                "C": "RAM only",
+                "D": "GPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q91",
+              "text": "Demand paging loads",
+              "options": {
+                "A": "Entire program",
+                "B": "Required pages",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q92",
+              "text": "Page replacement algorithms include",
+              "options": {
+                "A": "FIFO",
+                "B": "LRU",
+                "C": "Optimal",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q93",
+              "text": "LRU stands for",
+              "options": {
+                "A": "Least Recently Used",
+                "B": "Last Recently Used",
+                "C": "Least Random Used",
+                "D": "Long Recently Used"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q94",
+              "text": "FIFO page replacement removes",
+              "options": {
+                "A": "Oldest page",
+                "B": "Newest page",
+                "C": "Random page",
+                "D": "Largest page"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q95",
+              "text": "Optimal algorithm removes",
+              "options": {
+                "A": "Future unused page",
+                "B": "Oldest page",
+                "C": "Random",
+                "D": "Newest"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q96",
+              "text": "Belady's anomaly occurs in",
+              "options": {
+                "A": "FIFO",
+                "B": "LRU",
+                "C": "Optimal",
+                "D": "Random"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q97",
+              "text": "Working set model helps in",
+              "options": {
+                "A": "Memory management",
+                "B": "CPU",
+                "C": "Disk",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q98",
+              "text": "Thrashing occurs when",
+              "options": {
+                "A": "High paging",
+                "B": "Low paging",
+                "C": "CPU idle",
+                "D": "Memory free"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q99",
+              "text": "Swap space is used in",
+              "options": {
+                "A": "Disk",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Input"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            },
+            {
+              "id": "os-q100",
+              "text": "OS evolves to",
+              "options": {
+                "A": "Improve performance",
+                "B": "Increase complexity",
+                "C": "Reduce usage",
+                "D": "Stop development"
+              },
+              "correctAnswer": "A",
+              "topic": "Process & Memory Management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dc-datacom",
+      "name": "Data Communication",
+      "chapters": [
+        {
+          "id": "dc-datacom-ch-1",
+          "name": "Data Communication Basics",
+          "questions": [
+            {
+              "id": "dc-q1",
+              "text": "Data communication refers to",
+              "options": {
+                "A": "Data storage",
+                "B": "Exchange of data between devices",
+                "C": "Data processing",
+                "D": "Data deletion"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q2",
+              "text": "Communication system consists of",
+              "options": {
+                "A": "Sender",
+                "B": "Receiver",
+                "C": "Medium",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q3",
+              "text": "Transmission medium is",
+              "options": {
+                "A": "Device",
+                "B": "Path for data transfer",
+                "C": "Software",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q4",
+              "text": "Guided media includes",
+              "options": {
+                "A": "Wireless",
+                "B": "Optical fiber",
+                "C": "Satellite",
+                "D": "Microwave"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q5",
+              "text": "Unguided media includes",
+              "options": {
+                "A": "Twisted pair",
+                "B": "Coaxial cable",
+                "C": "Wireless",
+                "D": "Optical fiber"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q6",
+              "text": "Twisted pair cable is used in",
+              "options": {
+                "A": "LAN",
+                "B": "WAN",
+                "C": "CPU",
+                "D": "GPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q7",
+              "text": "Coaxial cable has",
+              "options": {
+                "A": "No shielding",
+                "B": "Single shielding",
+                "C": "Double shielding",
+                "D": "Triple shielding"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q8",
+              "text": "Optical fiber uses",
+              "options": {
+                "A": "Electricity",
+                "B": "Light",
+                "C": "Magnetism",
+                "D": "Heat"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q9",
+              "text": "Bandwidth refers to",
+              "options": {
+                "A": "Speed",
+                "B": "Capacity of channel",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q10",
+              "text": "Data rate is measured in",
+              "options": {
+                "A": "Hz",
+                "B": "bps",
+                "C": "Volts",
+                "D": "Amps"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q11",
+              "text": "Analog signal is",
+              "options": {
+                "A": "Continuous",
+                "B": "Discrete",
+                "C": "Binary",
+                "D": "Digital"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q12",
+              "text": "Digital signal is",
+              "options": {
+                "A": "Continuous",
+                "B": "Discrete",
+                "C": "Analog",
+                "D": "Voltage"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q13",
+              "text": "Noise affects",
+              "options": {
+                "A": "Signal quality",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q14",
+              "text": "Attenuation means",
+              "options": {
+                "A": "Increase signal",
+                "B": "Decrease signal",
+                "C": "No change",
+                "D": "Amplification"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q15",
+              "text": "Amplifier is used to",
+              "options": {
+                "A": "Reduce signal",
+                "B": "Increase signal",
+                "C": "Store data",
+                "D": "Process data"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q16",
+              "text": "Modulation is",
+              "options": {
+                "A": "Signal processing",
+                "B": "Encoding signal",
+                "C": "Changing signal",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q17",
+              "text": "AM stands for",
+              "options": {
+                "A": "Amplitude Modulation",
+                "B": "Analog Modulation",
+                "C": "Automatic Modulation",
+                "D": "Advanced Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q18",
+              "text": "FM stands for",
+              "options": {
+                "A": "Frequency Modulation",
+                "B": "Fast Modulation",
+                "C": "File Modulation",
+                "D": "Fixed Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q19",
+              "text": "PM stands for",
+              "options": {
+                "A": "Phase Modulation",
+                "B": "Power Modulation",
+                "C": "Pulse Modulation",
+                "D": "Parallel Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q20",
+              "text": "Demodulation is",
+              "options": {
+                "A": "Encoding",
+                "B": "Decoding",
+                "C": "Processing",
+                "D": "Storage"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q21",
+              "text": "Multiplexing combines",
+              "options": {
+                "A": "Signals",
+                "B": "Channels",
+                "C": "Data",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q22",
+              "text": "FDM stands for",
+              "options": {
+                "A": "Frequency Division Multiplexing",
+                "B": "File Division Multiplexing",
+                "C": "Fast Division Multiplexing",
+                "D": "Fixed Division Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q23",
+              "text": "TDM stands for",
+              "options": {
+                "A": "Time Division Multiplexing",
+                "B": "Transfer Division Multiplexing",
+                "C": "Temporary Division Multiplexing",
+                "D": "Time Data Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q24",
+              "text": "CDM stands for",
+              "options": {
+                "A": "Code Division Multiplexing",
+                "B": "Channel Division Multiplexing",
+                "C": "Circuit Division Multiplexing",
+                "D": "Control Division Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q25",
+              "text": "Transmission modes include",
+              "options": {
+                "A": "Simplex",
+                "B": "Half duplex",
+                "C": "Full duplex",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q26",
+              "text": "Simplex transmission allows",
+              "options": {
+                "A": "Two-way communication",
+                "B": "One-way communication",
+                "C": "Full duplex",
+                "D": "Half duplex"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q27",
+              "text": "Half duplex transmission allows",
+              "options": {
+                "A": "One-way only",
+                "B": "Two-way but not simultaneous",
+                "C": "Full duplex",
+                "D": "No communication"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q28",
+              "text": "Full duplex transmission allows",
+              "options": {
+                "A": "One-way",
+                "B": "Two-way simultaneous",
+                "C": "Half duplex",
+                "D": "No communication"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q29",
+              "text": "Network topology defines",
+              "options": {
+                "A": "Structure of network",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q30",
+              "text": "Bus topology uses",
+              "options": {
+                "A": "Single communication line",
+                "B": "Ring structure",
+                "C": "Star structure",
+                "D": "Mesh"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q31",
+              "text": "Star topology uses",
+              "options": {
+                "A": "Central hub",
+                "B": "Ring",
+                "C": "Bus",
+                "D": "Mesh"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q32",
+              "text": "Ring topology connects devices in",
+              "options": {
+                "A": "Line",
+                "B": "Circle",
+                "C": "Star",
+                "D": "Mesh"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q33",
+              "text": "Mesh topology provides",
+              "options": {
+                "A": "Low reliability",
+                "B": "High reliability",
+                "C": "No connection",
+                "D": "Single path"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q34",
+              "text": "Hybrid topology is",
+              "options": {
+                "A": "Combination of topologies",
+                "B": "Single topology",
+                "C": "Linear",
+                "D": "Circular"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q35",
+              "text": "LAN stands for",
+              "options": {
+                "A": "Local Area Network",
+                "B": "Large Area Network",
+                "C": "Long Area Network",
+                "D": "Logical Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q36",
+              "text": "MAN stands for",
+              "options": {
+                "A": "Metropolitan Area Network",
+                "B": "Main Area Network",
+                "C": "Medium Area Network",
+                "D": "Multiple Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q37",
+              "text": "WAN stands for",
+              "options": {
+                "A": "Wide Area Network",
+                "B": "Wireless Area Network",
+                "C": "World Area Network",
+                "D": "Web Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q38",
+              "text": "Internet is a",
+              "options": {
+                "A": "Single network",
+                "B": "Network of networks",
+                "C": "Device",
+                "D": "Protocol"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q39",
+              "text": "Protocol defines",
+              "options": {
+                "A": "Rules for communication",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q40",
+              "text": "TCP/IP is a",
+              "options": {
+                "A": "Protocol suite",
+                "B": "Device",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q41",
+              "text": "HTTP is used for",
+              "options": {
+                "A": "Web browsing",
+                "B": "Email",
+                "C": "File transfer",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q42",
+              "text": "FTP is used for",
+              "options": {
+                "A": "File transfer",
+                "B": "Email",
+                "C": "Web",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q43",
+              "text": "SMTP is used for",
+              "options": {
+                "A": "Sending emails",
+                "B": "Receiving emails",
+                "C": "File transfer",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q44",
+              "text": "POP is used for",
+              "options": {
+                "A": "Receiving emails",
+                "B": "Sending emails",
+                "C": "File transfer",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q45",
+              "text": "DNS converts",
+              "options": {
+                "A": "Domain name to IP address",
+                "B": "IP to domain",
+                "C": "Data",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q46",
+              "text": "IP address is",
+              "options": {
+                "A": "Unique identifier",
+                "B": "File",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q47",
+              "text": "IPv4 address uses",
+              "options": {
+                "A": "16 bits",
+                "B": "32 bits",
+                "C": "64 bits",
+                "D": "128 bits"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q48",
+              "text": "IPv6 address uses",
+              "options": {
+                "A": "32 bits",
+                "B": "64 bits",
+                "C": "128 bits",
+                "D": "256 bits"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q49",
+              "text": "Router connects",
+              "options": {
+                "A": "Different networks",
+                "B": "Same devices",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q50",
+              "text": "Switch connects",
+              "options": {
+                "A": "Networks",
+                "B": "Devices in LAN",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q51",
+              "text": "Bridge operates at",
+              "options": {
+                "A": "Physical layer",
+                "B": "Data Link layer",
+                "C": "Network layer",
+                "D": "Transport layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q52",
+              "text": "Router operates at",
+              "options": {
+                "A": "Data Link layer",
+                "B": "Network layer",
+                "C": "Transport layer",
+                "D": "Application layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q53",
+              "text": "Hub operates at",
+              "options": {
+                "A": "Physical layer",
+                "B": "Data Link layer",
+                "C": "Network layer",
+                "D": "Transport layer"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q54",
+              "text": "Gateway operates at",
+              "options": {
+                "A": "All layers",
+                "B": "Physical layer",
+                "C": "Network layer",
+                "D": "Data Link layer"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q55",
+              "text": "OSI model has",
+              "options": {
+                "A": "5 layers",
+                "B": "6 layers",
+                "C": "7 layers",
+                "D": "8 layers"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q56",
+              "text": "Physical layer deals with",
+              "options": {
+                "A": "Bits",
+                "B": "Frames",
+                "C": "Packets",
+                "D": "Messages"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q57",
+              "text": "Data Link layer deals with",
+              "options": {
+                "A": "Bits",
+                "B": "Frames",
+                "C": "Packets",
+                "D": "Messages"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q58",
+              "text": "Network layer deals with",
+              "options": {
+                "A": "Frames",
+                "B": "Packets",
+                "C": "Bits",
+                "D": "Messages"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q59",
+              "text": "Transport layer ensures",
+              "options": {
+                "A": "Reliable delivery",
+                "B": "Routing",
+                "C": "Framing",
+                "D": "Encoding"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q60",
+              "text": "Session layer manages",
+              "options": {
+                "A": "Sessions",
+                "B": "Routing",
+                "C": "Frames",
+                "D": "Bits"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q61",
+              "text": "Presentation layer handles",
+              "options": {
+                "A": "Encryption and formatting",
+                "B": "Routing",
+                "C": "Frames",
+                "D": "Bits"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q62",
+              "text": "Application layer provides",
+              "options": {
+                "A": "User services",
+                "B": "Routing",
+                "C": "Frames",
+                "D": "Bits"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q63",
+              "text": "TCP is",
+              "options": {
+                "A": "Connection-oriented protocol",
+                "B": "Connectionless protocol",
+                "C": "Physical protocol",
+                "D": "Data Link protocol"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q64",
+              "text": "UDP is",
+              "options": {
+                "A": "Connection-oriented protocol",
+                "B": "Connectionless protocol",
+                "C": "Physical protocol",
+                "D": "Data Link protocol"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q65",
+              "text": "IP works at",
+              "options": {
+                "A": "Transport layer",
+                "B": "Network layer",
+                "C": "Data Link layer",
+                "D": "Physical layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q66",
+              "text": "ARP is used for",
+              "options": {
+                "A": "IP to MAC address mapping",
+                "B": "MAC to IP mapping",
+                "C": "Routing",
+                "D": "Switching"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q67",
+              "text": "RARP is used for",
+              "options": {
+                "A": "MAC to IP mapping",
+                "B": "IP to MAC mapping",
+                "C": "Routing",
+                "D": "Switching"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q68",
+              "text": "MAC address is",
+              "options": {
+                "A": "Logical address",
+                "B": "Physical address",
+                "C": "Temporary address",
+                "D": "Virtual address"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q69",
+              "text": "IPv4 address format is",
+              "options": {
+                "A": "Binary",
+                "B": "Dotted decimal",
+                "C": "Hexadecimal",
+                "D": "Octal"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q70",
+              "text": "Subnetting is used to",
+              "options": {
+                "A": "Divide network",
+                "B": "Increase CPU",
+                "C": "Reduce memory",
+                "D": "Improve disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q71",
+              "text": "Default port of HTTP is",
+              "options": {
+                "A": "21",
+                "B": "23",
+                "C": "80",
+                "D": "443"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q72",
+              "text": "Default port of HTTPS is",
+              "options": {
+                "A": "80",
+                "B": "21",
+                "C": "443",
+                "D": "25"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q73",
+              "text": "FTP uses port",
+              "options": {
+                "A": "21",
+                "B": "22",
+                "C": "23",
+                "D": "80"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q74",
+              "text": "SMTP uses port",
+              "options": {
+                "A": "25",
+                "B": "21",
+                "C": "80",
+                "D": "443"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q75",
+              "text": "DNS uses port",
+              "options": {
+                "A": "25",
+                "B": "53",
+                "C": "80",
+                "D": "21"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q76",
+              "text": "Ping command uses",
+              "options": {
+                "A": "TCP protocol",
+                "B": "UDP protocol",
+                "C": "ICMP protocol",
+                "D": "HTTP protocol"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q77",
+              "text": "ICMP is used for",
+              "options": {
+                "A": "Error reporting and diagnostics",
+                "B": "File transfer",
+                "C": "Email",
+                "D": "Web browsing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q78",
+              "text": "DHCP is used to assign",
+              "options": {
+                "A": "IP addresses",
+                "B": "MAC addresses",
+                "C": "Files",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q79",
+              "text": "NAT is used to translate",
+              "options": {
+                "A": "Private IP to public IP",
+                "B": "Public IP to private IP",
+                "C": "Data",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q80",
+              "text": "Firewall is used for",
+              "options": {
+                "A": "Network security",
+                "B": "Data storage",
+                "C": "CPU control",
+                "D": "Memory management"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q81",
+              "text": "Encryption is used to ensure",
+              "options": {
+                "A": "Security",
+                "B": "Speed",
+                "C": "Storage",
+                "D": "Processing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q82",
+              "text": "Symmetric encryption uses",
+              "options": {
+                "A": "One key(s)",
+                "B": "Two keys",
+                "C": "Three keys",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q83",
+              "text": "Asymmetric encryption uses",
+              "options": {
+                "A": "One key(s)",
+                "B": "Two keys",
+                "C": "Three keys",
+                "D": "None"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q84",
+              "text": "SSL is used for",
+              "options": {
+                "A": "Secure communication",
+                "B": "File storage",
+                "C": "CPU processing",
+                "D": "Memory allocation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q85",
+              "text": "HTTPS uses",
+              "options": {
+                "A": "SSL/TLS",
+                "B": "FTP",
+                "C": "SMTP",
+                "D": "DNS"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q86",
+              "text": "Digital certificate is used to verify",
+              "options": {
+                "A": "Identity",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q87",
+              "text": "Cyber attacks include",
+              "options": {
+                "A": "Phishing",
+                "B": "Malware",
+                "C": "Hacking",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q88",
+              "text": "Phishing is used to steal",
+              "options": {
+                "A": "Passwords",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q89",
+              "text": "Malware includes",
+              "options": {
+                "A": "Virus",
+                "B": "Worm",
+                "C": "Trojan",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q90",
+              "text": "VPN provides",
+              "options": {
+                "A": "Secure connection over internet",
+                "B": "Open connection",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q91",
+              "text": "Wi-Fi is a",
+              "options": {
+                "A": "Wired network",
+                "B": "Wireless network",
+                "C": "Optical network",
+                "D": "Satellite network"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q92",
+              "text": "Bluetooth is used for",
+              "options": {
+                "A": "Short-range communication",
+                "B": "Long-range communication",
+                "C": "Satellite communication",
+                "D": "Wired communication"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q93",
+              "text": "4G represents",
+              "options": {
+                "A": "Network generation",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q94",
+              "text": "5G provides",
+              "options": {
+                "A": "High speed",
+                "B": "Low latency",
+                "C": "Better connectivity",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q95",
+              "text": "Satellite communication uses",
+              "options": {
+                "A": "Space medium",
+                "B": "Cable medium",
+                "C": "Fiber medium",
+                "D": "Copper medium"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q96",
+              "text": "Microwave communication is",
+              "options": {
+                "A": "Wireless",
+                "B": "Wired",
+                "C": "Optical",
+                "D": "Mechanical"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q97",
+              "text": "Infrared communication is used for",
+              "options": {
+                "A": "Short-distance communication",
+                "B": "Long-distance communication",
+                "C": "Global communication",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q98",
+              "text": "Noise affects",
+              "options": {
+                "A": "Signal quality",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q99",
+              "text": "Signal-to-noise ratio indicates",
+              "options": {
+                "A": "Signal quality",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Basics"
+            },
+            {
+              "id": "dc-q100",
+              "text": "Data communication helps improve",
+              "options": {
+                "A": "Connectivity",
+                "B": "Efficiency",
+                "C": "Information sharing",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Basics"
+            }
+          ]
+        },
+        {
+          "id": "dc-datacom-ch-2",
+          "name": "Data Communication Advanced",
+          "questions": [
+            {
+              "id": "dc-q1",
+              "text": "Data communication is defined as",
+              "options": {
+                "A": "Exchange of data between devices",
+                "B": "Storage of data",
+                "C": "Processing of data",
+                "D": "Deletion of data"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q2",
+              "text": "Components of communication system include",
+              "options": {
+                "A": "Sender",
+                "B": "Receiver",
+                "C": "Medium",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q3",
+              "text": "Transmission medium is",
+              "options": {
+                "A": "Path for data transfer",
+                "B": "Device",
+                "C": "Software",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q4",
+              "text": "Guided media includes",
+              "options": {
+                "A": "Optical fiber",
+                "B": "Wireless",
+                "C": "Satellite",
+                "D": "Microwave"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q5",
+              "text": "Unguided media includes",
+              "options": {
+                "A": "Twisted pair",
+                "B": "Coaxial cable",
+                "C": "Wireless",
+                "D": "Optical fiber"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q6",
+              "text": "Twisted pair cable is used in",
+              "options": {
+                "A": "LAN",
+                "B": "WAN",
+                "C": "CPU",
+                "D": "GPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q7",
+              "text": "Coaxial cable has",
+              "options": {
+                "A": "Single shielding",
+                "B": "Double shielding",
+                "C": "No shielding",
+                "D": "Triple shielding"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q8",
+              "text": "Optical fiber uses",
+              "options": {
+                "A": "Light",
+                "B": "Electricity",
+                "C": "Heat",
+                "D": "Magnetism"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q9",
+              "text": "Bandwidth refers to",
+              "options": {
+                "A": "Capacity of channel",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q10",
+              "text": "Data rate is measured in",
+              "options": {
+                "A": "bps",
+                "B": "Hz",
+                "C": "Volt",
+                "D": "Ampere"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q11",
+              "text": "Analog signal is",
+              "options": {
+                "A": "Continuous",
+                "B": "Discrete",
+                "C": "Binary",
+                "D": "Digital"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q12",
+              "text": "Digital signal is",
+              "options": {
+                "A": "Discrete",
+                "B": "Continuous",
+                "C": "Analog",
+                "D": "Voltage"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q13",
+              "text": "Noise affects",
+              "options": {
+                "A": "Signal quality",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q14",
+              "text": "Attenuation means",
+              "options": {
+                "A": "Decrease in signal strength",
+                "B": "Increase signal",
+                "C": "No change",
+                "D": "Amplification"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q15",
+              "text": "Amplifier is used to",
+              "options": {
+                "A": "Increase signal strength",
+                "B": "Decrease signal",
+                "C": "Store data",
+                "D": "Process data"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q16",
+              "text": "Modulation is",
+              "options": {
+                "A": "Changing signal properties",
+                "B": "Encoding",
+                "C": "Processing",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q17",
+              "text": "AM stands for",
+              "options": {
+                "A": "Amplitude Modulation",
+                "B": "Analog Modulation",
+                "C": "Automatic Modulation",
+                "D": "Advanced Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q18",
+              "text": "FM stands for",
+              "options": {
+                "A": "Frequency Modulation",
+                "B": "Fast Modulation",
+                "C": "File Modulation",
+                "D": "Fixed Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q19",
+              "text": "PM stands for",
+              "options": {
+                "A": "Phase Modulation",
+                "B": "Power Modulation",
+                "C": "Pulse Modulation",
+                "D": "Parallel Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q20",
+              "text": "Demodulation is",
+              "options": {
+                "A": "Decoding",
+                "B": "Encoding",
+                "C": "Processing",
+                "D": "Storage"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q21",
+              "text": "Multiplexing combines",
+              "options": {
+                "A": "Multiple signals",
+                "B": "Data",
+                "C": "Channels",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q22",
+              "text": "FDM stands for",
+              "options": {
+                "A": "Frequency Division Multiplexing",
+                "B": "File Division Multiplexing",
+                "C": "Fast Division Multiplexing",
+                "D": "Fixed Division Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q23",
+              "text": "TDM stands for",
+              "options": {
+                "A": "Time Division Multiplexing",
+                "B": "Transfer Division Multiplexing",
+                "C": "Temporary Division Multiplexing",
+                "D": "Time Data Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q24",
+              "text": "CDM stands for",
+              "options": {
+                "A": "Code Division Multiplexing",
+                "B": "Channel Division Multiplexing",
+                "C": "Circuit Division Multiplexing",
+                "D": "Control Division Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q25",
+              "text": "Transmission modes include",
+              "options": {
+                "A": "Simplex",
+                "B": "Half duplex",
+                "C": "Full duplex",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q26",
+              "text": "Simplex mode allows",
+              "options": {
+                "A": "One-way communication",
+                "B": "Two-way communication",
+                "C": "Full duplex",
+                "D": "Half duplex"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q27",
+              "text": "Half duplex mode allows",
+              "options": {
+                "A": "One-way only",
+                "B": "Two-way but not simultaneous",
+                "C": "Full duplex",
+                "D": "No communication"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q28",
+              "text": "Full duplex mode allows",
+              "options": {
+                "A": "One-way",
+                "B": "Two-way simultaneous communication",
+                "C": "Half duplex",
+                "D": "No communication"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q29",
+              "text": "Network topology means",
+              "options": {
+                "A": "Arrangement of network",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q30",
+              "text": "Bus topology uses",
+              "options": {
+                "A": "Single backbone cable",
+                "B": "Ring",
+                "C": "Star",
+                "D": "Mesh"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q31",
+              "text": "Star topology uses",
+              "options": {
+                "A": "Central hub",
+                "B": "Ring",
+                "C": "Bus",
+                "D": "Mesh"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q32",
+              "text": "Ring topology forms",
+              "options": {
+                "A": "Line",
+                "B": "Circle",
+                "C": "Star",
+                "D": "Mesh"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q33",
+              "text": "Mesh topology provides",
+              "options": {
+                "A": "High reliability",
+                "B": "Low reliability",
+                "C": "No reliability",
+                "D": "Single path"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q34",
+              "text": "Hybrid topology is",
+              "options": {
+                "A": "Combination of topologies",
+                "B": "Single topology",
+                "C": "Linear",
+                "D": "Circular"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q35",
+              "text": "LAN stands for",
+              "options": {
+                "A": "Local Area Network",
+                "B": "Large Area Network",
+                "C": "Long Area Network",
+                "D": "Logical Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q36",
+              "text": "MAN stands for",
+              "options": {
+                "A": "Metropolitan Area Network",
+                "B": "Main Area Network",
+                "C": "Medium Area Network",
+                "D": "Multiple Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q37",
+              "text": "WAN stands for",
+              "options": {
+                "A": "Wide Area Network",
+                "B": "Wireless Area Network",
+                "C": "World Area Network",
+                "D": "Web Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q38",
+              "text": "Internet is",
+              "options": {
+                "A": "Single network",
+                "B": "Network of networks",
+                "C": "Device",
+                "D": "Protocol"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q39",
+              "text": "Protocol is",
+              "options": {
+                "A": "Set of rules",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Device"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q40",
+              "text": "TCP/IP is a",
+              "options": {
+                "A": "Protocol suite",
+                "B": "Device",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q41",
+              "text": "HTTP is used for",
+              "options": {
+                "A": "Web browsing",
+                "B": "Email",
+                "C": "File transfer",
+                "D": "Storage"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q42",
+              "text": "FTP is used for",
+              "options": {
+                "A": "File transfer",
+                "B": "Email",
+                "C": "Web",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q43",
+              "text": "SMTP is used for",
+              "options": {
+                "A": "Sending emails",
+                "B": "Receiving emails",
+                "C": "File transfer",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q44",
+              "text": "POP is used for",
+              "options": {
+                "A": "Receiving emails",
+                "B": "Sending emails",
+                "C": "File transfer",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q45",
+              "text": "DNS converts",
+              "options": {
+                "A": "Domain name to IP address",
+                "B": "IP to domain",
+                "C": "Data",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q46",
+              "text": "IP address is",
+              "options": {
+                "A": "Unique identifier",
+                "B": "File",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q47",
+              "text": "IPv4 uses",
+              "options": {
+                "A": "16 bits",
+                "B": "32 bits",
+                "C": "64 bits",
+                "D": "128 bits"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q48",
+              "text": "IPv6 uses",
+              "options": {
+                "A": "32 bits",
+                "B": "64 bits",
+                "C": "128 bits",
+                "D": "256 bits"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q49",
+              "text": "Router connects",
+              "options": {
+                "A": "Different networks",
+                "B": "Same devices",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q50",
+              "text": "Switch connects",
+              "options": {
+                "A": "Networks",
+                "B": "Devices in LAN",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q51",
+              "text": "Bridge operates at",
+              "options": {
+                "A": "Physical layer",
+                "B": "Data Link layer",
+                "C": "Network layer",
+                "D": "Transport layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q52",
+              "text": "Router operates at",
+              "options": {
+                "A": "Data Link layer",
+                "B": "Network layer",
+                "C": "Transport layer",
+                "D": "Application layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q53",
+              "text": "Hub operates at",
+              "options": {
+                "A": "Physical layer",
+                "B": "Data Link layer",
+                "C": "Network layer",
+                "D": "Transport layer"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q54",
+              "text": "Gateway operates at",
+              "options": {
+                "A": "All layers",
+                "B": "Physical layer",
+                "C": "Network layer",
+                "D": "Data Link layer"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q55",
+              "text": "OSI model consists of",
+              "options": {
+                "A": "5 layers",
+                "B": "6 layers",
+                "C": "7 layers",
+                "D": "8 layers"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q56",
+              "text": "Physical layer deals with",
+              "options": {
+                "A": "Bits",
+                "B": "Frames",
+                "C": "Packets",
+                "D": "Messages"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q57",
+              "text": "Data link layer deals with",
+              "options": {
+                "A": "Bits",
+                "B": "Frames",
+                "C": "Packets",
+                "D": "Messages"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q58",
+              "text": "Network layer deals with",
+              "options": {
+                "A": "Frames",
+                "B": "Packets",
+                "C": "Bits",
+                "D": "Messages"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q59",
+              "text": "Transport layer ensures",
+              "options": {
+                "A": "Reliable delivery",
+                "B": "Routing",
+                "C": "Framing",
+                "D": "Encoding"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q60",
+              "text": "Session layer is responsible for",
+              "options": {
+                "A": "Session management",
+                "B": "Routing",
+                "C": "Framing",
+                "D": "Bit transmission"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q61",
+              "text": "Presentation layer handles",
+              "options": {
+                "A": "Encryption and data formatting",
+                "B": "Routing",
+                "C": "Frames",
+                "D": "Bits"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q62",
+              "text": "Application layer provides",
+              "options": {
+                "A": "Network services to user",
+                "B": "Routing",
+                "C": "Frames",
+                "D": "Bits"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q63",
+              "text": "TCP is a",
+              "options": {
+                "A": "Connection-oriented protocol",
+                "B": "Connectionless protocol",
+                "C": "Physical protocol",
+                "D": "Data Link protocol"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q64",
+              "text": "UDP is a",
+              "options": {
+                "A": "Connection-oriented protocol",
+                "B": "Connectionless protocol",
+                "C": "Physical protocol",
+                "D": "Data Link protocol"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q65",
+              "text": "IP protocol works at",
+              "options": {
+                "A": "Transport layer",
+                "B": "Network layer",
+                "C": "Data Link layer",
+                "D": "Physical layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q66",
+              "text": "ARP is used to map",
+              "options": {
+                "A": "IP address to MAC address",
+                "B": "MAC to IP",
+                "C": "Routing paths",
+                "D": "Ports"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q67",
+              "text": "RARP is used to map",
+              "options": {
+                "A": "MAC address to IP address",
+                "B": "IP to MAC",
+                "C": "Ports",
+                "D": "Packets"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q68",
+              "text": "MAC address is",
+              "options": {
+                "A": "Logical address",
+                "B": "Physical address",
+                "C": "Temporary address",
+                "D": "Virtual address"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q69",
+              "text": "IPv4 address format is",
+              "options": {
+                "A": "Binary",
+                "B": "Dotted decimal",
+                "C": "Hexadecimal",
+                "D": "Octal"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q70",
+              "text": "Subnetting is used to",
+              "options": {
+                "A": "Divide a network",
+                "B": "Increase CPU speed",
+                "C": "Reduce memory",
+                "D": "Improve disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q71",
+              "text": "Default port number of HTTP is",
+              "options": {
+                "A": "21",
+                "B": "23",
+                "C": "80",
+                "D": "443"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q72",
+              "text": "Default port number of HTTPS is",
+              "options": {
+                "A": "80",
+                "B": "21",
+                "C": "443",
+                "D": "25"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q73",
+              "text": "FTP protocol uses port",
+              "options": {
+                "A": "21",
+                "B": "22",
+                "C": "23",
+                "D": "80"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q74",
+              "text": "SMTP protocol uses port",
+              "options": {
+                "A": "25",
+                "B": "21",
+                "C": "80",
+                "D": "443"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q75",
+              "text": "DNS uses port number",
+              "options": {
+                "A": "25",
+                "B": "53",
+                "C": "80",
+                "D": "21"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q76",
+              "text": "Ping command uses",
+              "options": {
+                "A": "TCP protocol",
+                "B": "UDP protocol",
+                "C": "ICMP protocol",
+                "D": "HTTP protocol"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q77",
+              "text": "ICMP is used for",
+              "options": {
+                "A": "Error reporting",
+                "B": "File transfer",
+                "C": "Email",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q78",
+              "text": "DHCP assigns",
+              "options": {
+                "A": "IP address",
+                "B": "MAC address",
+                "C": "File",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q79",
+              "text": "NAT translates",
+              "options": {
+                "A": "Private IP to public IP",
+                "B": "Public to private",
+                "C": "Data",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q80",
+              "text": "Firewall provides",
+              "options": {
+                "A": "Network security",
+                "B": "Storage",
+                "C": "CPU control",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q81",
+              "text": "Encryption ensures",
+              "options": {
+                "A": "Security",
+                "B": "Speed",
+                "C": "Storage",
+                "D": "Processing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q82",
+              "text": "Symmetric encryption uses",
+              "options": {
+                "A": "One key(s)",
+                "B": "Two keys",
+                "C": "Three keys",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q83",
+              "text": "Asymmetric encryption uses",
+              "options": {
+                "A": "One key(s)",
+                "B": "Two keys",
+                "C": "Three keys",
+                "D": "None"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q84",
+              "text": "SSL is used for",
+              "options": {
+                "A": "Secure communication",
+                "B": "File storage",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q85",
+              "text": "HTTPS uses",
+              "options": {
+                "A": "SSL/TLS",
+                "B": "FTP",
+                "C": "SMTP",
+                "D": "DNS"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q86",
+              "text": "Digital certificate verifies",
+              "options": {
+                "A": "Identity",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q87",
+              "text": "Cyber attacks include",
+              "options": {
+                "A": "Phishing",
+                "B": "Malware",
+                "C": "Hacking",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q88",
+              "text": "Phishing is used to steal",
+              "options": {
+                "A": "Passwords",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q89",
+              "text": "Malware includes",
+              "options": {
+                "A": "Virus",
+                "B": "Worm",
+                "C": "Trojan",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q90",
+              "text": "VPN provides",
+              "options": {
+                "A": "Secure connection",
+                "B": "Open network",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q91",
+              "text": "Wi-Fi is a",
+              "options": {
+                "A": "Wired network",
+                "B": "Wireless network",
+                "C": "Optical network",
+                "D": "Satellite network"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q92",
+              "text": "Bluetooth is used for",
+              "options": {
+                "A": "Short-range communication",
+                "B": "Long-range",
+                "C": "Satellite",
+                "D": "Wired"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q93",
+              "text": "4G represents",
+              "options": {
+                "A": "Network generation",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q94",
+              "text": "5G provides",
+              "options": {
+                "A": "High speed",
+                "B": "Low latency",
+                "C": "Better connectivity",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q95",
+              "text": "Satellite communication uses",
+              "options": {
+                "A": "Space",
+                "B": "Cable",
+                "C": "Fiber",
+                "D": "Copper"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q96",
+              "text": "Microwave communication is",
+              "options": {
+                "A": "Wireless",
+                "B": "Wired",
+                "C": "Optical",
+                "D": "Mechanical"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q97",
+              "text": "Infrared communication is used for",
+              "options": {
+                "A": "Short-distance communication",
+                "B": "Long-distance",
+                "C": "Global",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q98",
+              "text": "Noise affects",
+              "options": {
+                "A": "Signal quality",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q99",
+              "text": "Signal-to-noise ratio indicates",
+              "options": {
+                "A": "Signal quality",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q100",
+              "text": "Data communication improves",
+              "options": {
+                "A": "Connectivity",
+                "B": "Efficiency",
+                "C": "Information sharing",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q101",
+              "text": "Transmission impairments include",
+              "options": {
+                "A": "Noise",
+                "B": "Attenuation",
+                "C": "Distortion",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q102",
+              "text": "Distortion occurs when",
+              "options": {
+                "A": "Signal changes shape",
+                "B": "Signal increases",
+                "C": "Signal stops",
+                "D": "No signal"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q103",
+              "text": "Repeater is used to",
+              "options": {
+                "A": "Strengthen signal",
+                "B": "Store data",
+                "C": "Process data",
+                "D": "Encrypt data"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q104",
+              "text": "Modem is used for",
+              "options": {
+                "A": "Modulation and demodulation",
+                "B": "Storage",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q105",
+              "text": "Bit rate means",
+              "options": {
+                "A": "Bits per second",
+                "B": "Bytes",
+                "C": "Signals",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q106",
+              "text": "Baud rate means",
+              "options": {
+                "A": "Signal changes per second",
+                "B": "Bits",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q107",
+              "text": "Nyquist theorem applies to",
+              "options": {
+                "A": "Noiseless channel",
+                "B": "Noisy channel",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q108",
+              "text": "Shannon theorem applies to",
+              "options": {
+                "A": "Noisy channel",
+                "B": "Noiseless channel",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q109",
+              "text": "ASK stands for",
+              "options": {
+                "A": "Amplitude Shift Keying",
+                "B": "Analog Shift Keying",
+                "C": "Automatic Signal Keying",
+                "D": "Advanced Shift Keying"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q110",
+              "text": "FSK stands for",
+              "options": {
+                "A": "Frequency Shift Keying",
+                "B": "Fast Signal Keying",
+                "C": "File Shift Keying",
+                "D": "Fixed Shift Keying"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q111",
+              "text": "PSK stands for",
+              "options": {
+                "A": "Phase Shift Keying",
+                "B": "Power Shift Keying",
+                "C": "Pulse Shift Keying",
+                "D": "Parallel Shift Keying"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q112",
+              "text": "QAM combines",
+              "options": {
+                "A": "Amplitude and Phase",
+                "B": "Frequency and Phase",
+                "C": "Amplitude and Frequency",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q113",
+              "text": "Line coding is used in",
+              "options": {
+                "A": "Digital transmission",
+                "B": "Analog",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q114",
+              "text": "Manchester encoding is",
+              "options": {
+                "A": "Line coding",
+                "B": "Modulation",
+                "C": "Multiplexing",
+                "D": "Routing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q115",
+              "text": "Error detection includes",
+              "options": {
+                "A": "Parity",
+                "B": "CRC",
+                "C": "Checksum",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q116",
+              "text": "Parity bit detects",
+              "options": {
+                "A": "Single-bit error",
+                "B": "Multi-bit error",
+                "C": "No error",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q117",
+              "text": "CRC stands for",
+              "options": {
+                "A": "Cyclic Redundancy Check",
+                "B": "Code Redundancy Check",
+                "C": "Central Redundancy Check",
+                "D": "Cycle Random Check"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q118",
+              "text": "Hamming code is used for",
+              "options": {
+                "A": "Error correction",
+                "B": "Storage",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q119",
+              "text": "Flow control manages",
+              "options": {
+                "A": "Data rate",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q120",
+              "text": "Stop-and-wait is",
+              "options": {
+                "A": "Flow control protocol",
+                "B": "Routing protocol",
+                "C": "Encoding protocol",
+                "D": "Multiplexing protocol"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q121",
+              "text": "Sliding window is used for",
+              "options": {
+                "A": "Flow control",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q122",
+              "text": "ARQ stands for",
+              "options": {
+                "A": "Automatic Repeat Request",
+                "B": "Advanced Request",
+                "C": "Auto Query",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q123",
+              "text": "Go-Back-N sends",
+              "options": {
+                "A": "Multiple frames",
+                "B": "Single frame",
+                "C": "None",
+                "D": "Random frames"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q124",
+              "text": "Selective repeat retransmits",
+              "options": {
+                "A": "Only error frames",
+                "B": "All frames",
+                "C": "None",
+                "D": "Random frames"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            },
+            {
+              "id": "dc-q125",
+              "text": "Routing determines",
+              "options": {
+                "A": "Path for data",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced"
+            }
+          ]
+        },
+        {
+          "id": "dc-datacom-ch-3",
+          "name": "Data Communication Advanced 2",
+          "questions": [
+            {
+              "id": "dc-q1",
+              "text": "Data communication refers to",
+              "options": {
+                "A": "Exchange of data between devices",
+                "B": "Storage of data",
+                "C": "Processing of data",
+                "D": "Deletion of data"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q2",
+              "text": "Components of data communication include",
+              "options": {
+                "A": "Sender",
+                "B": "Receiver",
+                "C": "Medium",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q3",
+              "text": "Transmission medium is",
+              "options": {
+                "A": "Path for data transfer",
+                "B": "Device",
+                "C": "Software",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q4",
+              "text": "Guided media includes",
+              "options": {
+                "A": "Optical fiber",
+                "B": "Wireless",
+                "C": "Satellite",
+                "D": "Microwave"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q5",
+              "text": "Unguided media includes",
+              "options": {
+                "A": "Twisted pair",
+                "B": "Coaxial cable",
+                "C": "Wireless",
+                "D": "Optical fiber"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q6",
+              "text": "Twisted pair cable is used in",
+              "options": {
+                "A": "LAN",
+                "B": "WAN",
+                "C": "CPU",
+                "D": "GPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q7",
+              "text": "Coaxial cable has",
+              "options": {
+                "A": "Single shielding",
+                "B": "Double shielding",
+                "C": "No shielding",
+                "D": "Triple shielding"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q8",
+              "text": "Optical fiber uses",
+              "options": {
+                "A": "Light",
+                "B": "Electricity",
+                "C": "Heat",
+                "D": "Magnetism"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q9",
+              "text": "Bandwidth refers to",
+              "options": {
+                "A": "Capacity of channel",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q10",
+              "text": "Data rate is measured in",
+              "options": {
+                "A": "bps",
+                "B": "Hz",
+                "C": "Volt",
+                "D": "Ampere"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q11",
+              "text": "Analog signal is",
+              "options": {
+                "A": "Continuous",
+                "B": "Discrete",
+                "C": "Binary",
+                "D": "Digital"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q12",
+              "text": "Digital signal is",
+              "options": {
+                "A": "Discrete",
+                "B": "Continuous",
+                "C": "Analog",
+                "D": "Voltage"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q13",
+              "text": "Noise affects",
+              "options": {
+                "A": "Signal quality",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q14",
+              "text": "Attenuation means",
+              "options": {
+                "A": "Decrease in signal strength",
+                "B": "Increase signal",
+                "C": "No change",
+                "D": "Amplification"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q15",
+              "text": "Amplifier is used to",
+              "options": {
+                "A": "Increase signal strength",
+                "B": "Decrease signal",
+                "C": "Store data",
+                "D": "Process data"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q16",
+              "text": "Modulation is",
+              "options": {
+                "A": "Changing signal properties",
+                "B": "Encoding",
+                "C": "Processing",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q17",
+              "text": "AM stands for",
+              "options": {
+                "A": "Amplitude Modulation",
+                "B": "Analog Modulation",
+                "C": "Automatic Modulation",
+                "D": "Advanced Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q18",
+              "text": "FM stands for",
+              "options": {
+                "A": "Frequency Modulation",
+                "B": "Fast Modulation",
+                "C": "File Modulation",
+                "D": "Fixed Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q19",
+              "text": "PM stands for",
+              "options": {
+                "A": "Phase Modulation",
+                "B": "Power Modulation",
+                "C": "Pulse Modulation",
+                "D": "Parallel Modulation"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q20",
+              "text": "Demodulation is",
+              "options": {
+                "A": "Decoding",
+                "B": "Encoding",
+                "C": "Processing",
+                "D": "Storage"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q21",
+              "text": "Multiplexing combines",
+              "options": {
+                "A": "Multiple signals",
+                "B": "Channels",
+                "C": "Data streams",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q22",
+              "text": "FDM stands for",
+              "options": {
+                "A": "Frequency Division Multiplexing",
+                "B": "File Division Multiplexing",
+                "C": "Fast Division Multiplexing",
+                "D": "Fixed Division Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q23",
+              "text": "TDM stands for",
+              "options": {
+                "A": "Time Division Multiplexing",
+                "B": "Transfer Division Multiplexing",
+                "C": "Temporary Division Multiplexing",
+                "D": "Time Data Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q24",
+              "text": "CDM stands for",
+              "options": {
+                "A": "Code Division Multiplexing",
+                "B": "Channel Division Multiplexing",
+                "C": "Circuit Division Multiplexing",
+                "D": "Control Division Multiplexing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q25",
+              "text": "Transmission modes include",
+              "options": {
+                "A": "Simplex",
+                "B": "Half duplex",
+                "C": "Full duplex",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q26",
+              "text": "Simplex mode allows",
+              "options": {
+                "A": "One-way communication",
+                "B": "Two-way communication",
+                "C": "Full duplex",
+                "D": "Half duplex"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q27",
+              "text": "Half duplex mode allows",
+              "options": {
+                "A": "One-way only",
+                "B": "Two-way but not simultaneous",
+                "C": "Full duplex",
+                "D": "No communication"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q28",
+              "text": "Full duplex mode allows",
+              "options": {
+                "A": "One-way",
+                "B": "Two-way simultaneous communication",
+                "C": "Half duplex",
+                "D": "No communication"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q29",
+              "text": "Network topology refers to",
+              "options": {
+                "A": "Structure of network",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q30",
+              "text": "Bus topology uses",
+              "options": {
+                "A": "Single backbone cable",
+                "B": "Ring",
+                "C": "Star",
+                "D": "Mesh"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q31",
+              "text": "Star topology uses",
+              "options": {
+                "A": "Central hub",
+                "B": "Ring",
+                "C": "Bus",
+                "D": "Mesh"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q32",
+              "text": "Ring topology connects devices in",
+              "options": {
+                "A": "Line",
+                "B": "Circle",
+                "C": "Star",
+                "D": "Mesh"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q33",
+              "text": "Mesh topology provides",
+              "options": {
+                "A": "High reliability",
+                "B": "Low reliability",
+                "C": "No reliability",
+                "D": "Single path"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q34",
+              "text": "Hybrid topology is",
+              "options": {
+                "A": "Combination of topologies",
+                "B": "Single topology",
+                "C": "Linear",
+                "D": "Circular"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q35",
+              "text": "LAN stands for",
+              "options": {
+                "A": "Local Area Network",
+                "B": "Large Area Network",
+                "C": "Long Area Network",
+                "D": "Logical Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q36",
+              "text": "MAN stands for",
+              "options": {
+                "A": "Metropolitan Area Network",
+                "B": "Main Area Network",
+                "C": "Medium Area Network",
+                "D": "Multiple Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q37",
+              "text": "WAN stands for",
+              "options": {
+                "A": "Wide Area Network",
+                "B": "Wireless Area Network",
+                "C": "World Area Network",
+                "D": "Web Area Network"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q38",
+              "text": "Internet is a",
+              "options": {
+                "A": "Single network",
+                "B": "Network of networks",
+                "C": "Device",
+                "D": "Protocol"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q39",
+              "text": "Protocol defines",
+              "options": {
+                "A": "Rules of communication",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q40",
+              "text": "TCP/IP is a",
+              "options": {
+                "A": "Protocol suite",
+                "B": "Device",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q41",
+              "text": "HTTP is used for",
+              "options": {
+                "A": "Web browsing",
+                "B": "Email",
+                "C": "File transfer",
+                "D": "Storage"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q42",
+              "text": "FTP is used for",
+              "options": {
+                "A": "File transfer",
+                "B": "Email",
+                "C": "Web browsing",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q43",
+              "text": "SMTP is used for",
+              "options": {
+                "A": "Sending emails",
+                "B": "Receiving emails",
+                "C": "File transfer",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q44",
+              "text": "POP is used for",
+              "options": {
+                "A": "Receiving emails",
+                "B": "Sending emails",
+                "C": "File transfer",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q45",
+              "text": "DNS converts",
+              "options": {
+                "A": "Domain name to IP address",
+                "B": "IP to domain",
+                "C": "Data",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q46",
+              "text": "IP address is",
+              "options": {
+                "A": "Unique identifier",
+                "B": "File",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q47",
+              "text": "IPv4 uses",
+              "options": {
+                "A": "16 bits",
+                "B": "32 bits",
+                "C": "64 bits",
+                "D": "128 bits"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q48",
+              "text": "IPv6 uses",
+              "options": {
+                "A": "32 bits",
+                "B": "64 bits",
+                "C": "128 bits",
+                "D": "256 bits"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q49",
+              "text": "Router connects",
+              "options": {
+                "A": "Different networks",
+                "B": "Same devices",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q50",
+              "text": "Switch connects",
+              "options": {
+                "A": "Networks",
+                "B": "Devices in LAN",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q51",
+              "text": "Bridge operates at",
+              "options": {
+                "A": "Physical layer",
+                "B": "Data Link layer",
+                "C": "Network layer",
+                "D": "Transport layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q52",
+              "text": "Router operates at",
+              "options": {
+                "A": "Data Link layer",
+                "B": "Network layer",
+                "C": "Transport layer",
+                "D": "Application layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q53",
+              "text": "Hub operates at",
+              "options": {
+                "A": "Physical layer",
+                "B": "Data Link layer",
+                "C": "Network layer",
+                "D": "Transport layer"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q54",
+              "text": "Gateway operates at",
+              "options": {
+                "A": "All layers",
+                "B": "Physical layer",
+                "C": "Network layer",
+                "D": "Data Link layer"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q55",
+              "text": "OSI model consists of",
+              "options": {
+                "A": "5 layers",
+                "B": "6 layers",
+                "C": "7 layers",
+                "D": "8 layers"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q56",
+              "text": "Physical layer deals with",
+              "options": {
+                "A": "Bits",
+                "B": "Frames",
+                "C": "Packets",
+                "D": "Messages"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q57",
+              "text": "Data link layer deals with",
+              "options": {
+                "A": "Bits",
+                "B": "Frames",
+                "C": "Packets",
+                "D": "Messages"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q58",
+              "text": "Network layer deals with",
+              "options": {
+                "A": "Frames",
+                "B": "Packets",
+                "C": "Bits",
+                "D": "Messages"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q59",
+              "text": "Transport layer ensures",
+              "options": {
+                "A": "Reliable delivery",
+                "B": "Routing",
+                "C": "Framing",
+                "D": "Encoding"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q60",
+              "text": "Session layer is responsible for",
+              "options": {
+                "A": "Session management",
+                "B": "Routing",
+                "C": "Framing",
+                "D": "Bit transmission"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q61",
+              "text": "Presentation layer handles",
+              "options": {
+                "A": "Data formatting and encryption",
+                "B": "Routing",
+                "C": "Framing",
+                "D": "Bit transmission"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q62",
+              "text": "Application layer provides",
+              "options": {
+                "A": "Services to end users",
+                "B": "Routing",
+                "C": "Frames",
+                "D": "Bit transmission"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q63",
+              "text": "TCP is a",
+              "options": {
+                "A": "Connection-oriented protocol",
+                "B": "Connectionless protocol",
+                "C": "Physical protocol",
+                "D": "Data Link protocol"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q64",
+              "text": "UDP is a",
+              "options": {
+                "A": "Connection-oriented protocol",
+                "B": "Connectionless protocol",
+                "C": "Physical protocol",
+                "D": "Data Link protocol"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q65",
+              "text": "IP protocol works at",
+              "options": {
+                "A": "Transport layer",
+                "B": "Network layer",
+                "C": "Data Link layer",
+                "D": "Physical layer"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q66",
+              "text": "ARP is used for",
+              "options": {
+                "A": "Mapping IP to MAC",
+                "B": "Mapping MAC to IP",
+                "C": "Routing",
+                "D": "Switching"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q67",
+              "text": "RARP is used for",
+              "options": {
+                "A": "Mapping MAC to IP",
+                "B": "Mapping IP to MAC",
+                "C": "Routing",
+                "D": "Switching"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q68",
+              "text": "MAC address is",
+              "options": {
+                "A": "Logical address",
+                "B": "Physical address",
+                "C": "Temporary address",
+                "D": "Virtual address"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q69",
+              "text": "IPv4 address format is",
+              "options": {
+                "A": "Binary",
+                "B": "Dotted decimal",
+                "C": "Hexadecimal",
+                "D": "Octal"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q70",
+              "text": "Subnetting is used to",
+              "options": {
+                "A": "Divide network",
+                "B": "Increase CPU",
+                "C": "Reduce memory",
+                "D": "Improve disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q71",
+              "text": "Default port of HTTP is",
+              "options": {
+                "A": "21",
+                "B": "23",
+                "C": "80",
+                "D": "443"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q72",
+              "text": "Default port of HTTPS is",
+              "options": {
+                "A": "80",
+                "B": "21",
+                "C": "443",
+                "D": "25"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q73",
+              "text": "FTP uses port",
+              "options": {
+                "A": "21",
+                "B": "22",
+                "C": "23",
+                "D": "80"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q74",
+              "text": "SMTP uses port",
+              "options": {
+                "A": "25",
+                "B": "21",
+                "C": "80",
+                "D": "443"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q75",
+              "text": "DNS uses port",
+              "options": {
+                "A": "25",
+                "B": "53",
+                "C": "80",
+                "D": "21"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q76",
+              "text": "Ping command uses",
+              "options": {
+                "A": "TCP protocol",
+                "B": "UDP protocol",
+                "C": "ICMP protocol",
+                "D": "HTTP protocol"
+              },
+              "correctAnswer": "C",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q77",
+              "text": "ICMP is used for",
+              "options": {
+                "A": "Error reporting",
+                "B": "File transfer",
+                "C": "Email",
+                "D": "Web"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q78",
+              "text": "DHCP assigns",
+              "options": {
+                "A": "IP address",
+                "B": "MAC",
+                "C": "File",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q79",
+              "text": "NAT translates",
+              "options": {
+                "A": "Private IP to public IP",
+                "B": "Public to private",
+                "C": "Data",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q80",
+              "text": "Firewall provides",
+              "options": {
+                "A": "Network security",
+                "B": "Storage",
+                "C": "CPU control",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q81",
+              "text": "Encryption is used to ensure",
+              "options": {
+                "A": "Security",
+                "B": "Speed",
+                "C": "Storage",
+                "D": "Processing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q82",
+              "text": "Symmetric encryption uses",
+              "options": {
+                "A": "One key(s)",
+                "B": "Two keys",
+                "C": "Three keys",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q83",
+              "text": "Asymmetric encryption uses",
+              "options": {
+                "A": "One key(s)",
+                "B": "Two keys",
+                "C": "Three keys",
+                "D": "None"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q84",
+              "text": "SSL is used for",
+              "options": {
+                "A": "Secure communication",
+                "B": "File storage",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q85",
+              "text": "HTTPS uses",
+              "options": {
+                "A": "SSL/TLS",
+                "B": "FTP",
+                "C": "SMTP",
+                "D": "DNS"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q86",
+              "text": "Digital certificate verifies",
+              "options": {
+                "A": "Identity",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q87",
+              "text": "Cyber attacks include",
+              "options": {
+                "A": "Phishing",
+                "B": "Malware",
+                "C": "Hacking",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q88",
+              "text": "Phishing is used to steal",
+              "options": {
+                "A": "Passwords",
+                "B": "Memory",
+                "C": "CPU",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q89",
+              "text": "Malware includes",
+              "options": {
+                "A": "Virus",
+                "B": "Worm",
+                "C": "Trojan",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q90",
+              "text": "VPN provides",
+              "options": {
+                "A": "Secure connection",
+                "B": "Open network",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q91",
+              "text": "Wi-Fi is a",
+              "options": {
+                "A": "Wired network",
+                "B": "Wireless network",
+                "C": "Optical network",
+                "D": "Satellite network"
+              },
+              "correctAnswer": "B",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q92",
+              "text": "Bluetooth is used for",
+              "options": {
+                "A": "Short-range communication",
+                "B": "Long-range",
+                "C": "Satellite",
+                "D": "Wired"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q93",
+              "text": "4G represents",
+              "options": {
+                "A": "Network generation",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q94",
+              "text": "5G provides",
+              "options": {
+                "A": "High speed",
+                "B": "Low latency",
+                "C": "Better connectivity",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q95",
+              "text": "Satellite communication uses",
+              "options": {
+                "A": "Space",
+                "B": "Cable",
+                "C": "Fiber",
+                "D": "Copper"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q96",
+              "text": "Microwave communication is",
+              "options": {
+                "A": "Wireless",
+                "B": "Wired",
+                "C": "Optical",
+                "D": "Mechanical"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q97",
+              "text": "Infrared communication is used for",
+              "options": {
+                "A": "Short-distance communication",
+                "B": "Long-distance",
+                "C": "Global",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q98",
+              "text": "Noise affects",
+              "options": {
+                "A": "Signal quality",
+                "B": "CPU",
+                "C": "Memory",
+                "D": "Disk"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q99",
+              "text": "Signal-to-noise ratio indicates",
+              "options": {
+                "A": "Signal quality",
+                "B": "Speed",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q100",
+              "text": "Data communication improves",
+              "options": {
+                "A": "Connectivity",
+                "B": "Efficiency",
+                "C": "Information sharing",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q101",
+              "text": "Transmission impairment includes",
+              "options": {
+                "A": "Noise",
+                "B": "Attenuation",
+                "C": "Distortion",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q102",
+              "text": "Distortion means",
+              "options": {
+                "A": "Change in signal shape",
+                "B": "Increase signal",
+                "C": "Stop signal",
+                "D": "No signal"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q103",
+              "text": "Repeater is used to",
+              "options": {
+                "A": "Regenerate signal",
+                "B": "Store data",
+                "C": "Process data",
+                "D": "Encrypt data"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q104",
+              "text": "Modem performs",
+              "options": {
+                "A": "Modulation and demodulation",
+                "B": "Storage",
+                "C": "CPU work",
+                "D": "Memory work"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q105",
+              "text": "Bit rate means",
+              "options": {
+                "A": "Bits per second",
+                "B": "Bytes",
+                "C": "Signals",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q106",
+              "text": "Baud rate means",
+              "options": {
+                "A": "Signal changes per second",
+                "B": "Bits",
+                "C": "Memory",
+                "D": "CPU"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q107",
+              "text": "Nyquist theorem applies to",
+              "options": {
+                "A": "Noiseless channel",
+                "B": "Noisy channel",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q108",
+              "text": "Shannon theorem applies to",
+              "options": {
+                "A": "Noisy channel",
+                "B": "Noiseless channel",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q109",
+              "text": "ASK stands for",
+              "options": {
+                "A": "Amplitude Shift Keying",
+                "B": "Analog Shift Keying",
+                "C": "Automatic Signal Keying",
+                "D": "Advanced Shift Keying"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q110",
+              "text": "FSK stands for",
+              "options": {
+                "A": "Frequency Shift Keying",
+                "B": "Fast Signal Keying",
+                "C": "File Shift Keying",
+                "D": "Fixed Shift Keying"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q111",
+              "text": "PSK stands for",
+              "options": {
+                "A": "Phase Shift Keying",
+                "B": "Power Shift Keying",
+                "C": "Pulse Shift Keying",
+                "D": "Parallel Shift Keying"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q112",
+              "text": "QAM combines",
+              "options": {
+                "A": "Amplitude and phase",
+                "B": "Frequency and phase",
+                "C": "Amplitude and frequency",
+                "D": "None"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q113",
+              "text": "Line coding is used in",
+              "options": {
+                "A": "Digital transmission",
+                "B": "Analog",
+                "C": "CPU",
+                "D": "Memory"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q114",
+              "text": "Manchester encoding is",
+              "options": {
+                "A": "Line coding",
+                "B": "Modulation",
+                "C": "Multiplexing",
+                "D": "Routing"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q115",
+              "text": "Error detection includes",
+              "options": {
+                "A": "Parity",
+                "B": "CRC",
+                "C": "Checksum",
+                "D": "All of the above"
+              },
+              "correctAnswer": "D",
+              "topic": "Data Communication Advanced 2"
+            },
+            {
+              "id": "dc-q116",
+              "text": "CRC stands for",
+              "options": {
+                "A": "Cyclic Redundancy Check",
+                "B": "Code Redundancy Check",
+                "C": "Central Redundancy Check",
+                "D": "Cycle Random Check"
+              },
+              "correctAnswer": "A",
+              "topic": "Data Communication Advanced 2"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
