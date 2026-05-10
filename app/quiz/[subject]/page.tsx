@@ -271,9 +271,8 @@ export default function QuizPage() {
   const handleAutoNext = useCallback(() => {
     setQuizQuestions((prev) => {
       if (currentIdx >= prev.length - 1) {
-        // Last question — go to complete
+        // Last question — stop timer only, let the auto-submit effect handle submission
         stopTimer();
-        setPhase("complete");
         return prev;
       }
       setCurrentIdx((idx) => idx + 1);
@@ -306,7 +305,8 @@ export default function QuizPage() {
   };
 
   // ─── Submit quiz ────────────────────────────────
-  const handleSubmitQuiz = () => {
+  const handleSubmitQuiz = useCallback(() => {
+    console.log("handleSubmitQuiz called", { currentIdx, quizLength: quizQuestions.length });
     stopTimer();
     const result = computeQuizResult(quizQuestions, answers);
     const userName = localStorage.getItem("quizcraft_name") ?? "";
@@ -330,30 +330,64 @@ export default function QuizPage() {
       percentage: result.percentage,
     };
 
-    saveAttempt(storedAttempt);
-    clearIncompleteAttempt();
-    localStorage.setItem("quizcraft_last_attempt", JSON.stringify(storedAttempt));
+    // Save attempt via library (wraps localStorage in try-catch)
+    try {
+      saveAttempt(storedAttempt);
+      console.log("saveAttempt succeeded");
+    } catch (e) {
+      console.error("saveAttempt failed:", e);
+    }
+
+    try {
+      clearIncompleteAttempt();
+    } catch (e) {
+      console.error("clearIncompleteAttempt failed:", e);
+    }
+
+    try {
+      localStorage.setItem("quizcraft_last_attempt", JSON.stringify(storedAttempt));
+    } catch (e) {
+      console.error("quizcraft_last_attempt save failed:", e);
+    }
+
     // Also save to quizcraft_attempts array for home page stats
-    const existingAttempts = JSON.parse(localStorage.getItem("quizcraft_attempts") || "[]");
-    existingAttempts.unshift(storedAttempt);
-    localStorage.setItem("quizcraft_attempts", JSON.stringify(existingAttempts));
-    updateUserStatsAfterQuiz(result.score, result.total, result.weakTopics);
+    try {
+      const existingAttempts = JSON.parse(localStorage.getItem("quizcraft_attempts") || "[]");
+      existingAttempts.unshift(storedAttempt);
+      localStorage.setItem("quizcraft_attempts", JSON.stringify(existingAttempts));
+      console.log("quizcraft_attempts updated, count:", existingAttempts.length);
+    } catch (e) {
+      console.error("quizcraft_attempts save failed:", e);
+    }
+
+    try {
+      updateUserStatsAfterQuiz(result.score, result.total, result.weakTopics);
+      console.log("updateUserStatsAfterQuiz succeeded");
+    } catch (e) {
+      console.error("updateUserStatsAfterQuiz failed:", e);
+    }
 
     // Save anonymous attempt to global leaderboard (non-blocking)
+    const safeSubjectId = subjectId.replace(/[^\w\s-]/g, "_");
     saveAttemptToFirestore({
       name: userName,
-      subjectId,
+      subjectId: safeSubjectId,
       score: result.score,
       totalQuestions: result.total,
       percentage: Math.round((result.score / result.total) * 100),
       weakTopics: result.weakTopics,
       timestamp: Date.now(),
-    }).catch(console.warn);
+    }).catch((e) => console.warn("saveAttemptToFirestore failed:", e));
 
     // Store result for results page
-    localStorage.setItem("quizcraft_last_result", JSON.stringify(result));
+    try {
+      localStorage.setItem("quizcraft_last_result", JSON.stringify(result));
+    } catch (e) {
+      console.error("quizcraft_last_result save failed:", e);
+    }
+
     setPhase("complete");
-  };
+  }, [stopTimer, quizQuestions, answers, startTime, subjectId]);
 
   // ─── Computed values ────────────────────────────
   const currentQuestion = quizQuestions[currentIdx];

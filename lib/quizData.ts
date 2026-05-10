@@ -173,9 +173,13 @@ export interface StoredAttempt extends QuizAttempt {
 
 export function saveAttempt(attempt: StoredAttempt): void {
   if (typeof window === "undefined") return;
-  const attempts = getAttempts();
-  attempts.unshift(attempt);
-  localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(attempts));
+  try {
+    const attempts = getAttempts();
+    attempts.unshift(attempt);
+    localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(attempts));
+  } catch (e) {
+    console.error("saveAttempt: localStorage write failed", e);
+  }
 }
 
 export function getAttempts(): StoredAttempt[] {
@@ -242,7 +246,11 @@ export interface UserStats {
 
 export function saveUserStats(stats: UserStats): void {
   if (typeof window === "undefined") return;
-  localStorage.setItem(USER_KEY, JSON.stringify(stats));
+  try {
+    localStorage.setItem(USER_KEY, JSON.stringify(stats));
+  } catch (e) {
+    console.error("saveUserStats: localStorage write failed", e);
+  }
 }
 
 export function getUserStats(): UserStats {

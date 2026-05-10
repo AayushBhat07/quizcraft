@@ -147,21 +147,22 @@ export default function LeaderboardPage() {
     setIsUsingFs(false);
     const raw = localStorage.getItem('quizcraft_attempts');
     if (!raw) { setLocalEntries([]); return; }
+    let attempts: StoredAttempt[] = [];
     try {
-      const attempts = JSON.parse(raw) as StoredAttempt[];
-      const name = localStorage.getItem('quizcraft_name') || '';
-      setUserName(name);
-      const byName: Record<string, LeaderboardEntry> = {};
-      attempts.forEach((a) => {
-        const n = a.userName || name || 'You';
-        const pct = Math.round((a.score / a.totalQuestions) * 100);
-        if (!byName[n] || byName[n].percentage < pct) {
-          byName[n] = { id: a.id, name: n, subjectId: a.subjectId, score: a.score, totalQuestions: a.totalQuestions, percentage: pct, timestamp: a.timestamp, isCurrentUser: n === name && name !== '' };
-        }
-      });
-      const sorted = Object.values(byName).sort((a, b) => b.percentage - a.percentage);
-      setLocalEntries(sorted);
-    } catch { setLocalEntries([]); }
+      attempts = JSON.parse(raw) as StoredAttempt[];
+    } catch { setLocalEntries([]); return; }
+    const name = localStorage.getItem('quizcraft_name') || '';
+    setUserName(name);
+    const byName: Record<string, LeaderboardEntry> = {};
+    attempts.forEach((a) => {
+      const n = a.userName || name || 'You';
+      const pct = Math.round((a.score / a.totalQuestions) * 100);
+      if (!byName[n] || byName[n].percentage < pct) {
+        byName[n] = { id: a.id, name: n, subjectId: a.subjectId, score: a.score, totalQuestions: a.totalQuestions, percentage: pct, timestamp: a.timestamp, isCurrentUser: n === name && name !== '' };
+      }
+    });
+    const sorted = Object.values(byName).sort((a, b) => b.percentage - a.percentage);
+    setLocalEntries(sorted);
   }
 
   useEffect(() => {
@@ -170,20 +171,10 @@ export default function LeaderboardPage() {
     try {
       const attempt: StoredAttempt = JSON.parse(lastAttemptRaw);
       const name = localStorage.getItem('quizcraft_name') || attempt.userName || 'Anonymous';
-      saveAttemptToFirestore({ name, subjectId: attempt.subjectId, score: attempt.score, totalQuestions: attempt.totalQuestions, percentage: Math.round((attempt.score / attempt.totalQuestions) * 100), weakTopics: attempt.weakTopics || [], timestamp: attempt.timestamp }).catch(() => {});
-    } catch {}
-  }, []);
-
-  // Also push current user's last attempt to Firestore on load
-  useEffect(() => {
-    const lastAttemptRaw = localStorage.getItem("quizcraft_last_attempt");
-    if (!lastAttemptRaw) return;
-    try {
-      const attempt: StoredAttempt = JSON.parse(lastAttemptRaw);
-      const name = localStorage.getItem("quizcraft_name") || attempt.userName || "Anonymous";
+      const safeSubjectId = (attempt.subjectId || 'ete').replace(/[^\w\s-]/g, '_');
       saveAttemptToFirestore({
         name,
-        subjectId: attempt.subjectId,
+        subjectId: safeSubjectId,
         score: attempt.score,
         totalQuestions: attempt.totalQuestions,
         percentage: Math.round((attempt.score / attempt.totalQuestions) * 100),
