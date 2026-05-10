@@ -122,7 +122,7 @@ export default function QuizPage() {
         window.history.replaceState({}, "", `/quiz/${subjectId}`);
       }
     }
-  }, [subjectId]);
+  }, [subjectId, phase]);
 
   // ─── Save incomplete attempt on answer selection ───────────────────
   useEffect(() => {
@@ -288,6 +288,17 @@ export default function QuizPage() {
     setSelectedAnswer(option);
     const q = quizQuestions[currentIdx];
     setAnswers((prev) => ({ ...prev, [q.id]: option }));
+    // Synchronously save incomplete attempt on answer selection
+    const userName = localStorage.getItem("quizcraft_name") ?? "";
+    saveIncompleteAttempt({
+      subjectId,
+      quizQuestions,
+      answers: { ...answers, [q.id]: option },
+      currentIdx,
+      selectedAnswer: option,
+      timestamp: Date.now(),
+      userName,
+    });
     // Auto-advance after 500ms
     setTimeout(() => {
       handleAutoNext();
