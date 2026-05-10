@@ -215,13 +215,22 @@ export default function QuizPage() {
     };
   }, [timerActive]);
 
-  // Auto-advance when timer hits 0
+
+
+  // Auto-submit when last question is reached and answered
   useEffect(() => {
-    if (timeLeft === 0 && phase === "quiz") {
-      handleAutoNext();
+    if (phase === "quiz" && currentIdx >= quizQuestions.length - 1 && selectedAnswer && quizQuestions.length > 0) {
+      console.log("AUTO_SUBMIT: triggering", { currentIdx, quizLength: quizQuestions.length, selectedAnswer });
+      const timeout = setTimeout(() => {
+        try {
+          handleSubmitQuiz();
+        } catch (e) {
+          console.error("AUTO_SUBMIT: handleSubmitQuiz threw", e);
+        }
+      }, 300);
+      return () => clearTimeout(timeout);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [timeLeft]);
+  }, [phase, currentIdx, selectedAnswer, quizQuestions.length]);
 
   // ─── Chapter selection helpers ────────────────
   const chapters = subject?.chapters ?? [];
