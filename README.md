@@ -6,9 +6,41 @@
 
 ---
 
+## 🕐 Development Timeline
+
+**Session 1 (Pre-May 2026): Initial Build**
+- QuizCraft built with 218 questions (MCQ Bank)
+- Deployed to Vercel: https://study-platform-peach-iota.vercel.app
+
+**Session 2 (May 2, 2026): ETE Textbook Extraction + Firebase Setup**
+- Extracted 100 questions from the full ETE.pdf textbook (20 per unit, 5 units)
+- Merged with 218 MCQ Bank questions = 318+ total questions
+- Set up Firebase project for future auth/persistence
+- Two question sets now available: "Emerging Trends in Electronics" (100 Qs) and "Emerging Trends in Electronics (MCQ Bank)" (400+ Qs)
+- URL update: quiz now lives at `/quiz/ete-textbook` for textbook questions
+
+**Session 3 (May 10, 2026): Bug Fix Sprint + Auto-Browser Testing**
+- Sub-agent testing revealed multiple dead buttons on home page: "Start Quiz — All Chapters", individual chapter/unit buttons, "All Questions", and Leaderboard all non-functional
+- Progress stats not updating after quiz completion; leaderboard staying empty
+- Root causes: stale React closures on chapter button onClick handlers, `window.focus` event not firing on Next.js client-side router navigation, "All Questions" button missing onClick handler
+- Fixes applied: `nameRef` pattern to avoid stale closures, `useEffect([pathname])` for stats reload, wired up "All Questions" button
+- Build verified clean, pushed to GitHub → Vercel auto-deploy
+- Browser automation confirmed all navigation and quiz flow working end-to-end
+
+**Session 4 (May 10, 2026): Resume / Incomplete Save Feature**
+- Added `saveIncompleteAttempt()` / `loadIncompleteAttempt()` / `clearIncompleteAttempt()` in lib/quizData.ts
+- Home page now shows amber "Unfinished Quiz Found" banner if incomplete attempt exists (within 24hrs)
+- "Resume Quiz" restores exact question position, all previous answers, resets timer
+- "Discard" clears incomplete attempt for fresh start
+- `beforeunload` event + useEffect cleanup saves partial progress on navigate away
+- `completed: false` attempts never touch leaderboard or stats
+- SkillsMP integrations: nextjs-stack-bug-fixer, ahooks, generic-react-ux-designer, zustand-state-management
+
+---
+
 ## ✨ Features
 
-- 🧠 **218 Real Questions** — All questions sourced from the actual Emerging Trends in Electronics curriculum
+- 🧠 **318+ Real Questions** — 100 from ETE textbook + 218+ from MCQ Bank
 - ⏱️ **Timed Quizzes** — 60 seconds per question with auto-advance
 - 📊 **Chapter-wise Tracking** — See your performance across 3 chapters
 - 🎯 **Weak Topic Detection** — Automatically identifies topics you need to work on
@@ -21,7 +53,19 @@
 
 ## 📚 Subject Coverage
 
-### Emerging Trends in Electronics
+### Emerging Trends in Electronics (Textbook)
+
+| Unit | Topic | Questions |
+|------|-------|-----------|
+| 1 | Advanced Processors and Technology | 20 |
+| 2 | AI and Machine Learning | 20 |
+| 3 | ESP32 Microcontroller | 20 |
+| 4 | IoT and Embedded Systems | 20 |
+| 5 | Emerging Technologies | 20 |
+
+**Total: 100 Questions** (textbook extraction)
+
+### Emerging Trends in Electronics (MCQ Bank)
 
 | Chapter | Topic | Questions |
 |---------|-------|-----------|
@@ -29,7 +73,9 @@
 | 2 | AI and Machine Learning | ~74 |
 | 3 | ESP32 Microcontroller | ~72 |
 
-**Total: 218 Questions**
+**Total: 218+ Questions** (MCQ Bank)
+
+**Combined Total: 318+ Questions**
 
 ---
 
@@ -98,19 +144,21 @@ Just type your name and hit **Start Quiz** — no sign-up required.
 ```
 study-platform/
 ├── app/
-│   ├── page.tsx           # Home — subject selection & name input
-│   ├── quiz/[subject]/    # Quiz engine with timer
-│   ├── results/[attemptId]/ # Results & weak topic analysis
-│   └── leaderboard/       # Rankings
+│   ├── page.tsx                    # Home — subject selection & name input
+│   ├── quiz/[subject]/page.tsx     # Quiz engine (setup + quiz + complete phases)
+│   ├── results/[attemptId]/page.tsx # Results & weak topic analysis
+│   ├── leaderboard/page.tsx        # Rankings
+│   └── profile/page.tsx            # User profile
 ├── components/
-│   ├── ui/                # Shadcn UI components
-│   ├── QuizEngine.tsx     # Core quiz logic
-│   └── QuestionCard.tsx   # Question display component
+│   └── ui/                         # Shadcn UI components
 ├── data/
-│   └── questions.json     # All 218 ETE questions
+│   └── questions.json              # All 318+ ETE questions
 ├── lib/
-│   └── utils.ts           # Helper functions
-└── public/                # Static assets
+│   ├── quizData.ts                 # localStorage helpers, question data
+│   ├── firebase.ts                 # Firebase config
+│   ├── firebaseHelpers.ts          # Firestore helpers
+│   └── eteExplanations.ts          # Answer explanations
+└── public/                        # Static assets
 ```
 
 ---
@@ -118,10 +166,10 @@ study-platform/
 ## 🎨 Design System
 
 **Color Palette:**
-- 🖤 Background: `#1D1E2C` (deep dark)
-- 💜 Primary: `#AC9FBB` (muted purple-lilac)
-- 🤍 Light: `#F7EBEC` (off-white)
-- 💗 Muted: `#DDBDD5` (soft pink)
+- 🍂 Background: `#1a1209` (deep warm brown)
+- 🍯 Primary: `#f6aa1c` (amber gold)
+- 🤍 Light: `#faf3e0` (warm cream)
+- 🟤 Muted: `#8b7355` (warm brown)
 - ✅ Success: `#81c784` (green)
 - ❌ Error: `#e57373` (soft red)
 
@@ -144,17 +192,9 @@ Contributions welcome! Here's how:
 
 ---
 
-## ⚠️ Known Issues
-
-- Second PDF question extraction had OCR corruption — Subject 2 questions are incomplete. **Only Emerging Trends in Electronics (218 questions) is fully functional.**
-- Leaderboard shows mock data until more users take quizzes
-
----
-
 ## 📈 Future Roadmap
 
 - [ ] Add more subjects
-- [ ] Firebase auth for persistent leaderboard
 - [ ] Spaced repetition algorithm
 - [ ] Voice quiz mode
 - [ ] Mobile app (React Native)
