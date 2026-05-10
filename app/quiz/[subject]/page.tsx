@@ -298,6 +298,13 @@ export default function QuizPage() {
     // Save last answer for auto-submit trigger
     lastAnswerRef.current = option;
     
+    // Direct call for last question — bypasses setTimeout timing issue
+    if (currentIdx >= quizQuestions.length - 1) {
+      // Last question — submit immediately
+      handleSubmitQuiz();
+      return;
+    }
+    
     // Auto-advance after 500ms
     setTimeout(() => {
       handleAutoNext();
@@ -388,22 +395,6 @@ export default function QuizPage() {
 
     setPhase("complete");
   }, [stopTimer, quizQuestions, answers, startTime, subjectId]);
-
-// Auto-submit when last question is reached and answered
-  useEffect(() => {
-    console.log("AUTO_SUBMIT_EFFECT: checking", { phase, currentIdx, quizLen: quizQuestions.length, lastAns: lastAnswerRef.current });
-    if (phase === "quiz" && currentIdx >= quizQuestions.length - 1 && lastAnswerRef.current && quizQuestions.length > 0) {
-      console.log("AUTO_SUBMIT: FIRING");
-      const timeout = setTimeout(() => {
-        try {
-          handleSubmitQuiz();
-        } catch (e) {
-          console.error("AUTO_SUBMIT: handleSubmitQuiz threw", e);
-        }
-      }, 300);
-      return () => clearTimeout(timeout);
-    }
-  }, [phase, currentIdx, quizQuestions.length, handleSubmitQuiz]);
 
 
   // ─── Computed values ────────────────────────────
