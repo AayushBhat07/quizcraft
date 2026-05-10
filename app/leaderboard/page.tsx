@@ -2,19 +2,17 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import {
   ArrowLeft,
   Trophy,
-  Medal,
   TrendingUp,
   Calendar,
   Hash,
   Loader2,
-  User,
 } from "lucide-react";
 import { getLeaderboard, saveAttemptToFirestore } from "@/lib/firebaseHelpers";
 import type { StoredAttempt } from "@/lib/quizData";
@@ -70,12 +68,12 @@ function timeAgo(ts: number): string {
 }
 
 function RankMedal({ rank }: { rank: number }) {
-  if (rank === 1) return <span className="text-2xl">🥇</span>;
-  if (rank === 2) return <span className="text-2xl">🥈</span>;
-  if (rank === 3) return <span className="text-2xl">🥉</span>;
+  if (rank === 1) return <span className="text-2xl flex-shrink-0">🥇</span>;
+  if (rank === 2) return <span className="text-2xl flex-shrink-0">🥈</span>;
+  if (rank === 3) return <span className="text-2xl flex-shrink-0">🥉</span>;
   return (
     <span
-      className="w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold"
+      className="w-8 h-8 flex items-center justify-center rounded-full text-sm font-bold flex-shrink-0"
       style={{
         backgroundColor: C.surface2,
         color: C.mutedFg,
@@ -89,7 +87,7 @@ function RankMedal({ rank }: { rank: number }) {
 
 function ScoreBar({ score }: { score: number }) {
   return (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-2">
       <div className="flex-1 h-2 rounded-full overflow-hidden" style={{ backgroundColor: C.surface2 }}>
         <div
           className="h-2 rounded-full transition-all duration-500"
@@ -100,7 +98,7 @@ function ScoreBar({ score }: { score: number }) {
         />
       </div>
       <span
-        className="text-sm font-bold w-12 text-right"
+        className="text-sm font-bold w-10 text-right flex-shrink-0"
         style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
       >
         {score}%
@@ -196,7 +194,7 @@ export default function LeaderboardPage() {
 
   return (
     <div
-      className="min-h-screen p-6"
+      className="min-h-screen p-4 sm:p-6"
       style={{ backgroundColor: C.bg, fontFamily: "Inter, sans-serif" }}
     >
       {/* Background gradient */}
@@ -207,7 +205,7 @@ export default function LeaderboardPage() {
         }}
       />
 
-      <div className="relative z-10 max-w-3xl mx-auto space-y-6">
+      <div className="relative z-10 max-w-3xl mx-auto space-y-4 sm:space-y-6">
         {/* Header */}
         <div className="flex items-center gap-3">
           <Button
@@ -219,7 +217,7 @@ export default function LeaderboardPage() {
             <ArrowLeft className="w-5 h-5" />
           </Button>
           <h1
-            className="text-2xl font-bold"
+            className="text-xl sm:text-2xl font-bold"
             style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
           >
             🏆 Leaderboard
@@ -235,7 +233,7 @@ export default function LeaderboardPage() {
           }}
         >
           <span
-            className="w-2 h-2 rounded-full"
+            className="w-2 h-2 rounded-full flex-shrink-0"
             style={{ backgroundColor: isUsingFs ? C.success : C.muted }}
           />
           {isUsingFs ? "Global · Anyone can contribute" : "Local · Only your device"}
@@ -252,21 +250,22 @@ export default function LeaderboardPage() {
         {/* Empty state */}
         {!isLoading && rankedEntries.length === 0 && (
           <Card
-            className="p-8 text-center"
+            className="p-6 sm:p-8 text-center"
             style={{ backgroundColor: C.surface, border: `1px solid ${C.surface2}` }}
           >
-            <div className="text-5xl mb-4">📋</div>
+            <div className="text-4xl sm:text-5xl mb-4">📋</div>
             <h3
-              className="text-xl font-semibold mb-2"
+              className="text-lg sm:text-xl font-semibold mb-2"
               style={{ fontFamily: "Lexend, sans-serif", color: C.fg }}
             >
               No scores yet
             </h3>
-            <p className="mb-6" style={{ color: C.mutedFg }}>
+            <p className="mb-6 text-sm sm:text-base" style={{ color: C.mutedFg }}>
               Be the first to take a quiz and claim the #1 spot!
             </p>
             <Button
               onClick={() => router.push("/")}
+              size="sm"
               style={{
                 backgroundColor: C.primary,
                 color: C.bg,
@@ -284,28 +283,29 @@ export default function LeaderboardPage() {
             {/* Subject filter tabs */}
             <Tabs value={activeTab} onValueChange={setActiveTab}>
               <TabsList
-                className="grid w-full"
+                className="flex flex-wrap gap-1"
                 style={{
                   backgroundColor: C.surface,
                   border: `1px solid ${C.surface2}`,
-                  gridTemplateColumns: `repeat(${Math.min(allEntries.length, 5)}, 1fr)`,
                 }}
               >
                 <TabsTrigger
                   value="all"
+                  className="text-xs sm:text-sm px-2 sm:px-3 py-1.5"
                   style={{
                     fontFamily: "Lexend, sans-serif",
                     color: activeTab === "all" ? C.fg : C.mutedFg,
                   }}
                 >
-                  <TrendingUp className="w-4 h-4 mr-2" />
-                  All
+                  <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
+                  <span className="hidden sm:inline">All</span>
                 </TabsTrigger>
                 {/* Dynamic subject tabs */}
-                {[...Array.from(new Map(allEntries.map(e => [e.subjectId, e])).entries())].map(([sid, e]) => (
+                {[...Array.from(new Map(allEntries.map(e => [e.subjectId, e])).entries())].map(([sid]) => (
                   <TabsTrigger
                     key={sid}
                     value={sid}
+                    className="text-xs sm:text-sm px-2 sm:px-3 py-1.5 max-w-[120px] sm:max-w-[200px] truncate"
                     style={{
                       fontFamily: "Lexend, sans-serif",
                       color: activeTab === sid ? C.fg : C.mutedFg,
@@ -329,14 +329,15 @@ export default function LeaderboardPage() {
                           : `1px solid ${C.surface2}`,
                       }}
                     >
-                      <CardContent className="p-4">
-                        <div className="flex items-center gap-4">
+                      <CardContent className="p-3 sm:p-4">
+                        {/* Mobile layout: row with all info, score bar below name+meta on sm+ */}
+                        <div className="flex items-start gap-2 sm:gap-3">
                           <RankMedal rank={rank} />
 
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 flex-wrap">
                               <span
-                                className="font-semibold text-base truncate"
+                                className="font-semibold text-sm sm:text-base max-w-[120px] sm:max-w-[200px] truncate"
                                 style={{
                                   fontFamily: "Lexend, sans-serif",
                                   color: entry.isCurrentUser ? C.primary : C.fg,
@@ -347,7 +348,7 @@ export default function LeaderboardPage() {
                               {entry.isCurrentUser && (
                                 <Badge
                                   variant="outline"
-                                  className="text-xs"
+                                  className="text-[10px] sm:text-xs px-1.5 py-0.5 flex-shrink-0"
                                   style={{
                                     borderColor: C.primary,
                                     color: C.primary,
@@ -358,27 +359,20 @@ export default function LeaderboardPage() {
                               )}
                             </div>
                             <div
-                              className="flex items-center gap-3 mt-1 text-xs"
+                              className="flex items-center gap-1.5 sm:gap-3 mt-1 text-[10px] sm:text-xs flex-wrap"
                               style={{ color: C.mutedFg }}
                             >
-                              <span className="flex items-center gap-1">
-                                <Hash className="w-3 h-3" />
+                              <span className="flex items-center gap-0.5 sm:gap-1 flex-shrink-0">
+                                <Hash className="w-2.5 h-2.5 sm:w-3 sm:h-3 flex-shrink-0" />
                                 {entry.score}/{entry.totalQuestions}
                               </span>
-                              <span>{timeAgo(entry.timestamp)}</span>
-                              <span>{formatDate(entry.timestamp)}</span>
+                              <span className="flex-shrink-0">{timeAgo(entry.timestamp)}</span>
+                              <span className="hidden sm:flex-shrink-0">{formatDate(entry.timestamp)}</span>
                             </div>
                           </div>
 
-                          <div className="w-36 hidden sm:block">
+                          <div className="w-20 sm:w-32 flex-shrink-0 pt-0.5">
                             <ScoreBar score={entry.percentage} />
-                          </div>
-
-                          <div
-                            className="sm:hidden text-sm font-bold"
-                            style={{ fontFamily: "Lexend, sans-serif", color: C.primary }}
-                          >
-                            {entry.percentage}%
                           </div>
                         </div>
                       </CardContent>
@@ -391,8 +385,8 @@ export default function LeaderboardPage() {
             {/* Your rank summary */}
             {hasCurrentUser && (
               <Card style={{ backgroundColor: C.surface, border: `1px solid ${C.surface2}` }}>
-                <CardContent className="p-4">
-                  <p className="text-sm" style={{ color: C.mutedFg }}>
+                <CardContent className="p-3 sm:p-4">
+                  <p className="text-xs sm:text-sm" style={{ color: C.mutedFg }}>
                     Your best score:{" "}
                     <span
                       className="font-bold"
@@ -417,7 +411,7 @@ export default function LeaderboardPage() {
         {/* CTA */}
         <Button
           onClick={() => router.push("/")}
-          className="w-full"
+          className="w-full text-sm sm:text-base"
           style={{
             backgroundColor: C.primary,
             color: C.bg,
