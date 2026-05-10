@@ -91,6 +91,7 @@ export default function QuizPage() {
   const userStats = getUserStats();
 
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const lastAnswerRef = useRef<string | null>(null);
 
   // ─── Redirect if no name set ───────────────────
   useEffect(() => {
@@ -294,6 +295,9 @@ export default function QuizPage() {
       timestamp: Date.now(),
       userName,
     });
+    // Save last answer for auto-submit trigger
+    lastAnswerRef.current = option;
+    
     // Auto-advance after 500ms
     setTimeout(() => {
       handleAutoNext();
@@ -387,8 +391,9 @@ export default function QuizPage() {
 
 // Auto-submit when last question is reached and answered
   useEffect(() => {
-    if (phase === "quiz" && currentIdx >= quizQuestions.length - 1 && selectedAnswer && quizQuestions.length > 0) {
-      console.log("AUTO_SUBMIT: triggering", { currentIdx, quizLength: quizQuestions.length, selectedAnswer });
+    console.log("AUTO_SUBMIT_EFFECT: checking", { phase, currentIdx, quizLen: quizQuestions.length, lastAns: lastAnswerRef.current });
+    if (phase === "quiz" && currentIdx >= quizQuestions.length - 1 && lastAnswerRef.current && quizQuestions.length > 0) {
+      console.log("AUTO_SUBMIT: FIRING");
       const timeout = setTimeout(() => {
         try {
           handleSubmitQuiz();
@@ -398,7 +403,7 @@ export default function QuizPage() {
       }, 300);
       return () => clearTimeout(timeout);
     }
-  }, [phase, currentIdx, selectedAnswer, quizQuestions.length, handleSubmitQuiz]);
+  }, [phase, currentIdx, quizQuestions.length, handleSubmitQuiz]);
 
 
   // ─── Computed values ────────────────────────────
