@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useEffect, useRef } from "react";
+import { useRouter, usePathname } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -29,6 +29,9 @@ export default function HomePage() {
   const [selectedSubjectIdx, setSelectedSubjectIdx] = useState(0);
   const [userStats, setUserStats] = useState<{ totalQuizzes: number; bestScore: number; avgScore: number } | null>(null);
   const router = useRouter();
+  const pathname = usePathname();
+  // Ref to always have current name value without stale closure issues in onClick handlers
+  const nameRef = useRef("");
 
   const SELECTED_SUBJECT = ALL_SUBJECTS[selectedSubjectIdx];
   const CHAPTERS = SELECTED_SUBJECT.chapters.map(ch => ({
@@ -59,13 +62,9 @@ export default function HomePage() {
 
   useEffect(() => {
     loadStats();
-  }, []);
+  }, [pathname]);
 
-  useEffect(() => {
-    const handleShowStats = () => loadStats();
-    window.addEventListener("focus", handleShowStats);
-    return () => window.removeEventListener("focus", handleShowStats);
-  }, []);
+
 
   const handleStartQuiz = () => {
     const finalName = name.trim() || "Anonymous";
@@ -129,7 +128,7 @@ export default function HomePage() {
                     <Input
                       placeholder="Enter your name"
                       value={name}
-                      onChange={(e) => setName(e.target.value)}
+                      onChange={(e) => { setName(e.target.value); nameRef.current = e.target.value; }}
                       className="h-12 text-base"
                       style={{
                         backgroundColor: C.card,
@@ -194,10 +193,11 @@ export default function HomePage() {
                         (e.currentTarget as HTMLElement).style.borderColor = "transparent";
                       }}
                       onClick={() => {
+                        const currentName = nameRef.current.trim() || localStorage.getItem("quizcraft_name")?.trim() || "Anonymous";
                         const subj = ALL_SUBJECTS[selectedSubjectIdx];
                         localStorage.setItem("quizcraft_selected_chapters", JSON.stringify([ch.id]));
                         localStorage.setItem("quizcraft_subject", subj.id);
-                        router.push(`/quiz/${subj.id}?name=${encodeURIComponent(name.trim() || "Anonymous")}`);
+                        router.push(`/quiz/${subj.id}?name=${encodeURIComponent(currentName)}`);
                       }}
                     >
                       <div className="flex items-center gap-2">
@@ -456,6 +456,13 @@ export default function HomePage() {
                     color: C.mutedFg,
                     fontFamily: "Lexend, sans-serif",
                     backgroundColor: C.surface,
+                  }}
+                  onClick={() => {
+                    const currentName = nameRef.current.trim() || localStorage.getItem("quizcraft_name")?.trim() || "Anonymous";
+                    const subj = ALL_SUBJECTS[selectedSubjectIdx];
+                    localStorage.setItem("quizcraft_selected_chapters", JSON.stringify(subj.chapters.map((c: any) => c.id)));
+                    localStorage.setItem("quizcraft_subject", subj.id);
+                    router.push(`/quiz/${subj.id}?name=${encodeURIComponent(currentName)}`);
                   }}
                 >
                   <BookOpen className="w-4 h-4 mr-2" />
