@@ -5,6 +5,7 @@ import type { Question, Chapter, Subject, QuizAttempt } from "@/types";
 const ATTEMPTS_KEY = "quizcraft_attempts";
 const USER_KEY = "quizcraft_user";
 const PREFS_KEY = "quizcraft_quiz_prefs";
+const INCOMPLETE_KEY = "quizcraft_incomplete_attempt";
 
 // ─── Types for the raw JSON structure ───────────────
 // These match the exact shape of questions.json (no chapterId/chapterName/subjectId on questions)
@@ -189,6 +190,44 @@ export function getAttempts(): StoredAttempt[] {
 
 export function getAttemptById(id: string): StoredAttempt | undefined {
   return getAttempts().find((a) => a.id === id);
+}
+
+// ─── Incomplete attempt (mid-quiz save) ────────────
+export interface IncompleteAttempt {
+  subjectId: string;
+  quizQuestions: QuizQuestion[];
+  answers: Record<string, string>;
+  currentIdx: number;
+  selectedAnswer: string | null;
+  timestamp: number;
+  userName: string;
+}
+
+export function saveIncompleteAttempt(partial: IncompleteAttempt): void {
+  if (typeof window === "undefined") return;
+  localStorage.setItem(INCOMPLETE_KEY, JSON.stringify(partial));
+}
+
+export function loadIncompleteAttempt(): IncompleteAttempt | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const stored = localStorage.getItem(INCOMPLETE_KEY);
+    if (!stored) return null;
+    const parsed = JSON.parse(stored) as IncompleteAttempt;
+    // Only valid within 24 hours
+    if (Date.now() - parsed.timestamp > 24 * 60 * 60 * 1000) {
+      localStorage.removeItem(INCOMPLETE_KEY);
+      return null;
+    }
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+export function clearIncompleteAttempt(): void {
+  if (typeof window === "undefined") return;
+  localStorage.removeItem(INCOMPLETE_KEY);
 }
 
 // ─── User stats ────────────────────────────────────

@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { BookOpen, Trophy, TrendingUp, Zap, Target, Flame, User } from "lucide-react";
+import { BookOpen, Trophy, TrendingUp, Zap, Target, Flame, User, RotateCcw, X } from "lucide-react";
 import questionsData from "@/data/questions.json";
+import { loadIncompleteAttempt, clearIncompleteAttempt, type IncompleteAttempt } from "@/lib/quizData";
 
 const C = {
   bg:        "#1a1209",
@@ -23,11 +24,13 @@ const C = {
 };
 
 const ALL_SUBJECTS = questionsData.subjects;
+const HOURS_24 = 24 * 60 * 60 * 1000;
 
 export default function HomePage() {
   const [name, setName] = useState("");
   const [selectedSubjectIdx, setSelectedSubjectIdx] = useState(0);
   const [userStats, setUserStats] = useState<{ totalQuizzes: number; bestScore: number; avgScore: number } | null>(null);
+  const [incomplete, setIncomplete] = useState<IncompleteAttempt | null>(null);
   const router = useRouter();
   const pathname = usePathname();
   // Ref to always have current name value without stale closure issues in onClick handlers
@@ -62,7 +65,26 @@ export default function HomePage() {
 
   useEffect(() => {
     loadStats();
+    const incompleteAttempt = loadIncompleteAttempt();
+    if (incompleteAttempt) {
+      setIncomplete(incompleteAttempt);
+    }
   }, [pathname]);
+
+  const handleResume = () => {
+    if (!incomplete) return;
+    router.push(`/quiz/${incomplete.subjectId}?resume=true`);
+  };
+
+  const handleDiscard = () => {
+    clearIncompleteAttempt();
+    setIncomplete(null);
+  };
+
+  const formatIncompleteTime = (ts: number) => {
+    const date = new Date(ts);
+    return date.toLocaleTimeString("en-IN", { hour: "2-digit", minute: "2-digit" });
+  };
 
 
 
@@ -89,6 +111,45 @@ export default function HomePage() {
 
       <div className="relative z-10 min-h-screen flex flex-col">
         <div className="flex-1 max-w-7xl mx-auto w-full px-6 py-10">
+
+          {/* ── Resume Banner ── */}
+          {incomplete && (
+            <div
+              className="mb-6 p-4 rounded-xl flex flex-col sm:flex-row items-start sm:items-center gap-4"
+              style={{ backgroundColor: C.surface, border: `1px solid ${C.primary}60` }}
+            >
+              <div className="flex-1">
+                <div className="flex items-center gap-2 mb-1">
+                  <RotateCcw className="w-4 h-4" style={{ color: C.primary }} />
+                  <p className="text-sm font-semibold" style={{ color: C.primary }}>
+                    Unfinished Quiz Found
+                  </p>
+                </div>
+                <p className="text-sm" style={{ color: C.mutedFg }}>
+                  You left off at question {incomplete.currentIdx + 2} with {Object.keys(incomplete.answers).length} answer{Object.keys(incomplete.answers).length !== 1 ? "s" : ""} saved.
+                  {` Last active: ${formatIncompleteTime(incomplete.timestamp)} today.`}
+                </p>
+              </div>
+              <div className="flex gap-2">
+                <Button
+                  onClick={handleResume}
+                  className="text-sm font-semibold"
+                  style={{ backgroundColor: C.primary, color: C.bg }}
+                >
+                  Resume Quiz
+                </Button>
+                <Button
+                  variant="outline"
+                  onClick={handleDiscard}
+                  className="text-sm"
+                  style={{ borderColor: `${C.muted}50`, color: C.mutedFg }}
+                >
+                  <X className="w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+          )}
+
           {/* ── SPLIT SCREEN LAYOUT ── */}
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 h-full items-start">
 

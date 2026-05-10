@@ -29,9 +29,13 @@ import {
   computeQuizResult,
   updateUserStatsAfterQuiz,
   getUserStats,
+  saveIncompleteAttempt,
+  loadIncompleteAttempt,
+  clearIncompleteAttempt,
   type QuizQuestion,
   type QuizPrefs,
   type StoredAttempt,
+  type IncompleteAttempt,
 } from "@/lib/quizData";
 import { saveAttemptToFirestore } from "@/lib/firebaseHelpers";
 import { eteExplanations } from "@/lib/eteExplanations";
@@ -93,15 +97,88 @@ export default function QuizPage() {
     if (!localStorage.getItem("quizcraft_name")) {
       router.replace("/");
     }
-    // Reset phase when subject changes
+    // Reset phase when subject changes (only on initial mount, not on resume navigation)
     setPhase("setup");
     setQuizQuestions([]);
     setCurrentIdx(0);
     setAnswers({});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router, subjectId]);
+
+  // ─── Handle resume from incomplete attempt ───────────────────
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("resume") === "true") {
+      const incomplete = loadIncompleteAttempt();
+      if (incomplete && incomplete.subjectId === subjectId) {
+        setQuizQuestions(incomplete.quizQuestions);
+        setCurrentIdx(incomplete.currentIdx);
+        setAnswers(incomplete.answers);
+        setSelectedAnswer(incomplete.selectedAnswer);
+        setTimeLeft(TIMER_SECS);
+        setTimerActive(false);
+        setPhase("quiz");
+        // Clear URL param
+        window.history.replaceState({}, "", `/quiz/${subjectId}`);
+      }
+    }
+  }, [subjectId]);
+
+  // ─── Save incomplete attempt on answer selection ───────────────────
+  useEffect(() => {
+    if (phase !== "quiz" || quizQuestions.length === 0) return;
+    const answeredCount = Object.keys(answers).length;
+    if (answeredCount < 1) return;
+    const userName = localStorage.getItem("quizcraft_name") ?? "";
+    saveIncompleteAttempt({
+      subjectId,
+      quizQuestions,
+      answers,
+      currentIdx,
+      selectedAnswer,
+      timestamp: Date.now(),
+      userName,
+    });
+  }, [answers, currentIdx, selectedAnswer, phase, quizQuestions, subjectId]);
 
   // ─── Name validation ───────────────────────────
   const userName = localStorage.getItem("quizcraft_name") ?? "";
+
+
+  // ─── Save incomplete attempt on mount/unmount ─────────────────
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      if (phase === "quiz" && quizQuestions.length > 0 && Object.keys(answers).length > 0) {
+        const userName = localStorage.getItem("quizcraft_name") ?? "";
+        saveIncompleteAttempt({
+          subjectId,
+          quizQuestions,
+          answers,
+          currentIdx,
+          selectedAnswer,
+          timestamp: Date.now(),
+          userName,
+        });
+      }
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+      // Also save on normal unmount (navigating away mid-quiz)
+      if (phase === "quiz" && quizQuestions.length > 0 && Object.keys(answers).length > 0) {
+        const userName = localStorage.getItem("quizcraft_name") ?? "";
+        saveIncompleteAttempt({
+          subjectId,
+          quizQuestions,
+          answers,
+          currentIdx,
+          selectedAnswer,
+          timestamp: Date.now(),
+          userName,
+        });
+      }
+    };
+  }, [phase, quizQuestions, answers, currentIdx, selectedAnswer, subjectId]);
 
   // ─── Timer logic ──────────────────────────────
   const startTimer = useCallback(() => {
@@ -243,6 +320,7 @@ export default function QuizPage() {
     };
 
     saveAttempt(storedAttempt);
+    clearIncompleteAttempt();
     localStorage.setItem("quizcraft_last_attempt", JSON.stringify(storedAttempt));
     // Also save to quizcraft_attempts array for home page stats
     const existingAttempts = JSON.parse(localStorage.getItem("quizcraft_attempts") || "[]");
